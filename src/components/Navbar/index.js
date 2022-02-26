@@ -22,7 +22,7 @@ return (
 			</NavLink>
 		</NavMenu>
 		<NavBtn>
-			<NavBtnLink to='/signin'>Sign In</NavBtnLink>
+			<NavBtnLink to='/signup'>Sign Up</NavBtnLink>
 			<NavBtnLink to='/login'>Login</NavBtnLink>
 		</NavBtn>
 	</Nav>
