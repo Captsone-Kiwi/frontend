@@ -6,6 +6,7 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 LogoDiv,
+Wrap
 } from './NavbarElements';
 
 const Navbar = () => {

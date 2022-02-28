@@ -94,3 +94,11 @@ background: url(img/logo.png);
 background-repeat: no-repeat;
 background-size: contain;
 `;
+
+export const Wrap = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 35px;
+
+`;
