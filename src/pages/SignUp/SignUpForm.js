@@ -3,7 +3,7 @@ import './style.css';
 import Checkbox from '../../components/Checkbox/Checkbox';
 import {
   NavBtn,
-  NavBtnLink,
+  LoginBtnLink,
   } from '../../components/Navbar/NavbarElements';
 
 class SignUpForm extends React.Component {
@@ -132,10 +132,10 @@ class SignUpForm extends React.Component {
             <span style={{ marginLeft: 8 }}>I have read the Privacy Acknowledgement.</span>
         </label>
         <div>
-          {/* <NavBtn>
-            <NavBtnLink type="submit" to='/login'>Login</NavBtnLink>
-          </NavBtn> */}
-          <input type="submit" className="button"  value="Create an account"/>
+          <NavBtn>
+            <LoginBtnLink type="submit" to='/login'>Login</LoginBtnLink>
+            <input type="submit" className="button"  value="Create an account"/>
+          </NavBtn>
         </div>
         </form>
     </div>

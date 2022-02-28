@@ -28,7 +28,6 @@ cursor: pointer;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-right: -24px;
 white-space: nowrap; */
 @media screen and (max-width: 768px) {
 	display: none;
@@ -38,16 +37,14 @@ white-space: nowrap; */
 export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
-margin-right: 24px;
-@media screen and (max-width: 768px) {
-	display: none;
-}
+justify-content: space-between;
 `;
 
 export const NavBtnLink = styled(Link)`
 border-radius: 4px;
 background: #FFFFFF;
-padding: 10px 22px;
+padding: 12px 15px;
+margin-right: 12px;
 color: #3CB371;
 outline: none;
 border: 2px solid #3CB371;
@@ -55,7 +52,32 @@ border-radius: 99px;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
-margin-left: 24px;
+white-space: nowrap;
+
+&:hover {
+	transition: all 0.2s ease-in-out;
+	background: #3CB371;
+	color: #FFFFFF;
+}
+`;
+
+export const LoginBtnLink = styled(Link)`
+width: 230px !important;
+text-align: center;
+border-radius: 4px;
+background: #FFFFFF;
+margin-right: 12px;
+color: #3CB371;
+outline: none;
+border: 2px solid #3CB371;
+border-radius: 99px;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+white-space: nowrap;
+padding: 12px 15px;
+box-sizing: border-box;
+
 &:hover {
 	transition: all 0.2s ease-in-out;
 	background: #3CB371;
