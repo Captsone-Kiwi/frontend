@@ -1,50 +1,86 @@
-form {
-  width: 100%;
+#register,
+#login {
+  width: 40%;
+  padding: 0px 15px 15px 15px;
+  border-radius: 5px;
+  font-family: arial;
+  line-height: 16px;
+  color: #333333;
+  font-size: 14px;
+  background: #ffffff;
+  margin: 100px auto;
 }
 
-.loginBox {
-  width: 50%;
+#register h3 {
   text-align: center;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 20%);
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  white-space: nowrap;
 }
 
-.signUpSubmit {
-  margin: 25px 0 15px 0;
+#register label {
+  color: #7a7a7a;
 }
 
-.pwStrRow {
-  width: 63%;
-  text-align: left;
-  margin: auto;
-  padding: 0;
-  font-size: 12px;
+form label,
+form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 90%;
 }
 
-.pwStrWeak {
-  display: inline-block;
-  position: relative;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  color: gray;
+form input {
+  padding: 10px;
+  border: solid 1px #bdc7d8;
+  border-radius: 8px;
 }
 
-.pwStrStrong {
-  display: inline-block;
-  position: relative;
-  left: 77%;
-  padding: 0;
-  margin: 0;
-  color: gray;
+.button {
+  background-color: #3cb371;
+  border-radius: 99px;
+  font-weight: bold;
+  padding: 12px 15px;
+  color: #ffffff;
 }
 
-@media screen and (max-width: 550px) {
-  .loginBox {
-    width: 85%;
-  }
+.errorMsg {
+  color: #cc0000;
+  margin-bottom: 12px;
+}
+
+.sucessMsg {
+  color: #6b8e23;
+  margin-bottom: 10px;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: transparent;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #3cb371;
+}
+
+input[type="submit"] {
+  width: 100%;
 }

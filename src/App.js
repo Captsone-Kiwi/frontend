@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Login from './pages/Login/login';
-import SignUpContainer from './pages/SignUp/SignUpContainer';
+import SignUpForm from './pages/SignUp/SignUpForm';
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
         {/* <SignUpContainer/> */}
         {/* <Route path='/' exact component={Home}/> */}
-        <Route path='/signup' component={SignUpContainer}/>
+        <Route path='/signup' component={SignUpForm}/>
         <Route path='/login' component={Login}/>
     </Router>
   );
