@@ -132,8 +132,8 @@ class SignUpForm extends React.Component {
 
           <label>
             <Checkbox
-              checked={this.state.checked}
-              onChange={this.handleCheckboxChange}
+              // checked={this.state.checked}
+              // onChange={this.handleCheckboxChange}
             />
             <span style={{ marginLeft: 8 }}>I have read the Privacy Acknowledgement.</span>
           </label>
