@@ -22,21 +22,21 @@
   color: #7a7a7a;
 }
 
-form label,
-form input {
+label,
+input {
   display: block;
   margin-bottom: 10px;
   width: 465px;
 }
 
-form input {
+input {
   padding: 10px;
   border: solid 1px #bdc7d8;
   border-radius: 8px;
 }
 
 @media screen and (max-width: 768px) {
-  form input {
+  input {
     width: 485px;
   }
 }
@@ -92,4 +92,20 @@ input:focus {
 input[type="submit"] {
   width: 230px !important;
   margin-bottom: 0px;
+}
+
+button {
+  width: 230px !important;
+  text-align: center;
+  border-radius: 99px;
+  border: 2px solid #3cb371;
+  background: #3cb371;
+  margin-right: 12px;
+  color: #fff;
+  outline: auto;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 12px 15px;
 }
