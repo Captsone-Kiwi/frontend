@@ -1,20 +1,20 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {LoginForm} from './pages/Login/LoginForm';
-import SignUpForm from './pages/SignUp/SignUpForm';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HeaderContainer from "./container/headerContainer";
+import { Home, Login, SignUp } from "./pages";
 
 function App() {
-
   return (
-    
     <Router>
-      <Navbar />
-        {/* <SignUpContainer/> */}
-        {/* <Route path='/' exact component={Home}/> */}
-        <Route path='/signup' component={SignUpForm}/>
-        <Route path={'/login'} component={LoginForm}/>
+      <HeaderContainer />
+      {/* <SignUpContainer/> */}
+      {/* <Route path='/' exact component={Home}/> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </Router>
   );
 }
