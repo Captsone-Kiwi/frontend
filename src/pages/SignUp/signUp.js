@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
+import * as api from "../../api/server";
 
-function SignUp() {
+function SignUp(props) {
   // const navigator = useNavigate();
   const [values, setValues] = useState({
     email: "",
@@ -14,6 +15,19 @@ function SignUp() {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setValues({ ...values, [name]: value });
+  };
+
+  const signup = () => {
+    console.log("hhhhhiiiiii");
+    // const { history } = props;
+    const token = api.createUser(values);
+    console.log(token);
+    // await alert(token);
+    if (token.non_field_errors) {
+      token.non_field_errors.map((e) => alert(e));
+    } else {
+      // history.push('/');
+    }
   };
 
   // privacy
@@ -110,8 +124,8 @@ function SignUp() {
         </style.Span>
         <style.TextInput
           required
-          placeholder="Confirm Password"
-          name="Enter your password"
+          placeholder="Enter your password"
+          name="repassword"
           type="password"
           value={values.repassword}
           onChange={handleChange}
@@ -141,7 +155,9 @@ function SignUp() {
             Privacy Acknowledgement.
           </style.TextBtn>
         </style.CheckForm>
-        <style.Button type="submit">Create an account</style.Button>
+        <style.Button type="submit" onClick={signup}>
+          Create an account
+        </style.Button>
       </style.SignUpForm>
     </style.Container>
   );
