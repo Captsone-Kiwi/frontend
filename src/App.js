@@ -8,8 +8,6 @@ function App() {
   return (
     <Router>
       <HeaderContainer />
-      {/* <SignUpContainer/> */}
-      {/* <Route path='/' exact component={Home}/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
