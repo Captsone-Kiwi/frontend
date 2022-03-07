@@ -17,12 +17,21 @@ function SignUp(props) {
     setValues({ ...values, [name]: value });
   };
 
+<<<<<<< HEAD
+  const signup = () => {
+    console.log("hhhhhiiiiii");
+    // const { history } = props;
+    const token = api.createUser(values);
+    console.log(token);
+    // await alert(token);
+=======
   const signup = async () => {
     console.log("hhhhhiiiiii");
     // const { history } = props;
     const token = await api.createUser(values);
     await console.log(values);
     await alert(token);
+>>>>>>> origin/login
     if (token.non_field_errors) {
       token.non_field_errors.map((e) => alert(e));
     } else {
