@@ -29,8 +29,13 @@ class SignUpForm extends React.Component {
     event.preventDefault();
     if (this.validateForm()) {
       let fields = {};
+<<<<<<< HEAD
       fields["name"] = this.state.fields.name;
       fields["email"] = this.state.fields.email;
+=======
+      fields["username"] = this.state.fields.username;
+      fields["emailid"] = this.state.fields.emailid;
+>>>>>>> origin/login
       fields["password"] = this.state.fields.password;
       this.setState({ fields: fields });
 
