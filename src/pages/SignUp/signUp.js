@@ -1,41 +1,43 @@
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
-import * as api from "../../api/server";
+import * as authAPI from "../../api/authAPI";
 
 function SignUp(props) {
-  // const navigator = useNavigate();
+  const navigator = useNavigate();
   const [values, setValues] = useState({
     email: "",
     password: "",
     repassword: "",
     name: "",
   });
+  const [member, setMember] = useState("");
+  const memberType = (e) => {
+    e.preventDefault();
+    if (e.target.tagName !== "DIV") {
+      let target = e.target;
+      while (e.target.tagName !== "BUTTON") {
+        target = target.parentNode;
+      }
+      setMember(target.value);
+    }
+  };
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setValues({ ...values, [name]: value });
   };
 
-<<<<<<< HEAD
-  const signup = () => {
-    console.log("hhhhhiiiiii");
-    // const { history } = props;
-    const token = api.createUser(values);
-    console.log(token);
+  const signup = (event) => {
+    event.preventDefault();
+    const token = authAPI.createUser(values);
+    console.log("토큰", token);
     // await alert(token);
-=======
-  const signup = async () => {
-    console.log("hhhhhiiiiii");
-    // const { history } = props;
-    const token = await api.createUser(values);
-    await console.log(values);
-    await alert(token);
->>>>>>> origin/login
     if (token.non_field_errors) {
       token.non_field_errors.map((e) => alert(e));
     } else {
-      // history.push('/');
+      alert("회원가입 성공");
+      navigator("/");
     }
   };
 
@@ -147,6 +149,29 @@ function SignUp(props) {
           }
           InputProps={{ disableUnderline: true }}
         />
+        <style.Span
+          color="#7a7a7a"
+          size="14px"
+          margins="20px 0px 8px 0px"
+          weight="bold"
+          font="AppleSD"
+        >
+          Member Type
+        </style.Span>
+        <style.MemberContainer onClick={memberType}>
+          <style.MemberBtn
+            value="interviewer"
+            current={member === "interviewer"}
+          >
+            Interviewer
+          </style.MemberBtn>
+          <style.MemberBtn
+            value="interviewee"
+            current={member === "interviewee"}
+          >
+            Interviewee
+          </style.MemberBtn>
+        </style.MemberContainer>
         <style.CheckForm>
           {privacyInfo && (
             <DetailContent

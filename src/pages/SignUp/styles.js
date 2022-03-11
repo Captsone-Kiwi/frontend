@@ -40,14 +40,14 @@ export const TextInput = styled(TextField)`
     height: 28px;
     padding-left: 10px;
     border: 1px solid #929292;
-    border-radius: 8px;
+    border-radius: 12px;
     color: #929292;
   }
 `;
 
 export const CheckForm = styled.div`
   display: flex;
-  padding: 30px 0 30px 0;
+  padding: 40px 0 30px 0;
 `;
 
 export const IdCheckBox = styled(Checkbox)`
@@ -80,16 +80,15 @@ export const TextBtn = styled.button`
 `;
 
 export const Button = styled.button`
-  width: 50%;
+  width: 48%;
   height: 50px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 99px;
   background-color: white;
   border: 2px solid #3cb371;
   color: #3cb371;
-  margin-top: 30px;
-  align-self: center;
+  align-self: flex-end;
   &:hover {
     cursor: pointer;
     background-color: #3cb371;
@@ -151,4 +150,26 @@ export const ConfirmButton = styled(Button)`
   background-image: none;
   border-radius: 50px;
   font-size: 15px;
+`;
+
+export const MemberContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const MemberBtn = styled.button`
+  width: 48%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: ${(props) => (props.current ? "#929292" : "white")};
+  border: 1px solid #929292;
+  color: ${(props) => (props.current ? "white" : "#929292")};
+  align-self: center;
+  &:hover {
+    cursor: pointer;
+    background-color: #929292;
+    color: white;
+  }
 `;
