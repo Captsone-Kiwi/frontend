@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
+import * as authAPI from "../../api/authAPI";
 
 function Login() {
   const navigator = useNavigate();
@@ -12,11 +13,23 @@ function Login() {
     console.log(event.target);
   };
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const token = authAPI.authLogin(values);
+    console.log("토큰", token);
+    if (token.non_field_errors) {
+      token.non_field_errors.map((e) => alert(e));
+    } else {
+      alert("환영합니다!");
+      navigator("/");
+    }
+  };
+
   return (
     <>
       <style.Container>
         <style.Title>Login</style.Title>
-        <style.LoginForm>
+        <style.LoginForm onSubmit={handleSubmit}>
           <style.Span
             color="#7a7a7a"
             size="14px"
