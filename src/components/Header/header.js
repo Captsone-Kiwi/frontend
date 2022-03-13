@@ -18,11 +18,6 @@ function Header() {
         <style.MenuBtn onClick={() => navigator("/question")}>
           Question
         </style.MenuBtn>
-        {/* 임시 */}
-        <style.MenuBtn onClick={() => navigator("/signup")}>
-          Sign Up
-        </style.MenuBtn>
-        <style.MenuBtn onClick={() => navigator("/login")}>Login</style.MenuBtn>
       </style.Menu>
     </style.Header>
   );
