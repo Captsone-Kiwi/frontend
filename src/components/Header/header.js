@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React from "react";
 import * as style from "./styles";
 import { useNavigate } from "react-router-dom";
 
