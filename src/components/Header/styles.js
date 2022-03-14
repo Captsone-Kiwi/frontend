@@ -7,7 +7,6 @@ export const Header = styled.div`
   background: white;
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.16);
   z-index: 3;
-  padding: 0.2rem 4rem;
   align-items: center;
 `;
 
@@ -15,11 +14,26 @@ export const Logo = styled.img`
   width: 60px;
   height: 40px;
   margin-right: 24px;
+  margin-left: 4rem;
   background-repeat: no-repeat;
   background-size: contain;
 `;
 
 export const Menu = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+`;
+
+export const menuRight = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
+`;
+
+export const menuLeft = styled.div`
   display: flex;
   align-items: center;
   height: 100%;

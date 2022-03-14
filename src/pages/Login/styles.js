@@ -9,7 +9,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 70px;
+  padding-bottom: 150px;
 `;
 
 export const Title = styled.p`
@@ -83,7 +84,7 @@ export const ButtonContainer = styled.div`
 export const Button = styled.button`
   width: 45%;
   height: 50px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 99px;
   background-color: white;
