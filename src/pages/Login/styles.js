@@ -9,7 +9,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 200px;
+  padding-top: 70px;
+  padding-bottom: 150px;
 `;
 
 export const Title = styled.p`

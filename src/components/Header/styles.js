@@ -21,6 +21,20 @@ export const Logo = styled.img`
 
 export const Menu = styled.div`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+`;
+
+export const menuRight = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
+`;
+
+export const menuLeft = styled.div`
+  display: flex;
   align-items: center;
   height: 100%;
 `;
