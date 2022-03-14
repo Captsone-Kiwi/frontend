@@ -6,6 +6,7 @@ import InterviewReserve from "./interviewReserve";
 
 function Interview(props) {
   const [side, setSide] = useState("interview");
+  const [tag, setTag] = useState("");
   const [step, setStep] = useState(0);
   const prevStep = () => {
     if (step >= 0) setStep(step - 1);
@@ -23,6 +24,8 @@ function Interview(props) {
             setStep={setStep}
             prevStep={prevStep}
             nextStep={nextStep}
+            tag={tag}
+            setTag={setTag}
           />
         ) : (
           <InterviewReserve

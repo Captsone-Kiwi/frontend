@@ -29,7 +29,10 @@ export const selectBtn = styled.button`
   font-weight: bold;
   margin-right: 20px;
   padding-bottom: 5px;
+  margin-bottom: -2px;
+  border-bottom: ${(props) => (props.current ? "3px solid #3cb371" : "none")};
   &:hover {
+    cursor: pointer;
     border-bottom: 3px solid #3cb371;
   }
 `;

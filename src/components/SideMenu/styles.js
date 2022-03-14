@@ -5,7 +5,7 @@ export const sideContainer = styled.div`
   width: 20%;
   min-width: 250px;
   height: 100%;
-  min-height: 1020px;
+  min-height: 1300px;
   background-color: #e1e5e3;
   flex-direction: column;
   align-items: center;
