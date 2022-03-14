@@ -1,7 +1,6 @@
 import React from "react";
 import * as style from "./styles";
 import { useNavigate } from "react-router-dom";
-import { StepLabel } from "@material-ui/core";
 
 function Header() {
   const navigator = useNavigate();
