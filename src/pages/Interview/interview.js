@@ -14,6 +14,20 @@ function Interview(props) {
   const nextStep = () => {
     if (step < 2) setStep(step + 1);
   };
+
+  const [reserve, setReserve] = useState({
+    interviewName: "",
+    startTime: "",
+    template: "INT",
+    interviewee: "",
+    interviewer: "",
+  });
+
+  const reserveUpload = ({ target }) => {
+    let { name, value } = target;
+    setReserve({ ...reserve, [name]: value });
+  };
+
   return (
     <style.Container>
       <SideMenu side={side} setSide={setSide} />
@@ -33,6 +47,7 @@ function Interview(props) {
             setStep={setStep}
             prevStep={prevStep}
             nextStep={nextStep}
+            reserveUpload={reserveUpload}
           />
         )}
       </style.interviewContainer>

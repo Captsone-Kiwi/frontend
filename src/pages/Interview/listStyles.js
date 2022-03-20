@@ -17,7 +17,7 @@ export const Span = styled.p`
 export const selectionDiv = styled.div`
   display: flex;
   width: 100%;
-  border-bottom: 2px solid #c4c4c4;
+  border-bottom: 3px solid #c4c4c4;
 `;
 
 export const selectBtn = styled.button`
@@ -29,10 +29,26 @@ export const selectBtn = styled.button`
   font-weight: bold;
   margin-right: 20px;
   padding-bottom: 5px;
-  margin-bottom: -2px;
+  margin-bottom: -3px;
   border-bottom: ${(props) => (props.current ? "3px solid #3cb371" : "none")};
   &:hover {
     cursor: pointer;
     border-bottom: 3px solid #3cb371;
+  }
+`;
+
+export const reserveInterview = styled.button`
+  width: fit-content;
+  border: 2px solid #3cb371;
+  background-color: white;
+  color: #3cb371;
+  align-self: flex-end;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  &:hover {
+    cursor: pointer;
   }
 `;

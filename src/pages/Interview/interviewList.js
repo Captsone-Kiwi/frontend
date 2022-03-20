@@ -23,13 +23,13 @@ export default function interviewList(props) {
         <style.selectBtn value="old" current={tag === "old"}>
           이전
         </style.selectBtn>
-        <style.selectBtn value="indi" current={tag === "indi"}>
-          개인 면접실
-        </style.selectBtn>
         <style.selectBtn value="template" current={tag === "template"}>
           면접 템플릿
         </style.selectBtn>
       </style.selectionDiv>
+      <style.reserveInterview onClick={props.nextStep}>
+        면접 예약
+      </style.reserveInterview>
     </style.Container>
   );
 }
