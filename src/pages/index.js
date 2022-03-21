@@ -4,3 +4,4 @@ export { default as SignUp } from "./SignUp/signUp";
 export { default as Profile } from "./Profile/profile";
 export { default as Interview } from "./Interview/interview";
 export { default as Uploads } from "./Uploads/upload";
+export { default as Main } from "./Main/main";
