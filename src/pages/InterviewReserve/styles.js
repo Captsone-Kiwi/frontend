@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { TextField } from "@material-ui/core";
 
 export const mainContainer = styled.div`
   display: flex;
@@ -64,71 +63,16 @@ export const reserveTitle = styled.p`
   margin-left: 10px;
 `;
 
-export const reserveName = styled(TextField)`
+export const reserveName = styled.input`
   width: 70%;
-  .MuiInputBase-input {
-    height: 25px;
-    border: 1px solid #929292;
-    border-radius: 12px;
-    color: black;
-  }
-  .MuiFormControl-root {
-    padding: 6px;
-  }
+  height: 28px;
+  border: 1px solid #929292;
+  border-radius: 12px;
+  padding: 6px 10px;
 `;
 
 export const detailContainer = styled.div`
-  width: 70%;
+  width: 73%;
   display: flex;
   flex-direction: column;
-`;
-
-export const interviewerList = styled(TextField)`
-  width: 100%;
-  .MuiInputBase-input {
-    height: 25px;
-    border: 1px solid #929292;
-    border-radius: 12px;
-    color: black;
-    margin-bottom: 10px;
-  }
-  .MuiFormControl-root {
-    padding: 6px;
-  }
-`;
-
-export const addBtn = styled.button`
-  align-self: center;
-  margin-top: 7px;
-  padding: unset;
-  background: transparent;
-  border: none;
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
-export const addImg = styled.img`
-  width: 30px;
-`;
-
-export const inputBox = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-export const removeBtn = styled.button`
-  align-self: flex-start;
-  padding: unset;
-  background: transparent;
-  border: none;
-  margin-top: 7px;
-  margin-left: 3px;
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
-export const removeImg = styled.img`
-  width: 25px;
 `;

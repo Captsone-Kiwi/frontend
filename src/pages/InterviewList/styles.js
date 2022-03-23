@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const mainContainer = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+export const interviewContainer = styled.div`
+  display: flex;
+  width: 80%;
+`;
+
 export const Container = styled.div`
   width: 100%;
   display: flex;
