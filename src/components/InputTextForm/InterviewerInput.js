@@ -24,12 +24,15 @@ function InterviewerInput(props) {
   };
   const removeInterviewer = (e, index) => {
     const name = e.target.getAttribute("name");
+    console.log("받아온 index:", index);
+    console.log("name:", name);
     if (props.reserveInfo.interviewer.length > 1) {
       setCurrViewer(currViewer - 1);
       props.setReserveInfo({
         ...props.reserveInfo,
         [name]: [
           ...props.reserveInfo[name].filter((value, idx) => {
+            console.log("array:", props.reserveInfo.interviewer);
             return idx !== index;
           }),
         ],
@@ -47,7 +50,7 @@ function InterviewerInput(props) {
   }, []);
 
   return (
-    <style.inputBox>
+    <style.inputBox id="inputBox">
       <style.interviewerList
         name="interviewer"
         className={"viewer-input" + props.index}
@@ -60,6 +63,7 @@ function InterviewerInput(props) {
         name="interviewer"
         onClick={(e) => {
           removeInterviewer(e, props.index);
+          console.log("index:", props.index);
         }}
       >
         <style.removeImg

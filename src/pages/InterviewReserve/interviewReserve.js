@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
+import DatePick from "../../components/DatePick/datepick";
 import InterviewerInput from "../../components/InputTextForm/InterviewerInput";
 import IntervieweeInput from "../../components/InputTextForm/IntervieweeInput";
 
@@ -48,6 +49,11 @@ function InterviewReserve(props) {
             </style.reserveSection>
             <style.reserveSection>
               <style.reserveTitle>면접 일시</style.reserveTitle>
+              <style.reserveTime>
+                <style.reserveDate>
+                  <DatePick />
+                </style.reserveDate>
+              </style.reserveTime>
             </style.reserveSection>
             <style.reserveSection>
               <style.reserveTitle>면접 ID</style.reserveTitle>

@@ -7,7 +7,7 @@ export const inputBox = styled.div`
 
 export const interviewerList = styled.input`
   width: 100%;
-  height: 28px;
+  height: 25px;
   border: 1px solid #929292;
   border-radius: 12px;
   margin-bottom: 10px;

@@ -52,7 +52,7 @@ export const reserveSection = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding-bottom: 35px;
+  padding-bottom: 65px;
 `;
 
 export const reserveTitle = styled.p`
@@ -61,11 +61,12 @@ export const reserveTitle = styled.p`
   font-weight: bold;
   color: #7a7a7a;
   margin-left: 10px;
+  margin-top: 10px;
 `;
 
 export const reserveName = styled.input`
   width: 70%;
-  height: 28px;
+  height: 25px;
   border: 1px solid #929292;
   border-radius: 12px;
   padding: 6px 10px;
@@ -75,4 +76,18 @@ export const detailContainer = styled.div`
   width: 73%;
   display: flex;
   flex-direction: column;
+`;
+
+export const reserveTime = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+`;
+
+export const reserveDate = styled.div`
+  width: 49%;
+`;
+
+export const reserveHour = styled.div`
+  width: 48%;
 `;
