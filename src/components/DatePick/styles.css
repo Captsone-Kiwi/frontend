@@ -5,12 +5,11 @@
 }
 
 .react-datepicker__day--keyboard-selected {
-  border-radius: 1.3rem;
-  background-color: #3cb371;
-  color: #fff;
+  background-color: transparent;
+  color: black;
 }
 
-.input {
+.date-input {
   width: 100%;
   height: 33px;
   text-align: center;
@@ -18,16 +17,4 @@
   border: 1px solid #929292;
   cursor: pointer;
   font-size: 15px;
-}
-
-.react-datepicker__input-container::before {
-  content: "";
-  background-image: url("../../../public/images/common/calendarIcon.png");
-  background-size: cover;
-  display: inline-block;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 7px;
-  left: 12px;
 }

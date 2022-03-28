@@ -6,7 +6,7 @@ import SideMenu from "../../components/SideMenu/sideMenu";
 function InterviewList(props) {
   const navigator = useNavigate();
   const [side, setSide] = useState("interview");
-  const [tag, setTag] = useState("");
+  const [tag, setTag] = useState("new");
   const btnClicked = (e) => {
     e.preventDefault();
     if (e.target.tagName !== "DIV") {
@@ -17,14 +17,6 @@ function InterviewList(props) {
       setTag(target.value);
     }
   };
-  //면접 예약 정보
-  const [reserveInfo, setReserveInfo] = useState({
-    interviewName: "",
-    startTime: "",
-    template: "INT",
-    interviewee: [""],
-    interviewer: [""],
-  });
 
   return (
     <style.mainContainer>

@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import DatePick from "../../components/DatePick/datepick";
+import TimePick from "../../components/TimePick/timepick";
+import SelectTemplate from "../../components/SelectTemplate/selectTemplate";
 import InterviewerInput from "../../components/InputTextForm/InterviewerInput";
 import IntervieweeInput from "../../components/InputTextForm/IntervieweeInput";
 
@@ -51,15 +53,27 @@ function InterviewReserve(props) {
               <style.reserveTitle>면접 일시</style.reserveTitle>
               <style.reserveTime>
                 <style.reserveDate>
+                  <style.calendarImg src="/images/common/calendarIcon.png" />
                   <DatePick />
                 </style.reserveDate>
+                <style.reserveHour>
+                  <style.clockImg src="/images/common/clockIcon.png" />
+                  <TimePick />
+                </style.reserveHour>
               </style.reserveTime>
             </style.reserveSection>
             <style.reserveSection>
               <style.reserveTitle>면접 ID</style.reserveTitle>
+              <style.createId>
+                <style.IdCheckBox />
+                <style.Text>자동으로 생성</style.Text>
+              </style.createId>
             </style.reserveSection>
             <style.reserveSection>
               <style.reserveTitle>템플릿</style.reserveTitle>
+              <style.selectTemplate>
+                <SelectTemplate />
+              </style.selectTemplate>
             </style.reserveSection>
             <style.reserveSection>
               <style.reserveTitle>면접관</style.reserveTitle>
@@ -89,6 +103,10 @@ function InterviewReserve(props) {
                 ))}
               </style.detailContainer>
             </style.reserveSection>
+            <style.buttonSection>
+              <style.Button>저장</style.Button>
+              <style.Button>취소</style.Button>
+            </style.buttonSection>
           </style.reserveContainer>
         </style.Container>
       </style.interviewContainer>

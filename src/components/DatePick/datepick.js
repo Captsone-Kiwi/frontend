@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ko } from "date-fns/esm/locale";
@@ -9,7 +9,7 @@ function DatePick(props) {
   const [selectedDay, setSelectedDay] = useState(today);
   return (
     <DatePicker
-      className="input"
+      className="date-input"
       mode="single"
       selected={selectedDay}
       onSelect={setSelectedDay}

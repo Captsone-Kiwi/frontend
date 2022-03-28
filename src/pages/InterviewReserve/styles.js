@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Checkbox } from "semantic-ui-react";
 
 export const mainContainer = styled.div`
   display: flex;
@@ -81,13 +82,93 @@ export const detailContainer = styled.div`
 export const reserveTime = styled.div`
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 72%;
 `;
 
 export const reserveDate = styled.div`
-  width: 49%;
+  width: 100%;
+  min-width: 210px;
+  flex-direction: row;
+`;
+
+export const calendarImg = styled.img`
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 7px;
+  margin-left: 12px;
 `;
 
 export const reserveHour = styled.div`
-  width: 48%;
+  width: 100%;
+  min-width: 210px;
+  margin-left: 15px;
+`;
+
+export const clockImg = styled.img`
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 7px;
+  margin-left: 12px;
+`;
+
+export const createId = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 72%;
+`;
+
+export const IdCheckBox = styled(Checkbox)`
+  align-self: center;
+  &&& > {
+    label:before,
+    input:focus ~ label:before,
+    label:after {
+      background-color: #1c1c1c;
+      border: 1px solid white;
+      border-radius: 0;
+      width: 17px;
+      height: 16px;
+    }
+    input:checked~label:after{
+      color: #3CB371;
+      font-size: 12px;
+    }
+`;
+
+export const Text = styled.p`
+  font-size: 14px;
+  color: black;
+  margin-left: 5px;
+`;
+
+export const selectTemplate = styled.div`
+  display: flex;
+  width: 72%;
+`;
+
+export const buttonSection = styled.div`
+  display: flex;
+  align-self: flex-end;
+`;
+
+export const Button = styled.button`
+  width: 65px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  color: black;
+  margin: 0 10px 0 0;
+  &:hover {
+    cursor: pointer;
+    background-color: #3cb371;
+    color: white;
+    border: none;
+  }
 `;
