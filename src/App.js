@@ -12,6 +12,7 @@ import {
   Uploads,
   Main,
 } from "./pages";
+
 function App() {
   return (
     <Router>
