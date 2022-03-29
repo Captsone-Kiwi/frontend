@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import * as style from "./styles";
 import * as authAPI from "../../api/authAPI";
 
 function Login() {
+  const [username, setUsername] = useState('sohyeon');
+  const [room, setRoom] = useState('KIWI');
+  
   const navigator = useNavigate();
   const [values, setValues] = useState({ email: "", password: "" });
 
@@ -80,7 +83,9 @@ function Login() {
             <style.Button onClick={() => navigator("/signup")} type="submit">
               Create an account
             </style.Button>
-            <style.Button>Login</style.Button>
+            <Link onClick={e => (!username || !room) ? e.preventDefault() : null} to={`/main?username=${username}&room=${room}`}>
+                <style.Button>Login</style.Button>
+            </Link>
           </style.ButtonContainer>
         </style.LoginForm>
       </style.Container>
