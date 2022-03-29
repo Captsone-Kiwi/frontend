@@ -22,7 +22,7 @@ function SideMenu(props) {
         <style.Span>프로필</style.Span>
       </style.sideBtn>
       <style.sideBtn
-        onClick={() => navigator("/interviewlist")}
+        onClick={() => navigator("/interview")}
         value="interview"
         current={side === "interview"}
       >
