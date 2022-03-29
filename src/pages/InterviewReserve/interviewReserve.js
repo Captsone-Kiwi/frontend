@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
+import interviewAPI from "../../api/interviewAPI";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import DatePick from "../../components/DatePick/datepick";
 import TimePick from "../../components/TimePick/timepick";
@@ -11,6 +12,7 @@ import IntervieweeInput from "../../components/InputTextForm/IntervieweeInput";
 function InterviewReserve(props) {
   const navigator = useNavigate();
   const [side, setSide] = useState("interview");
+  const [selectedDay, setSelectedDay] = useState(new Date());
   //면접 예약 정보
   const [reserveInfo, setReserveInfo] = useState({
     interviewName: "",
@@ -19,10 +21,39 @@ function InterviewReserve(props) {
     interviewee: [""],
     interviewer: [""],
   });
+  console.log("저장되는 정보들", reserveInfo);
 
+  // 면접 이름 정보 저장
   const reserveUpload = ({ target }) => {
     let { name, value } = target;
     setReserveInfo({ ...reserveInfo, [name]: value });
+  };
+
+  //시간 정보 저장
+  const onChange = () => {
+    setReserveInfo({ ...reserveInfo });
+  };
+
+  //인터뷰 업로드
+  const interviewSubmit = () => {
+    console.log("interviewName:", reserveInfo);
+    uploadInterview();
+  };
+  const uploadInterview = async () => {
+    const formData = new FormData();
+    formData.append("interviewName", reserveInfo.interviewName);
+    formData.append("startTime", reserveInfo.startTime);
+    formData.append("template", reserveInfo.template);
+    formData.append("interviewee", reserveInfo.interviewee);
+    formData.append("interviewer", reserveInfo.interviewer);
+    await interviewAPI
+      .createInterview(formData)
+      .then((res) => {
+        console.log("인터뷰 예약 업로드", res.data, res);
+        alert("업로드 성공");
+        navigator("/interviewlist");
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -54,7 +85,15 @@ function InterviewReserve(props) {
               <style.reserveTime>
                 <style.reserveDate>
                   <style.calendarImg src="/images/common/calendarIcon.png" />
-                  <DatePick />
+                  <DatePick
+                    name="startTime"
+                    value={reserveInfo.startTime}
+                    selectedDay={selectedDay}
+                    setSelectedDay={setSelectedDay}
+                    onChange={onChange}
+                    reserveInfo={reserveInfo}
+                    setReserveInfo={setReserveInfo}
+                  />
                 </style.reserveDate>
                 <style.reserveHour>
                   <style.clockImg src="/images/common/clockIcon.png" />
@@ -65,7 +104,7 @@ function InterviewReserve(props) {
             <style.reserveSection>
               <style.reserveTitle>면접 ID</style.reserveTitle>
               <style.createId>
-                <style.IdCheckBox />
+                <style.IdCheckBox type="checkbox" />
                 <style.Text>자동으로 생성</style.Text>
               </style.createId>
             </style.reserveSection>
@@ -104,7 +143,7 @@ function InterviewReserve(props) {
               </style.detailContainer>
             </style.reserveSection>
             <style.buttonSection>
-              <style.Button>저장</style.Button>
+              <style.Button onClick={interviewSubmit}>저장</style.Button>
               <style.Button>취소</style.Button>
             </style.buttonSection>
           </style.reserveContainer>

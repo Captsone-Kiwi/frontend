@@ -5,14 +5,15 @@ import { ko } from "date-fns/esm/locale";
 import "./styles.css";
 
 function DatePick(props) {
-  const today = new Date();
-  const [selectedDay, setSelectedDay] = useState(today);
+  console.log("selectedDay", props.selectedDay);
+  console.log("name", props.name);
   return (
     <DatePicker
-      className="date-input"
+      className="date-pick"
       mode="single"
-      selected={selectedDay}
-      onSelect={setSelectedDay}
+      selected={props.selectedDay}
+      onSelect={props.setSelectedDay}
+      onChange={props.onChange}
       locale={ko}
       dateFormat="yyyy / MM / dd (eee)"
       minDate={new Date()}
