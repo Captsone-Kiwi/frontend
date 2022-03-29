@@ -40,6 +40,7 @@ function InterviewList(props) {
           >
             면접 예약
           </style.reserveInterview>
+          <style.reserveInterview>임의 버튼</style.reserveInterview>
         </style.Container>
       </style.interviewContainer>
     </style.mainContainer>

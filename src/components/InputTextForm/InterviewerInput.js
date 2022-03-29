@@ -38,7 +38,7 @@ function InterviewerInput(props) {
         ],
       });
     } else {
-      alert("더이상 삭제할 수 없습니다.");
+      alert("더이상 삭제할 수 없습니다");
     }
   };
 

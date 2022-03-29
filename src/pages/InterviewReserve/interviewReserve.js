@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import dayjs from "dayjs";
 import * as style from "./styles";
 import interviewAPI from "../../api/interviewAPI";
 import SideMenu from "../../components/SideMenu/sideMenu";
@@ -13,11 +14,13 @@ function InterviewReserve(props) {
   const navigator = useNavigate();
   const [side, setSide] = useState("interview");
   const [selectedDay, setSelectedDay] = useState(new Date());
+  const [selectedTime, setSelectedTime] = useState(new Date(0, 0, 0));
   //면접 예약 정보
   const [reserveInfo, setReserveInfo] = useState({
     interviewName: "",
+    startDate: "",
     startTime: "",
-    template: "INT",
+    template: 0,
     interviewee: [""],
     interviewer: [""],
   });
@@ -29,9 +32,21 @@ function InterviewReserve(props) {
     setReserveInfo({ ...reserveInfo, [name]: value });
   };
 
+  //날짜 정보 저장
+  const dateChange = (e) => {
+    const setStartDate = { ...reserveInfo };
+    const dateFormat = dayjs(e).format("YYYY/MM/DD");
+    setStartDate["startDate"] = dateFormat;
+    setReserveInfo(setStartDate);
+  };
+
   //시간 정보 저장
-  const onChange = () => {
-    setReserveInfo({ ...reserveInfo });
+  const timeChange = (time) => {
+    setSelectedTime(time);
+    const setStartTime = { ...reserveInfo };
+    const dateFormat = dayjs(time).format("HH/mm");
+    setStartTime["startTime"] = dateFormat;
+    setReserveInfo(setStartTime);
   };
 
   //인터뷰 업로드
@@ -86,18 +101,22 @@ function InterviewReserve(props) {
                 <style.reserveDate>
                   <style.calendarImg src="/images/common/calendarIcon.png" />
                   <DatePick
-                    name="startTime"
+                    name="startDate"
                     value={reserveInfo.startTime}
                     selectedDay={selectedDay}
                     setSelectedDay={setSelectedDay}
-                    onChange={onChange}
-                    reserveInfo={reserveInfo}
-                    setReserveInfo={setReserveInfo}
+                    onChange={dateChange}
                   />
                 </style.reserveDate>
                 <style.reserveHour>
                   <style.clockImg src="/images/common/clockIcon.png" />
-                  <TimePick />
+                  <TimePick
+                    name="startTime"
+                    value={reserveInfo.startTime}
+                    selectedTime={selectedTime}
+                    setSelectedTime={setSelectedTime}
+                    onChange={timeChange}
+                  />
                 </style.reserveHour>
               </style.reserveTime>
             </style.reserveSection>
@@ -111,7 +130,10 @@ function InterviewReserve(props) {
             <style.reserveSection>
               <style.reserveTitle>템플릿</style.reserveTitle>
               <style.selectTemplate>
-                <SelectTemplate />
+                <SelectTemplate
+                  reserveInfo={reserveInfo}
+                  setReserveInfo={setReserveInfo}
+                />
               </style.selectTemplate>
             </style.reserveSection>
             <style.reserveSection>
