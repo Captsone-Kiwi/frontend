@@ -2,8 +2,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
-node_modules/.cache/default-development/1.pack
-
 ### Node ###
 # Logs
 logs
