@@ -1,6 +1,7 @@
 import React from 'react';
 import Bottom from "../../components/Bottom/Bottom.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
+import Video from './Video.js';
 
 function Main() {
 
@@ -8,6 +9,7 @@ function Main() {
     <>
         <Sidebar style={{position:'absolute'}}/>
         <Bottom style={{position:'absolute'}}/>
+        <Video/>
     </>
   );
 }
