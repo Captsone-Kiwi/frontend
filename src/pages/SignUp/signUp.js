@@ -6,13 +6,17 @@ import * as authAPI from "../../api/authAPI";
 function SignUp(props) {
   const navigator = useNavigate();
   const [values, setValues] = useState({
+    name: "",
     email: "",
     password: "",
     repassword: "",
-    name: "",
+    memberType: "0",
   });
+  console.log("회원가입 저장 정보들", values);
+
+  //어떤 멤버타입이 선택되었는지 보여주는 함수
   const [member, setMember] = useState("");
-  const memberType = (e) => {
+  const selectMemberType = (e) => {
     e.preventDefault();
     if (e.target.tagName !== "DIV") {
       let target = e.target;
@@ -22,16 +26,32 @@ function SignUp(props) {
       setMember(target.value);
     }
   };
+  //멤버 타입 저장
+  const changeMemberType = (e) => {
+    console.log("eeeee", e.target);
+    const setName = { ...values };
+    const setValue = e.target.name;
+    setName["memberType"] = setValue;
+    setValues(setName);
+    // const { name, value } = e.target;
+    // if (value === "interviewer") {
+    //   setValues({ ...values, [name]: 1 });
+    // }
+    // if (value === "interviewee") {
+    //   setValues({ ...values, [name]: 2 });
+    // }
+  };
 
+  //회원가입 정보들 저장
   const handleChange = (event) => {
     const { name, value } = event.target;
     setValues({ ...values, [name]: value });
   };
 
+  //회원가입
   const signup = (event) => {
     event.preventDefault();
     const token = authAPI.createUser(values);
-    console.log("토큰", token);
     // await alert(token);
     if (token.non_field_errors) {
       token.non_field_errors.map((e) => alert(e));
@@ -41,7 +61,7 @@ function SignUp(props) {
     }
   };
 
-  // privacy
+  // privacy 모달 창 띄우기
   const [checked, setChecked] = useState(false);
   const [privacyInfo, setPrivacyInfo] = useState(false);
   const handlePrivacy = async (event) => {
@@ -158,14 +178,18 @@ function SignUp(props) {
         >
           Member Type
         </style.Span>
-        <style.MemberContainer onClick={memberType}>
+        <style.MemberContainer onClick={selectMemberType}>
           <style.MemberBtn
+            onClick={changeMemberType}
+            name="1"
             value="interviewer"
             current={member === "interviewer"}
           >
             Interviewer
           </style.MemberBtn>
           <style.MemberBtn
+            onClick={changeMemberType}
+            name="2"
             value="interviewee"
             current={member === "interviewee"}
           >
