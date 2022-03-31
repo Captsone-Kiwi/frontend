@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import * as style from "./styles";
 import * as authAPI from "../../api/authAPI";
+import AuthContext from "../../store";
 
 function Login() {
-  const [username, setUsername] = useState('sohyeon');
-  const [room, setRoom] = useState('KIWI');
-  
+  // const [username, setUsername] = useState("sohyeon");
+  // const [room, setRoom] = useState("KIWI");
+
   const navigator = useNavigate();
+  const [, actions] = useContext(AuthContext);
   const [values, setValues] = useState({ email: "", password: "" });
 
   const handleChange = (event) => {
@@ -18,14 +20,16 @@ function Login() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const token = authAPI.authLogin(values);
-    console.log("토큰", token);
-    if (token.non_field_errors) {
-      token.non_field_errors.map((e) => alert(e));
-    } else {
-      alert("환영합니다!");
-      navigator("/");
-    }
+    await authAPI
+      .authLogin(values)
+      .then((result) => {
+        alert("환영합니다! 마이 페이지로 이동합니다.");
+        actions.setLoginState(true);
+        navigator("/profile");
+      })
+      .catch(() => {
+        alert("비밀번호 또는 이메일이 잘못되었습니다.");
+      });
   };
 
   return (
@@ -83,9 +87,10 @@ function Login() {
             <style.Button onClick={() => navigator("/signup")} type="submit">
               Create an account
             </style.Button>
-            <Link onClick={e => (!username || !room) ? e.preventDefault() : null} to={`/main?username=${username}&room=${room}`}>
+            <style.Button>Login</style.Button>
+            {/* <Link onClick={e => (!username || !room) ? e.preventDefault() : null} to={`/main?username=${username}&room=${room}`}>
                 <style.Button>Login</style.Button>
-            </Link>
+            </Link> */}
           </style.ButtonContainer>
         </style.LoginForm>
       </style.Container>

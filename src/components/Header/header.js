@@ -1,9 +1,44 @@
-import React from "react";
-import * as style from "./styles";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import * as style from "./styles";
+import * as authAPI from "../../api/authAPI";
+import AuthContext from "../../store";
 
 function Header() {
   const navigator = useNavigate();
+  const [state, actions] = useContext(AuthContext);
+  console.log("state : ", state);
+  const [userInfo, setUserInfo] = useState({ name: "" });
+
+  const logout = async () => {
+    await authAPI.authLogout().then((result) => {
+      alert("로그아웃 되었습니다.");
+      actions.setLoginState(false);
+      navigator("/");
+    });
+  };
+
+  useEffect(() => {
+    getUserInfo();
+  }, [state]);
+  // const getUserInfo = async () => {
+  //   await authAPI
+  //     .getUsername()
+  //     .then((result) => {
+  //       setUserInfo(result.data);
+  //     })
+  //     .catch((err) => console.log("로그인이 안되어있음", err));
+  // };
+
+  const getUserInfo = async () => {
+    await authAPI
+      .getUsername()
+      .then((res) => {
+        setUserInfo(res.data);
+        console.log("유지이름", res.data);
+      })
+      .catch((err) => console.log("로그인을 안함", err));
+  };
 
   return (
     <style.Header>
@@ -19,15 +54,25 @@ function Header() {
           <style.MenuBtn onClick={() => navigator("/question")}>
             Question
           </style.MenuBtn>
-        </style.menuLeft>
-        <style.menuRight>
           <style.MenuBtn
-            style={{ marginRight: "50px" }}
+            style={{ marginLeft: "50px" }}
             onClick={() => navigator("/profile")}
           >
             mypage
           </style.MenuBtn>
-        </style.menuRight>
+        </style.menuLeft>
+        {state.logged ? (
+          <style.menuRight>
+            <style.Span>{userInfo.name}</style.Span>
+            <style.MenuBtn style={{ marginRight: "50px" }} onClick={logout}>
+              Logout
+            </style.MenuBtn>
+          </style.menuRight>
+        ) : (
+          <style.menuRight>
+            <style.MenuBtn>Login</style.MenuBtn>
+          </style.menuRight>
+        )}
       </style.Menu>
     </style.Header>
   );
