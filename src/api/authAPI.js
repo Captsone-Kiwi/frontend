@@ -1,6 +1,3 @@
-import axios from "./config";
-import { tokenConfig } from "./tokenConfig";
-
 //회원가입
 export function createUser(fields) {
   var myHeaders = new Headers();
@@ -80,39 +77,34 @@ export function authLogout() {
 }
 
 //유저정보 받아오기
-// export function getUsername() {
-//   var myHeaders = new Headers();
-//   myHeaders.append("Content-Type", "application/json");
-
-//   // var raw = JSON.stringify({
-//   //   email: fields.email,
-//   //   password: fields.password,
-//   // });
-
-//   var requestOptions = {
-//     method: "GET",
-//     headers: myHeaders,
-//     // body: raw,
-//     redirect: "follow",
-//   };
-
-//   const result = fetch("http://localhost:8000/getUsername", requestOptions)
-//     // .then((response) => response.text())
-//     .then((result) => {
-//       console.log("getUsername result", result);
-//       window.sessionStorage.setItem("token", result.data);
-//     })
-//     .then((result) => {
-//       console.log("결과값", result);
-//       console.log("닉네임", result.data);
-//     })
-//     .catch((error) => console.log("getUsername error", error));
-//   return result;
-// }
-
 export function getUsername() {
-  console.log("토큰", tokenConfig());
-  return axios.get(`getUsername`, tokenConfig());
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+
+  // var raw = JSON.stringify({
+  //   email: fields.email,
+  //   password: fields.password,
+  // });
+
+  var requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    // body: raw,
+    redirect: "follow",
+  };
+
+  const result = fetch("http://localhost:8000/getUsername", requestOptions)
+    // .then((response) => response.text())
+    .then((result) => {
+      console.log("getUsername result", result);
+      window.sessionStorage.setItem("token", result.data);
+    })
+    .then((result) => {
+      console.log("결과값", result);
+      console.log("닉네임", result.data);
+    })
+    .catch((error) => console.log("getUsername error", error));
+  return result;
 }
 
 // 토큰
