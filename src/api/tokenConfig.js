@@ -7,7 +7,7 @@ export const tokenConfig = () => {
     },
   };
   if (token) {
-    config.headers["Authorization"] = `JWT ${token}`;
+    config.headers["X-AUTH-TOKEN"] = `${token}`;
   }
   return config;
 };

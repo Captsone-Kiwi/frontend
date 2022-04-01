@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
-import * as authAPI from "../../api/authAPI";
+import authAPI from "../../api/authAPI";
 import AuthContext from "../../store";
 
 function Login() {
@@ -21,13 +21,19 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     await authAPI
-      .authLogin(values)
+      .authLogin({
+        email: values.email,
+        password: values.password,
+      })
       .then((result) => {
         alert("환영합니다! 마이 페이지로 이동합니다.");
+        console.log("authLogin result", result.data);
+        window.sessionStorage.setItem("token", result.data.data);
         actions.setLoginState(true);
         navigator("/profile");
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log("authLogin error", error);
         alert("비밀번호 또는 이메일이 잘못되었습니다.");
       });
   };

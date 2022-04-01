@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
-import * as style from "./styles";
-import interviewAPI from "../../api/interviewAPI";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import DatePick from "../../components/DatePick/datepick";
 import TimePick from "../../components/TimePick/timepick";
 import SelectTemplate from "../../components/SelectTemplate/selectTemplate";
 import InterviewerInput from "../../components/InputTextForm/InterviewerInput";
 import IntervieweeInput from "../../components/InputTextForm/IntervieweeInput";
+import * as style from "./styles";
+import interviewAPI from "../../api/interviewAPI";
 
 function InterviewReserve(props) {
   const navigator = useNavigate();
@@ -50,25 +50,23 @@ function InterviewReserve(props) {
   };
 
   //인터뷰 업로드
-  const interviewSubmit = () => {
-    console.log("interviewName:", reserveInfo);
-    uploadInterview();
-  };
-  const uploadInterview = async () => {
-    const formData = new FormData();
-    formData.append("interviewName", reserveInfo.interviewName);
-    formData.append("startTime", reserveInfo.startTime);
-    formData.append("template", reserveInfo.template);
-    formData.append("interviewee", reserveInfo.interviewee);
-    formData.append("interviewer", reserveInfo.interviewer);
+  const uploadInterview = async (event) => {
+    event.preventDefault();
     await interviewAPI
-      .createInterview(formData)
+      .createInterview({
+        interviewName: reserveInfo.interviewName,
+        startDate: reserveInfo.startDate,
+        startTime: reserveInfo.startTime,
+        template: reserveInfo.template,
+        interviewee: reserveInfo.interviewee,
+        interviewer: reserveInfo.interviewer,
+      })
       .then((res) => {
-        console.log("인터뷰 예약 업로드", res.data, res);
-        alert("업로드 성공");
+        console.log("createInterview result", res);
+        alert("면접 예약 성공");
         navigator("/interviewlist");
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log("createInterview err", err));
   };
 
   return (
@@ -165,7 +163,7 @@ function InterviewReserve(props) {
               </style.detailContainer>
             </style.reserveSection>
             <style.buttonSection>
-              <style.Button onClick={interviewSubmit}>저장</style.Button>
+              <style.Button onClick={uploadInterview}>저장</style.Button>
               <style.Button>취소</style.Button>
             </style.buttonSection>
           </style.reserveContainer>

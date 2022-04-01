@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
-import * as authAPI from "../../api/authAPI";
+import authAPI from "../../api/authAPI";
 
 function SignUp(props) {
   const navigator = useNavigate();
@@ -49,16 +49,22 @@ function SignUp(props) {
   };
 
   //회원가입
-  const signup = (event) => {
+  const signup = async (event) => {
     event.preventDefault();
-    const token = authAPI.createUser(values);
-    // await alert(token);
-    if (token.non_field_errors) {
-      token.non_field_errors.map((e) => alert(e));
-    } else {
-      alert("회원가입 성공");
-      navigator("/");
-    }
+    await authAPI
+      .createUser({
+        name: values.name,
+        email: values.email,
+        password: values.password,
+        memberType: values.memberType,
+      })
+      .then((result) => {
+        console.log("signup result", result.data);
+        navigator("/");
+      })
+      .catch((error) => {
+        console.log("signup error", error.config);
+      });
   };
 
   // privacy 모달 창 띄우기
