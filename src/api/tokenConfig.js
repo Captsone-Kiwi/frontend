@@ -7,6 +7,7 @@ export const tokenConfig = () => {
     },
   };
   if (token) {
+    //헤더설정
     config.headers["X-AUTH-TOKEN"] = `${token}`;
   }
   return config;
