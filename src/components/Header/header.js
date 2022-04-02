@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
-import * as authAPI from "../../api/authAPI";
+import authAPI from "../../api/authAPI";
 import AuthContext from "../../store";
 
 function Header() {
@@ -11,33 +11,27 @@ function Header() {
   const [userInfo, setUserInfo] = useState({ name: "" });
 
   const logout = async () => {
-    await authAPI.authLogout().then((result) => {
-      alert("로그아웃 되었습니다.");
-      actions.setLoginState(false);
-      navigator("/");
-    });
+    await authAPI
+      .authLogout()
+      .then((result) => {
+        alert("로그아웃 되었습니다.");
+        actions.setLoginState(false);
+        navigator("/");
+      })
+      .catch((err) => console.log("authLogout error", err));
   };
 
   useEffect(() => {
     getUserInfo();
   }, [state]);
-  // const getUserInfo = async () => {
-  //   await authAPI
-  //     .getUsername()
-  //     .then((result) => {
-  //       setUserInfo(result.data);
-  //     })
-  //     .catch((err) => console.log("로그인이 안되어있음", err));
-  // };
-
   const getUserInfo = async () => {
     await authAPI
-      .getUsername()
+      .getUser()
       .then((res) => {
         setUserInfo(res.data);
-        console.log("유지이름", res.data);
+        console.log("getUser result", res);
       })
-      .catch((err) => console.log("로그인을 안함", err));
+      .catch((error) => console.log("getUser error", error));
   };
 
   return (
