@@ -28,7 +28,7 @@ function Header() {
     await authAPI
       .getUser()
       .then((res) => {
-        setUserInfo(res.data);
+        setUserInfo(res.data.data);
         console.log("getUser result", res);
       })
       .catch((error) => console.log("getUser error", error));
