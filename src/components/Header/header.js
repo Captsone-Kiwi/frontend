@@ -1,38 +1,9 @@
-import React, { useState, useEffect, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import * as style from "./styles";
-import authAPI from "../../api/authAPI";
-import AuthContext from "../../store";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const navigator = useNavigate();
-  const [state, actions] = useContext(AuthContext);
-  console.log("state : ", state);
-  const [userInfo, setUserInfo] = useState({ name: "" });
-
-  const logout = async () => {
-    await authAPI
-      .authLogout()
-      .then((result) => {
-        alert("로그아웃 되었습니다.");
-        actions.setLoginState(false);
-        navigator("/");
-      })
-      .catch((err) => console.log("authLogout error", err));
-  };
-
-  useEffect(() => {
-    getUserInfo();
-  }, [state]);
-  const getUserInfo = async () => {
-    await authAPI
-      .getUser()
-      .then((res) => {
-        setUserInfo(res.data);
-        console.log("getUser result", res);
-      })
-      .catch((error) => console.log("getUser error", error));
-  };
 
   return (
     <style.Header>
@@ -48,25 +19,15 @@ function Header() {
           <style.MenuBtn onClick={() => navigator("/question")}>
             Question
           </style.MenuBtn>
+        </style.menuLeft>
+        <style.menuRight>
           <style.MenuBtn
-            style={{ marginLeft: "50px" }}
+            style={{ marginRight: "50px" }}
             onClick={() => navigator("/profile")}
           >
             mypage
           </style.MenuBtn>
-        </style.menuLeft>
-        {state.logged ? (
-          <style.menuRight>
-            <style.Span>{userInfo.name}</style.Span>
-            <style.MenuBtn style={{ marginRight: "50px" }} onClick={logout}>
-              Logout
-            </style.MenuBtn>
-          </style.menuRight>
-        ) : (
-          <style.menuRight>
-            <style.MenuBtn>Login</style.MenuBtn>
-          </style.menuRight>
-        )}
+        </style.menuRight>
       </style.Menu>
     </style.Header>
   );

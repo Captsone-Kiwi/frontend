@@ -4,10 +4,11 @@ import { tokenConfig } from "./tokenConfig";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   createInterview(data) {
-    return axios.post(`createInterview`, data);
+    console.log("토큰", tokenConfig());
+    return axios.post(`createInterview`, data, tokenConfig());
   },
   getInterview() {
     console.log("토큰", tokenConfig());
-    return axios.get(`getUser`, tokenConfig());
+    return axios.get(`getInterview`, tokenConfig());
   },
 };

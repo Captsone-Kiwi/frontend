@@ -39,11 +39,6 @@ export const menuLeft = styled.div`
   height: 100%;
 `;
 
-export const Span = styled.p`
-  font-size: 15px;
-  color: #929292;
-`;
-
 export const MenuBtn = styled.button`
   font-size: 14px;
   cursor: pointer;

@@ -14,8 +14,9 @@ const io = socketio(server);
 // app.use(cors());
 app.use(router);
 
-
 io.on('connection', (socket) => {
+
+    // message
     socket.on('join',({username, room}, callback) => {
         const {error, user} = addUser({ id: socket.id, username, room});
 
@@ -50,6 +51,8 @@ io.on('connection', (socket) => {
             io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room)});
         }
     })
+
+ 
 });
 
 
