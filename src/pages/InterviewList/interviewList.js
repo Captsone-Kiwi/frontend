@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import AuthContext from "../../store";
@@ -75,20 +75,20 @@ function InterviewList(props) {
             <style.leftDetail>
               <style.interviewSchedule>
                 <style.interviewDate>
-                  {interviewInfo[0].startDate}
+                  {/* {interviewInfo[0].startDate} */}
                 </style.interviewDate>
                 <style.interviewTime>
-                  {interviewInfo[0].startTime}
+                  {/* {interviewInfo[0].startTime} */}
                 </style.interviewTime>
               </style.interviewSchedule>
               <style.interviewTitle>
-                {interviewInfo[0].interview_name}
+                {/* {interviewInfo[0].interview_name} */}
               </style.interviewTitle>
             </style.leftDetail>
             <style.rightDetail>
-              <style.greenButton onClick={() => navigator("/main")}>
-                시작
-              </style.greenButton>
+            <style.greenButton onClick={() => navigator("/main?username=sohyeon&room=KIWI")}>
+              시작
+            </style.greenButton>              
               <style.Buttons>편집</style.Buttons>
               <style.Buttons>삭제</style.Buttons>
             </style.rightDetail>

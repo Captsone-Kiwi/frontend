@@ -48,7 +48,7 @@ function App() {
         <Route path="/interviewlist" element={<InterviewList />} />
         <Route path="/interviewreserve" element={<InterviewReserve />} />
         <Route path="/upload" element={<Uploads />} />
-        <Route path="/main" element={<Main />} />
+        <Route path="/main" element = {<Main />}/>
       </Routes>
     </Router>
   );

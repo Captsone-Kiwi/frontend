@@ -35,10 +35,11 @@ export const NavMenu = styled.div`
   justify-content: space-between;
   flex-direction: row;
   align-items: end;
-  position: fixed;
   top: 0;
   left: 0;
   transition: 850ms;
+  position: absolute;
+  z-index: 1;
 `
 
 export const Logo = styled.div`
