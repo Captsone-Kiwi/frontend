@@ -9,6 +9,25 @@
       name="description"
       content="Web site created using create-react-app"
     />
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #000000;
+      overflow: hidden;
+		}
+    #canvasArea {
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        width: fit-content;
+        height: fit-content;
+        left: 5%;
+    }
+
+        
+	</style>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -25,10 +44,66 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+        <script src="libs/jshashtable.js" crossorigin="anonymous"></script>
+      <script src="logger.js" crossorigin="anonymous"></script>
+      <script src="gd.js" crossorigin="anonymous"></script>
+      <script src="libs/rbush.js" crossorigin="anonymous"></script>
+      <script src="inputmanager.js" crossorigin="anonymous"></script>
+      <script src="jsonmanager.js" crossorigin="anonymous"></script>
+      <script src="timemanager.js" crossorigin="anonymous"></script>
+      <script src="runtimeobject.js" crossorigin="anonymous"></script>
+      <script src="profiler.js" crossorigin="anonymous"></script>
+      <script src="runtimescene.js" crossorigin="anonymous"></script>
+      <script src="scenestack.js" crossorigin="anonymous"></script>
+      <script src="polygon.js" crossorigin="anonymous"></script>
+      <script src="force.js" crossorigin="anonymous"></script>
+      <script src="layer.js" crossorigin="anonymous"></script>
+      <script src="timer.js" crossorigin="anonymous"></script>
+      <script src="runtimegame.js" crossorigin="anonymous"></script>
+      <script src="variable.js" crossorigin="anonymous"></script>
+      <script src="variablescontainer.js" crossorigin="anonymous"></script>
+      <script src="oncetriggers.js" crossorigin="anonymous"></script>
+      <script src="runtimebehavior.js" crossorigin="anonymous"></script>
+      <script src="spriteruntimeobject.js" crossorigin="anonymous"></script>
+      <script src="events-tools/commontools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/variabletools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/runtimescenetools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/inputtools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/objecttools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/cameratools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/soundtools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/storagetools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/stringtools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/windowtools.js" crossorigin="anonymous"></script>
+      <script src="events-tools/networktools.js" crossorigin="anonymous"></script>
+      <script src="splash/gd-logo-light.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/pixi.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/pixi-filters-tools.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/runtimegame-pixi-renderer.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/runtimescene-pixi-renderer.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/layer-pixi-renderer.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/pixi-image-manager.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/pixi-bitmapfont-manager.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/spriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/loadingscreen-pixi-renderer.js" crossorigin="anonymous"></script>
+      <script src="pixi-renderers/pixi-effects-manager.js" crossorigin="anonymous"></script>
+      <script src="howler-sound-manager/howler.min.js" crossorigin="anonymous"></script>
+      <script src="howler-sound-manager/howler-sound-manager.js" crossorigin="anonymous"></script>
+      <script src="fontfaceobserver-font-manager/fontfaceobserver.js" crossorigin="anonymous"></script>
+      <script src="fontfaceobserver-font-manager/fontfaceobserver-font-manager.js" crossorigin="anonymous"></script>
+      <script src="Extensions/TextObject/textruntimeobject.js" crossorigin="anonymous"></script>
+      <script src="Extensions/TextObject/textruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+      <script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject.js" crossorigin="anonymous"></script>
+      <script src="Extensions/TiledSpriteObject/tiledspriteruntimeobject-pixi-renderer.js" crossorigin="anonymous"></script>
+      <script src="code0.js" crossorigin="anonymous"></script>
+      <script src="code1.js" crossorigin="anonymous"></script>
+      <script src="code2.js" crossorigin="anonymous"></script>
+      <script src="data.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="sample.js"></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

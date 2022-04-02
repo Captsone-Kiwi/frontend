@@ -9,6 +9,7 @@ const Container = styled.div`
     position: absolute;
     left: 75%;
     transform: translate(-50%, -20%);
+    z-index: 1;
 `;
 export const StyledVideo = styled.video`
     width: 200px;

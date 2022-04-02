@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HeaderContainer from "./container/headerContainer";
 import { Home, Login, SignUp, Profile, Interview, Uploads, Main } from "./pages";
+// import { GdevelopPage } from './pages/GDevelop/GdevelopPage.js';
 
 // import Room from "./routes/Room";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/interview" element={<Interview />} />
         <Route path="/upload" element={<Uploads />} />
         <Route path="/main" element={<Main />} />
+        {/* <Route path={"/gdevelop"} component={GdevelopPage}/> */}
       </Routes>
     </Router>
   );
