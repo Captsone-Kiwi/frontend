@@ -1,14 +1,3 @@
-{
-  "name": "ws",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ws": "8.5.0"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:30db8d8e0ef67acc045dae7c69d49fa61ea64fa21dc2186ff4286174c55488cd
+size 241

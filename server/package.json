@@ -1,16 +1,3 @@
-{
-    "name": "server",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "express": "^4.17.3",
-      "socket.io": "^2.4.1"
-    }
-  }
-  
+version https://git-lfs.github.com/spec/v1
+oid sha256:81d2d66e938601a0a606ddb6b096665d951c39fc440ba77537782aa66b3e5307
+size 279
