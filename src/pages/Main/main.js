@@ -5,6 +5,11 @@ import Video from './Video.js';
 import GdevelopPage from '../../pages/GDevelop/GdevelopPage.js';
 
 function Main() {
+  if(!window.location.hash) {
+    window.location = window.location + '#loaded';
+    window.location.reload();
+  }
+
   return (
     <>
         <Sidebar style={{position:'absolute', zIndex:1}}/>
