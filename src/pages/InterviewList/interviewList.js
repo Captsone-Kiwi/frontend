@@ -67,7 +67,9 @@ function InterviewList(props) {
             면접 예약
           </style.reserveInterview>
           <style.dateDiv>
-            <style.interviewSpan>시간</style.interviewSpan>
+            <style.interviewSpan style={{ marginLeft: "10px" }}>
+              시간
+            </style.interviewSpan>
             <style.interviewSpan>면접명</style.interviewSpan>
             <style.interviewSpan>참여자</style.interviewSpan>
           </style.dateDiv>
@@ -76,19 +78,35 @@ function InterviewList(props) {
               <style.interviewSchedule>
                 <style.interviewDate>
                   {/* {interviewInfo[0].startDate} */}
+                  2022/04/08
                 </style.interviewDate>
                 <style.interviewTime>
                   {/* {interviewInfo[0].startTime} */}
+                  15:00
                 </style.interviewTime>
               </style.interviewSchedule>
               <style.interviewTitle>
                 {/* {interviewInfo[0].interview_name} */}
+                Kiwi Interview
               </style.interviewTitle>
+              <style.interviewMember>
+                <style.intervieweeList>
+                  interviewee1@google.com
+                </style.intervieweeList>
+                <style.intervieweeList>
+                  interviewee2@google.com
+                </style.intervieweeList>
+                <style.intervieweeList>
+                  interviewee3@google.com
+                </style.intervieweeList>
+              </style.interviewMember>
             </style.leftDetail>
             <style.rightDetail>
-            <style.greenButton onClick={() => navigator("/main?username=sohyeon&room=KIWI")}>
-              시작
-            </style.greenButton>              
+              <style.greenButton
+                onClick={() => navigator("/main?username=sohyeon&room=KIWI")}
+              >
+                시작
+              </style.greenButton>
               <style.Buttons>편집</style.Buttons>
               <style.Buttons>삭제</style.Buttons>
             </style.rightDetail>
