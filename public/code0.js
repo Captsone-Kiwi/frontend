@@ -14,9 +14,9 @@ gdjs.Custom_32sceneCode.GDNextStepBtnObjects3= [];
 gdjs.Custom_32sceneCode.GDResetBtnObjects1= [];
 gdjs.Custom_32sceneCode.GDResetBtnObjects2= [];
 gdjs.Custom_32sceneCode.GDResetBtnObjects3= [];
-gdjs.Custom_32sceneCode.GDMouseCursorObjects1= [];
-gdjs.Custom_32sceneCode.GDMouseCursorObjects2= [];
-gdjs.Custom_32sceneCode.GDMouseCursorObjects3= [];
+// gdjs.Custom_32sceneCode.GDMouseCursorObjects1= [];
+// gdjs.Custom_32sceneCode.GDMouseCursorObjects2= [];
+// gdjs.Custom_32sceneCode.GDMouseCursorObjects3= [];
 gdjs.Custom_32sceneCode.GDMaxNumObjects1= [];
 gdjs.Custom_32sceneCode.GDMaxNumObjects2= [];
 gdjs.Custom_32sceneCode.GDMaxNumObjects3= [];
@@ -8976,18 +8976,12 @@ gdjs.copyArray(runtimeScene.getObjects("select2"), gdjs.Custom_32sceneCode.GDsel
 
 
 {
-gdjs.copyArray(runtimeScene.getObjects("MouseCursor"), gdjs.Custom_32sceneCode.GDMouseCursorObjects1);
-{for(var i = 0, len = gdjs.Custom_32sceneCode.GDMouseCursorObjects1.length ;i < len;++i) {
-    gdjs.Custom_32sceneCode.GDMouseCursorObjects1[i].setPosition(gdjs.evtTools.input.getMouseX(runtimeScene, "", 0),gdjs.evtTools.input.getMouseY(runtimeScene, "", 0));
+// gdjs.copyArray(runtimeScene.getObjects("MouseCursor"), gdjs.Custom_32sceneCode.GDMouseCursorObjects1);
+// {for(var i = 0, len = gdjs.Custom_32sceneCode.GDMouseCursorObjects1.length ;i < len;++i) {
+//     gdjs.Custom_32sceneCode.GDMouseCursorObjects1[i].setPosition(gdjs.evtTools.input.getMouseX(runtimeScene, "", 0),gdjs.evtTools.input.getMouseY(runtimeScene, "", 0));
+// }
+// }
 }
-}}
-
-}
-
-
-{
-
-
 
 }
 
@@ -8995,8 +8989,15 @@ gdjs.copyArray(runtimeScene.getObjects("MouseCursor"), gdjs.Custom_32sceneCode.G
 {
 
 
+
+}
+
+
 {
-gdjs.copyArray(runtimeScene.getObjects("MouseCursor"), gdjs.Custom_32sceneCode.GDMouseCursorObjects1);
+
+
+{
+// gdjs.copyArray(runtimeScene.getObjects("MouseCursor"), gdjs.Custom_32sceneCode.GDMouseCursorObjects1);
 gdjs.copyArray(runtimeScene.getObjects("select1"), gdjs.Custom_32sceneCode.GDselect1Objects1);
 gdjs.copyArray(runtimeScene.getObjects("select2"), gdjs.Custom_32sceneCode.GDselect2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("select3"), gdjs.Custom_32sceneCode.GDselect3Objects1);
@@ -9009,10 +9010,12 @@ gdjs.copyArray(runtimeScene.getObjects("select3"), gdjs.Custom_32sceneCode.GDsel
 }{for(var i = 0, len = gdjs.Custom_32sceneCode.GDselect3Objects1.length ;i < len;++i) {
     gdjs.Custom_32sceneCode.GDselect3Objects1[i].setZOrder(100000000000000000000000000000);
 }
-}{for(var i = 0, len = gdjs.Custom_32sceneCode.GDMouseCursorObjects1.length ;i < len;++i) {
-    gdjs.Custom_32sceneCode.GDMouseCursorObjects1[i].setZOrder(100000000000000000000000000001);
 }
-}}
+// {for(var i = 0, len = gdjs.Custom_32sceneCode.GDMouseCursorObjects1.length ;i < len;++i) {
+//     gdjs.Custom_32sceneCode.GDMouseCursorObjects1[i].setZOrder(100000000000000000000000000001);
+// }
+// }
+}
 
 }
 
@@ -13629,9 +13632,9 @@ gdjs.Custom_32sceneCode.GDNextStepBtnObjects3.length = 0;
 gdjs.Custom_32sceneCode.GDResetBtnObjects1.length = 0;
 gdjs.Custom_32sceneCode.GDResetBtnObjects2.length = 0;
 gdjs.Custom_32sceneCode.GDResetBtnObjects3.length = 0;
-gdjs.Custom_32sceneCode.GDMouseCursorObjects1.length = 0;
-gdjs.Custom_32sceneCode.GDMouseCursorObjects2.length = 0;
-gdjs.Custom_32sceneCode.GDMouseCursorObjects3.length = 0;
+// gdjs.Custom_32sceneCode.GDMouseCursorObjects1.length = 0;
+// gdjs.Custom_32sceneCode.GDMouseCursorObjects2.length = 0;
+// gdjs.Custom_32sceneCode.GDMouseCursorObjects3.length = 0;
 gdjs.Custom_32sceneCode.GDMaxNumObjects1.length = 0;
 gdjs.Custom_32sceneCode.GDMaxNumObjects2.length = 0;
 gdjs.Custom_32sceneCode.GDMaxNumObjects3.length = 0;

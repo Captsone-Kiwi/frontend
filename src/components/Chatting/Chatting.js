@@ -47,6 +47,7 @@ function Chatting() {
   const sendMessage = (event) => {
     event.preventDefault();
     if (message) {
+      console.log(message)
       socket.emit('sendMessage', message, () => setMessage(''));
     }
   }
