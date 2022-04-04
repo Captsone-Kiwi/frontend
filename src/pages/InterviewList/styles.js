@@ -74,7 +74,7 @@ export const dateDiv = styled.div`
 export const interviewSpan = styled.p`
   font-size: 13px;
   color: black;
-  width: 20%;
+  width: 21%;
 `;
 
 export const interviewDetail = styled.div`
@@ -87,10 +87,11 @@ export const interviewDetail = styled.div`
 `;
 
 export const leftDetail = styled.div`
-  width: 70%;
+  width: 73%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 5px;
 `;
 
 export const rightDetail = styled.div`
@@ -125,7 +126,19 @@ export const interviewTitle = styled.p`
   color: #3cb371;
   font-size: 15px;
   font-weight: bold;
-  width: 60%;
+  width: 29%;
+`;
+
+export const interviewMember = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+`;
+
+export const intervieweeList = styled.p`
+  color: #4c4c4c;
+  font-size: 15px;
+  margin: 4px;
 `;
 
 export const greenButton = styled.button`
