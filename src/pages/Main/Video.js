@@ -44,7 +44,7 @@ const Video = () => {
     const {username, room} = queryString.parse(location);
     const videos = useRef([]);
 
-    navigator.mediaDevices.getUserMedia({audio: true, video: true}).then((mediaStream) => {
+    navigator.mediaDevices.getUserMedia({audio: false, video: true}).then((mediaStream) => {
         videos.current.srcObject = mediaStream;
         videos.current.onloadedmetadata = function(e) {
             videos.current.play();
