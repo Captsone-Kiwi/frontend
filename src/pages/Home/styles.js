@@ -47,8 +47,8 @@ export const mainTextBold = styled.p`
 export const mainTextDetail = styled.p`
   font-size: 12px;
   font-weight: 300;
-  width: 80%;
-  color: #86979e;
+  width: fit-content;
+  color: #656565;
   margin-top: -0.5rem;
 `;
 
@@ -62,18 +62,19 @@ export const btnContainer = styled.div`
 
 export const Button = styled.button`
   width: 200px;
-  height: 60px;
+  height: 50px;
   font-size: 20px;
   font-weight: bold;
   border-radius: 99px;
-  background-color: white;
+  background-color: #3cb371;
   border: 2px solid #3cb371;
-  color: #3cb371;
-  margin: 10px 10px 0 0;
+  color: white;
+  align-self: flex-end;
   &:hover {
     cursor: pointer;
-    background-color: #3cb371;
-    color: white;
+    background-color: rgba(60, 179, 113, 0.2);
+    border: 2px solid rgba(60, 179, 113, 0.2);
+    color: #3cb371;
   }
 `;
 

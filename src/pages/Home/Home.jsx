@@ -15,16 +15,20 @@ function Home() {
             enjoy the <span style={{ color: "#3CB371" }}>Kiwi</span>
           </style.mainTextBold>
           <style.mainTextDetail>
-            I will always remember The day you kissed my lips Light as a feather
-            And it went just like this No, it's never been better Than the
-            summer of 2002
+            Metabus System Optimized for Non-face-to-face Interviews
+          </style.mainTextDetail>
+          <style.mainTextDetail>
+            Reduce recruitment costs for businesses and job seekers
+          </style.mainTextDetail>
+          <style.mainTextDetail>
+            by developing a meta-bus system optimized
+          </style.mainTextDetail>
+          <style.mainTextDetail>
+            for non-face-to-face interviews through the device-free web
           </style.mainTextDetail>
           <style.btnContainer>
-            <style.Button onClick={() => navigator("/signup")}>
-              Sign Up
-            </style.Button>
-            <style.Button onClick={() => navigator("/login")}>
-              Login
+            <style.Button onClick={() => navigator("/interviewlist")}>
+              Start Kiwi
             </style.Button>
           </style.btnContainer>
         </style.textContainer>

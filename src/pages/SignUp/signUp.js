@@ -202,7 +202,7 @@ function SignUp(props) {
             Interviewee
           </style.MemberBtn>
         </style.MemberContainer>
-        <style.CheckForm>
+        {/* <style.CheckForm>
           {privacyInfo && (
             <DetailContent
               Title={"Privacy Acknowledgement."}
@@ -218,7 +218,7 @@ function SignUp(props) {
           <style.TextBtn checked={checked} onClick={handlePrivacy}>
             Privacy Acknowledgement.
           </style.TextBtn>
-        </style.CheckForm>
+        </style.CheckForm> */}
         <style.Button type="submit" onClick={signup}>
           Create an account
         </style.Button>

@@ -1,9 +1,38 @@
-import React from "react";
-import * as style from "./styles";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import * as style from "./styles";
+import authAPI from "../../api/authAPI";
+import AuthContext from "../../store";
 
 function Header() {
   const navigator = useNavigate();
+  const [state, actions] = useContext(AuthContext);
+  console.log("state : ", state);
+  const [userInfo, setUserInfo] = useState({ name: "" });
+
+  const logout = async () => {
+    await authAPI
+      .authLogout()
+      .then((result) => {
+        alert("로그아웃 되었습니다.");
+        actions.setLoginState(false);
+        navigator("/");
+      })
+      .catch((err) => console.log("authLogout error", err));
+  };
+
+  useEffect(() => {
+    getUserInfo();
+  }, [state]);
+  const getUserInfo = async () => {
+    await authAPI
+      .getUser()
+      .then((res) => {
+        setUserInfo(res.data.data);
+        console.log("getUser result", res);
+      })
+      .catch((error) => console.log("getUser error", error));
+  };
 
   return (
     <style.Header>
@@ -20,14 +49,27 @@ function Header() {
             Question
           </style.MenuBtn>
         </style.menuLeft>
-        <style.menuRight>
-          <style.MenuBtn
-            style={{ marginRight: "50px" }}
-            onClick={() => navigator("/profile")}
-          >
-            mypage
-          </style.MenuBtn>
-        </style.menuRight>
+        {state.logged ? (
+          <style.menuRight>
+            {/* <style.MenuBtn style={{ marginRight: "50px" }} onClick={logout}>
+              Logout
+            </style.MenuBtn> */}
+            <style.profileIcon
+              src={process.env.PUBLIC_URL + "/images/common/profile.png"}
+              onClick={() => navigator("/profile")}
+            />
+            <style.userName>{userInfo.name}</style.userName>
+          </style.menuRight>
+        ) : (
+          <style.menuRight>
+            <style.LoginButton onClick={() => navigator("/login")}>
+              로그인
+            </style.LoginButton>
+            <style.SignUpButton onClick={() => navigator("/signup")}>
+              회원가입
+            </style.SignUpButton>
+          </style.menuRight>
+        )}
       </style.Menu>
     </style.Header>
   );
