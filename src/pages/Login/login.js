@@ -26,11 +26,11 @@ function Login() {
         password: values.password,
       })
       .then((result) => {
-        alert("환영합니다! 마이 페이지로 이동합니다.");
+        alert("환영합니다!");
         console.log("authLogin result", result.data);
         window.sessionStorage.setItem("token", result.data.data);
         actions.setLoginState(true);
-        navigator("/profile");
+        navigator("/");
       })
       .catch((error) => {
         console.log("authLogin error", error);
