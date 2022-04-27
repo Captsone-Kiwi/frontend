@@ -4,6 +4,7 @@ import * as Io5Icons from "react-icons/io5";
 import * as IoIcons from "react-icons/io";
 import * as style from "./styles";
 import Timer from '../Timer/Timer.js';
+import SettingModal from '../SettingModal/SettingModal.js';
 import Chatting from '../Chatting/Chatting.js';
 import {motion} from "framer-motion";
 
@@ -84,7 +85,7 @@ function Sidebar() {
           </motion.div>
           { tabState.onWatch && <Timer/> } 
         </style.NavMenu>
-
+        { tabState.onSet && <SettingModal/> } 
     </>
   );
 }

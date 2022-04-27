@@ -1,0 +1,29 @@
+select {
+  background: #ffffff;
+  border: 1px solid #929292;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 240px;
+  height: 32px;
+}
+
+meter {
+  width: 240px;
+  margin-top: 16px;
+}
+meter::-webkit-meter-bar {
+  background: #e5e5e5;
+  border-radius: 0;
+  border: none;
+  width: 240px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #86cc00; /* Green */
+  width: 240px;
+  border-radius: 0;
+}
+
+.value {
+  display: none;
+}
