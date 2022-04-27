@@ -11,8 +11,8 @@ export const Container = styled.div`
 `;
 
 export const TimeCircle = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   background-color: #f6f6f6;
   border-radius: 99px;
   border: 18px solid #3cb371;

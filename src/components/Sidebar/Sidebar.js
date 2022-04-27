@@ -74,6 +74,7 @@ function Sidebar() {
               animate={{
                 width : tabState.onChat? "100%" : "0",
                 height : tabState.onChat? "100%" : "0",
+                display : tabState.onChat? "flex" : "none",
 
                 transition: {
                   duration: 0.5,

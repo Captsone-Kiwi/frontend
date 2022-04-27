@@ -1,18 +1,24 @@
 import React, { Component } from "react";
 import * as moment from "moment";
 import * as style from "./styles";
+import * as BsIcons from "react-icons/bs";
 
 export default class Timer extends Component {
+
+
   state = {
     time: 0,
-    isStarted: false
+    isStarted: false,
+    stop : false,
+    reset : false
   };
 
   startTimer = () => {
     this.setState({
       isStarted: true,
-      time: this.state.time
+      time: this.state.time,
     });
+
 
     this.timer = setInterval(
       () =>
@@ -25,7 +31,8 @@ export default class Timer extends Component {
 
   stopTimer = () => {
     this.setState({
-      isStarted: false
+      isStarted: false,
+      stop: true
     });
     clearInterval(this.timer);
   };
@@ -33,7 +40,10 @@ export default class Timer extends Component {
   resetTimer = () => {
     this.setState({
       time: 0,
-      isStarted: false
+      isStarted: false,
+      start: false,
+      stop: false,
+      
     });
   };
 
@@ -41,16 +51,18 @@ export default class Timer extends Component {
     return (
       <style.Container>
         <style.TimeCircle>
-          <h4>
+          <h4 style={{marginBottom: 0, marginTop: "36px"}}>
             {moment()
               .hour(0)
               .minute(0)
               .second(this.state.time)
               .format("HH : mm : ss")}
           </h4>
-          <button onClick={this.startTimer}> start </button>
-          <button onClick={this.stopTimer}> stop </button>
-          <button onClick={this.resetTimer}> reset </button>
+
+          {!this.state.isStarted && !this.state.stop && !this.state.reset && <BsIcons.BsFillPlayFill style={{color: this.state.isStarted? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={this.startTimer}/>}
+          {this.state.isStarted && <BsIcons.BsPauseFill style={{color: this.state.reset? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={this.stopTimer}/>}
+          {!this.state.isStarted && this.state.stop && <BsIcons.BsFillReplyAllFill style={{color: this.state.reset? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={this.resetTimer}/>}
+
         </style.TimeCircle>
       </style.Container>
     );
