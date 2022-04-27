@@ -9,7 +9,6 @@ select {
 
 meter {
   width: 240px;
-  margin-top: 16px;
 }
 meter::-webkit-meter-bar {
   background: #e5e5e5;

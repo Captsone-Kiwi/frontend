@@ -230,14 +230,16 @@ class SettingModal extends React.Component {
   }  
 }
 
+
 render(){
+
   return (
     <>
       <style.ModalContainer>
+        {/* <style.removeBtn onClick={remove}/> */}
         <style.LogoDiv/>
         <style.WrapContainer>
-          <style.columnDiv>
-            {/* <video ref={videos}  autoPlay/> */}
+            <Video/>
             <style.columnDiv>
             <style.rowDiv>
                 <BsIcons.BsCameraVideoFill style={{ color: '#86979E', fontSize: '28px', margin: '0px 16px'}}/>
@@ -262,7 +264,6 @@ render(){
               </style.rowDiv>
               
             </style.columnDiv>
-          </style.columnDiv>
         </style.WrapContainer>
       </style.ModalContainer>
     </>
