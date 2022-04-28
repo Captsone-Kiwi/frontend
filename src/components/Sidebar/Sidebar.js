@@ -7,6 +7,8 @@ import * as FaIcons from "react-icons/fa";
 import * as style from "./styles";
 import Timer from '../Timer/Timer.js';
 import SettingModal from '../SettingModal/SettingModal.js';
+import ExitModal from '../ExitModal/ExitModal.js';
+
 import Chatting from '../Chatting/Chatting.js';
 import {motion} from "framer-motion";
 import Sample from './Sample';
@@ -74,28 +76,14 @@ function Sidebar() {
             </motion.div>
 
           </style.Sidebar>
-          <motion.div
-              style={{
-                boxShadow: 'rgb(0 0 0 / 10%) 7px 0px 7px 0px',
-              }}
-              animate={{
-                width : tabState.onChat? "100%" : "0",
-                height : tabState.onChat? "100%" : "0",
-                display : tabState.onChat? "flex" : "none",
-
-                transition: {
-                  duration: 0.5,
-                  damping: 10,
-                },
-              }}
-            >
-          <Chatting style={{display: tabState.onChat ? "visible" : "none"}} />
-          </motion.div>
+          
+          { tabState.onChat &&  <Chatting/> }
           { tabState.onWatch && <Timer/> }
           { tabState.onCheck && <Sample/> } 
 
         </style.NavMenu>
         { tabState.onSet && <SettingModal/> }
+        { tabState.onExit && <ExitModal/> }
 
     </>
   );

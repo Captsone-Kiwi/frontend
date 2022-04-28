@@ -6,7 +6,7 @@ export const Container = styled.div`
   border: 10px solid #f7f7f7;
   position: absolute;
   left: 7px;
-  bottom: -2px;
+  bottom: 0px;
 
 `;
 
