@@ -2,6 +2,7 @@ import React from 'react';
 import Bottom from "../../components/Bottom/Bottom.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import Video from './Video.js';
+import VideoSlider from './VideoSlider.js';
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 import queryString from 'query-string';
@@ -12,8 +13,8 @@ function Main() {
   const Container = styled.div`
     position: absolute;
     bottom: 0;
-    width: 200px;
-    height: 150px;
+    width: 180px;
+    height: 120px;
     left: 75%;
     border-radius: 20px;
     z-index: 1;
@@ -54,6 +55,7 @@ const NameBlock = ({title}) => (
     <>
         <Sidebar style={{position:'absolute', zIndex:1}}/>
         <Bottom style={{position:'absolute'}}/>
+        <VideoSlider/>
         <Container>
             <Video/>
             <NameBlock title={username} />

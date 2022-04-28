@@ -20,7 +20,7 @@ export const Sidebar = styled.div`
 
 export const WrapIcon = styled.div`
   display: flex;
-  height: 300px;
+  height: 400px;
   flex-direction: column;
   align-items: center;
   list-style: none;

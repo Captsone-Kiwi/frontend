@@ -2,13 +2,13 @@ import React, {useRef} from "react";
 import styled from "styled-components";
 
 export const StyledVideo = styled.video`
-    width: 200px;
-    height: 150px;
+    width: 180px;
+    height: 120px;
     box-sizing: border-box;
     border-radius: 12px;
     object-fit: cover;
     background-color: black;
-    z-index:1
+    z-index:1;
 `;
 
 
