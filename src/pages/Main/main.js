@@ -228,15 +228,17 @@ async function getRemoteStreams(){
           console.log("Consumer Transport Changed to State : ",state);
           if(state == "connected"){
 
-            let remote_video = document.querySelector('.slick-track').querySelectorAll('.slick-active')[0].querySelector('video');
+            let length = document.querySelector('.slick-track').querySelectorAll('.slick-active').length;
+            
+            for (var i = 0; i < length; i++) { // 배열 arr의 모든 요소의 인덱스(index)를 출력함.
+              let remote_video = document.querySelector('.slick-track').querySelectorAll('.slick-active')[i].querySelector('video');
+              if(remote_video.srcObject == null){
+                remote_video.srcObject = await remote_stream;
+                break;
+              }
 
-            if(remote_video.srcObject == null){
-                remote_video.srcObject = await remote_stream;
-            }else{
-                let remote_video = document.querySelector('.slick-track').querySelectorAll('.slick-active')[1].querySelector('video');
-                remote_video.srcObject = await remote_stream;
+            }       
             }
-
               // find consumer id from consumer transport
               const consumer_id = consumer_dict[consumer_transport.id];
               await socket.request('resume',{ consumer_id });
@@ -307,14 +309,17 @@ socket.on("createConsumer",async(res) => {
   consumer_transport.on("connectionstatechange",async (state) => {
       console.log("Consumer Transport Changed to State : ",state);
       if(state == "connected"){
-        let remote_video = document.querySelector('.slick-track').querySelectorAll('.slick-active')[0].querySelector('video');
-
+        let length = document.querySelector('.slick-track').querySelectorAll('.slick-active').length;
+        
+        for (var i = 0; i < length; i++) { // 배열 arr의 모든 요소의 인덱스(index)를 출력함.
+          let remote_video = document.querySelector('.slick-track').querySelectorAll('.slick-active')[i].querySelector('video');
           if(remote_video.srcObject == null){
-              remote_video.srcObject = await remote_stream;
-          }else{
-            let remote_video = document.querySelector('.slick-track').querySelectorAll('.slick-active')[1].querySelector('video');
             remote_video.srcObject = await remote_stream;
+            break;
           }
+
+        }        
+          
 
           // find consumer id from consumer transport
           const consumer_id = consumer_dict[consumer_transport.id];

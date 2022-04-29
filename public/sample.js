@@ -3,10 +3,10 @@ var pathArray = window.location.pathname.split('/');
 if(pathArray[1] == "main"){
     console.log(1);
     // window.onload = function() {
-        // if(!window.location.hash) {
-        //     window.location = window.location + '#loaded';
-        //     window.location.reload();
-        // }
+    //     if(!window.location.hash) {
+    //         window.location = window.location + '#loaded';
+    //         window.location.reload();
+    //     }
     // }
     
     (function() {
