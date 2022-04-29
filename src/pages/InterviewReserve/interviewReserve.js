@@ -23,6 +23,7 @@ function InterviewReserve(props) {
     template: 0,
     interviewee: [""],
     interviewer: [""],
+    interviewId: 0,
   });
   console.log("저장되는 정보들", reserveInfo);
 
@@ -60,6 +61,7 @@ function InterviewReserve(props) {
         template: reserveInfo.template,
         interviewee: reserveInfo.interviewee,
         interviewer: reserveInfo.interviewer,
+        interviewId: reserveInfo.interviewId,
       })
       .then((res) => {
         console.log("createInterview result", res);
@@ -163,7 +165,16 @@ function InterviewReserve(props) {
               </style.detailContainer>
             </style.reserveSection>
             <style.buttonSection>
-              <style.Button onClick={uploadInterview}>저장</style.Button>
+              <style.Button
+                style={{
+                  backgroundColor: "#3cb371",
+                  border: "none",
+                  color: "white",
+                }}
+                onClick={uploadInterview}
+              >
+                저장
+              </style.Button>
               <style.Button>취소</style.Button>
             </style.buttonSection>
           </style.reserveContainer>

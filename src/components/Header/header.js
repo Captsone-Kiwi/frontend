@@ -56,7 +56,7 @@ function Header() {
             </style.MenuBtn> */}
             <style.profileIcon
               src={process.env.PUBLIC_URL + "/images/common/profile.png"}
-              onClick={() => navigator("/profile")}
+              onClick={() => navigator("/interviewlist")}
             />
             <style.userName>{userInfo.name}</style.userName>
           </style.menuRight>

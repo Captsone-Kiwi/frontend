@@ -35,13 +35,6 @@ function SideMenu(props) {
       {memberInfo.memberType === 1 ? (
         <>
           <style.sideBtn
-            onClick={() => navigator("/profile")}
-            value="profile"
-            current={side === "profile"}
-          >
-            <style.Span>프로필</style.Span>
-          </style.sideBtn>
-          <style.sideBtn
             onClick={() => navigator("/interviewlist")}
             value="interview"
             current={side === "interview"}
@@ -55,15 +48,31 @@ function SideMenu(props) {
           >
             <style.Span>업로드</style.Span>
           </style.sideBtn>
+          <style.sideBtn
+            onClick={() => navigator("/profile")}
+            value="profile"
+            current={side === "profile"}
+          >
+            <style.Span>프로필</style.Span>
+          </style.sideBtn>
         </>
       ) : memberInfo.memberType === 2 ? (
-        <style.sideBtn
-          onClick={() => navigator("/interviewlist")}
-          value="interview"
-          current={side === "interview"}
-        >
-          <style.Span>면접</style.Span>
-        </style.sideBtn>
+        <>
+          <style.sideBtn
+            onClick={() => navigator("/interviewlist")}
+            value="interview"
+            current={side === "interview"}
+          >
+            <style.Span>면접</style.Span>
+          </style.sideBtn>
+          <style.sideBtn
+            onClick={() => navigator("/profile")}
+            value="profile"
+            current={side === "profile"}
+          >
+            <style.Span>프로필</style.Span>
+          </style.sideBtn>
+        </>
       ) : null}
     </style.sideContainer>
   );

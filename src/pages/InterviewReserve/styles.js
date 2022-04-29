@@ -167,8 +167,5 @@ export const Button = styled.button`
   margin: 0 10px 0 0;
   &:hover {
     cursor: pointer;
-    background-color: #3cb371;
-    color: white;
-    border: none;
   }
 `;
