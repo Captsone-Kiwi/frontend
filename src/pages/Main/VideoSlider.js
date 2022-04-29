@@ -2,8 +2,18 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Video from './Video.js';
+import { StyledVideo } from './Video.js';
 import styled from "styled-components";
+
+export const Video = styled.video`
+    width: 180px;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: black;
+    z-index:1;
+`;
 
 const Name = styled.div`
     position: absolute;
@@ -14,7 +24,6 @@ const Name = styled.div`
     background-color: black;
     color: white;
     border-radius: 20px;
-
 `;
 
 const NameBlock = ({title}) => (
@@ -27,14 +36,12 @@ function User({ user }) {
     return (
       <div>
         <NameBlock title={user.username} style={{position:'absolute'}}/>
-        <Video style={{position:'absolute'}}/>
+        <Video autoPlay id={user.id}/>
       </div>
     );
   }
 
 export default class VideoSlider extends Component {
-
-
   state = {
     display: true,
     width: 600,
@@ -50,22 +57,22 @@ export default class VideoSlider extends Component {
 
     const users = [
         {
-          id: 1,
+          id: "remoteVideo1",
           username: 'sohyeon',
           email: 'sohyeon@gmail.com'
         },
         {
-          id: 2,
+          id: "remoteVideo2",
           username: 'jinwoo',
           email: 'jinwoo@example.com'
         },
         {
-          id: 3,
+          id: "remoteVideo3",
           username: 'chanmi',
           email: 'chanmi@example.com'
         },
         {
-            id: 4,
+            id: "remoteVideo4",
             username: 'professor',
             email: 'professor@example.com'
           }
@@ -73,7 +80,6 @@ export default class VideoSlider extends Component {
 
     return (
       <div>
-        <h2> Resizable Collapsible </h2>
         <button
           className="button"
           onClick={() =>
