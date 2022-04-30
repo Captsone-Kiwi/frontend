@@ -53,11 +53,11 @@ export const mainTextDetail = styled.p`
 `;
 
 export const btnContainer = styled.div`
-  width: 65%;
+  width: fit-content;
   display: flex;
   justify-content: flex-end;
-  margin-top: 45px;
-  margin-right: 10px;
+  padding-top: 45px;
+  padding-right: 10px;
 `;
 
 export const Button = styled.button`
