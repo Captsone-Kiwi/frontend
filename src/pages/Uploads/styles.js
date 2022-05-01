@@ -46,3 +46,19 @@ export const selectBtn = styled.button`
     border-bottom: 3px solid #3cb371;
   }
 `;
+
+export const uploadBtn = styled.button`
+  width: fit-content;
+  border: 2px solid #3cb371;
+  background-color: white;
+  color: #3cb371;
+  align-self: flex-end;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+`;

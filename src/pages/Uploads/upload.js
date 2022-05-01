@@ -34,11 +34,17 @@ function Uploads(props) {
             </style.selectBtn>
           </style.selectionDiv>
           {tag === "resume" ? (
-            <p>이력서</p>
+            <style.uploadBtn onClick={() => navigator("/resume")}>
+              이력서 업로드
+            </style.uploadBtn>
           ) : tag === "evaluation" ? (
-            <p>평가항목</p>
+            <style.uploadBtn onClick={() => navigator("/evaluation")}>
+              평가항목 추가
+            </style.uploadBtn>
           ) : tag === "exam" ? (
-            <p>시험지</p>
+            <style.uploadBtn onClick={() => navigator("/exam")}>
+              시험지 추가
+            </style.uploadBtn>
           ) : null}
         </style.detailContainer>
       </style.uploadContainer>

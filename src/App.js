@@ -10,6 +10,9 @@ import {
   InterviewList,
   InterviewReserve,
   Uploads,
+  UploadEvaluation,
+  UploadResume,
+  UploadExam,
   Main,
 } from "./pages";
 import AuthContext from "./store";
@@ -48,6 +51,9 @@ function App() {
         <Route path="/interviewlist" element={<InterviewList />} />
         <Route path="/interviewreserve" element={<InterviewReserve />} />
         <Route path="/upload" element={<Uploads />} />
+        <Route path="/evaluation" element={<UploadEvaluation />} />
+        <Route path="/resume" element={<UploadResume />} />
+        <Route path="/exam" element={<UploadExam />} />
         <Route
           path="/main?username=:name?room=:interview_id"
           element={<Main />}
