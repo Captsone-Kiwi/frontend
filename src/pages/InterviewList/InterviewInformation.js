@@ -4,7 +4,7 @@ import * as style from "./styles";
 import interviewAPI from "../../api/interviewAPI";
 import AuthContext from "../../store";
 
-function Participant(props) {
+function InterviewInformation(props) {
   const navigator = useNavigate();
   const [participant, setParticipant] = useState([]);
   const [state, actions] = useContext(AuthContext);
@@ -80,4 +80,4 @@ function Participant(props) {
   );
 }
 
-export default Participant;
+export default InterviewInformation;

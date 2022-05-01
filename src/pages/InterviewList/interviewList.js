@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
-import Participant from "./participantList";
+import InterviewInformation from "./InterviewInformation";
 import AuthContext from "../../store";
 import interviewAPI from "../../api/interviewAPI";
 import authAPI from "../../api/authAPI";
@@ -93,7 +93,7 @@ function InterviewList(props) {
                 <style.interviewSpan>참여자</style.interviewSpan>
               </style.dateDiv>
               {interviewInfo.map((e) => (
-                <Participant
+                <InterviewInformation
                   memberInfo={memberInfo}
                   startDate={e.startDate}
                   startTime={e.startTime}
@@ -112,7 +112,7 @@ function InterviewList(props) {
                 <style.interviewSpan>면접명</style.interviewSpan>
               </style.dateDiv>
               {interviewInfo.map((e) => (
-                <Participant
+                <InterviewInformation
                   memberInfo={memberInfo}
                   startDate={e.startDate}
                   startTime={e.startTime}

@@ -36,7 +36,7 @@ function InterviewReserve(props) {
   //날짜 정보 저장
   const dateChange = (e) => {
     const setStartDate = { ...reserveInfo };
-    const dateFormat = dayjs(e).format("YYYY/MM/DD");
+    const dateFormat = dayjs(e).format("YYYY년 MM월 DD일");
     setStartDate["startDate"] = dateFormat;
     setReserveInfo(setStartDate);
   };
@@ -45,7 +45,7 @@ function InterviewReserve(props) {
   const timeChange = (time) => {
     setSelectedTime(time);
     const setStartTime = { ...reserveInfo };
-    const dateFormat = dayjs(time).format("HH/mm");
+    const dateFormat = dayjs(time).format("HH시 mm분");
     setStartTime["startTime"] = dateFormat;
     setReserveInfo(setStartTime);
   };
