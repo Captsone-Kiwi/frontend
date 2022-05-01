@@ -33,6 +33,13 @@ function Uploads(props) {
               시험지
             </style.selectBtn>
           </style.selectionDiv>
+          {tag === "resume" ? (
+            <p>이력서</p>
+          ) : tag === "evaluation" ? (
+            <p>평가항목</p>
+          ) : tag === "exam" ? (
+            <p>시험지</p>
+          ) : null}
         </style.detailContainer>
       </style.uploadContainer>
     </style.mainContainer>

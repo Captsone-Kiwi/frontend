@@ -78,51 +78,71 @@ function InterviewList(props) {
               면접 템플릿
             </style.selectBtn> */}
           </style.selectionDiv>
-          {memberInfo.memberType === 1 ? (
+          {interviewInfo.length === 0 ? (
             <>
               <style.reserveInterview
                 onClick={() => navigator("/interviewreserve")}
               >
                 면접 예약
               </style.reserveInterview>
-              <style.dateDiv>
-                <style.interviewSpan style={{ marginLeft: "10px" }}>
-                  시간
-                </style.interviewSpan>
-                <style.interviewSpan>면접명</style.interviewSpan>
-                <style.interviewSpan>참여자</style.interviewSpan>
-              </style.dateDiv>
-              {interviewInfo.map((e) => (
-                <InterviewInformation
-                  memberInfo={memberInfo}
-                  startDate={e.startDate}
-                  startTime={e.startTime}
-                  interview_name={e.interview_name}
-                  interview_id={e.id}
-                  memberType={memberInfo.memberType}
-                />
-              ))}
+              <style.noInterview>
+                <style.noInterviewText>
+                  사용자에게 예정된 면접이 없습니다.
+                </style.noInterviewText>
+                <style.noInterviewText>
+                  새 면접을 예약하려면 면접 예약 버튼을 눌러 진행해주세요.
+                </style.noInterviewText>
+              </style.noInterview>
             </>
-          ) : memberInfo.memberType === 2 ? (
+          ) : (
             <>
-              <style.dateDiv>
-                <style.interviewSpan style={{ marginLeft: "10px" }}>
-                  시간
-                </style.interviewSpan>
-                <style.interviewSpan>면접명</style.interviewSpan>
-              </style.dateDiv>
-              {interviewInfo.map((e) => (
-                <InterviewInformation
-                  memberInfo={memberInfo}
-                  startDate={e.startDate}
-                  startTime={e.startTime}
-                  interview_name={e.interview_name}
-                  interview_id={e.id}
-                  memberType={memberInfo.memberType}
-                />
-              ))}
+              {memberInfo.memberType === 1 ? (
+                <>
+                  <style.reserveInterview
+                    onClick={() => navigator("/interviewreserve")}
+                  >
+                    면접 예약
+                  </style.reserveInterview>
+                  <style.dateDiv>
+                    <style.interviewSpan style={{ marginLeft: "10px" }}>
+                      시간
+                    </style.interviewSpan>
+                    <style.interviewSpan>면접명</style.interviewSpan>
+                    <style.interviewSpan>참여자</style.interviewSpan>
+                  </style.dateDiv>
+                  {interviewInfo.map((e) => (
+                    <InterviewInformation
+                      memberInfo={memberInfo}
+                      startDate={e.startDate}
+                      startTime={e.startTime}
+                      interview_name={e.interview_name}
+                      interview_id={e.id}
+                      memberType={memberInfo.memberType}
+                    />
+                  ))}
+                </>
+              ) : memberInfo.memberType === 2 ? (
+                <>
+                  <style.dateDiv>
+                    <style.interviewSpan style={{ marginLeft: "10px" }}>
+                      시간
+                    </style.interviewSpan>
+                    <style.interviewSpan>면접명</style.interviewSpan>
+                  </style.dateDiv>
+                  {interviewInfo.map((e) => (
+                    <InterviewInformation
+                      memberInfo={memberInfo}
+                      startDate={e.startDate}
+                      startTime={e.startTime}
+                      interview_name={e.interview_name}
+                      interview_id={e.id}
+                      memberType={memberInfo.memberType}
+                    />
+                  ))}
+                </>
+              ) : null}
             </>
-          ) : null}
+          )}
         </style.Container>
       </style.interviewContainer>
     </style.mainContainer>

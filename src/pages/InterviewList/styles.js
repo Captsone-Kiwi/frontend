@@ -179,3 +179,17 @@ export const Buttons = styled.button`
     cursor: pointer;
   }
 `;
+
+export const noInterview = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20%;
+  align-items: center;
+`;
+
+export const noInterviewText = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+  color: #7a7a7a;
+  margin-block-start: 0;
+`;
