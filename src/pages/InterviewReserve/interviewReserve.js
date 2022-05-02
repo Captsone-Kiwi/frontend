@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import DatePick from "../../components/DatePick/datepick";
 import TimePick from "../../components/TimePick/timepick";
-import SelectTemplate from "../../components/SelectTemplate/selectTemplate";
+import TemplateSelect from "../../components/SelectForm/templateSelect";
 import InterviewerInput from "../../components/InputTextForm/InterviewerInput";
 import IntervieweeInput from "../../components/InputTextForm/IntervieweeInput";
 import * as style from "./styles";
@@ -130,7 +130,7 @@ function InterviewReserve(props) {
             <style.reserveSection>
               <style.reserveTitle>템플릿</style.reserveTitle>
               <style.selectTemplate>
-                <SelectTemplate
+                <TemplateSelect
                   reserveInfo={reserveInfo}
                   setReserveInfo={setReserveInfo}
                 />

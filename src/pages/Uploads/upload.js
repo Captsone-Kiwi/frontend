@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
 
 function Uploads(props) {
+  const navigator = useNavigate();
   const [side, setSide] = useState("upload");
   const [tag, setTag] = useState("resume");
 

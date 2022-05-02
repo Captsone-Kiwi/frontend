@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import InterviewInformation from "./InterviewInformation";
@@ -9,7 +9,6 @@ import authAPI from "../../api/authAPI";
 
 function InterviewList(props) {
   const navigator = useNavigate();
-  const params = useParams();
   const [side, setSide] = useState("interview");
   const [tag, setTag] = useState("new");
   const [state, actions] = useContext(AuthContext);
