@@ -238,10 +238,10 @@ async function getRemoteStreams(){
               }
 
             }       
-            }
-              // find consumer id from consumer transport
-              const consumer_id = consumer_dict[consumer_transport.id];
-              await socket.request('resume',{ consumer_id });
+        
+            // find consumer id from consumer transport
+            const consumer_id = consumer_dict[consumer_transport.id];
+            await socket.request('resume',{ consumer_id });
           }
       })
       let remote_stream = await consume(consumer_transport,producer_id);
