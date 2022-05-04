@@ -12,7 +12,7 @@ function UploadEvaluation() {
 
   //평가항목 정보
   const [evaluationInfo, setEvaluationInfo] = useState({
-    title: "",
+    interviewName: "",
     category: "",
   });
 
