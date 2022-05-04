@@ -90,36 +90,24 @@ export const Text = styled.div`
   align-self: center;
 `;
 
-export const EvalDiv = styled.div`
+export const bottomDiv = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  flex-direction: column;
 `;
 
-export const QuestionInput = styled.input`
-  width: 70%;
-  min-width: 600px;
-  height: 40px;
-  font-size: 15px;
-  border: 1px solid #929292;
-  border-radius: 12px;
-  margin: 8px 10px 8px 0;
-  padding: 6px 10px;
-`;
-
-export const removeBtn = styled.button`
+export const addBtn = styled.button`
   align-self: flex-start;
   padding: unset;
   background: transparent;
   border: none;
-  margin-top: 20px;
-  margin-left: -80px;
+  margin-top: 7px;
+  margin-left: 10px;
   &:hover {
     cursor: pointer;
   }
 `;
 
-export const removeImg = styled.img`
+export const addImg = styled.img`
   width: 25px;
 `;

@@ -11,9 +11,9 @@ function TypeSelect(props) {
     []
   );
   const handleSelect = (e) => {
-    const setTemplate = { ...props.reserveInfo };
-    setTemplate["template"] = e.value;
-    props.setReserveInfo(setTemplate);
+    const setType = { ...props.evaluationInfo };
+    setType["evaluationList"]["questions"][props.index]["type"] = e.value;
+    props.setEvaluationInfo(setType);
   };
   return (
     <div style={{ margin: "10px 0", width: "25%" }}>

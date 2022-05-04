@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import CategorySelect from "../../components/SelectForm/categorySelect";
-import TypeSelect from "../../components/SelectForm/typeSelect";
+import QuestionInput from "../../components/InputTextForm/QuestionInput";
 import * as style from "./styles";
-import { StepLabel } from "@material-ui/core";
 
 function UploadEvaluation() {
   const navigator = useNavigate();
+  const shortid = require("shortid");
   const [side, setSide] = useState("upload");
 
   //평가항목 정보
@@ -15,49 +15,34 @@ function UploadEvaluation() {
     name: "",
     evaluationList: {
       category: "",
-      questions: {
-        title: "",
-        type: 0,
-      },
+      questions: [
+        {
+          title: "",
+          type: 0,
+        },
+      ],
     },
   });
   console.log("평가항목 저장 정보", evaluationInfo);
 
-  const [currQue, setCurrQue] = useState(0);
-  const evaluationList = (e, index) => {
-    setEvaluationInfo({
-      ...evaluationInfo,
-      [e.target.name]: [
-        ...evaluationInfo[e.target.name].slice(0, index),
-        e.target.value,
-        ...evaluationInfo[e.target.name].slice(index + 1),
-      ],
-    });
-    setCurrQue(index);
-  };
-  const removeQuestion = (e, index) => {
-    const name = e.target.getAttribute("name");
-    if (evaluationInfo.interviewee.length > 1) {
-      setCurrQue(currQue - 1);
-      setEvaluationInfo({
-        ...evaluationInfo,
-        [name]: [
-          ...evaluationInfo[name].filter((value, idx) => {
-            return idx !== index;
-          }),
-        ],
-      });
-    } else {
-      alert("한 개 이상의 질문 항목을 입력해주세요.");
-    }
+  // 평가항목 제목 정보 저장
+  const evalNameUpload = ({ target }) => {
+    let { name, value } = target;
+    setEvaluationInfo({ ...evaluationInfo, [name]: value });
   };
 
-  //   useEffect(() => {
-  //     const input = document.querySelector(`.question-input${index}`);
-  //     input.value = evaluationInfo.interviewee[index];
-  //     // const currInput = document.querySelector(`.viewee-input${currViewee}`);
-  //     //currInput.focus();
-  //   }, []);
+  const [currQues, setCurrQues] = useState(0);
+
+  const addQuestions = () => {
+    setCurrQues(currQues + 1);
+    const setQues = { ...evaluationInfo };
+    setQues["evaluationList"]["questions"][currQues + 1] = {
+      title: "",
+      type: 0,
+    };
+    setEvaluationInfo(setQues);
+  };
+  console.log("currQues??", currQues);
 
   return (
     <style.mainContainer>
@@ -70,7 +55,16 @@ function UploadEvaluation() {
           </style.prevBtn>
           <style.Span>평가항목 등록</style.Span>
           <style.topDiv>
-            <style.EvalTitle placeholder="평가항목 제목을 입력하세요." />
+            <style.EvalTitle
+              name="name"
+              value={evaluationInfo.name}
+              type="text"
+              onChange={evalNameUpload}
+              required
+              autoFocus
+              InputProps={{ disableUnderline: true }}
+              placeholder="평가항목 제목을 입력하세요."
+            />
             <CategorySelect
               evaluationInfo={evaluationInfo}
               setEvaluationInfo={setEvaluationInfo}
@@ -84,34 +78,22 @@ function UploadEvaluation() {
               <style.Text>항목 유형</style.Text>
             </style.smallDiv2>
           </style.middleDiv>
-          <style.EvalDiv>
-            <style.QuestionInput />
-            <style.removeBtn>
-              <style.removeImg src="/images/common/removeBtn.png" />
-            </style.removeBtn>
-            <TypeSelect />
-            {/* {evaluationInfo.map((e, index) => (
-              <>
-                <style.QuestionInput
-                  name="question"
-                  className={"question-input" + index}
-                  onChange={(e) => {
-                    evaluationList(e, index);
-                  }}
-                  InputProps={{ disableUnderline: true }}
-                />
-                <style.removeBtn
-                  name="question"
-                  onClick={(e) => {
-                    removeQuestion(e, index);
-                  }}
-                >
-                  <style.removeImg src="/images/common/removeBtn.png" />
-                </style.removeBtn>
-                <TypeSelect />
-              </>
-            ))} */}
-          </style.EvalDiv>
+          <style.bottomDiv>
+            {evaluationInfo.evaluationList.questions.map((e, index) => (
+              <QuestionInput
+                name="interviewer"
+                index={index}
+                key={shortid.generate()}
+                evaluationInfo={evaluationInfo}
+                setEvaluationInfo={setEvaluationInfo}
+                currQues={currQues}
+                setCurrQues={setCurrQues}
+              />
+            ))}
+            <style.addBtn name="title" onClick={addQuestions}>
+              <style.addImg name="title" src="/images/common/addBtn.png" />
+            </style.addBtn>
+          </style.bottomDiv>
         </style.Container>
       </style.uploadContainer>
     </style.mainContainer>
