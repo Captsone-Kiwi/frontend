@@ -12,9 +12,16 @@ function UploadEvaluation() {
 
   //평가항목 정보
   const [evaluationInfo, setEvaluationInfo] = useState({
-    interviewName: "",
-    category: "",
+    name: "",
+    evaluationList: {
+      category: "",
+      questions: {
+        title: "",
+        type: 0,
+      },
+    },
   });
+  console.log("평가항목 저장 정보", evaluationInfo);
 
   const [currQue, setCurrQue] = useState(0);
   const evaluationList = (e, index) => {
@@ -64,7 +71,10 @@ function UploadEvaluation() {
           <style.Span>평가항목 등록</style.Span>
           <style.topDiv>
             <style.EvalTitle placeholder="평가항목 제목을 입력하세요." />
-            <CategorySelect />
+            <CategorySelect
+              evaluationInfo={evaluationInfo}
+              setEvaluationInfo={setEvaluationInfo}
+            />
           </style.topDiv>
           <style.middleDiv>
             <style.smallDiv1>

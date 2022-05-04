@@ -23,7 +23,6 @@ function InterviewReserve(props) {
     template: 0,
     interviewee: [""],
     interviewer: [""],
-    interviewId: 0,
   });
   console.log("저장되는 정보들", reserveInfo);
 
@@ -61,7 +60,6 @@ function InterviewReserve(props) {
         template: reserveInfo.template,
         interviewee: reserveInfo.interviewee,
         interviewer: reserveInfo.interviewer,
-        interviewId: reserveInfo.interviewId,
       })
       .then((res) => {
         console.log("createInterview result", res);
