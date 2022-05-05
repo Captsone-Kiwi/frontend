@@ -25,14 +25,12 @@ function InterviewerInput(props) {
   const removeInterviewer = (e, index) => {
     const name = e.target.getAttribute("name");
     console.log("받아온 index:", index);
-    console.log("name:", name);
     if (props.reserveInfo.interviewer.length > 1) {
       setCurrViewer(currViewer - 1);
       props.setReserveInfo({
         ...props.reserveInfo,
         [name]: [
           ...props.reserveInfo[name].filter((value, idx) => {
-            console.log("array:", props.reserveInfo.interviewer);
             return idx !== index;
           }),
         ],

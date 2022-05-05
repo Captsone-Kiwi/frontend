@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import CategorySelect from "../../components/SelectForm/categorySelect";
+import TypeSelect from "../../components/SelectForm/typeSelect";
 import QuestionInput from "../../components/InputTextForm/QuestionInput";
 import * as style from "./styles";
+import evaluationAPI from "../../api/evaluationAPI";
 
 function UploadEvaluation() {
   const navigator = useNavigate();
@@ -44,6 +46,26 @@ function UploadEvaluation() {
   };
   console.log("currQues??", currQues);
 
+  //평가항목 업로드
+  const uploadEvaluation = async (event) => {
+    event.preventDefault();
+    await evaluationAPI
+      .createEvaluation({
+        name: evaluationInfo.name,
+        evaluationList: evaluationInfo.evaluationList,
+        category: evaluationInfo.evaluationList.category,
+        questions: evaluationInfo.evaluationList.questions,
+        title: evaluationInfo.evaluationList.questions.title,
+        type: evaluationInfo.evaluationList.questions.type,
+      })
+      .then((res) => {
+        console.log("createEvaluation result", res);
+        alert("평가 항목 등록 완료");
+        navigator("/evaluation");
+      })
+      .catch((err) => console.log("createEvaluation err", err));
+  };
+
   return (
     <style.mainContainer>
       <SideMenu side={side} setSide={setSide} />
@@ -80,20 +102,41 @@ function UploadEvaluation() {
           </style.middleDiv>
           <style.bottomDiv>
             {evaluationInfo.evaluationList.questions.map((e, index) => (
-              <QuestionInput
-                name="interviewer"
-                index={index}
-                key={shortid.generate()}
-                evaluationInfo={evaluationInfo}
-                setEvaluationInfo={setEvaluationInfo}
-                currQues={currQues}
-                setCurrQues={setCurrQues}
-              />
+              <style.EvalDiv>
+                <QuestionInput
+                  name="interviewer"
+                  index={index}
+                  key={index}
+                  // key={shortid.generate()}
+                  evaluationInfo={evaluationInfo}
+                  setEvaluationInfo={setEvaluationInfo}
+                  currQues={currQues}
+                  setCurrQues={setCurrQues}
+                />
+                <TypeSelect
+                  evaluationInfo={evaluationInfo}
+                  setEvaluationInfo={setEvaluationInfo}
+                  index={index}
+                />
+              </style.EvalDiv>
             ))}
             <style.addBtn name="title" onClick={addQuestions}>
               <style.addImg name="title" src="/images/common/addBtn.png" />
             </style.addBtn>
           </style.bottomDiv>
+          <style.buttonSection>
+            <style.Button
+              style={{
+                backgroundColor: "#3cb371",
+                border: "none",
+                color: "white",
+              }}
+              onClick={uploadEvaluation}
+            >
+              저장
+            </style.Button>
+            <style.Button>취소</style.Button>
+          </style.buttonSection>
         </style.Container>
       </style.uploadContainer>
     </style.mainContainer>

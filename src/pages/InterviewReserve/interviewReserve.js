@@ -12,6 +12,7 @@ import interviewAPI from "../../api/interviewAPI";
 
 function InterviewReserve(props) {
   const navigator = useNavigate();
+  const shortid = require("shortid");
   const [side, setSide] = useState("interview");
   const [selectedDay, setSelectedDay] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState(new Date(0, 0, 0));
@@ -142,6 +143,7 @@ function InterviewReserve(props) {
                     name="interviewer"
                     index={index}
                     key={index}
+                    // key={shortid.generate()}
                     reserveInfo={reserveInfo}
                     setReserveInfo={setReserveInfo}
                   />
@@ -156,6 +158,7 @@ function InterviewReserve(props) {
                     name="interviewee"
                     index={index}
                     key={index}
+                    // key={shortid.generate()}
                     reserveInfo={reserveInfo}
                     setReserveInfo={setReserveInfo}
                   />

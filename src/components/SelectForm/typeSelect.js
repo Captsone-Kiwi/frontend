@@ -21,6 +21,7 @@ function TypeSelect(props) {
         onChange={handleSelect}
         options={options}
         placeholder={"항목 유형 선택"}
+        defaultValue={{ value: 0, label: "객관식 평가" }}
       />
     </div>
   );

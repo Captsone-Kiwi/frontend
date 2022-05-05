@@ -13,14 +13,16 @@ function InterviewList(props) {
   const [tag, setTag] = useState("new");
   const [state, actions] = useContext(AuthContext);
   const [memberInfo, setMemberInfo] = useState({ memberType: 0 }); // 멤버타입 불러오기
-  const [interviewInfo, setInterviewInfo] = useState({
-    interviewName: "",
-    startDate: "",
-    startTime: "",
-    template: 0,
-    interviewee: [""],
-    interviewer: [""],
-  });
+  const [interviewInfo, setInterviewInfo] = useState([
+    {
+      interviewName: "",
+      startDate: "",
+      startTime: "",
+      template: 0,
+      interviewee: [""],
+      interviewer: [""],
+    },
+  ]);
 
   const btnClicked = (e) => {
     e.preventDefault();
@@ -114,7 +116,7 @@ function InterviewList(props) {
                       memberInfo={memberInfo}
                       startDate={e.startDate}
                       startTime={e.startTime}
-                      interview_name={e.interview_name}
+                      interview_name={e.interviewName}
                       interview_id={e.id}
                       memberType={memberInfo.memberType}
                     />
@@ -133,7 +135,7 @@ function InterviewList(props) {
                       memberInfo={memberInfo}
                       startDate={e.startDate}
                       startTime={e.startTime}
-                      interview_name={e.interview_name}
+                      interview_name={e.interviewName}
                       interview_id={e.id}
                       memberType={memberInfo.memberType}
                     />

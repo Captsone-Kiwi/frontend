@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const EvalDiv = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-`;
-
 export const QuestionInput = styled.input`
   width: 70%;
   min-width: 600px;

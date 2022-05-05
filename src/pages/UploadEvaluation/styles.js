@@ -66,6 +66,7 @@ export const middleDiv = styled.div`
   display: flex;
   padding: 7px;
   border-bottom: 3px solid #c4c4c4;
+  margin-bottom: 20px;
 `;
 
 export const smallDiv1 = styled.div`
@@ -94,20 +95,47 @@ export const bottomDiv = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 1000px;
+`;
+
+export const EvalDiv = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 `;
 
 export const addBtn = styled.button`
-  align-self: flex-start;
+  align-self: center;
   padding: unset;
   background: transparent;
   border: none;
-  margin-top: 7px;
-  margin-left: 10px;
+  margin-top: 100px;
   &:hover {
     cursor: pointer;
   }
 `;
 
 export const addImg = styled.img`
-  width: 25px;
+  width: 35px;
+`;
+
+export const buttonSection = styled.div`
+  display: flex;
+  align-self: flex-end;
+`;
+
+export const Button = styled.button`
+  width: 65px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  color: black;
+  margin: 0 10px 0 0;
+  &:hover {
+    cursor: pointer;
+  }
 `;

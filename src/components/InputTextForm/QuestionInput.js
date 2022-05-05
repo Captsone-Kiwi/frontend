@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import TypeSelect from "../../components/SelectForm/typeSelect";
 import * as style from "./questionStyles";
 
 function QuestionInput(props) {
@@ -8,7 +7,6 @@ function QuestionInput(props) {
     setTitle["evaluationList"]["questions"][props.index][e.target.name] =
       e.target.value;
     props.setEvaluationInfo(setTitle);
-    props.setCurrQues(index);
   };
   const removeQuestion = (e, index) => {
     const setTitle = { ...props.evaluationInfo };
@@ -20,7 +18,6 @@ function QuestionInput(props) {
       ].filter((val, idx) => {
         return idx !== index;
       });
-      console.log("!!!!!!", setTitle);
       props.setEvaluationInfo(setTitle);
     } else {
       alert("한 개 이상의 질문 항목을 입력해주세요.");
@@ -31,14 +28,12 @@ function QuestionInput(props) {
     const input = document.querySelector(`.question-input${props.index}`);
     input.value =
       props.evaluationInfo.evaluationList.questions[props.index]["title"];
-    const currInput = document.querySelector(
-      `.question-input${props.currQues}`
-    );
+    const currInput = document.querySelector(`.question-input${props.index}`);
     currInput.focus();
   }, []);
 
   return (
-    <style.EvalDiv>
+    <>
       <style.QuestionInput
         name="title"
         className={"question-input" + props.index}
@@ -56,12 +51,7 @@ function QuestionInput(props) {
       >
         <style.removeImg name="title" src="/images/common/removeBtn.png" />
       </style.removeBtn>
-      <TypeSelect
-        evaluationInfo={props.evaluationInfo}
-        setEvaluationInfo={props.setEvaluationInfo}
-        index={props.index}
-      />
-    </style.EvalDiv>
+    </>
   );
 }
 
