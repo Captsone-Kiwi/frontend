@@ -13,11 +13,11 @@ export default function RadioButton() {
         name="radio-buttons-group"
         style={{flexDirection:'row', alignItems:'center'}}>
         <style.LabelLeft>매우 부족</style.LabelLeft>
-        {['0','1','2','3','4'].map((value, i) => (
-          <React.Fragment key={i}>
-            <FormControlLabel value={value} style={{margin:'0px'}} control={<Radio color='success' style={{padding:'6px'}}/>}/>
-          </React.Fragment>
-        ))}
+            {['0','1','2','3','4'].map((value, i) => (
+            <React.Fragment key={i}>
+                <FormControlLabel value={value} style={{margin:'0px'}} control={<Radio color='success' style={{padding:'6px'}}/>}/>
+            </React.Fragment>
+            ))}
         <style.LabelRight>매우 우수</style.LabelRight>
     </RadioGroup>
   )

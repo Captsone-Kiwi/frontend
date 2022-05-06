@@ -5,11 +5,12 @@ import * as style from "./styles";
 
 
 
-const names = ["백소현", "김찬미", "양진우"];
-const interviews = ["evaluationList1", "evaluationList2"];
-const evalutions = ["평가항목1", "평가항목2", "평가항목3"];
 
 export default function Dropdown() {
+    const names = ["백소현", "김찬미", "양진우"];
+    const interviews = ["evaluationList1", "evaluationList2"];
+    const evalutions = ["평가항목1", "평가항목2", "평가항목3"];
+
   const [isOpenName, setIsOpenName] = useState(false);
   const [isOpenInter, setIsOpenInter] = useState(false);
   const [isOpenEval, setIsOpenEval] = useState(false);
