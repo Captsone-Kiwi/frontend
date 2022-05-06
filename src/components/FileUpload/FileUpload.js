@@ -59,11 +59,19 @@ const FileUpload = () => {
       <style.formDiv onSubmit={onSubmit}>
         <style.uploadContainer>
           <style.fileImg src="/images/common/fileIcon.png" />
+          <style.fileText>Drag & Drop a File Here</style.fileText>
+          <style.fileLabel for="customFile" onChange={onChange}>
+            <p style={{ marginBlock: "0" }}>Or</p>
+            <p
+              style={{ color: "#3CB371", marginLeft: "7px", marginBlock: "0" }}
+            >
+              Click Here to Add Your Files
+            </p>
+          </style.fileLabel>
           <style.fileInput
             type="file"
             className="custom-file-input"
             id="customFile"
-            onChange={onChange}
           />
         </style.uploadContainer>
         <style.fileName>

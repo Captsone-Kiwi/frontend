@@ -11,10 +11,11 @@ function TypeSelect(props) {
     []
   );
   const handleSelect = (e) => {
-    const setType = { ...props.evaluationInfo };
-    setType["evaluationList"]["questions"][props.index]["type"] = e.value;
-    props.setEvaluationInfo(setType);
+    const setType = { ...props.questions };
+    setType["type"] = e.value;
+    props.setQuestions(setType);
   };
+
   return (
     <div style={{ margin: "10px 0", width: "25%" }}>
       <SelectType

@@ -31,17 +31,28 @@ export const fileImg = styled.img`
   width: 60px;
 `;
 
+export const fileText = styled.text`
+  font-size: 20px;
+  color: #7a7a7a;
+  margin-top: 43px;
+  font-weight: bold;
+`;
+
+export const fileLabel = styled.label`
+  font-size: 15px;
+  display: flex;
+  color: #7a7a7a;
+  margin-top: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 export const fileInput = styled.input`
   font-size: 15px;
   margin-top: 43px;
   margin-left: 110px;
-  .file-upload-button {
-    background-color: orange;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
+  display: none;
 `;
 
 export const fileName = styled.label`

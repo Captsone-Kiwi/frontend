@@ -1,32 +1,47 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import CreatableSelect from "react-select/creatable";
 import "./styles.css";
 
 function CategorySelect(props) {
   const [value, setValue] = useState();
 
+  // const [options, setOptions] = useState([
+  //   { value: "자기 표현력", label: "자기 표현력" },
+  //   { value: "협업 역량", label: "협업 역량" },
+  //   { value: "직무 역량", label: "직무 역량" },
+  //   { value: "태도 역량", label: "태도 역량" },
+  // ]);
+
   const [options, setOptions] = useState([
-    { value: "인성 평가", label: "인성 평가" },
-    { value: "능력 평가", label: "능력 평가" },
-    { value: "전공 적합성", label: "전공 적합성" },
-    { value: "발전 가능성", label: "발전 가능성" },
+    { value: 0, label: "자기 표현력" },
+    { value: 1, label: "협업 역량" },
+    { value: 2, label: "직무 역량" },
+    { value: 3, label: "태도 역량" },
   ]);
 
+  // const setCategory = { ...props.categoryList };
+  // setCategory[0] = { category: "자기 표현력" };
+  // setCategory[1] = { category: "협업 역량" };
+  // setCategory[2] = { category: "직무 역량" };
+  // setCategory[3] = { category: "태도 역량" };
+  // props.setCategoryList(setCategory);
+
   const handleChange = useCallback((inputValue) => {
-    const setCategory = { ...props.evaluationInfo };
     setValue(inputValue);
-    setCategory["evaluationList"]["category"] = inputValue.value;
-    props.setEvaluationInfo(setCategory);
   }, []);
 
+  const [currIdx, setCurrIdx] = useState(3);
   const handleCreate = useCallback(
     (inputValue) => {
-      const newValue = { value: inputValue.toLowerCase(), label: inputValue };
-      const setCategory = { ...props.evaluationInfo };
+      const newValue = { value: currIdx + 1, label: inputValue };
       setOptions([...options, newValue]);
       setValue(newValue);
-      setCategory["evaluationList"]["category"] = newValue.value;
-      props.setEvaluationInfo(setCategory);
+      const setCategory = { ...props.categoryList };
+      setCategory["evaluationList"][currIdx + 1] = {
+        category: newValue.label,
+      };
+      props.setCategoryList(setCategory);
+      setCurrIdx(currIdx + 1);
     },
     [options]
   );
