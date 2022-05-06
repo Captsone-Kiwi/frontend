@@ -1,73 +1,45 @@
-import React, {useState} from "react"
-import {QuestionList} from "./QuestionList"
-import RadioButton from "./RadioButton.js"
-import StyledInput from "./StyledInput.js"
-import FormControl from '@mui/material/FormControl';
+// https://www.csscodelab.com/reactjs-dropdown-list-example/
+// https://github.com/jokamjohn/custom-select-react/blob/master/src/App.js
+import React, { useState } from "react";
 import * as style from "./styles";
 
 
-function InputType(props) {
-  if(props.isType === 0) {
-      return <RadioButton/>;
-  }
-  return <StyledInput/>;
-}
 
+const names = ["백소현", "김찬미", "양진우"];
+const interviews = ["evaluationList1", "evaluationList2"];
+const evalutions = ["평가항목1", "평가항목2", "평가항목3"];
 
-function Question({quest, order}){
-    return(
-      <>
-      <style.QuestionBox>
-          <style.QuestionTitle><b>{quest.questions[0].title}</b></style.QuestionTitle>
-            <FormControl>
-          <style.QuestionTitle>{quest.title}</style.QuestionTitle>
-          
-          <InputType isType={quest.questions[0].type}/>
-          
-
-          </FormControl>
-        </style.QuestionBox>
-      </>
-    )
-}
-
-export default function QuestionBox(){
-  const names = ["백소현", "김찬미", "양진우"];
-  const interviews = ["evaluationList1", "evaluationList2"];
-  const evalutions = ["평가항목1", "평가항목2", "평가항목3"];
-
+export default function Dropdown() {
   const [isOpenName, setIsOpenName] = useState(false);
   const [isOpenInter, setIsOpenInter] = useState(false);
   const [isOpenEval, setIsOpenEval] = useState(false);
 
-
-  const [selectedName, setSelectedNames] = useState(['김찬미']);
-  const [selectedInter, setSelectedInter] = useState('Interview');
-  const [selectedEval, setSelectedEval] = useState('Evaluation');
+  
+  const [selectedName, setSelectedNames] = useState(null);
+  const [selectedInter, setSelectedInter] = useState(null);
+  const [selectedEval, setSelectedEval] = useState(null);
 
   const togglingName = () => setIsOpenName(!isOpenName);
   const togglingInter = () => setIsOpenInter(!isOpenInter);
   const togglingEval = () => setIsOpenEval(!isOpenEval);
 
   const onNameClicked = value => () => {
-    setSelectedNames([value]);
+    setSelectedNames(value);
     setIsOpenName(false);
   };
-
+  
   const onInterClicked = value => () => {
     setSelectedInter(value);
     setIsOpenInter(false);
   };
-
+  
   const onEvalClicked = value => () => {
     setSelectedEval(value);
     setIsOpenEval(false);
   };
-
-  const Questions = QuestionList[0].evaluationList;
-  return(
-      <div>
-      <style.Main>
+  return (
+      <>
+        <style.Main>
         <style.DropDownContainer>
             <style.DropDownHeader onClick={togglingName}>
             {selectedName || "Name"}
@@ -120,16 +92,7 @@ export default function QuestionBox(){
         </style.DropDownContainer>
 
         </style.Main>
-            {names.map((value, i) => (
-              Questions.map((quest, index) => (
-                  <Question 
-                  quest={quest} 
-                  order={index+1} 
-                  key={index}
-                  name={value}
-                  />
-              ))
-            ))}
-        </div>
-      )
+        
+  </>
+  );
 }
