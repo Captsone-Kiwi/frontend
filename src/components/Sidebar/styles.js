@@ -28,7 +28,7 @@ export const WrapIcon = styled.div`
 `
 
 export const NavMenu = styled.div`
-  background-color: #f7f7f7;
+  background-color: #fff;
   width: fit-content;
   height: 100vh;
   display: flex;
