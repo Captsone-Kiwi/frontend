@@ -24,15 +24,6 @@ function UploadEvaluation() {
     ],
   });
   console.log("평가항목 저장 정보", evaluationInfo);
-  // const [evaluationList, setEvaluationList] = useState({
-  //   questions: [
-  //     {
-  //       title: "",
-  //       type: 0,
-  //     },
-  //   ],
-  // });
-  // console.log("평가항목 저장 정보", evaluationList);
 
   // 평가항목 제목 정보 저장
   const evalNameUpload = ({ target }) => {
