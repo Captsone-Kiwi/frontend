@@ -65,25 +65,26 @@ export const middleDiv = styled.div`
   width: 100%;
   display: flex;
   padding: 7px;
-  border-bottom: 3px solid #c4c4c4;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 10px;
 `;
 
 export const smallDiv1 = styled.div`
-  width: 70%;
-  min-width: 600px;
+  width: 60%;
+  min-width: 500px;
   display: flex;
   justify-content: center;
 `;
 
 export const smallDiv2 = styled.div`
-  width: 30%;
+  width: 20%;
+  min-width: 190px;
   display: flex;
   justify-content: center;
 `;
 
 export const Text = styled.div`
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #7a7a7a;
   margin-block: 0;
@@ -101,8 +102,8 @@ export const bottomDiv = styled.div`
 export const EvalDiv = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  // justify-content: space-between;
+  padding: 8px;
 `;
 
 export const addBtn = styled.button`

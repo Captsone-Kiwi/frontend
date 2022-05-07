@@ -13,65 +13,44 @@ function UploadEvaluation() {
   const [side, setSide] = useState("upload");
 
   //평가항목 정보
-  // const [evaluationInfo, setEvaluationInfo] = useState({
-  //   name: "",
-  //   evaluationList: [
-  //     {
-  //       category: "",
-  //       questions: [
-  //         {
-  //           title: "",
-  //           type: 0,
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // });
-  const [evaluationName, setEvaluationName] = useState({ name: "" });
-  // const [categoryList, setCategoryList] = useState({
-  //   evaluationList: [
-  //     {
-  //       category: "자기 표현력",
-  //     },
-  //     {
-  //       category: "협업 역량",
-  //     },
-  //     {
-  //       category: "직무 역량",
-  //     },
-  //     {
-  //       category: "태도 역량",
-  //     },
-  //   ],
-  // });
-  // console.log("categoryList", categoryList);
-  const [evaluationList, setEvaluationList] = useState({
-    category: "",
-    questions: [
+  const [evaluationInfo, setEvaluationInfo] = useState({
+    name: "",
+    evaluationList: [
       {
+        category: "",
         title: "",
         type: 0,
       },
     ],
   });
-  console.log("평가항목 저장 정보", evaluationList);
-
-  const [categoryList, setCategoryList] = useState([evaluationList]);
-  console.log("categoryList", categoryList);
+  console.log("평가항목 저장 정보", evaluationInfo);
+  // const [evaluationList, setEvaluationList] = useState({
+  //   questions: [
+  //     {
+  //       title: "",
+  //       type: 0,
+  //     },
+  //   ],
+  // });
+  // console.log("평가항목 저장 정보", evaluationList);
 
   // 평가항목 제목 정보 저장
   const evalNameUpload = ({ target }) => {
     let { name, value } = target;
-    setEvaluationName({ ...evaluationName, [name]: value });
+    setEvaluationInfo({ ...evaluationInfo, [name]: value });
   };
 
   const [currQues, setCurrQues] = useState(0);
 
   const addQuestions = () => {
     setCurrQues(currQues + 1);
-    const setQues = { ...evaluationList };
-    setQues["questions"][currQues + 1] = { title: "", type: 0 };
-    setEvaluationList(setQues);
+    const setQues = { ...evaluationInfo };
+    setQues["evaluationList"][currQues + 1] = {
+      category: "",
+      title: "",
+      type: 0,
+    };
+    setEvaluationInfo(setQues);
   };
   console.log("currQues??", currQues);
 
@@ -80,8 +59,8 @@ function UploadEvaluation() {
     event.preventDefault();
     await evaluationAPI
       .createEvaluation({
-        name: evaluationName.name,
-        evaluationList: [evaluationList],
+        name: evaluationInfo.name,
+        evaluationList: evaluationInfo.evaluationList,
       })
       .then((res) => {
         console.log("createEvaluation result", res);
@@ -104,7 +83,7 @@ function UploadEvaluation() {
           <style.topDiv>
             <style.EvalTitle
               name="name"
-              value={evaluationName.name}
+              value={evaluationInfo.name}
               type="text"
               onChange={evalNameUpload}
               required
@@ -112,12 +91,11 @@ function UploadEvaluation() {
               InputProps={{ disableUnderline: true }}
               placeholder="평가항목 제목을 입력하세요."
             />
-            <CategorySelect
-              categoryList={categoryList}
-              setCategoryList={setCategoryList}
-            />
           </style.topDiv>
           <style.middleDiv>
+            <style.smallDiv2>
+              <style.Text>카테고리</style.Text>
+            </style.smallDiv2>
             <style.smallDiv1>
               <style.Text>질문 항목</style.Text>
             </style.smallDiv1>
@@ -126,21 +104,26 @@ function UploadEvaluation() {
             </style.smallDiv2>
           </style.middleDiv>
           <style.bottomDiv>
-            {evaluationList.questions.map((e, index) => (
+            {evaluationInfo.evaluationList.map((e, index) => (
               <style.EvalDiv>
+                <CategorySelect
+                  evaluationInfo={evaluationInfo}
+                  setEvaluationInfo={setEvaluationInfo}
+                  index={index}
+                />
                 <QuestionInput
                   name="interviewer"
                   index={index}
                   key={index}
                   // key={shortid.generate()}
-                  evaluationList={evaluationList}
-                  setEvaluationList={setEvaluationList}
+                  evaluationInfo={evaluationInfo}
+                  setEvaluationInfo={setEvaluationInfo}
                   currQues={currQues}
                   setCurrQues={setCurrQues}
                 />
                 <TypeSelect
-                  evaluationList={evaluationList}
-                  setEvaluationList={setEvaluationList}
+                  evaluationInfo={evaluationInfo}
+                  setEvaluationInfo={setEvaluationInfo}
                   index={index}
                 />
               </style.EvalDiv>

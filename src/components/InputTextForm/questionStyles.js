@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const QuestionInput = styled.input`
-  width: 70%;
-  min-width: 600px;
+  width: 520px;
+  // min-width: 400px;
   height: 40px;
   font-size: 15px;
   border: 1px solid #929292;
   border-radius: 12px;
-  margin: 8px 10px 8px 0;
+  margin: 8px 20px 8px 20px;
   padding: 6px 10px;
 `;
 
@@ -16,8 +16,8 @@ export const removeBtn = styled.button`
   padding: unset;
   background: transparent;
   border: none;
-  margin-top: 20px;
-  margin-left: -80px;
+  margin-top: 23px;
+  margin-left: -53px;
   &:hover {
     cursor: pointer;
   }

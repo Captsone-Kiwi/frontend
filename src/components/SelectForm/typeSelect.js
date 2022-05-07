@@ -11,13 +11,13 @@ function TypeSelect(props) {
     []
   );
   const handleSelect = (e) => {
-    const setType = { ...props.questions };
-    setType["type"] = e.value;
-    props.setQuestions(setType);
+    const setType = { ...props.evaluationInfo };
+    setType["evaluationList"][props.index]["type"] = e.value;
+    props.setEvaluationInfo(setType);
   };
 
   return (
-    <div style={{ margin: "10px 0", width: "25%" }}>
+    <div style={{ margin: "8px 0 8px 28px", width: "20%", minWidth: "190px" }}>
       <SelectType
         onChange={handleSelect}
         options={options}

@@ -3,19 +3,21 @@ import * as style from "./questionStyles";
 
 function QuestionInput(props) {
   const questionList = (e, index) => {
-    const setTitle = { ...props.evaluationList };
-    setTitle["questions"][props.index][e.target.name] = e.target.value;
-    props.setEvaluationList(setTitle);
+    const setTitle = { ...props.evaluationInfo };
+    setTitle["evaluationList"][props.index][e.target.name] = e.target.value;
+    props.setEvaluationInfo(setTitle);
     // props.currQues(index);
   };
   const removeQuestion = (e, index) => {
-    const setTitle = { ...props.evaluationList };
-    if (props.evaluationList.questions.length > 1) {
+    const setTitle = { ...props.evaluationInfo };
+    if (props.evaluationInfo.evaluationList.length > 1) {
       props.setCurrQues(props.currQues - 1);
-      setTitle["questions"] = setTitle["questions"].filter((val, idx) => {
-        return idx !== index;
-      });
-      props.setEvaluationList(setTitle);
+      setTitle["evaluationList"] = setTitle["evaluationList"].filter(
+        (val, idx) => {
+          return idx !== index;
+        }
+      );
+      props.setEvaluationInfo(setTitle);
     } else {
       alert("한 개 이상의 질문 항목을 입력해주세요.");
     }
@@ -23,7 +25,7 @@ function QuestionInput(props) {
 
   useEffect(() => {
     const input = document.querySelector(`.question-input${props.index}`);
-    input.value = props.evaluationList.questions[props.index]["title"];
+    input.value = props.evaluationInfo.evaluationList[props.index]["title"];
     // const currInput = document.querySelector(`.question-input${props.currQues}`);
     // currInput.focus();
   }, []);
