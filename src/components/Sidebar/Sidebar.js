@@ -8,7 +8,9 @@ import * as style from "./styles";
 import Timer from '../Timer/Timer.js';
 import SettingModal from '../SettingModal/SettingModal.js';
 import ExitModal from '../ExitModal/ExitModal.js';
-import QuestionBox from '../Evaluation/QuestionBox.js';
+// import QuestionBox from '../Evaluation/QuestionBox.js';
+import Selection from '../Evaluation/Select.js';
+
 import Chatting from '../Chatting/Chatting.js';
 import {motion} from "framer-motion";
 import Sample from './Sample';
@@ -76,7 +78,7 @@ function Sidebar() {
             </motion.div>
 
           </style.Sidebar>
-          { tabState.onEval &&  <QuestionBox/> }
+          { tabState.onEval &&  <Selection/> }
           { tabState.onChat &&  <Chatting/> }
           { tabState.onWatch && <Timer/> }
           { tabState.onCheck && <Sample/> } 

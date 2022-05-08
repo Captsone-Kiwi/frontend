@@ -9,11 +9,11 @@ export default function RadioButton() {
   return(
     <RadioGroup
         aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue='0'
+        defaultValue='1'
         name="radio-buttons-group"
         style={{flexDirection:'row', alignItems:'center'}}>
         <style.LabelLeft>매우 부족</style.LabelLeft>
-            {['0','1','2','3','4'].map((value, i) => (
+            {['1','2','3','4','5'].map((value, i) => (
             <React.Fragment key={i}>
                 <FormControlLabel value={value} style={{margin:'0px'}} control={<Radio color='success' style={{padding:'6px'}}/>}/>
             </React.Fragment>

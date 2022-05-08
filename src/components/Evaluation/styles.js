@@ -17,7 +17,6 @@ export const QuestionBox = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    z-index: 5;
 `;
 
 export const QuestionTitle = styled.div`
@@ -72,7 +71,6 @@ export const DropDownHeader = styled.div`
 `;
 
 export const DropDownListContainer = styled.div`
-  z-index: 100;
   width: 7.5em;
 `;
 
