@@ -33,19 +33,31 @@ function Uploads(props) {
     ],
   });
   useEffect(() => {
-    getEvaluationInfo();
+    // getEvaluationInfo();
+    getEvaluationId();
   }, [state]);
 
-  //평가항목 정보 가져오기
-  const getEvaluationInfo = async () => {
+  //평가항목 아이디 리스트 가져오기
+  const getEvaluationId = async () => {
     await evaluationAPI
-      .getEvaluation()
+      .getEvaluationIdList()
       .then((res) => {
-        setEvaluationInfo(res.data.data);
-        console.log("getEvaluationInfo result", res.data);
+        // setEvaluationInfo(res.data.data);
+        console.log("getEvaluationId result", res.data);
       })
-      .catch((error) => console.log("getEvaluationInfo error", error));
+      .catch((error) => console.log("getEvaluationId error", error));
   };
+
+  //평가항목 정보 가져오기
+  // const getEvaluationInfo = async () => {
+  //   await evaluationAPI
+  //     .getEvaluation()
+  //     .then((res) => {
+  //       setEvaluationInfo(res.data.data);
+  //       console.log("getEvaluationInfo result", res.data);
+  //     })
+  //     .catch((error) => console.log("getEvaluationInfo error", error));
+  // };
 
   return (
     <style.mainContainer>
