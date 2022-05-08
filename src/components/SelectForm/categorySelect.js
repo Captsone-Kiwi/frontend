@@ -29,11 +29,11 @@ function CategorySelect(props) {
   const handleCreate = useCallback(
     (inputValue) => {
       const newValue = { value: inputValue.toLowerCase(), label: inputValue };
-      setOptions([...options, newValue]);
-      setValue(newValue);
       const setCategory = { ...props.evaluationInfo };
       setCategory["evaluationList"][props.index]["category"] = newValue.value;
       props.setEvaluationInfo(setCategory);
+      setOptions([...options, newValue]);
+      setValue(newValue);
     },
     [options]
   );

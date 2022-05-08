@@ -56,7 +56,7 @@ function UploadEvaluation() {
       .then((res) => {
         console.log("createEvaluation result", res);
         alert("평가 항목 등록 완료");
-        navigator("/evaluation");
+        navigator("/upload");
       })
       .catch((err) => console.log("createEvaluation err", err));
   };

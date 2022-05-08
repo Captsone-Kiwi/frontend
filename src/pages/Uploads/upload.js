@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
+import evaluationAPI from "../../api/evaluationAPI";
+import AuthContext from "../../store";
 
 function Uploads(props) {
   const navigator = useNavigate();
+  const [state, actions] = useContext(AuthContext);
   const [side, setSide] = useState("upload");
   const [tag, setTag] = useState("resume");
 
@@ -18,6 +21,32 @@ function Uploads(props) {
       setTag(target.value);
     }
   };
+
+  const [evaluationInfo, setEvaluationInfo] = useState({
+    name: "",
+    evaluationList: [
+      {
+        category: "",
+        title: "",
+        type: 0,
+      },
+    ],
+  });
+  useEffect(() => {
+    getEvaluationInfo();
+  }, [state]);
+
+  //평가항목 정보 가져오기
+  const getEvaluationInfo = async () => {
+    await evaluationAPI
+      .getEvaluation()
+      .then((res) => {
+        setEvaluationInfo(res.data.data);
+        console.log("getEvaluationInfo result", res.data);
+      })
+      .catch((error) => console.log("getEvaluationInfo error", error));
+  };
+
   return (
     <style.mainContainer>
       <SideMenu side={side} setSide={setSide} />
@@ -36,13 +65,30 @@ function Uploads(props) {
             </style.selectBtn>
           </style.selectionDiv>
           {tag === "resume" ? (
-            <style.uploadBtn onClick={() => navigator("/resume")}>
-              이력서 업로드
-            </style.uploadBtn>
+            <>
+              <style.uploadBtn onClick={() => navigator("/resume")}>
+                이력서 업로드
+              </style.uploadBtn>
+              <style.infoDiv>
+                <style.titleSpan style={{ marginLeft: "10px" }}>
+                  제목
+                </style.titleSpan>
+              </style.infoDiv>
+            </>
           ) : tag === "evaluation" ? (
-            <style.uploadBtn onClick={() => navigator("/evaluation")}>
-              평가항목 추가
-            </style.uploadBtn>
+            <>
+              <style.uploadBtn onClick={() => navigator("/evaluation")}>
+                평가항목 추가
+              </style.uploadBtn>
+              <style.infoDiv>
+                <style.titleSpan style={{ marginLeft: "10px" }}>
+                  제목
+                </style.titleSpan>
+              </style.infoDiv>
+              <style.evaluationDetail>
+                <style.evaluationTitle></style.evaluationTitle>
+              </style.evaluationDetail>
+            </>
           ) : tag === "exam" ? (
             <style.uploadBtn onClick={() => navigator("/exam")}>
               시험지 추가

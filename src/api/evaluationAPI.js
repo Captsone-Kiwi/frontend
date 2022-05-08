@@ -6,4 +6,7 @@ export default {
   createEvaluation(data) {
     return axios.post(`createEvaluation`, data);
   },
+  getEvaluation(eval_id) {
+    return axios.get(`getEvaluation?eval_id=${eval_id}`);
+  },
 };

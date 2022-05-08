@@ -15,7 +15,7 @@ function InterviewList(props) {
   const [memberInfo, setMemberInfo] = useState({ memberType: 0 }); // 멤버타입 불러오기
   const [interviewInfo, setInterviewInfo] = useState([
     {
-      interviewName: "",
+      interview_name: "",
       startDate: "",
       startTime: "",
       template: 0,
@@ -116,7 +116,7 @@ function InterviewList(props) {
                       memberInfo={memberInfo}
                       startDate={e.startDate}
                       startTime={e.startTime}
-                      interview_name={e.interviewName}
+                      interview_name={e.interview_name}
                       interview_id={e.id}
                       memberType={memberInfo.memberType}
                     />
@@ -135,7 +135,7 @@ function InterviewList(props) {
                       memberInfo={memberInfo}
                       startDate={e.startDate}
                       startTime={e.startTime}
-                      interview_name={e.interviewName}
+                      interview_name={e.interview_name}
                       interview_id={e.id}
                       memberType={memberInfo.memberType}
                     />

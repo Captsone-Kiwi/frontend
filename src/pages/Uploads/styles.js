@@ -62,3 +62,33 @@ export const uploadBtn = styled.button`
     cursor: pointer;
   }
 `;
+
+export const infoDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  background-color: #eff5f2;
+  margin-top: 10px;
+  border-radius: 4px;
+`;
+
+export const titleSpan = styled.p`
+  font-size: 13px;
+  color: black;
+  width: 21%;
+`;
+
+export const evaluationDetail = styled.div`
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  height: fit-content;
+`;
+
+export const evaluationTitle = styled.p`
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 3px;
+`;
