@@ -78,12 +78,22 @@ export const titleSpan = styled.p`
 `;
 
 export const evaluationDetail = styled.div`
-  width: 100%;
   height: 60px;
   display: flex;
-  flex-direction: column;
-  margin: 10px 0;
+  justify-content: space-between;
   height: fit-content;
+  padding: 20px 15px;
+  border: 1px solid #e1e6e3;
+`;
+
+export const leftDiv = styled.div`
+  display: flex;
+  align-self: center;
+`;
+
+export const rightDiv = styled.div`
+  display: flex;
+  align-self: center;
 `;
 
 export const evaluationTitle = styled.p`
@@ -91,4 +101,47 @@ export const evaluationTitle = styled.p`
   font-size: 15px;
   font-weight: bold;
   margin: 3px;
+`;
+
+export const fileImg = styled.img`
+  width: 20px;
+  margin-right: 10px;
+`;
+
+export const greenButton = styled.button`
+  width: 45px;
+  height: 27px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 3px;
+  align-items: center;
+  background-color: #3cb371;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const Buttons = styled.button`
+  width: 45px;
+  height: 27px;
+  padding-left: 9px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 3px;
+  align-items: center;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+  }
 `;

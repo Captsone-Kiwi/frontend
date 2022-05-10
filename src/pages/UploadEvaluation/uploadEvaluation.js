@@ -26,10 +26,12 @@ function UploadEvaluation() {
   console.log("평가항목 저장 정보", evaluationInfo);
 
   // 평가항목 제목 정보 저장
+  const [evalName, setEvalName] = useState({ name: "" });
   const evalNameUpload = ({ target }) => {
     let { name, value } = target;
-    setEvaluationInfo({ ...evaluationInfo, [name]: value });
+    setEvalName({ ...evalName, [name]: value });
   };
+  console.log("평가항목 제목 저장", evalName);
 
   const [currQues, setCurrQues] = useState(0);
 
@@ -43,14 +45,13 @@ function UploadEvaluation() {
     };
     setEvaluationInfo(setQues);
   };
-  console.log("currQues??", currQues);
 
   //평가항목 업로드
   const uploadEvaluation = async (event) => {
     event.preventDefault();
     await evaluationAPI
       .createEvaluation({
-        name: evaluationInfo.name,
+        name: evalName.name,
         evaluationList: evaluationInfo.evaluationList,
       })
       .then((res) => {
@@ -74,7 +75,7 @@ function UploadEvaluation() {
           <style.topDiv>
             <style.EvalTitle
               name="name"
-              value={evaluationInfo.name}
+              value={evalName.name}
               type="text"
               onChange={evalNameUpload}
               required

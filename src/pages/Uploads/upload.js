@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
+import EvaluationInformation from "./evaluationInformation";
 import evaluationAPI from "../../api/evaluationAPI";
 import AuthContext from "../../store";
 
@@ -22,42 +23,22 @@ function Uploads(props) {
     }
   };
 
-  const [evaluationInfo, setEvaluationInfo] = useState({
-    name: "",
-    evaluationList: [
-      {
-        category: "",
-        title: "",
-        type: 0,
-      },
-    ],
-  });
   useEffect(() => {
     // getEvaluationInfo();
     getEvaluationId();
   }, [state]);
 
+  const [evalId, setEvalId] = useState([]);
   //평가항목 아이디 리스트 가져오기
   const getEvaluationId = async () => {
     await evaluationAPI
       .getEvaluationIdList()
       .then((res) => {
-        // setEvaluationInfo(res.data.data);
+        setEvalId(res.data.data);
         console.log("getEvaluationId result", res.data);
       })
       .catch((error) => console.log("getEvaluationId error", error));
   };
-
-  //평가항목 정보 가져오기
-  // const getEvaluationInfo = async () => {
-  //   await evaluationAPI
-  //     .getEvaluation()
-  //     .then((res) => {
-  //       setEvaluationInfo(res.data.data);
-  //       console.log("getEvaluationInfo result", res.data);
-  //     })
-  //     .catch((error) => console.log("getEvaluationInfo error", error));
-  // };
 
   return (
     <style.mainContainer>
@@ -97,9 +78,9 @@ function Uploads(props) {
                   제목
                 </style.titleSpan>
               </style.infoDiv>
-              <style.evaluationDetail>
-                <style.evaluationTitle></style.evaluationTitle>
-              </style.evaluationDetail>
+              {evalId.map((e, idx) => (
+                <EvaluationInformation evalId={e} idx={idx} />
+              ))}
             </>
           ) : tag === "exam" ? (
             <style.uploadBtn onClick={() => navigator("/exam")}>
