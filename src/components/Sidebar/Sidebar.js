@@ -8,8 +8,8 @@ import * as style from "./styles";
 import Timer from '../Timer/Timer.js';
 import SettingModal from '../SettingModal/SettingModal.js';
 import ExitModal from '../ExitModal/ExitModal.js';
-// import QuestionBox from '../Evaluation/QuestionBox.js';
-import Selection from '../Evaluation/Select.js';
+import Eval from '../Practice/Eval.js';
+// import Filter from '../Evaluation/Filter.js';
 
 import Chatting from '../Chatting/Chatting.js';
 import {motion} from "framer-motion";
@@ -78,10 +78,11 @@ function Sidebar() {
             </motion.div>
 
           </style.Sidebar>
-          { tabState.onEval &&  <Selection/> }
+
+          { tabState.onEval &&  <Eval/>}
           { tabState.onChat &&  <Chatting/> }
           { tabState.onWatch && <Timer/> }
-          { tabState.onCheck && <Sample/> } 
+          { tabState.onCheck && <Sample name={'CV2'}/> } 
 
         </style.NavMenu>
         { tabState.onSet && <SettingModal/> }

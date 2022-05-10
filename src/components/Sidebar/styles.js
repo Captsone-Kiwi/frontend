@@ -34,7 +34,6 @@ export const NavMenu = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: end;
   top: 0;
   left: 0;
   transition: 850ms;

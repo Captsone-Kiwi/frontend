@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import ResumeAPI from "../../api/ResumeAPI";
 
+function Sample(props) {
+  
 
-
-const Sample = () => {
-  const [embedURL] = useState('https://drive.google.com/viewerng/viewer?embedded=true&url=http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&scrollbar=0')
+  const [embedURL, setEmbedURL] = useState(`http://localhost:8000/getResume?name=${props.name}`)
 
   return (
       <iframe src={embedURL} width="400px" height='100%'></iframe>
