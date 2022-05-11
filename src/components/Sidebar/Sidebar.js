@@ -2,15 +2,25 @@ import React, { useState } from 'react';
 import * as MdIcons from 'react-icons/md';
 import * as Io5Icons from "react-icons/io5";
 import * as IoIcons from "react-icons/io";
+import * as BsIcons from "react-icons/bs";
+import * as FaIcons from "react-icons/fa";
 import * as style from "./styles";
 import Timer from '../Timer/Timer.js';
+import SettingModal from '../SettingModal/SettingModal.js';
+import ExitModal from '../ExitModal/ExitModal.js';
+import Eval from '../Practice/Eval.js';
+// import Filter from '../Evaluation/Filter.js';
+
 import Chatting from '../Chatting/Chatting.js';
 import {motion} from "framer-motion";
+import Sample from './Sample';
 
 function Sidebar() {
 
   const [tabState, setTabState] = useState({
     onSet: false,
+    onCheck: false,
+    onEval: false,
     onTrans: false,
     onChat: false,
     onExit: false,
@@ -58,6 +68,8 @@ function Sidebar() {
             >
               <style.WrapIcon>
                 <Io5Icons.IoSettingsSharp id='onSet' style={{color: tabState.onSet? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={tabHandler}/>
+                <FaIcons.FaStickyNote id='onCheck' style={{color: tabState.onCheck? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={tabHandler}/>
+                <BsIcons.BsCheckCircleFill id='onEval' style={{color: tabState.onEval? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={tabHandler}/>
                 <Io5Icons.IoAccessibility id='onTrans' style={{color: tabState.onTrans? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={tabHandler}/>
                 <Io5Icons.IoChatbox id='onChat' style={{color: tabState.onChat? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={tabHandler}/>
                 <MdIcons.MdExitToApp id='onExit' style={{ color: tabState.onExit? '#3CB371':'#7a7a7a', fontSize: '28px', margin: '16px 16px'}} onClick={tabHandler}/>
@@ -66,24 +78,15 @@ function Sidebar() {
             </motion.div>
 
           </style.Sidebar>
-          <motion.div
-              style={{
-                boxShadow: 'rgb(0 0 0 / 10%) 7px 0px 7px 0px',
-              }}
-              animate={{
-                width : tabState.onChat? "100%" : "0",
-                height : tabState.onChat? "100%" : "0",
 
-                transition: {
-                  duration: 0.5,
-                  damping: 10,
-                },
-              }}
-            >
-          <Chatting style={{display: tabState.onChat ? "visible" : "none"}} />
-          </motion.div>
-          { tabState.onWatch && <Timer/> } 
+          { tabState.onEval &&  <Eval/>}
+          { tabState.onChat &&  <Chatting/> }
+          { tabState.onWatch && <Timer/> }
+          { tabState.onCheck && <Sample name={'CV2'}/> } 
+
         </style.NavMenu>
+        { tabState.onSet && <SettingModal/> }
+        { tabState.onExit && <ExitModal/> }
 
     </>
   );
