@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import EvalList from './EvalList';
 import evaluationAPI from "../../api/evaluationAPI";
+import { AbsoluteCenter } from '@chakra-ui/layout';
 
 function Eval() {
 
@@ -81,7 +82,6 @@ function Eval() {
 
 const Questions = questions.evaluationList;
     const names = ["백소현", "김찬미", "양진우"];
-    const [selectedName, setSelectedNames] = useState('백소현');
 
     const [data, setData] = useState(
         names.map((Label,_) => (
@@ -89,35 +89,22 @@ const Questions = questions.evaluationList;
         ))
     )
 
-  const onToggle = (e, index, idx) => {
-    const name = data.findIndex((emp) => emp.label === '김찬미');
-    console.log(name);
-    data[name]['evaluation'][index]['questions'][idx]['data'] = e.target.value;
-    setData(data);
-    console.log(data);
+  const onToggle = (e, index, idx, selectedName) => {
+    
+    const array = JSON.parse(JSON.stringify(data));
 
-    // console.log(data[0][0])
-    // const index = data.findIndex((emp) => emp.label === '백소현');
-    // data.  = [...this.state.employees]; // important to create a copy, otherwise you'll modify state outside of setState call
-    // employees[index] = employee;
-    // this.setState({employees});
+    const name = array.findIndex((emp) => emp.label === selectedName );
+    const temp = array.map(d =>
+        d.label === selectedName ? { ...d} : null
+    );
+    temp[name]['evaluation'][index]['questions'][idx]['data'] = e.target.value;
 
-      // const temp = data.map(d =>
-      //   d.label === selectedName ? {
-      //       ...d, evaluation:{...d.evaluation,
-      //         [index]: {...d.evaluation[index],
-      //         questions : {...d.evaluation[index].questions,
-      //         [idx]: {
-      //           ...d.evaluation[index].questions[idx],
-      //           data : e.target.value
-      //                 }
-      //               }
-      //             }
-      //           }
-      //         } : d
-    // );
-    // setData(temp)
-    // console.log("temp",temp)
+    const copyArray = data.map(d =>
+        d.label === selectedName ? 
+            temp[name]
+        :d
+    )
+    setData(copyArray)
   };
 
   return (

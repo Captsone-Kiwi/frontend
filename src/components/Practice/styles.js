@@ -9,7 +9,7 @@ export const QuestionFlex = styled.div`
 
 export const QuestionBox = styled.div`
     width: 280px;
-    height: 80px;
+    height: 100px;
     margin : 20px;
     border-radius: 8px;
     border : 1px solid #929292;
@@ -22,12 +22,22 @@ export const QuestionBox = styled.div`
 export const QuestionTitle = styled.div`
     font-style: normal;
     font-weight: 500;
-    margin-top: 10px;
     font-size: 14px;
     line-height: 18px;
     color: #000000;
     text-align: center;
 `;
+
+export const QuestionCategory = styled.div`
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 7px;
+    color: green;
+    align-self: end;
+    padding-right: 10px;
+    line-height: 2px;
+    `;
 
 export const LabelLeft = styled.div`
     font-style: normal;
