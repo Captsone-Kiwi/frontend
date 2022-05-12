@@ -34,6 +34,18 @@ function EvaluationInformation(props) {
       .catch((error) => console.log("getEvaluationInfo error", error));
   };
 
+  // 평가항목 삭제하기
+  const deleteEvaluation = async () => {
+    await evaluationAPI
+      .deleteEvaluation(props.evalId)
+      .then((res) => {
+        alert("해당 평가항목을 삭제하시겠습니까?");
+        window.location.reload();
+        console.log("deleteEvaluation result", res.data);
+      })
+      .catch((error) => console.log("deleteEvaluation error", error));
+  };
+
   return (
     <style.evaluationDetail>
       <style.leftDiv>
@@ -42,7 +54,7 @@ function EvaluationInformation(props) {
       </style.leftDiv>
       <style.rightDiv>
         <style.greenButton>편집</style.greenButton>
-        <style.Buttons>삭제</style.Buttons>
+        <style.Buttons onClick={deleteEvaluation}>삭제</style.Buttons>
       </style.rightDiv>
     </style.evaluationDetail>
   );
