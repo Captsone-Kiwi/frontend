@@ -39,7 +39,7 @@ function CategorySelect(props) {
   );
 
   return (
-    <div style={{ margin: "8px 0", width: "20%", minWidth: "190px" }}>
+    <div style={{ margin: "8px 0", width: "17%" }}>
       <CreatableSelect
         // isClearable
         placeholder={"카테고리 선택.."}

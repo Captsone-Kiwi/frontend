@@ -4,6 +4,7 @@ import SideMenu from "../../components/SideMenu/sideMenu";
 import CategorySelect from "../../components/SelectForm/categorySelect";
 import TypeSelect from "../../components/SelectForm/typeSelect";
 import QuestionInput from "../../components/InputTextForm/QuestionInput";
+import MaxScoreInput from "../../components/InputTextForm/maxScoreInput";
 import * as style from "./styles";
 import evaluationAPI from "../../api/evaluationAPI";
 
@@ -34,6 +35,21 @@ function UploadEvaluation() {
   console.log("평가항목 제목 저장", evalName);
 
   const [currQues, setCurrQues] = useState(0);
+
+  const removeQuestion = (e, index) => {
+    const setTitle = { ...evaluationInfo };
+    if (evaluationInfo.evaluationList.length > 1) {
+      setCurrQues(currQues - 1);
+      setTitle["evaluationList"] = setTitle["evaluationList"].filter(
+        (val, idx) => {
+          return idx !== index;
+        }
+      );
+      setEvaluationInfo(setTitle);
+    } else {
+      alert("한 개 이상의 질문 항목을 입력해주세요.");
+    }
+  };
 
   const addQuestions = () => {
     setCurrQues(currQues + 1);
@@ -85,15 +101,18 @@ function UploadEvaluation() {
             />
           </style.topDiv>
           <style.middleDiv>
-            <style.smallDiv2>
+            <style.smallDiv>
               <style.Text>카테고리</style.Text>
-            </style.smallDiv2>
-            <style.smallDiv1>
+            </style.smallDiv>
+            <style.smallDiv style={{ margin: "0 260px" }}>
               <style.Text>질문 항목</style.Text>
-            </style.smallDiv1>
-            <style.smallDiv2>
+            </style.smallDiv>
+            <style.smallDiv style={{ margin: "0px 30px 0 0" }}>
               <style.Text>항목 유형</style.Text>
-            </style.smallDiv2>
+            </style.smallDiv>
+            <style.smallDiv style={{ margin: "0 -18px 0px 0px" }}>
+              <style.Text>최대 점수</style.Text>
+            </style.smallDiv>
           </style.middleDiv>
           <style.bottomDiv>
             {evaluationInfo.evaluationList.map((e, index) => (
@@ -104,7 +123,7 @@ function UploadEvaluation() {
                   index={index}
                 />
                 <QuestionInput
-                  name="interviewer"
+                  name="title"
                   index={index}
                   key={index}
                   // key={shortid.generate()}
@@ -118,6 +137,29 @@ function UploadEvaluation() {
                   setEvaluationInfo={setEvaluationInfo}
                   index={index}
                 />
+                <MaxScoreInput
+                  name="maxScore"
+                  index={index}
+                  key={index}
+                  // key={shortid.generate()}
+                  evaluationInfo={evaluationInfo}
+                  setEvaluationInfo={setEvaluationInfo}
+                  currQues={currQues}
+                  setCurrQues={setCurrQues}
+                />
+                <style.removeBtn
+                  name="title"
+                  index={index}
+                  onClick={(e) => {
+                    removeQuestion(e, index);
+                    console.log("index:", index);
+                  }}
+                >
+                  <style.removeImg
+                    name="title"
+                    src="/images/common/deleteBtn.png"
+                  />
+                </style.removeBtn>
               </style.EvalDiv>
             ))}
             <style.addBtn name="title" onClick={addQuestions}>

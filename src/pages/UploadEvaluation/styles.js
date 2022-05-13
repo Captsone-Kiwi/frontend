@@ -44,7 +44,6 @@ export const Span = styled.p`
 export const topDiv = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
   padding: 15px;
 `;
 
@@ -67,18 +66,10 @@ export const middleDiv = styled.div`
   padding: 7px;
   border-bottom: 1px solid #c4c4c4;
   margin-bottom: 10px;
+  justify-content: space-evenly;
 `;
 
-export const smallDiv1 = styled.div`
-  width: 60%;
-  min-width: 500px;
-  display: flex;
-  justify-content: center;
-`;
-
-export const smallDiv2 = styled.div`
-  width: 20%;
-  min-width: 190px;
+export const smallDiv = styled.div`
   display: flex;
   justify-content: center;
 `;
@@ -96,13 +87,12 @@ export const bottomDiv = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 1000px;
 `;
 
 export const EvalDiv = styled.div`
   width: 100%;
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-evenly;
   padding: 8px;
 `;
 
@@ -111,7 +101,7 @@ export const addBtn = styled.button`
   padding: unset;
   background: transparent;
   border: none;
-  margin-top: 100px;
+  margin-top: 120px;
   &:hover {
     cursor: pointer;
   }
@@ -124,6 +114,7 @@ export const addImg = styled.img`
 export const buttonSection = styled.div`
   display: flex;
   align-self: flex-end;
+  margin-top: 200px;
 `;
 
 export const Button = styled.button`
@@ -139,4 +130,17 @@ export const Button = styled.button`
   &:hover {
     cursor: pointer;
   }
+`;
+
+export const removeBtn = styled.button`
+  align-self: center;
+  background: transparent;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const removeImg = styled.img`
+  width: 25px;
 `;

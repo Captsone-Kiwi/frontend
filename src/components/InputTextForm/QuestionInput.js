@@ -31,25 +31,14 @@ function QuestionInput(props) {
   }, []);
 
   return (
-    <>
-      <style.QuestionInput
-        name="title"
-        className={"question-input" + props.index}
-        onChange={(e) => {
-          questionList(e, props.index);
-        }}
-        InputProps={{ disableUnderline: true }}
-      />
-      <style.removeBtn
-        name="title"
-        onClick={(e) => {
-          removeQuestion(e, props.index);
-          console.log("index:", props.index);
-        }}
-      >
-        <style.removeImg name="title" src="/images/common/removeBtn.png" />
-      </style.removeBtn>
-    </>
+    <style.QuestionInput
+      name="title"
+      className={"question-input" + props.index}
+      onChange={(e) => {
+        questionList(e, props.index);
+      }}
+      InputProps={{ disableUnderline: true }}
+    />
   );
 }
 
