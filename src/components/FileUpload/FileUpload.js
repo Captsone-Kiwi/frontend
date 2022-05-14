@@ -1,56 +1,76 @@
 import React, { useState } from "react";
 import Message from "./Message";
 import Progress from "./Progress";
-import axios from "axios";
 import * as style from "./styles";
+import resumeAPI from "../../api/resumeAPI";
 
 const FileUpload = () => {
-  const [file, setFile] = useState("");
-  const [filename, setFilename] = useState("Choose File");
+  const [file, setFile] = useState([]);
+  const [filename, setFilename] = useState("No File Choose");
   const [uploadedFile, setUploadedFile] = useState({});
   const [message, setMessage] = useState("");
   const [uploadPercentage, setUploadPercentage] = useState(0);
 
   const onChange = (e) => {
-    setFile(e.target.files[0]);
-    setFilename(e.target.files[0].name);
+    console.log(
+      "e.target.files[0]",
+      e.target.files[0],
+      "e.target.files[0].name",
+      e.target.files[0]
+    );
+    // setFile(e.target.files[0]);
+    // setFilename(e.target.files[0].name);
+    setFile(e.target.files);
   };
 
   const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("file", file);
-
-    try {
-      const res = await axios.post("/insertResume", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-        onUploadProgress: (progressEvent) => {
-          setUploadPercentage(
-            parseInt(
-              Math.round((progressEvent.loaded * 100) / progressEvent.total)
-            )
-          );
-        },
+    for (let i = 0; i < file.length; i++) {
+      formData.append("file", file[i]);
+    }
+    // formData.append("file", file);
+    await resumeAPI
+      .insertResume({
+        file: file,
+      })
+      .then((res) => {
+        setFile(res.data.data);
+        console.log("insertResume result", res.data);
+      })
+      .catch((error) => {
+        console.log("insertResume error", error);
+        setUploadPercentage(0);
       });
 
-      // Clear percentage
-      setTimeout(() => setUploadPercentage(0), 10000);
+    // try {
+    //   const res = await axios.post("/insertResume", formData, {
+    //     headers: {
+    //       "Content-Type": "multipart/form-data",
+    //     },
+    //     onUploadProgress: (progressEvent) => {
+    //       setUploadPercentage(
+    //         parseInt(
+    //           Math.round((progressEvent.loaded * 100) / progressEvent.total)
+    //         )
+    //       );
+    //     },
+    //   });
 
-      const { fileName, filePath } = res.data;
+    //   // Clear percentage
+    //   setTimeout(() => setUploadPercentage(0), 10000);
 
-      setUploadedFile({ fileName, filePath });
-
-      setMessage("File Uploaded");
-    } catch (err) {
-      if (err.response.status === 500) {
-        setMessage("There was a problem with the server");
-      } else {
-        setMessage(err.response.data.msg);
-      }
-      setUploadPercentage(0);
-    }
+    //   const { fileName, filePath } = res.data;
+    //   setUploadedFile({ fileName, filePath });
+    //   setMessage("File Uploaded");
+    // } catch (err) {
+    //   if (err.response.status === 500) {
+    //     setMessage("There was a problem with the server");
+    //   } else {
+    //     setMessage(err.response.data.msg);
+    //   }
+    //   setUploadPercentage(0);
+    // }
   };
 
   return (
@@ -59,13 +79,12 @@ const FileUpload = () => {
       <style.formDiv onSubmit={onSubmit}>
         <style.uploadContainer>
           <style.fileImg src="/images/common/fileIcon.png" />
-          <style.fileText>Drag & Drop a File Here</style.fileText>
+          <style.fileText>Uploading Resume Here</style.fileText>
           <style.fileLabel for="customFile" onChange={onChange}>
-            <p style={{ marginBlock: "0" }}>Or</p>
             <p
               style={{ color: "#3CB371", marginLeft: "7px", marginBlock: "0" }}
             >
-              Click Here to Add Your Files
+              Click Here
             </p>
           </style.fileLabel>
           <style.fileInput

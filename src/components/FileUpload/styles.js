@@ -39,7 +39,8 @@ export const fileText = styled.text`
 `;
 
 export const fileLabel = styled.label`
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bold;
   display: flex;
   color: #7a7a7a;
   margin-top: 10px;

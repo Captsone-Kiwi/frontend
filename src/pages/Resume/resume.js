@@ -11,7 +11,6 @@ function Resume(props) {
   const [side, setSide] = useState("resume");
 
   useEffect(() => {
-    // getEvaluationInfo();
     getEvaluationId();
   }, [state]);
 
