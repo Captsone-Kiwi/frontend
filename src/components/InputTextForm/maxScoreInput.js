@@ -3,15 +3,13 @@ import React, { useState, useEffect } from "react";
 import * as style from "./questionStyles";
 
 function MaxScoreInput(props) {
-  //   const questionList = (e, index) => {
-  //     const setTitle = { ...props.evaluationInfo };
-  //     setTitle["evaluationList"][props.index][e.target.name] = e.target.value;
-  //     props.setEvaluationInfo(setTitle);
-  //     // props.currQues(index);
-  //   };
-
-  console.log("index", props.index);
-
+  const scoreList = (e, index) => {
+    const setTitle = { ...props.evaluationInfo };
+    setTitle["evaluationList"][props.index][e.target.name] = e.target.value;
+    props.setEvaluationInfo(setTitle);
+    // console.log("index", index);
+    // props.currQues(index);
+  };
   useEffect(() => {
     // const input = document.querySelector(`.maxScore-input${props.index}`);
     // input.value = props.evaluationInfo.evaluationList[props.index]["title"];
@@ -21,13 +19,18 @@ function MaxScoreInput(props) {
 
   return (
     <style.ScoreInput
-      name="maxScore"
+      name="range"
       id="score-input"
-      // className={"maxScore-input" + props.index}
-      // onChange={(e) => {
-      //   questionList(e, props.index);
-      // }}
+      className={"maxScore-input" + props.index}
+      onChange={(e) => {
+        scoreList(e, props.index);
+      }}
       InputProps={{ disableUnderline: true }}
+      disabled={
+        props.evaluationInfo.evaluationList[props.index].type === 1
+          ? true
+          : false
+      }
     />
   );
 }

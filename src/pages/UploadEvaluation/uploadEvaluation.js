@@ -21,6 +21,7 @@ function UploadEvaluation() {
         category: "",
         title: "",
         type: 0,
+        range: 0,
       },
     ],
   });
@@ -58,6 +59,7 @@ function UploadEvaluation() {
       category: "",
       title: "",
       type: 0,
+      range: 0,
     };
     setEvaluationInfo(setQues);
   };
@@ -138,7 +140,7 @@ function UploadEvaluation() {
                   index={index}
                 />
                 <MaxScoreInput
-                  name="maxScore"
+                  name="range"
                   index={index}
                   key={index}
                   // key={shortid.generate()}
