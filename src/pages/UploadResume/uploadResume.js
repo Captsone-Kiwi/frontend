@@ -6,14 +6,14 @@ import * as style from "./styles";
 
 function UploadResume() {
   const navigator = useNavigate();
-  const [side, setSide] = useState("upload");
+  const [side, setSide] = useState("resume");
 
   return (
     <style.mainContainer>
       <SideMenu side={side} setSide={setSide} />
       <style.uploadContainer>
         <style.Container>
-          <style.prevBtn onClick={() => navigator("/upload")}>
+          <style.prevBtn onClick={() => navigator("/resume")}>
             <style.prevImg src="/images/common/prevBtn.png" />
             뒤로 돌아가기
           </style.prevBtn>

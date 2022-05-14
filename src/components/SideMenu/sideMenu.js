@@ -42,18 +42,18 @@ function SideMenu(props) {
             <style.Span>면접</style.Span>
           </style.sideBtn>
           <style.sideBtn
-            onClick={() => navigator("/upload")}
-            value="upload"
-            current={side === "upload"}
+            onClick={() => navigator("/evaluation")}
+            value="evaluation"
+            current={side === "evaluation"}
           >
-            <style.Span>업로드</style.Span>
+            <style.Span>평가항목</style.Span>
           </style.sideBtn>
           <style.sideBtn
-            onClick={() => navigator("/profile")}
-            value="profile"
-            current={side === "profile"}
+            onClick={() => navigator("/resume")}
+            value="resume"
+            current={side === "resume"}
           >
-            <style.Span>프로필</style.Span>
+            <style.Span>이력서</style.Span>
           </style.sideBtn>
         </>
       ) : memberInfo.memberType === 2 ? (

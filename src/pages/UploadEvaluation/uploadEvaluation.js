@@ -11,7 +11,7 @@ import evaluationAPI from "../../api/evaluationAPI";
 function UploadEvaluation() {
   const navigator = useNavigate();
   const shortid = require("shortid");
-  const [side, setSide] = useState("upload");
+  const [side, setSide] = useState("evaluation");
 
   //평가항목 정보
   const [evaluationInfo, setEvaluationInfo] = useState({
@@ -75,7 +75,7 @@ function UploadEvaluation() {
       .then((res) => {
         console.log("createEvaluation result", res);
         alert("평가 항목 등록 완료");
-        navigator("/upload");
+        navigator("/evaluation");
       })
       .catch((err) => console.log("createEvaluation err", err));
   };
@@ -85,7 +85,7 @@ function UploadEvaluation() {
       <SideMenu side={side} setSide={setSide} />
       <style.uploadContainer>
         <style.Container>
-          <style.prevBtn onClick={() => navigator("/upload")}>
+          <style.prevBtn onClick={() => navigator("/evaluation")}>
             <style.prevImg src="/images/common/prevBtn.png" />
             뒤로 돌아가기
           </style.prevBtn>

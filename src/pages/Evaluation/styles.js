@@ -26,25 +26,9 @@ export const Span = styled.p`
 
 export const selectionDiv = styled.div`
   display: flex;
+  flex-direction: row-reverse;
   width: 100%;
   border-bottom: 3px solid #c4c4c4;
-`;
-
-export const selectBtn = styled.button`
-  width: fit-content;
-  color: #7a7a7a;
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 30px;
-  padding-bottom: 5px;
-  margin-bottom: -3px;
-  border-bottom: ${(props) => (props.current ? "3px solid #3cb371" : "none")};
-  &:hover {
-    cursor: pointer;
-    border-bottom: 3px solid #3cb371;
-  }
 `;
 
 export const uploadBtn = styled.button`
@@ -52,12 +36,11 @@ export const uploadBtn = styled.button`
   border: 2px solid #3cb371;
   background-color: white;
   color: #3cb371;
-  align-self: flex-end;
   padding: 6px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 8px;
-  margin-top: 10px;
+  margin-bottom: 10px;
   &:hover {
     cursor: pointer;
   }
@@ -72,11 +55,27 @@ export const infoDiv = styled.div`
 `;
 
 export const titleSpan = styled.p`
-  font-size: 13px;
+  font-size: 14px;
   color: black;
   width: 21%;
 `;
 
+export const noEvaluation = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 25% 20%;
+  align-items: center;
+  border: 1px solid #e1e6e3;
+`;
+
+export const noEvaluationText = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+  color: #7a7a7a;
+  margin-block-start: 0;
+`;
+
+// 여기부터 평가항목 이름 불러오는 부분
 export const evaluationDetail = styled.div`
   height: 60px;
   display: flex;
