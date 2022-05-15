@@ -106,7 +106,7 @@ function InterviewList(props) {
                   </style.reserveInterview>
                   <style.dateDiv>
                     <style.interviewSpan style={{ marginLeft: "10px" }}>
-                      시간
+                      날짜 / 시간
                     </style.interviewSpan>
                     <style.interviewSpan>면접명</style.interviewSpan>
                     <style.interviewSpan>참여자</style.interviewSpan>
@@ -126,7 +126,7 @@ function InterviewList(props) {
                 <>
                   <style.dateDiv>
                     <style.interviewSpan style={{ marginLeft: "10px" }}>
-                      시간
+                      날짜 / 시간
                     </style.interviewSpan>
                     <style.interviewSpan>면접명</style.interviewSpan>
                   </style.dateDiv>

@@ -6,7 +6,14 @@ import AuthContext from "../../store";
 
 function InterviewInformation(props) {
   const navigator = useNavigate();
-  const [participant, setParticipant] = useState([]);
+  const [participant, setParticipant] = useState([
+    {
+      email: "",
+      name: "",
+    },
+  ]);
+  console.log("participant", participant);
+
   const [state, actions] = useContext(AuthContext);
   useEffect(() => {
     getParticipant();
@@ -18,7 +25,7 @@ function InterviewInformation(props) {
       .participant(props.interview_id)
       .then((result) => {
         setParticipant(result.data.data);
-        // console.log("participant result", result.data.data);
+        console.log("participant result", result.data);
       })
       .catch((err) => console.log("participant error", err));
   };
@@ -51,8 +58,10 @@ function InterviewInformation(props) {
         </style.interviewSchedule>
         <style.interviewTitle>{props.interview_name}</style.interviewTitle>
         <style.interviewMember>
-          {participant.map((e) => (
-            <style.intervieweeList>{e}</style.intervieweeList>
+          {participant.map((e, idx) => (
+            <style.intervieweeList>
+              {e.email} ( {e.name} )
+            </style.intervieweeList>
           ))}
         </style.interviewMember>
       </style.leftDetail>
