@@ -20,7 +20,7 @@ export const Sidebar = styled.div`
 
 export const WrapIcon = styled.div`
   display: flex;
-  height: 300px;
+  height: 400px;
   flex-direction: column;
   align-items: center;
   list-style: none;
@@ -28,13 +28,12 @@ export const WrapIcon = styled.div`
 `
 
 export const NavMenu = styled.div`
-  background-color: #f7f7f7;
+  background-color: #fff;
   width: fit-content;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: end;
   top: 0;
   left: 0;
   transition: 850ms;
