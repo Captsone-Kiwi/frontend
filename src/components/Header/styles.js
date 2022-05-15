@@ -17,6 +17,9 @@ export const Logo = styled.img`
   margin-left: 4rem;
   background-repeat: no-repeat;
   background-size: contain;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Menu = styled.div`
@@ -39,6 +42,12 @@ export const menuLeft = styled.div`
   height: 100%;
 `;
 
+export const userName = styled.p`
+  font-size: 15px;
+  color: #929292;
+  margin-right: 55px;
+`;
+
 export const MenuBtn = styled.button`
   font-size: 14px;
   cursor: pointer;
@@ -48,5 +57,46 @@ export const MenuBtn = styled.button`
   color: #7a7a7a;
   &.active {
     color: #3cb371;
+  }
+`;
+
+export const LoginButton = styled.button`
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 99px;
+  background-color: rgba(60, 179, 113, 0.2);
+  border: 2px solid rgba(60, 179, 113, 0.2);
+  color: #3cb371;
+  margin: 0 10px 0 0;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const SignUpButton = styled.button`
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 99px;
+  background-color: #3cb371;
+  border: 2px solid #3cb371;
+  color: white;
+  margin: 0 55px 0 0;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const profileIcon = styled.img`
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &:hover {
+    cursor: pointer;
   }
 `;

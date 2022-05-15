@@ -26,11 +26,11 @@ function Login() {
         password: values.password,
       })
       .then((result) => {
-        alert("환영합니다! 마이 페이지로 이동합니다.");
+        alert("환영합니다!");
         console.log("authLogin result", result.data);
         window.sessionStorage.setItem("token", result.data.data);
         actions.setLoginState(true);
-        navigator("/profile");
+        navigator("/");
       })
       .catch((error) => {
         console.log("authLogin error", error);
@@ -78,7 +78,7 @@ function Login() {
             value={values.password}
             onChange={handleChange}
           ></style.textInput>
-          <style.LoginUtil>
+          {/* <style.LoginUtil>
             <style.CheckForm>
               <style.IdCheckBox type="checkbox" />
               <style.Span color="#929292" weight="bold" font="AppleSD">
@@ -88,12 +88,15 @@ function Login() {
             <style.Span color="#3CB371" weight="bold" font="AppleSD">
               Reset Password?
             </style.Span>
-          </style.LoginUtil>
+          </style.LoginUtil> */}
           <style.ButtonContainer>
-            <style.Button onClick={() => navigator("/signup")} type="submit">
+            <style.SignUpButton
+              onClick={() => navigator("/signup")}
+              type="submit"
+            >
               Create an account
-            </style.Button>
-            <style.Button>Login</style.Button>
+            </style.SignUpButton>
+            <style.LoginButton>Login</style.LoginButton>
             {/* <Link onClick={e => (!username || !room) ? e.preventDefault() : null} to={`/main?username=${username}&room=${room}`}>
                 <style.Button>Login</style.Button>
             </Link> */}

@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 140px;
   padding-bottom: 150px;
 `;
 
@@ -79,9 +79,10 @@ export const ButtonContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-top: 80px;
 `;
 
-export const Button = styled.button`
+export const SignUpButton = styled.button`
   width: 45%;
   height: 50px;
   font-size: 18px;
@@ -93,7 +94,26 @@ export const Button = styled.button`
   margin-top: 10px;
   &:hover {
     cursor: pointer;
-    background-color: #3cb371;
-    color: white;
+    background-color: rgba(60, 179, 113, 0.2);
+    border: 2px solid rgba(60, 179, 113, 0.2);
+    color: #3cb371;
+  }
+`;
+
+export const LoginButton = styled.button`
+  width: 45%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 99px;
+  background-color: #3cb371;
+  border: 2px solid #3cb371;
+  color: white;
+  margin-top: 10px;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(60, 179, 113, 0.6);
+    border: 2px solid rgba(60, 179, 113, 0.2);
+    color: #3cb371;
   }
 `;

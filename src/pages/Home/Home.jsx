@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import * as style from "./styles";
 import { useNavigate } from "react-router-dom";
+import authAPI from "../../api/authAPI";
 
 function Home() {
   const navigator = useNavigate();
+  const [user, setUserInfo] = useState();
+
+  const checkUser = async () => {
+    await authAPI
+      .getUser()
+      .then((res) => {
+        setUserInfo(res.data.data);
+        navigator("/interviewlist");
+        console.log("checkUser result", res);
+      })
+      .catch((error) => {
+        alert("로그인을 해야 이용할 수 있습니다.");
+        navigator("/login");
+        console.log("checkUser error", error);
+      });
+  };
 
   return (
     <style.Container>
@@ -15,17 +32,19 @@ function Home() {
             enjoy the <span style={{ color: "#3CB371" }}>Kiwi</span>
           </style.mainTextBold>
           <style.mainTextDetail>
-            I will always remember The day you kissed my lips Light as a feather
-            And it went just like this No, it's never been better Than the
-            summer of 2002
+            Metabus System Optimized for Non-face-to-face Interviews
+          </style.mainTextDetail>
+          <style.mainTextDetail>
+            Reduce recruitment costs for businesses and job seekers
+          </style.mainTextDetail>
+          <style.mainTextDetail>
+            by developing a meta-bus system optimized
+          </style.mainTextDetail>
+          <style.mainTextDetail>
+            for non-face-to-face interviews through the device-free web
           </style.mainTextDetail>
           <style.btnContainer>
-            <style.Button onClick={() => navigator("/signup")}>
-              Sign Up
-            </style.Button>
-            <style.Button onClick={() => navigator("/login")}>
-              Login
-            </style.Button>
+            <style.Button onClick={checkUser}>Start Kiwi</style.Button>
           </style.btnContainer>
         </style.textContainer>
       </style.mainContainer>

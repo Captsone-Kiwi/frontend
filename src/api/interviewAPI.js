@@ -8,7 +8,12 @@ export default {
     return axios.post(`createInterview`, data, tokenConfig());
   },
   getInterview() {
-    console.log("토큰", tokenConfig());
     return axios.get(`getInterview`, tokenConfig());
+  },
+  participant(id) {
+    return axios.get(`participant?id=${id}`);
+  },
+  deleteInterview(id) {
+    return axios.get(`deleteInterview?id=${id}`);
   },
 };

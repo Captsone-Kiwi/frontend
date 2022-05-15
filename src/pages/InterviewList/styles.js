@@ -37,7 +37,7 @@ export const selectBtn = styled.button`
   border: none;
   font-size: 16px;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 30px;
   padding-bottom: 5px;
   margin-bottom: -3px;
   border-bottom: ${(props) => (props.current ? "3px solid #3cb371" : "none")};
@@ -84,6 +84,7 @@ export const interviewDetail = styled.div`
   flex-direction: row;
   align-content: space-between;
   margin: 10px 0;
+  height: fit-content;
 `;
 
 export const leftDetail = styled.div`
@@ -117,7 +118,7 @@ export const interviewDate = styled.p`
 
 export const interviewTime = styled.p`
   color: #3cb371;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   margin: 3px;
 `;
@@ -177,4 +178,18 @@ export const Buttons = styled.button`
   &:hover {
     cursor: pointer;
   }
+`;
+
+export const noInterview = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20%;
+  align-items: center;
+`;
+
+export const noInterviewText = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+  color: #7a7a7a;
+  margin-block-start: 0;
 `;

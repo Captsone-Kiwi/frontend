@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
-import Select from "react-select";
+import SelectTemplate from "react-select";
 import "./styles.css";
 
-function SelectTemplate(props) {
+function TemplateSelect(props) {
   const options = useMemo(
     () => [
       { value: 1, label: "Small (2~3)" },
@@ -17,7 +17,7 @@ function SelectTemplate(props) {
     props.setReserveInfo(setTemplate);
   };
   return (
-    <Select
+    <SelectTemplate
       onChange={handleSelect}
       options={options}
       placeholder={"템플릿 선택"}
@@ -25,4 +25,4 @@ function SelectTemplate(props) {
   );
 }
 
-export default SelectTemplate;
+export default TemplateSelect;

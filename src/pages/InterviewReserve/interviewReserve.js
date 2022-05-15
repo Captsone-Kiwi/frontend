@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import DatePick from "../../components/DatePick/datepick";
 import TimePick from "../../components/TimePick/timepick";
-import SelectTemplate from "../../components/SelectTemplate/selectTemplate";
+import TemplateSelect from "../../components/SelectForm/templateSelect";
 import InterviewerInput from "../../components/InputTextForm/InterviewerInput";
 import IntervieweeInput from "../../components/InputTextForm/IntervieweeInput";
 import * as style from "./styles";
@@ -12,6 +12,7 @@ import interviewAPI from "../../api/interviewAPI";
 
 function InterviewReserve(props) {
   const navigator = useNavigate();
+  const shortid = require("shortid");
   const [side, setSide] = useState("interview");
   const [selectedDay, setSelectedDay] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState(new Date(0, 0, 0));
@@ -35,7 +36,7 @@ function InterviewReserve(props) {
   //날짜 정보 저장
   const dateChange = (e) => {
     const setStartDate = { ...reserveInfo };
-    const dateFormat = dayjs(e).format("YYYY/MM/DD");
+    const dateFormat = dayjs(e).format("YYYY년 MM월 DD일");
     setStartDate["startDate"] = dateFormat;
     setReserveInfo(setStartDate);
   };
@@ -44,7 +45,7 @@ function InterviewReserve(props) {
   const timeChange = (time) => {
     setSelectedTime(time);
     const setStartTime = { ...reserveInfo };
-    const dateFormat = dayjs(time).format("HH/mm");
+    const dateFormat = dayjs(time).format("HH시 mm분");
     setStartTime["startTime"] = dateFormat;
     setReserveInfo(setStartTime);
   };
@@ -128,7 +129,7 @@ function InterviewReserve(props) {
             <style.reserveSection>
               <style.reserveTitle>템플릿</style.reserveTitle>
               <style.selectTemplate>
-                <SelectTemplate
+                <TemplateSelect
                   reserveInfo={reserveInfo}
                   setReserveInfo={setReserveInfo}
                 />
@@ -142,6 +143,7 @@ function InterviewReserve(props) {
                     name="interviewer"
                     index={index}
                     key={index}
+                    // key={shortid.generate()}
                     reserveInfo={reserveInfo}
                     setReserveInfo={setReserveInfo}
                   />
@@ -156,6 +158,7 @@ function InterviewReserve(props) {
                     name="interviewee"
                     index={index}
                     key={index}
+                    // key={shortid.generate()}
                     reserveInfo={reserveInfo}
                     setReserveInfo={setReserveInfo}
                   />
@@ -163,7 +166,16 @@ function InterviewReserve(props) {
               </style.detailContainer>
             </style.reserveSection>
             <style.buttonSection>
-              <style.Button onClick={uploadInterview}>저장</style.Button>
+              <style.Button
+                style={{
+                  backgroundColor: "#3cb371",
+                  border: "none",
+                  color: "white",
+                }}
+                onClick={uploadInterview}
+              >
+                저장
+              </style.Button>
               <style.Button>취소</style.Button>
             </style.buttonSection>
           </style.reserveContainer>

@@ -81,19 +81,20 @@ export const TextBtn = styled.button`
 `;
 
 export const Button = styled.button`
-  width: 48%;
+  width: 40%;
   height: 50px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 99px;
-  background-color: white;
+  background-color: #3cb371;
   border: 2px solid #3cb371;
-  color: #3cb371;
+  color: white;
   align-self: flex-end;
   &:hover {
     cursor: pointer;
-    background-color: #3cb371;
-    color: white;
+    background-color: rgba(60, 179, 113, 0.6);
+    border: 2px solid rgba(60, 179, 113, 0.2);
+    color: #3cb371;
   }
 `;
 
@@ -156,6 +157,7 @@ export const ConfirmButton = styled(Button)`
 export const MemberContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 0 0 50px 0;
 `;
 
 export const MemberBtn = styled.button`
