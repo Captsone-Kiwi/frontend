@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import DatePick from "../../components/DatePick/datepick";
 import TimePick from "../../components/TimePick/timepick";
 import TemplateSelect from "../../components/SelectForm/templateSelect";
+// import EvaluationSelect from "../../components/SelectForm/evaluationSelect";
 import InterviewerInput from "../../components/InputTextForm/InterviewerInput";
 import IntervieweeInput from "../../components/InputTextForm/IntervieweeInput";
 import * as style from "./styles";
 import interviewAPI from "../../api/interviewAPI";
+// import evaluationAPI from "../../api/evaluationAPI";
 
 function InterviewReserve(props) {
   const navigator = useNavigate();
@@ -49,6 +51,41 @@ function InterviewReserve(props) {
     setStartTime["startTime"] = dateFormat;
     setReserveInfo(setStartTime);
   };
+
+  // //평가항목 아이디 리스트 가져오기
+  // useEffect(() => {
+  //   getEvaluationId();
+  // }, []);
+  // const [evalId, setEvalId] = useState([]);
+  // const getEvaluationId = async () => {
+  //   await evaluationAPI
+  //     .getEvaluationIdList()
+  //     .then((res) => {
+  //       setEvalId(res.data.data);
+  //       // console.log("getEvaluationId result", res.data);
+  //     })
+  //     .catch((error) => console.log("getEvaluationId error", error));
+  // };
+
+  // //평가항목 정보 가져오기
+  // const [evaluationName, setEvaluationName] = useState([]);
+  // useEffect(() => {
+  //   getEvaluationInfo();
+  // }, [evalId]);
+  // const getEvaluationInfo = async () => {
+  //   evalId.map(
+  //     async (e, idx) =>
+  //       await evaluationAPI
+  //         .getEvaluation(e)
+  //         .then((res) => {
+  //           evaluationName.push(res.data.data.name);
+  //           // console.log("getEvaluationInfo result", res.data);
+  //         })
+  //         .catch((error) => console.log("getEvaluationInfo error", error))
+  //   );
+  //   setEvaluationName(evaluationName);
+  // };
+  // console.log("이름???", evaluationName);
 
   //인터뷰 업로드
   const uploadInterview = async (event) => {
@@ -135,6 +172,12 @@ function InterviewReserve(props) {
                 />
               </style.selectTemplate>
             </style.reserveSection>
+            {/* <style.reserveSection>
+              <style.reserveTitle>평가 항목</style.reserveTitle>
+              <style.selectTemplate>
+                <EvaluationSelect evaluationName={evaluationName} />
+              </style.selectTemplate>
+            </style.reserveSection> */}
             <style.reserveSection>
               <style.reserveTitle>면접관</style.reserveTitle>
               <style.detailContainer>
