@@ -11,9 +11,9 @@ export default {
     return axios.get(`getInterview`, tokenConfig());
   },
   participant(id) {
-    return axios.get(`/participant?id=${id}`);
+    return axios.get(`participant?id=${id}`);
   },
   deleteInterview(id) {
-    return axios.get(`/deleteInterview?id=${id}`);
+    return axios.get(`deleteInterview?id=${id}`);
   },
 };

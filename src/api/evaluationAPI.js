@@ -13,6 +13,6 @@ export default {
     return axios.get(`getEvaluation?evaluationId=${eval_id}`);
   },
   deleteEvaluation(eval_id) {
-    return axios.get(`/deleteEvaluation?evaluationId=${eval_id}`);
+    return axios.get(`deleteEvaluation?evaluationId=${eval_id}`);
   },
 };

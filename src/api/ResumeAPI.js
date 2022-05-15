@@ -3,8 +3,14 @@ import { tokenConfig } from "./tokenConfig";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  Resume(name) {
-    console.log("토큰", tokenConfig());
+  insertResume(data) {
+    return axios.post(`insertResume`, data, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    });
+  },
+  getResume(name) {
     return axios.get(`getResume?name=${name}`);
   },
 };
