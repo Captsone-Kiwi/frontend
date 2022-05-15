@@ -55,14 +55,33 @@ export const fileInput = styled.input`
   margin-left: 110px;
   display: none;
 `;
-
-export const fileName = styled.label`
+export const noFile = styled.label`
   display: flex;
   align-items: center;
   font-size: 17px;
 `;
 
+export const fileName = styled.label`
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  justify-content: space-between;
+`;
+
+export const Left = styled.div`
+  display: flex;
+`;
+
+export const Right = styled.div`
+  display: flex;
+`;
+
 export const fileIcon = styled.img`
   width: 22px;
   margin: 0 12px;
+`;
+
+export const uploadBtn = styled.button`
+  width: 70px;
+  height: 30px;
 `;

@@ -28,7 +28,7 @@ function UploadResume() {
                 border: "none",
                 color: "white",
               }}
-              //   onClick={uploadEvaluation}
+              //   onClick={uploadResume}
             >
               저장
             </style.Button>
