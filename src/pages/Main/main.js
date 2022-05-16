@@ -46,6 +46,7 @@ const socket = socket_client(server_url);
 let device;
 let producer;
 let data;
+let producer_list = {};
 
 const socketPromise = function (socket) {
   return function request(type, data = {}) {
@@ -69,11 +70,15 @@ async function broadcastProdcuer() {
 }
 
 // 1. 서버 라우터의 rtp capabilites를 받아와서 아래 내용을 처리.
+let flag = 0;
 async function getRtpCapabilities() {
   console.log("Requesting Rtp Capabilities");
+  flag++;
+  if (flag != 1) return 0;
   const data = await socket.request("getRtpCapabilities");
   rtp_capabilities = data.rtpCapabilities;
   console.log("Got Rtp Capabiltites : ", rtp_capabilities);
+  return 1;
 }
 
 // 2. 새로운 Device를 생성
@@ -179,6 +184,7 @@ async function consume(consumer_transport, producer_id) {
   });
 
   console.log("=============== CONSUME ===============");
+  producer_list[producer_id] = true;
   console.log(producer_id, consumer_transport);
   console.log("consume data : ", data);
 
@@ -268,11 +274,17 @@ function Main() {
   // const server_url = `http://54.208.151.152:3000`;
   socket.request = socketPromise(socket);
 
+  socket.on("disconnectedConsumer", async ({ producerId }) => {
+    console.log("disconnected : ", producerId);
+  });
+
   socket.on("connection-success", async ({ socketId }) => {
     console.log(socketId);
 
     // 1. 서버 라우터의 rtp capabilites를 받아와서 아래 내용을 처리.
-    await getRtpCapabilities();
+    let f = await getRtpCapabilities();
+    console.log(f);
+    if (f == 0) return;
 
     // 2. 새로운 Device를 생성
     // device.load()를 통해 라우터의 정보를 알아낸다.
@@ -342,12 +354,13 @@ function Main() {
             break;
           }
         }
-
         // find consumer id from consumer transport
         const consumer_id = consumer_dict[consumer_transport.id];
         await socket.request("resume", { consumer_id });
       }
     });
+    if (producer_list[producer_id] == true) return;
+    producer_list[producer_id] = true;
     let remote_stream = await consume(consumer_transport, producer_id);
     console.log("REMOTE STREAM");
     console.log(remote_stream);

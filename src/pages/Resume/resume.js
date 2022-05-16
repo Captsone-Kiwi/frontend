@@ -11,15 +11,16 @@ function Resume(props) {
   const [side, setSide] = useState("resume");
 
   const [filename, setFileName] = useState([]);
+  console.log("filename list", filename);
   useEffect(() => {
     getResume();
   }, [state]);
   const getResume = async () => {
     await resumeAPI
-      .getResume()
+      .getCreatedResumeList()
       .then((res) => {
         setFileName(res.data.data);
-        console.log("getResume result", res.data);
+        // console.log("getResume result", res.data);
       })
       .catch((error) => console.log("getResume error", error));
   };
@@ -40,6 +41,29 @@ function Resume(props) {
               제목
             </style.titleSpan>
           </style.infoDiv>
+          {filename.length === 0 ? (
+            <style.noResume>
+              <style.noResumeText>등록된 이력서가 없습니다.</style.noResumeText>
+              <style.noResumeText>
+                새 이력서를 등록하려면 이력서 업로드 버튼을 눌러 진행해주세요.
+              </style.noResumeText>
+            </style.noResume>
+          ) : (
+            <>
+              {filename.map((e, idx) => (
+                <style.evaluationDetail>
+                  <style.leftDiv>
+                    <style.fileImg src="/images/common/fileIcon.png" />
+                    <style.evaluationTitle>{e}</style.evaluationTitle>
+                  </style.leftDiv>
+                  <style.rightDiv>
+                    <style.greenButton>보기</style.greenButton>
+                    <style.Buttons>삭제</style.Buttons>
+                  </style.rightDiv>
+                </style.evaluationDetail>
+              ))}
+            </>
+          )}
         </style.detailContainer>
       </style.uploadContainer>
     </style.mainContainer>

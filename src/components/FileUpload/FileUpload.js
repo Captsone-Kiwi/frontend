@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Progress from "./Progress";
 import * as style from "./styles";
 import axios from "axios";
+import { tokenConfig } from "../../api/tokenConfig";
+import resumeAPI from "../../api/resumeAPI";
 
 function FileUpload() {
   const navigator = useNavigate();
@@ -23,47 +25,50 @@ function FileUpload() {
       formData.append("file", file[i]);
     }
     // formData.append("file", file);
-    // await resumeAPI
-    //   .insertResume({
-    //     file: file,
-    //   })
-    //   .then((res) => {
-    //     // setFile(res.data.data);
-    //     console.log("insertResume result", res.data);
-    //   })
-    //   .catch((error) => {
-    //     console.log("insertResume error", error);
-    //     setUploadPercentage(0);
-    //   });
-
-    try {
-      const res = await axios.post("/insertResume", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-        onUploadProgress: (progressEvent) => {
-          setUploadPercentage(
-            parseInt(
-              Math.round((progressEvent.loaded * 100) / progressEvent.total)
-            )
-          );
-        },
+    await resumeAPI
+      .insertResume(formData)
+      .then((res) => {
+        // setFile(res.data.data);
+        console.log("insertResume result", res.data);
+        setUploadPercentage(100);
+      })
+      .catch((error) => {
+        console.log("insertResume error", error);
+        setUploadPercentage(0);
       });
-      // Clear percentage
-      // setTimeout(() => setUploadPercentage(0), 10000);
-    } catch (err) {
-      if (err.response.status === 500) {
-        console.log("There was a problem with the server");
-      } else {
-        console.log(err.response.data.msg);
-      }
-      setUploadPercentage(0);
-    }
+
+    // try {
+    //   const res = await axios.post("/insertResume", formData, tokenConfig(), {
+    //     headers: {
+    //       "Content-Type": "multipart/form-data",
+    //     },
+    //     onUploadProgress: (progressEvent) => {
+    //       setUploadPercentage(
+    //         parseInt(
+    //           Math.round((progressEvent.loaded * 100) / progressEvent.total)
+    //         )
+    //       );
+    //     },
+    //   });
+    //   // Clear percentage
+    //   // setTimeout(() => setUploadPercentage(0), 10000);
+    // } catch (err) {
+    //   if (err.response.status === 500) {
+    //     console.log("There was a problem with the server");
+    //   } else {
+    //     console.log(err.response.data.msg);
+    //   }
+    //   setUploadPercentage(0);
+    // }
   };
 
   const finishResume = () => {
-    alert("상태 저장 완료");
-    navigator("/resume");
+    if (file.length === 0) {
+      alert("이력서를 업로드 해주세요!");
+    } else {
+      alert("이력서 저장 완료");
+      navigator("/resume");
+    }
   };
 
   return (
