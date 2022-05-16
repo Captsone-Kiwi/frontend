@@ -2,28 +2,26 @@ import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
-import evaluationAPI from "../../api/evaluationAPI";
 import AuthContext from "../../store";
+import resumeAPI from "../../api/resumeAPI";
 
 function Resume(props) {
   const navigator = useNavigate();
   const [state, actions] = useContext(AuthContext);
   const [side, setSide] = useState("resume");
 
+  const [filename, setFileName] = useState([]);
   useEffect(() => {
-    getEvaluationId();
+    getResume();
   }, [state]);
-
-  const [evalId, setEvalId] = useState([]);
-  //평가항목 아이디 리스트 가져오기
-  const getEvaluationId = async () => {
-    await evaluationAPI
-      .getEvaluationIdList()
+  const getResume = async () => {
+    await resumeAPI
+      .getResume()
       .then((res) => {
-        setEvalId(res.data.data);
-        console.log("getEvaluationId result", res.data);
+        setFileName(res.data.data);
+        console.log("getResume result", res.data);
       })
-      .catch((error) => console.log("getEvaluationId error", error));
+      .catch((error) => console.log("getResume error", error));
   };
 
   return (

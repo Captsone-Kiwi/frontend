@@ -2,7 +2,6 @@ export { default as Home } from "./Home/Home";
 export { default as Main } from "./Main/main";
 export { default as Login } from "./Login/login";
 export { default as SignUp } from "./SignUp/signUp";
-export { default as Profile } from "./Profile/profile";
 export { default as Resume } from "./Resume/resume";
 export { default as UploadResume } from "./UploadResume/uploadResume";
 export { default as Evaluation } from "./Evaluation/evaluation";

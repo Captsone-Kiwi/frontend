@@ -1,12 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Progress from "./Progress";
 import * as style from "./styles";
-import resumeAPI from "../../api/resumeAPI";
 import axios from "axios";
 
 function FileUpload() {
+  const navigator = useNavigate();
   const [file, setFile] = useState([]);
-  // const [uploadedFile, setUploadedFile] = useState({});
   const [uploadPercentage, setUploadPercentage] = useState(0);
 
   const onChange = (e) => {
@@ -61,6 +61,11 @@ function FileUpload() {
     }
   };
 
+  const finishResume = () => {
+    alert("상태 저장 완료");
+    navigator("/resume");
+  };
+
   return (
     <style.mainContainer>
       <style.formDiv onSubmit={onSubmit}>
@@ -77,7 +82,7 @@ function FileUpload() {
               type="file"
               className="custom-file-input"
               id="customFile"
-              multiple
+              // multiple
             />
           </style.fileLabel>
         </style.uploadContainer>
@@ -109,6 +114,19 @@ function FileUpload() {
         )}
         <Progress percentage={uploadPercentage} />
       </style.formDiv>
+      <style.buttonSection>
+        <style.Button
+          style={{
+            backgroundColor: "#3cb371",
+            border: "none",
+            color: "white",
+          }}
+          onClick={finishResume}
+        >
+          저장
+        </style.Button>
+        <style.Button>취소</style.Button>
+      </style.buttonSection>
       {/* {uploadedFile ? (
         <div className="row mt-5">
           <div className="col-md-6 m-auto">

@@ -47,17 +47,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/profile" element={<Profile />} />
         <Route path="/interviewlist" element={<InterviewList />} />
         <Route path="/interviewreserve" element={<InterviewReserve />} />
         <Route path="/evaluation" element={<Evaluation />} />
         <Route path="/upload_evaluation" element={<UploadEvaluation />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/upload_resume" element={<UploadResume />} />
-        <Route
-          path="/main?username=:name?room=:interview_id"
-          element={<Main />}
-        />
+        <Route path="/main" element={<Main />} />
       </Routes>
     </Router>
   );

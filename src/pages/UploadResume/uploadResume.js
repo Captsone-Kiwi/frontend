@@ -21,19 +21,6 @@ function UploadResume() {
           <style.resumeUpload>
             <FileUpload />
           </style.resumeUpload>
-          <style.buttonSection>
-            <style.Button
-              style={{
-                backgroundColor: "#3cb371",
-                border: "none",
-                color: "white",
-              }}
-              //   onClick={uploadResume}
-            >
-              저장
-            </style.Button>
-            <style.Button>취소</style.Button>
-          </style.buttonSection>
         </style.Container>
       </style.uploadContainer>
     </style.mainContainer>
