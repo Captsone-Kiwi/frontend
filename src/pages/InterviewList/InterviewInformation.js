@@ -10,6 +10,7 @@ function InterviewInformation(props) {
     {
       email: "",
       name: "",
+      member_type: 0,
     },
   ]);
   console.log("participant", participant);
@@ -45,7 +46,7 @@ function InterviewInformation(props) {
   //원하는 링크로 이동
   const gotoGdevelop = () => {
     navigator(
-      `/main?username=${props.memberInfo.name}?room=${props.interview_id}`
+      `/main?username=${props.memberInfo.name}&room=${props.interview_id}`
     );
   };
 
@@ -60,7 +61,12 @@ function InterviewInformation(props) {
         <style.interviewMember>
           {participant.map((e, idx) => (
             <style.intervieweeList>
-              {e.email} ( {e.name} )
+              {e.name} ({e.email}):
+              {e.member_type === 1
+                ? " 면접관"
+                : e.member_type === 2
+                ? " 면접자"
+                : null}
             </style.intervieweeList>
           ))}
         </style.interviewMember>

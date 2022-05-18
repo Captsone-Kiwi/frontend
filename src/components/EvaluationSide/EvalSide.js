@@ -7,10 +7,10 @@ import queryString from "query-string";
 import evaluationAPI from "../../api/evaluationAPI";
 import interviewAPI from "../../api/interviewAPI";
 // component 불러오기
-import EvalList from "./EvalList";
+import EvalPerson from "./EvalPerson";
 import EvalQuestions from "./EvalQuestions";
 
-function Eval() {
+function EvalSide() {
   const [state, actions] = useContext(AuthContext);
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
@@ -105,9 +105,9 @@ function Eval() {
 
   return (
     <>
-      <EvalList quests={data} onToggle={onToggle} />
+      <EvalPerson quests={data} onToggle={onToggle} />
     </>
   );
 }
 
-export default Eval;
+export default EvalSide;

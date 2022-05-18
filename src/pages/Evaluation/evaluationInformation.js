@@ -15,6 +15,7 @@ function EvaluationInformation(props) {
         category: "",
         title: "",
         type: 0,
+        data: 0,
       },
     ],
   });

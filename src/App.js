@@ -6,7 +6,6 @@ import {
   Home,
   Login,
   SignUp,
-  Profile,
   InterviewList,
   InterviewReserve,
   Evaluation,

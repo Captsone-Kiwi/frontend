@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import * as style from "./styles";
 import EvalQuestions from "./EvalQuestions";
 
-function EvalList({ quests, onToggle }) {
+function EvalPerson({ quests, onToggle }) {
   const names = ["백소현", "김찬미", "양진우"];
   const [isOpenName, setIsOpenName] = useState(false);
   const [selectedName, setSelectedNames] = useState(names[0]);
@@ -52,4 +52,4 @@ function EvalList({ quests, onToggle }) {
   );
 }
 
-export default EvalList;
+export default EvalPerson;

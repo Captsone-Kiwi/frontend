@@ -19,7 +19,7 @@ function MaxScoreInput(props) {
 
   return (
     <style.ScoreInput
-      name="range"
+      name="data"
       id="score-input"
       className={"maxScore-input" + props.index}
       onChange={(e) => {
