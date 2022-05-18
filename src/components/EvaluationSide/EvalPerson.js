@@ -1,54 +1,33 @@
 import zIndex from "@mui/material/styles/zIndex";
 import React, { useState } from "react";
 import * as style from "./styles";
-import EvalQuestions from "./EvalQuestions";
 
-function EvalPerson({ quests, onToggle }) {
-  const names = ["백소현", "김찬미", "양진우"];
+function EvalPerson(props) {
   const [isOpenName, setIsOpenName] = useState(false);
-  const [selectedName, setSelectedNames] = useState(names[0]);
   const togglingName = () => setIsOpenName(!isOpenName);
   const onNameClicked = (value) => () => {
-    setSelectedNames(value);
+    props.setSelectedNames(value);
     setIsOpenName(false);
   };
-
-  console.log(quests);
   return (
-    <div>
-      <style.Main>
-        <style.DropDownContainer>
-          <style.DropDownHeader onClick={togglingName}>
-            {selectedName}
-          </style.DropDownHeader>
+    <style.Main>
+      <style.DropDownContainer>
+        <style.DropDownHeader onClick={togglingName}>
+          {props.selectedName}
+        </style.DropDownHeader>
+        <style.DropDownListContainer>
           {isOpenName && (
-            <style.DropDownListContainer>
-              <style.DropDownList>
-                {names.map((name) => (
-                  <style.ListItem
-                    onClick={onNameClicked(name)}
-                    key={Math.random()}
-                  >
-                    {name}
-                  </style.ListItem>
-                ))}
-              </style.DropDownList>
-            </style.DropDownListContainer>
+            <style.DropDownList>
+              {props.interviewee.map((e) => (
+                <style.ListItem onClick={onNameClicked(e)} key={Math.random()}>
+                  {e}
+                </style.ListItem>
+              ))}
+            </style.DropDownList>
           )}
-        </style.DropDownContainer>
-      </style.Main>
-
-      {quests.map((quest) =>
-        quest.label === selectedName ? (
-          <EvalQuestions
-            quest={quest}
-            key={quest.label}
-            onToggle={onToggle}
-            name={selectedName}
-          />
-        ) : null
-      )}
-    </div>
+        </style.DropDownListContainer>
+      </style.DropDownContainer>
+    </style.Main>
   );
 }
 

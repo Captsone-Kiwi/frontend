@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { AbsoluteCenter } from "@chakra-ui/layout";
 import AuthContext from "../../store";
 import queryString from "query-string";
+import * as style from "./styles";
 // API 불러오기
 import evaluationAPI from "../../api/evaluationAPI";
 import interviewAPI from "../../api/interviewAPI";
@@ -15,39 +16,25 @@ function EvalSide() {
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
 
-  const [questions, setQuestions] = useState({
-    name: "",
-    evaluationList: [
-      {
-        category: "",
-        title: null,
-        type: 0,
-        questions: [
-          {
-            title: "",
-            type: 1,
-            data: 0,
-          },
-        ],
-      },
-    ],
-  });
-  //   console.log("questions", questions);
+  // const [questions, setQuestions] = useState({
+  //   name: "",
+  //   evaluationList: [
+  //     {
+  //       category: "",
+  //       title: null,
+  //       type: 0,
+  //       questions: [
+  //         {
+  //           title: "",
+  //           type: 1,
+  //           data: 0,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // });
 
-  //평가항목 아이디 리스트 가져오기
-  //   useEffect(() => {
-  //     getEvaluationId();
-  //   }, [state]);
-  //   const [evalId, setEvalId] = useState([]);
-  //   const getEvaluationId = async () => {
-  //     await evaluationAPI
-  //       .getEvaluationIdList()
-  //       .then((res) => {
-  //         setEvalId(res.data.data);
-  //         console.log("getEvaluationId result", res.data);
-  //       })
-  //       .catch((error) => console.log("getEvaluationId error", error));
-  //   };
+  const [questions, setQuestions] = useState([]);
 
   //평가항목 정보 가져오기
   useEffect(() => {
@@ -63,50 +50,46 @@ function EvalSide() {
       .catch((error) => console.log("getEvaluationInfo error", error));
   };
 
+  // 참여자 정보 가져오기
   useEffect(() => {
     getParticipant();
   }, [state]);
-  // 참여자 정보 가져오기
   const [participant, setParticipant] = useState([]);
   const getParticipant = async () => {
     await interviewAPI
       .participant(room)
       .then((result) => {
         setParticipant(result.data.data);
-        console.log("participant result", result.data);
+        // console.log("participant result", result.data);
       })
       .catch((err) => console.log("participant error", err));
   };
-
-  const Questions = questions.evaluationList;
-  console.log("Questions", Questions);
-  const names = ["백소현", "김찬미", "양진우"];
-
-  const [data, setData] = useState(
-    names.map((Label, _) => ({
-      label: Label,
-      evaluation: questions.evaluationList,
-    }))
-  );
-  console.log("data", data);
-
-  const onToggle = (e, index, idx, selectedName) => {
-    const array = JSON.parse(JSON.stringify(data));
-
-    const name = array.findIndex((emp) => emp.label === selectedName);
-    const temp = array.map((d) => (d.label === selectedName ? { ...d } : null));
-    temp[name]["evaluation"][index]["questions"][idx]["data"] = e.target.value;
-
-    const copyArray = data.map((d) =>
-      d.label === selectedName ? temp[name] : d
-    );
-    setData(copyArray);
-  };
+  // 참여자 중 면접자인 사람만 배열로 뽑아냄
+  const interviewee = participant
+    .filter((e) => e.member_type === 2)
+    .map((name) => name.name);
+  // 선택된 면접자
+  const [selectedName, setSelectedNames] = useState("면접자 선택");
 
   return (
-    <>
-      <EvalPerson quests={data} onToggle={onToggle} />
-    </>
+    <style.EvalSide>
+      <EvalPerson
+        interviewee={interviewee}
+        selectedName={selectedName}
+        setSelectedNames={setSelectedNames}
+      />
+      {selectedName === "면접자 선택" ? (
+        <style.infoDiv>
+          <style.infoText>면접자를 선택해 평가를 진행해주세요.</style.infoText>
+        </style.infoDiv>
+      ) : (
+        <EvalQuestions
+          questions={questions}
+          interviewee={interviewee}
+          selectedName={selectedName}
+        />
+      )}
+    </style.EvalSide>
   );
 }
 
