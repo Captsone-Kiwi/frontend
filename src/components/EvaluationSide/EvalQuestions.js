@@ -30,9 +30,29 @@ function EvalQuestions(props) {
     setData(copyArray);
   };
 
+  const [score, setScore] = useState(Number(0));
+  const handleBrushSize = (e, newValue, index, idx, selectedName) => {
+    // console.log("e", e.target);
+    // console.log("index -> 사람 인덱스", index);
+    // console.log("idx -> 문제 인덱스", idx);
+    // console.log("interviewee -> 참여자 3명", interviewee);
+    setScore(Number(newValue));
+    const array = JSON.parse(JSON.stringify(data));
+
+    const name = array.findIndex((emp) => emp.label === selectedName);
+    const temp = array.map((d) => (d.label === selectedName ? { ...d } : null));
+    temp[name]["evaluation"][index]["questions"][idx]["data"] =
+      Number(newValue);
+
+    const copyArray = data.map((d) =>
+      d.label === selectedName ? temp[name] : d
+    );
+    setData(copyArray);
+  };
+
   return (
     <>
-      {data.map((question, idx) =>
+      {data.map((question, que_idx) =>
         question.label === props.selectedName
           ? question.evaluation.map((qu, index) =>
               qu.questions.map((q, idx) => (
@@ -47,36 +67,49 @@ function EvalQuestions(props) {
                     style={{ marginBottom: "10px", alignSelf: "center" }}
                   >
                     {!q.type ? (
-                      <RadioGroup
-                        aria-labelledby="demo-radio-buttons-group-label"
-                        defaultValue={q.data}
-                        name="radio-buttons-group"
-                        style={{ flexDirection: "row", alignItems: "center" }}
-                      >
-                        <style.LabelLeft>매우 부족</style.LabelLeft>
-                        {["1", "2", "3", "4", "5"].map((value, i) => (
-                          <React.Fragment key={i}>
-                            <FormControlLabel
-                              value={value}
-                              style={{ margin: "0px" }}
-                              control={
-                                <Radio
-                                  color="success"
-                                  style={{ padding: "6px" }}
-                                  onClick={(e) =>
-                                    onToggle(e, index, idx, props.interviewee)
-                                  }
-                                />
-                              }
-                            />
-                          </React.Fragment>
-                        ))}
-                        <style.LabelRight>매우 우수</style.LabelRight>
-                      </RadioGroup>
+                      <style.SizeSlider
+                        value={score}
+                        onChange={(e, newValue) =>
+                          handleBrushSize(
+                            e,
+                            newValue,
+                            index,
+                            idx,
+                            props.selectedName
+                          )
+                        }
+                        valueLabelDisplay="auto"
+                      />
                     ) : (
+                      // <RadioGroup
+                      //   aria-labelledby="demo-radio-buttons-group-label"
+                      //   defaultValue={q.data}
+                      //   name="radio-buttons-group"
+                      //   style={{ flexDirection: "row", alignItems: "center" }}
+                      // >
+                      //   <style.LabelLeft>매우 부족</style.LabelLeft>
+                      //   {["1", "2", "3", "4", "5"].map((value, i) => (
+                      //     <React.Fragment key={i}>
+                      //       <FormControlLabel
+                      //         value={value}
+                      //         style={{ margin: "0px" }}
+                      //         control={
+                      //           <Radio
+                      //             color="success"
+                      //             style={{ padding: "6px" }}
+                      //             onClick={(e) =>
+                      //               onToggle(e, index, idx, props.interviewee)
+                      //             }
+                      //           />
+                      //         }
+                      //       />
+                      //     </React.Fragment>
+                      //   ))}
+                      //   <style.LabelRight>매우 우수</style.LabelRight>
+                      // </RadioGroup>
                       <input
                         onChange={(e) =>
-                          onToggle(e, index, idx, props.interviewee)
+                          onToggle(e, index, idx, props.selectedName)
                         }
                         value={q.data}
                       />

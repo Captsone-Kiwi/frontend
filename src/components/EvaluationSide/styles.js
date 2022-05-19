@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Slider as Slider1 } from "@material-ui/core";
+import { withStyles } from "@material-ui/styles";
 
 export const QuestionFlex = styled.div`
   display: flex;
@@ -145,3 +147,39 @@ export const ListItem = styled.li`
     color: #000;
   }
 `;
+
+export const SizeSlider = withStyles({
+  root: {
+    color: "#3CB371",
+    height: 8,
+    width: "240px",
+  },
+  thumb: {
+    height: 19,
+    width: 19,
+    backgroundColor: "#3CB371",
+    border: "2px solid",
+    marginTop: -7,
+    marginLeft: -8,
+    "&:focus, &:hover, &$active": {
+      boxShadow: "inherit",
+    },
+    "@media.wide": {
+      backgroundColor: "rgba(12, 112, 12)",
+    },
+  },
+  active: {},
+  valueLabel: {
+    left: "-50%",
+  },
+  track: {
+    height: 7,
+    borderRadius: 4,
+  },
+  rail: {
+    height: 7,
+    borderRadius: 4,
+    color: "#d4d4d4",
+    opacity: 1,
+  },
+})(Slider1);
