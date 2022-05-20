@@ -1,3 +1,78 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2bce6fa5133d4849eb2fd32d34e0d97f38342ffa198ce1fa0f3a330a25eda1fe
-size 2251
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.js",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.7",
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.3",
+    "@mui/material": "^5.7.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@userfront/core": "^0.2.41",
+    "axios": "^0.26.1",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.3.1",
+    "framer-motion": "^6.3.3",
+    "mediasoup-client": "^3.6.51",
+    "query-string": "^7.1.1",
+    "react": "^17.0.2",
+    "react-datepicker": "^4.7.0",
+    "react-dom": "^17.0.2",
+    "react-dropdown-timepicker": "^1.0.4",
+    "react-emoji": "^0.5.0",
+    "react-icons": "^4.3.1",
+    "react-native": "^0.67.3",
+    "react-native-web": "^0.17.6",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "^5.0.1",
+    "react-scroll-to-bottom": "^4.2.0",
+    "react-select": "^5.2.2",
+    "react-slick": "^0.29.0",
+    "react-time-picker": "^4.5.0",
+    "react-time-range": "^1.0.4",
+    "react-toastify": "^9.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.2",
+    "shortid": "^2.2.16",
+    "slick-carousel": "^1.8.1",
+    "socket.io-client": "^2.4.0",
+    "start": "^5.1.0",
+    "styled-components": "^5.3.3",
+    "validator": "^9.2.0",
+    "web-vitals": "^2.1.4",
+    "zxcvbn": "^4.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-datepicker": "^4.3.4"
+  }
+}
