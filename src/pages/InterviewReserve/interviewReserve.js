@@ -52,41 +52,6 @@ function InterviewReserve(props) {
     setReserveInfo(setStartTime);
   };
 
-  // //평가항목 아이디 리스트 가져오기
-  // useEffect(() => {
-  //   getEvaluationId();
-  // }, []);
-  // const [evalId, setEvalId] = useState([]);
-  // const getEvaluationId = async () => {
-  //   await evaluationAPI
-  //     .getEvaluationIdList()
-  //     .then((res) => {
-  //       setEvalId(res.data.data);
-  //       // console.log("getEvaluationId result", res.data);
-  //     })
-  //     .catch((error) => console.log("getEvaluationId error", error));
-  // };
-
-  // //평가항목 정보 가져오기
-  // const [evaluationName, setEvaluationName] = useState([]);
-  // useEffect(() => {
-  //   getEvaluationInfo();
-  // }, [evalId]);
-  // const getEvaluationInfo = async () => {
-  //   evalId.map(
-  //     async (e, idx) =>
-  //       await evaluationAPI
-  //         .getEvaluation(e)
-  //         .then((res) => {
-  //           evaluationName.push(res.data.data.name);
-  //           // console.log("getEvaluationInfo result", res.data);
-  //         })
-  //         .catch((error) => console.log("getEvaluationInfo error", error))
-  //   );
-  //   setEvaluationName(evaluationName);
-  // };
-  // console.log("이름???", evaluationName);
-
   //인터뷰 업로드
   const uploadInterview = async (event) => {
     event.preventDefault();

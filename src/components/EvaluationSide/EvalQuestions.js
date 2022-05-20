@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import zIndex from "@mui/material/styles/zIndex";
-import { keyframes } from "styled-components";
 import FormControl from "@mui/material/FormControl";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
 import SizeSlider from "../../components/SizeSlider/sizeslider";
 import * as style from "./styles";
 
@@ -16,7 +11,7 @@ function EvalQuestions(props) {
       evaluation: Questions,
     }))
   );
-  console.log("data", data);
+  // console.log("data", data);
 
   const onToggle = (e, index, idx, selectedName) => {
     const array = JSON.parse(JSON.stringify(data));

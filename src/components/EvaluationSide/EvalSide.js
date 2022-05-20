@@ -1,6 +1,5 @@
 import React, { useEffect, useContext, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { AbsoluteCenter } from "@chakra-ui/layout";
 import AuthContext from "../../store";
 import queryString from "query-string";
 import * as style from "./styles";
@@ -80,7 +79,12 @@ function EvalSide() {
       />
       {selectedName === "면접자 선택" ? (
         <style.infoDiv>
-          <style.infoText>면접자를 선택해 평가를 진행해주세요.</style.infoText>
+          <style.textDiv>
+            <style.infoText>우측 상단에서</style.infoText>
+            <style.infoText>
+              면접자를 선택해 평가를 진행해주세요.
+            </style.infoText>
+          </style.textDiv>
         </style.infoDiv>
       ) : (
         <EvalQuestions

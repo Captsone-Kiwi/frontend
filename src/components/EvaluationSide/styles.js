@@ -83,11 +83,15 @@ export const DropDownContainer = styled.div`
 `;
 
 export const infoDiv = styled.div`
-  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+`;
+
+export const textDiv = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 400px;
 `;
 
 export const infoText = styled.p`
@@ -95,6 +99,9 @@ export const infoText = styled.p`
   font-size: 15px;
   font-weight: bold;
   color: #7a7a7a;
+  margin-block: 5px;
+  width: fit-content;
+  align-self: center;
 `;
 
 export const DropDownHeader = styled.div`
