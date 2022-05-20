@@ -37,12 +37,17 @@ function Login() {
         alert("비밀번호 또는 이메일이 잘못되었습니다.");
       });
   };
+  const onKeyPress = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+    }
+  };
 
   return (
     <>
       <style.Container>
         <style.Title>Login</style.Title>
-        <style.LoginForm onSubmit={handleSubmit}>
+        <style.LoginForm onKeyPress={onKeyPress} onSubmit={handleSubmit}>
           <style.Span
             color="#7a7a7a"
             size="14px"

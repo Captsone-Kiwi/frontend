@@ -18,6 +18,9 @@ function UploadResume() {
             뒤로 돌아가기
           </style.prevBtn>
           <style.Span>이력서 업로드</style.Span>
+          <style.detailText>
+            * 이력서는 면접자의 이름으로 설정해주세요.
+          </style.detailText>
           <style.resumeUpload>
             <FileUpload />
           </style.resumeUpload>

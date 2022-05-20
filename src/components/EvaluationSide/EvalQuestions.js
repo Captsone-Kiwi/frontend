@@ -5,6 +5,7 @@ import FormControl from "@mui/material/FormControl";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import SizeSlider from "../../components/SizeSlider/sizeslider";
 import * as style from "./styles";
 
 function EvalQuestions(props) {
@@ -30,26 +31,6 @@ function EvalQuestions(props) {
     setData(copyArray);
   };
 
-  const [score, setScore] = useState(Number(0));
-  const handleBrushSize = (e, newValue, index, idx, selectedName) => {
-    // console.log("e", e.target);
-    // console.log("index -> 사람 인덱스", index);
-    // console.log("idx -> 문제 인덱스", idx);
-    // console.log("interviewee -> 참여자 3명", interviewee);
-    setScore(Number(newValue));
-    const array = JSON.parse(JSON.stringify(data));
-
-    const name = array.findIndex((emp) => emp.label === selectedName);
-    const temp = array.map((d) => (d.label === selectedName ? { ...d } : null));
-    temp[name]["evaluation"][index]["questions"][idx]["data"] =
-      Number(newValue);
-
-    const copyArray = data.map((d) =>
-      d.label === selectedName ? temp[name] : d
-    );
-    setData(copyArray);
-  };
-
   return (
     <>
       {data.map((question, que_idx) =>
@@ -64,23 +45,37 @@ function EvalQuestions(props) {
                     <b> {q.title}</b>
                   </style.QuestionTitle>
                   <FormControl
-                    style={{ marginBottom: "10px", alignSelf: "center" }}
+                    key={idx}
+                    style={{
+                      marginBottom: "15px",
+                      alignSelf: "center",
+                      width: "100%",
+                    }}
                   >
                     {!q.type ? (
-                      <style.SizeSlider
-                        value={score}
-                        onChange={(e, newValue) =>
-                          handleBrushSize(
-                            e,
-                            newValue,
-                            index,
-                            idx,
-                            props.selectedName
-                          )
-                        }
-                        valueLabelDisplay="auto"
+                      <SizeSlider
+                        storeScore={q.data}
+                        data={data}
+                        setData={setData}
+                        index={index}
+                        idx={idx}
+                        selectedName={props.selectedName}
                       />
                     ) : (
+                      // <style.SizeSlider
+                      //   value={score}
+                      //   onChange={
+                      //     (e, newValue) => setScore(Number(newValue))
+                      //     // handleBrushSize(
+                      //     //   e,
+                      //     //   newValue,
+                      //     //   index,
+                      //     //   idx,
+                      //     //   props.selectedName
+                      //     // )
+                      //   }
+                      //   valueLabelDisplay="auto"
+                      // />
                       // <RadioGroup
                       //   aria-labelledby="demo-radio-buttons-group-label"
                       //   defaultValue={q.data}
@@ -107,7 +102,12 @@ function EvalQuestions(props) {
                       //   ))}
                       //   <style.LabelRight>매우 우수</style.LabelRight>
                       // </RadioGroup>
-                      <input
+                      <style.MemoText
+                        style={{
+                          width: "250px",
+                          height: "50px",
+                          alignSelf: "center",
+                        }}
                         onChange={(e) =>
                           onToggle(e, index, idx, props.selectedName)
                         }

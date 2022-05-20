@@ -45,7 +45,7 @@ function EvalSide() {
       .getEvaluation(10)
       .then((res) => {
         setQuestions(res.data.data);
-        // console.log("getEvaluationInfo result", res.data);
+        console.log("getEvaluationInfo result", res.data.data);
       })
       .catch((error) => console.log("getEvaluationInfo error", error));
   };

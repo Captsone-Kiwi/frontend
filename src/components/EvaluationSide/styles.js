@@ -10,9 +10,9 @@ export const QuestionFlex = styled.div`
 `;
 
 export const QuestionBox = styled.div`
-  width: 280px;
+  width: 290px;
   height: fit-content;
-  margin: 20px;
+  margin: 20px 15px;
   border-radius: 8px;
   border: 1px solid #929292;
   display: flex;
@@ -146,6 +146,15 @@ export const ListItem = styled.li`
   &:hover {
     color: #000;
   }
+`;
+
+export const MemoText = styled.textarea`
+  background: none;
+  color: #888;
+  font-size: 10px;
+  width: "250px";
+  height: "50px";
+  alignself: "center";
 `;
 
 export const SizeSlider = withStyles({

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Progress from "./Progress";
 import * as style from "./styles";
-import axios from "axios";
-import { tokenConfig } from "../../api/tokenConfig";
 import resumeAPI from "../../api/resumeAPI";
 
 function FileUpload() {
@@ -36,30 +34,6 @@ function FileUpload() {
         console.log("insertResume error", error);
         setUploadPercentage(0);
       });
-
-    // try {
-    //   const res = await axios.post("/insertResume", formData, tokenConfig(), {
-    //     headers: {
-    //       "Content-Type": "multipart/form-data",
-    //     },
-    //     onUploadProgress: (progressEvent) => {
-    //       setUploadPercentage(
-    //         parseInt(
-    //           Math.round((progressEvent.loaded * 100) / progressEvent.total)
-    //         )
-    //       );
-    //     },
-    //   });
-    //   // Clear percentage
-    //   // setTimeout(() => setUploadPercentage(0), 10000);
-    // } catch (err) {
-    //   if (err.response.status === 500) {
-    //     console.log("There was a problem with the server");
-    //   } else {
-    //     console.log(err.response.data.msg);
-    //   }
-    //   setUploadPercentage(0);
-    // }
   };
 
   const finishResume = () => {
