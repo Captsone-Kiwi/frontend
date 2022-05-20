@@ -149,12 +149,11 @@ export const ListItem = styled.li`
 `;
 
 export const MemoText = styled.textarea`
-  background: none;
-  color: #888;
-  font-size: 10px;
-  width: "250px";
-  height: "50px";
-  alignself: "center";
+  color: black;
+  font-size: 15px;
+  width: 250px;
+  height: 60px;
+  align-self: center;
 `;
 
 export const SizeSlider = withStyles({

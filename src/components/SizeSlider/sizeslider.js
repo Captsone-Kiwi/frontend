@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import * as style from "./styles";
 
 function SizeSlider(props) {
-  const [score, setScore] = useState(Number(0));
-  const storeScore = props.storeScore;
-  console.log("qqqqq", Number(storeScore));
+  const [score, setScore] = useState(Number(props.storeScore));
 
   const handleBrushSize = (e, newValue, index, idx, selectedName) => {
     const array = JSON.parse(JSON.stringify(props.data));
@@ -49,7 +47,6 @@ function SizeSlider(props) {
     <style.SliderBox>
       <style.SizeSlider
         key={props.idx}
-        // defaultValue={Number(props.storeScore)}
         value={score}
         onChange={(e, newValue) =>
           handleBrushSize(
@@ -64,7 +61,7 @@ function SizeSlider(props) {
         step={1}
         marks
         min={0}
-        max={100}
+        max={30}
         aria-labelledby="input-slider"
       />
       <style.Input
@@ -83,7 +80,7 @@ function SizeSlider(props) {
         inputProps={{
           step: 1,
           min: 0,
-          max: 100,
+          max: 30,
           type: "number",
           "aria-labelledby": "input-slider",
         }}

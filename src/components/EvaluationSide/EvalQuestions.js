@@ -54,6 +54,7 @@ function EvalQuestions(props) {
                   >
                     {!q.type ? (
                       <SizeSlider
+                        // defaultValue={q.data}
                         storeScore={q.data}
                         data={data}
                         setData={setData}
@@ -62,56 +63,12 @@ function EvalQuestions(props) {
                         selectedName={props.selectedName}
                       />
                     ) : (
-                      // <style.SizeSlider
-                      //   value={score}
-                      //   onChange={
-                      //     (e, newValue) => setScore(Number(newValue))
-                      //     // handleBrushSize(
-                      //     //   e,
-                      //     //   newValue,
-                      //     //   index,
-                      //     //   idx,
-                      //     //   props.selectedName
-                      //     // )
-                      //   }
-                      //   valueLabelDisplay="auto"
-                      // />
-                      // <RadioGroup
-                      //   aria-labelledby="demo-radio-buttons-group-label"
-                      //   defaultValue={q.data}
-                      //   name="radio-buttons-group"
-                      //   style={{ flexDirection: "row", alignItems: "center" }}
-                      // >
-                      //   <style.LabelLeft>매우 부족</style.LabelLeft>
-                      //   {["1", "2", "3", "4", "5"].map((value, i) => (
-                      //     <React.Fragment key={i}>
-                      //       <FormControlLabel
-                      //         value={value}
-                      //         style={{ margin: "0px" }}
-                      //         control={
-                      //           <Radio
-                      //             color="success"
-                      //             style={{ padding: "6px" }}
-                      //             onClick={(e) =>
-                      //               onToggle(e, index, idx, props.interviewee)
-                      //             }
-                      //           />
-                      //         }
-                      //       />
-                      //     </React.Fragment>
-                      //   ))}
-                      //   <style.LabelRight>매우 우수</style.LabelRight>
-                      // </RadioGroup>
                       <style.MemoText
-                        style={{
-                          width: "250px",
-                          height: "50px",
-                          alignSelf: "center",
-                        }}
                         onChange={(e) =>
                           onToggle(e, index, idx, props.selectedName)
                         }
                         value={q.data}
+                        placeholder="이 곳에 의견을 작성해주세요."
                       />
                     )}
                   </FormControl>
