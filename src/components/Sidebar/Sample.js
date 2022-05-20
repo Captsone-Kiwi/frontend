@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from 'react';
-import ResumeAPI from "../../api/ResumeAPI";
 
 function Sample(props) {
   

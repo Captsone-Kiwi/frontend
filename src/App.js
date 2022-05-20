@@ -55,7 +55,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/upload_resume" element={<UploadResume />} />
         <Route
-          path="/main?username=:name?room=:interview_id"
+          path="/main"
           element={<Main />}
         />
       </Routes>
