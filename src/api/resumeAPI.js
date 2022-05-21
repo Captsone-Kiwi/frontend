@@ -10,6 +10,9 @@ export default {
       },
     });
   },
+  deleteResume(name) {
+    return axios.get(`deleteResume?name=${name}`, tokenConfig());
+  },
   getResume(name) {
     return axios.get(`getResume?name=${name}`);
   },

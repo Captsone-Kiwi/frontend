@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import interviewAPI from "../../api/interviewAPI";
 import AuthContext from "../../store";
+import ParticipantList from "./participantList";
 
 function InterviewInformation(props) {
   const navigator = useNavigate();
@@ -60,14 +61,7 @@ function InterviewInformation(props) {
         <style.interviewTitle>{props.interview_name}</style.interviewTitle>
         <style.interviewMember>
           {participant.map((e, idx) => (
-            <style.intervieweeList>
-              {e.name} ({e.email}):
-              {e.member_type === 1
-                ? " 면접관"
-                : e.member_type === 2
-                ? " 면접자"
-                : null}
-            </style.intervieweeList>
+            <ParticipantList participant={e} />
           ))}
         </style.interviewMember>
       </style.leftDetail>

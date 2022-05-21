@@ -35,12 +35,10 @@ function InterviewList(props) {
     }
   };
 
+  // 유저 정보 가져오기
   useEffect(() => {
     getMemberInfo();
-    getInterviewInfo();
   }, [state]);
-
-  // 유저 정보 가져오기
   const getMemberInfo = async () => {
     await authAPI
       .getUser()
@@ -52,6 +50,9 @@ function InterviewList(props) {
   };
 
   //예약된 인터뷰 & 참여자 정보 가져오기
+  useEffect(() => {
+    getInterviewInfo();
+  }, [state]);
   const getInterviewInfo = async () => {
     await interviewAPI
       .getInterview()

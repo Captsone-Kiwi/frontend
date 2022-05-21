@@ -71,7 +71,7 @@ function EvalSide() {
   const [selectedName, setSelectedNames] = useState("면접자 선택");
 
   return (
-    <style.EvalSide>
+    <style.EvalSideBack>
       <EvalPerson
         interviewee={interviewee}
         selectedName={selectedName}
@@ -93,7 +93,7 @@ function EvalSide() {
           selectedName={selectedName}
         />
       )}
-    </style.EvalSide>
+    </style.EvalSideBack>
   );
 }
 

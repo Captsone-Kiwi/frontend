@@ -57,11 +57,12 @@ export const LabelRight = styled.div`
   color: #3cb371;
 `;
 
-export const EvalSide = styled.div`
+export const EvalSideBack = styled.div`
   display: flex;
   flex-direction: column;
-  width: 320px;
-  overflow: scroll;
+  width: 340px;
+  overflow-y: auto;
+  overflow-x: hidden;
 `;
 
 export const Main = styled.div`

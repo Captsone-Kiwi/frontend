@@ -129,7 +129,7 @@ function InterviewReserve(props) {
               </style.createId>
             </style.reserveSection>
             <style.reserveSection>
-              <style.reserveTitle>템플릿</style.reserveTitle>
+              <style.reserveTitle>평가 항목</style.reserveTitle>
               <style.selectTemplate>
                 <TemplateSelect
                   reserveInfo={reserveInfo}

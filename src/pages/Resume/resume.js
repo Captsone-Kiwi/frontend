@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import AuthContext from "../../store";
+import ResumeList from "./ResumeList";
 import resumeAPI from "../../api/resumeAPI";
 
 function Resume(props) {
@@ -11,7 +12,6 @@ function Resume(props) {
   const [side, setSide] = useState("resume");
 
   const [filename, setFileName] = useState([]);
-  console.log("filename list", filename);
   useEffect(() => {
     getResume();
   }, [state]);
@@ -51,16 +51,7 @@ function Resume(props) {
           ) : (
             <>
               {filename.map((e, idx) => (
-                <style.evaluationDetail>
-                  <style.leftDiv>
-                    <style.fileImg src="/images/common/fileIcon.png" />
-                    <style.evaluationTitle>{e}</style.evaluationTitle>
-                  </style.leftDiv>
-                  <style.rightDiv>
-                    <style.greenButton>보기</style.greenButton>
-                    <style.Buttons>삭제</style.Buttons>
-                  </style.rightDiv>
-                </style.evaluationDetail>
+                <ResumeList filename={e} />
               ))}
             </>
           )}
