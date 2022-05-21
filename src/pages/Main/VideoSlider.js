@@ -38,7 +38,7 @@ function User({ user}) {
     return (
       <div>
         <NameBlock id={user.name} style={{position:'absolute'}}/>
-        <Video autoPlay id={user.id}/>
+        <Video autoPlay id={user.id} poster='/images/common/poster.png'/>
       </div>
     );
   }
