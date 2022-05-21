@@ -5,9 +5,6 @@ import authAPI from "../../api/authAPI";
 import AuthContext from "../../store";
 
 function Login() {
-  // const [username, setUsername] = useState("sohyeon");
-  // const [room, setRoom] = useState("KIWI");
-
   const navigator = useNavigate();
   const [, actions] = useContext(AuthContext);
   const [values, setValues] = useState({ email: "", password: "" });
@@ -102,9 +99,6 @@ function Login() {
               Create an account
             </style.SignUpButton>
             <style.LoginButton>Login</style.LoginButton>
-            {/* <Link onClick={e => (!username || !room) ? e.preventDefault() : null} to={`/main?username=${username}&room=${room}`}>
-                <style.Button>Login</style.Button>
-            </Link> */}
           </style.ButtonContainer>
         </style.LoginForm>
       </style.Container>

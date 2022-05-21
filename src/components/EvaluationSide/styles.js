@@ -22,6 +22,13 @@ export const QuestionBox = styled.div`
   gap: 15px;
 `;
 
+export const EvalInfoDiv = styled.div`
+  display: flex;
+  height: fit-content;
+  width: 95%;
+  justify-content: space-between;
+`;
+
 export const QuestionCategory = styled.div`
   font-style: normal;
   font-weight: 500;
@@ -29,6 +36,15 @@ export const QuestionCategory = styled.div`
   font-size: 7px;
   color: green;
   padding: 17px 0 0 12px;
+  line-height: 2px;
+`;
+export const QuestionRange = styled.div`
+  font-style: normal;
+  font-weight: 500;
+  align-self: flex-end;
+  font-size: 7px;
+  color: #b40101;
+  padding: 17px 12px 0 0;
   line-height: 2px;
 `;
 
@@ -39,22 +55,6 @@ export const QuestionTitle = styled.div`
   line-height: 18px;
   color: #000000;
   text-align: center;
-`;
-
-export const LabelLeft = styled.div`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 8px;
-  line-height: 18px;
-  color: #dd0000;
-`;
-
-export const LabelRight = styled.div`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 8px;
-  line-height: 18px;
-  color: #3cb371;
 `;
 
 export const EvalSideBack = styled.div`
@@ -158,10 +158,11 @@ export const ListItem = styled.li`
 
 export const MemoText = styled.textarea`
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   width: 250px;
   height: 60px;
   align-self: center;
+  padding: 5px;
 `;
 
 export const SizeSlider = withStyles({

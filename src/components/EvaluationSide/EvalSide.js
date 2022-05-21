@@ -14,31 +14,30 @@ function EvalSide() {
   const [state, actions] = useContext(AuthContext);
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
+  const [isVisit, setIsVisit] = useState(true);
 
-  // const [questions, setQuestions] = useState({
-  //   name: "",
-  //   evaluationList: [
-  //     {
-  //       category: "",
-  //       title: null,
-  //       type: 0,
-  //       questions: [
-  //         {
-  //           title: "",
-  //           type: 1,
-  //           data: 0,
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // });
+  useEffect(() => {
+    getParticipant();
+    getEvaluationInfo();
+  }, []);
 
-  const [questions, setQuestions] = useState([]);
+  // EvalSide를 실행 시켰을때 세션스토리지 정보 가져오기
+  useEffect(() => {
+    const stored_data = localStorage.getItem("EvalResult");
+    if (stored_data == null) {
+      console.log("트루");
+      setIsVisit(true);
+    } else {
+      console.log("아니야!!");
+      setIsVisit(false);
+    }
+  }, []);
 
   //평가항목 정보 가져오기
-  useEffect(() => {
-    getEvaluationInfo();
-  }, [state]);
+  const [questions, setQuestions] = useState([]);
+  console.log("questions", questions);
+  const Questions = questions.evaluationList;
+  console.log("Questions", Questions);
   const getEvaluationInfo = async () => {
     await evaluationAPI
       .getEvaluation(10)
@@ -50,16 +49,13 @@ function EvalSide() {
   };
 
   // 참여자 정보 가져오기
-  useEffect(() => {
-    getParticipant();
-  }, [state]);
   const [participant, setParticipant] = useState([]);
   const getParticipant = async () => {
     await interviewAPI
       .participant(room)
       .then((result) => {
         setParticipant(result.data.data);
-        // console.log("participant result", result.data);
+        console.log("participant result", result.data);
       })
       .catch((err) => console.log("participant error", err));
   };
@@ -69,6 +65,30 @@ function EvalSide() {
     .map((name) => name.name);
   // 선택된 면접자
   const [selectedName, setSelectedNames] = useState("면접자 선택");
+  console.log("============================");
+  console.log("이거???", interviewee);
+
+  const [data, setData] = useState(
+    interviewee.map((Label, _) => ({
+      label: Label,
+      evaluation: questions.evaluationList,
+    }))
+  );
+  console.log("data!!!!!!!!!!!!!!!!!!!", data);
+  //세션 스토리지 정보 가져오기
+  useEffect(() => {
+    loadData();
+  }, [isVisit]);
+  const loadData = () => {
+    let stored_data = localStorage.getItem("EvalResult");
+    if (isVisit === false) {
+      stored_data = JSON.parse(stored_data);
+      console.log("이거~!~!", stored_data);
+      setData(stored_data);
+    } else {
+      return data;
+    }
+  };
 
   return (
     <style.EvalSideBack>
@@ -88,9 +108,12 @@ function EvalSide() {
         </style.infoDiv>
       ) : (
         <EvalQuestions
-          questions={questions}
-          interviewee={interviewee}
+          data={data}
+          setData={setData}
           selectedName={selectedName}
+          // questions={questions}
+          // interviewee={interviewee}
+          // isVisit={isVisit}
         />
       )}
     </style.EvalSideBack>

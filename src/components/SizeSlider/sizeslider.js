@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import * as style from "./styles";
 
 function SizeSlider(props) {
+  // 저장되는 값들 -> data
   const [score, setScore] = useState(Number(props.storeScore));
+  // 평가항목에서 설정한 최대 점수값 -> range
+  const [maxScore, setMaxScore] = useState(Number(props.maxScore));
 
   const handleBrushSize = (e, newValue, index, idx, selectedName) => {
     const array = JSON.parse(JSON.stringify(props.data));
@@ -46,6 +49,7 @@ function SizeSlider(props) {
   return (
     <style.SliderBox>
       <style.SizeSlider
+        defaultValue={score}
         key={props.idx}
         value={score}
         onChange={(e, newValue) =>
@@ -59,12 +63,12 @@ function SizeSlider(props) {
         }
         valueLabelDisplay="auto"
         step={1}
-        marks
         min={0}
-        max={30}
+        max={maxScore}
         aria-labelledby="input-slider"
       />
       <style.Input
+        defaultValue={score}
         value={score}
         size="small"
         onChange={(e, newValue) =>
@@ -80,7 +84,7 @@ function SizeSlider(props) {
         inputProps={{
           step: 1,
           min: 0,
-          max: 30,
+          max: maxScore,
           type: "number",
           "aria-labelledby": "input-slider",
         }}

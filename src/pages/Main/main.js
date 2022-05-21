@@ -269,6 +269,13 @@ async function getRemoteStreams() {
 }
 
 function Main() {
+  //페이지를 나갈때 경고 알림과 localStorage 지우기
+  window.onbeforeunload = function (event) {
+    event.preventDefault();
+    localStorage.removeItem("EvalResult");
+    return "이 페이지에서 벗어나시겠습니까? \n 평가항목 변경사항이 저장되지 않을 수 있습니다.";
+  };
+
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
   // const server_url = `http://54.208.151.152:3000`;
@@ -368,7 +375,7 @@ function Main() {
 
   return (
     <>
-      <Sidebar style={{ position: "absolute", zIndex: 1 }} />
+      <Sidebar style={{ position: "absolute", zIndex: 5 }} />
       <Bottom style={{ position: "absolute" }} />
       <VideoSlider />
       <Container>

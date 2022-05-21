@@ -33,7 +33,10 @@ function Sidebar() {
     const newTabState = { ...tabState };
     const activeTab = e.currentTarget.id;
 
-    if (newTabState[activeTab] == true) {
+    if (newTabState[activeTab] === true) {
+      // if (activeTab === "onEval"){
+      //   alert
+      // }
       newTabState[activeTab] = false;
     } else {
       for (let key in newTabState) {
