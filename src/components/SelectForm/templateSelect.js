@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect, useState } from "react";
+import React, { useMemo } from "react";
 import SelectTemplate from "react-select";
 import "./styles.css";
 

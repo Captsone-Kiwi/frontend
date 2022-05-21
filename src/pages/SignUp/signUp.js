@@ -89,7 +89,7 @@ function SignUp(props) {
   return (
     <style.Container>
       <style.Title>Create an account</style.Title>
-      <style.SignUpForm>
+      <style.SignUpForm autocomplete="off">
         <style.Span
           color="#7a7a7a"
           size="14px"

@@ -1,23 +1,14 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useContext } from "react";
 import SelectEval from "react-select";
 import "./styles.css";
+import evaluationAPI from "../../api/evaluationAPI";
+import AuthContext from "../../store";
 
 function EvaluationSelect(props) {
-  //미완성
   const [value, setValue] = useState();
+  const [state, actions] = useContext(AuthContext);
 
-  const [options, setOptions] = useState([{ value: 0, label: "" }]);
-  console.log("options", options);
-
-  useEffect(() => {
-    makeOption();
-  }, [props.evaluationName]);
-  const makeOption = () => {
-    props.evaluationName.map(
-      (e, idx) => ((options.value = idx), (options.label = e))
-    );
-    setOptions(options);
-  };
+  // const [options, setOptions] = useState({ value: 0, label: "" });
 
   const handleChange = useCallback((inputValue) => {
     const setCategory = { ...props.evaluationInfo };
@@ -26,11 +17,19 @@ function EvaluationSelect(props) {
     setValue(inputValue);
   }, []);
 
+  const [options, setOptions] = useState(
+    props.evalId.map((e, idx) => ({
+      value: e,
+      label: "???",
+    }))
+  );
+  console.log("options", options);
+
   return (
     <div>
       <SelectEval
         onChange={handleChange}
-        options={options}
+        // options={options}
         placeholder={"평가항목 선택"}
       />
     </div>

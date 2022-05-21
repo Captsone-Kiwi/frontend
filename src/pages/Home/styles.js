@@ -17,7 +17,7 @@ export const mainContainer = styled.div`
 `;
 
 export const mainImg = styled.img`
-  width: 50%;
+  width: 55%;
   margin-top: -20px;
   z-index: -1;
 `;
