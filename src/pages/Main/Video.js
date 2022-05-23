@@ -45,7 +45,12 @@ const Video = () => {
   return (
     <>
       {/* <NameBlock title={username} /> */}
-      <StyledVideo ref={videos} autoPlay id="localVideo" />
+      <StyledVideo
+        ref={videos}
+        poster="/images/common/poster.png"
+        autoPlay
+        id="localVideo"
+      />
 
       {/* <NameBlock title="remote1" /> */}
       {/* <StyledVideo ref={videos}  autoPlay id="remoteVideo1" /> */}
