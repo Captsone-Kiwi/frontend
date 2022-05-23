@@ -4,17 +4,17 @@ import SizeSlider from "../../components/SizeSlider/sizeslider";
 import * as style from "./styles";
 import { StepLabel } from "@material-ui/core";
 
-function EvalQuestions({ data, setData, selectedName }) {
-  // const Questions = props.questions.evaluationList;
+function EvalQuestions(props) {
+  const Questions = props.questions.evaluationList;
 
-  // const [data, setData] = useState(
-  //   props.interviewee.map((Label, _) => ({
-  //     label: Label,
-  //     evaluation: Questions,
-  //   }))
-  // );
-  // console.log("data", data);
-  // //세션 스토리지 정보 가져오기
+  const [data, setData] = useState(
+    props.interviewee.map((Label, _) => ({
+      label: Label,
+      evaluation: Questions,
+    }))
+  );
+  console.log("data", data);
+  //세션 스토리지 정보 가져오기
   // useEffect(() => {
   //   loadData();
   // }, []);
@@ -26,11 +26,11 @@ function EvalQuestions({ data, setData, selectedName }) {
   //     setData(stored_data);
   //   }
   // };
-  console.log("************************************************");
+  // console.log("************************************************");
 
-  useEffect(() => {
-    localStorage.setItem("EvalResult", JSON.stringify(data));
-  }, [data]);
+  // useEffect(() => {
+  //   localStorage.setItem("EvalResult", JSON.stringify(data));
+  // }, [data]);
 
   const onToggle = (e, index, idx, selectedName) => {
     const array = JSON.parse(JSON.stringify(data));
@@ -48,7 +48,7 @@ function EvalQuestions({ data, setData, selectedName }) {
   return (
     <>
       {data.map((question, que_idx) =>
-        question.label === selectedName
+        question.label === props.selectedName
           ? question.evaluation.map((qu, index) =>
               qu.questions.map((q, idx) => (
                 <style.QuestionBox>
@@ -85,11 +85,13 @@ function EvalQuestions({ data, setData, selectedName }) {
                         setData={setData}
                         index={index}
                         idx={idx}
-                        selectedName={selectedName}
+                        selectedName={props.selectedName}
                       />
                     ) : (
                       <style.MemoText
-                        onChange={(e) => onToggle(e, index, idx, selectedName)}
+                        onChange={(e) =>
+                          onToggle(e, index, idx, props.selectedName)
+                        }
                         value={q.data === 0 ? null : q.data}
                         placeholder="이곳에 의견을 작성해주세요."
                       />

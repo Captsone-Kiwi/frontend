@@ -17,21 +17,21 @@ function EvalSide() {
   const [isVisit, setIsVisit] = useState(true);
 
   useEffect(() => {
-    getParticipant();
+    // getParticipant();
     getEvaluationInfo();
   }, []);
 
   // EvalSide를 실행 시켰을때 세션스토리지 정보 가져오기
-  useEffect(() => {
-    const stored_data = localStorage.getItem("EvalResult");
-    if (stored_data == null) {
-      console.log("트루");
-      setIsVisit(true);
-    } else {
-      console.log("아니야!!");
-      setIsVisit(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const stored_data = localStorage.getItem("EvalResult");
+  //   if (stored_data == null) {
+  //     console.log("트루");
+  //     setIsVisit(true);
+  //   } else {
+  //     console.log("아니야!!");
+  //     setIsVisit(false);
+  //   }
+  // }, []);
 
   //평가항목 정보 가져오기
   const [questions, setQuestions] = useState([]);
@@ -49,6 +49,10 @@ function EvalSide() {
   };
 
   // 참여자 정보 가져오기
+  useEffect(() => {
+    getParticipant();
+    // getEvaluationInfo();
+  }, [state]);
   const [participant, setParticipant] = useState([]);
   const getParticipant = async () => {
     await interviewAPI
@@ -65,30 +69,30 @@ function EvalSide() {
     .map((name) => name.name);
   // 선택된 면접자
   const [selectedName, setSelectedNames] = useState("면접자 선택");
-  console.log("============================");
-  console.log("이거???", interviewee);
+  // console.log("============================");
+  // console.log("이거???", interviewee);
 
-  const [data, setData] = useState(
-    interviewee.map((Label, _) => ({
-      label: Label,
-      evaluation: questions.evaluationList,
-    }))
-  );
-  console.log("data!!!!!!!!!!!!!!!!!!!", data);
+  // const [data, setData] = useState(
+  //   interviewee.map((Label, _) => ({
+  //     label: Label,
+  //     evaluation: questions.evaluationList,
+  //   }))
+  // );
+  // console.log("data!!!!!!!!!!!!!!!!!!!", data);
   //세션 스토리지 정보 가져오기
-  useEffect(() => {
-    loadData();
-  }, [isVisit]);
-  const loadData = () => {
-    let stored_data = localStorage.getItem("EvalResult");
-    if (isVisit === false) {
-      stored_data = JSON.parse(stored_data);
-      console.log("이거~!~!", stored_data);
-      setData(stored_data);
-    } else {
-      return data;
-    }
-  };
+  // useEffect(() => {
+  //   loadData();
+  // }, [isVisit]);
+  // const loadData = () => {
+  //   let stored_data = localStorage.getItem("EvalResult");
+  //   if (isVisit === false) {
+  //     stored_data = JSON.parse(stored_data);
+  //     console.log("이거~!~!", stored_data);
+  //     setData(stored_data);
+  //   } else {
+  //     return data;
+  //   }
+  // };
 
   return (
     <style.EvalSideBack>
@@ -108,11 +112,11 @@ function EvalSide() {
         </style.infoDiv>
       ) : (
         <EvalQuestions
-          data={data}
-          setData={setData}
+          // data={data}
+          // setData={setData}
           selectedName={selectedName}
-          // questions={questions}
-          // interviewee={interviewee}
+          questions={questions}
+          interviewee={interviewee}
           // isVisit={isVisit}
         />
       )}
