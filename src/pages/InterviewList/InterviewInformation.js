@@ -14,7 +14,7 @@ function InterviewInformation(props) {
       member_type: 0,
     },
   ]);
-  console.log("participant", participant);
+  // console.log("participant", participant);
 
   const [state, actions] = useContext(AuthContext);
   useEffect(() => {
@@ -27,7 +27,7 @@ function InterviewInformation(props) {
       .participant(props.interview_id)
       .then((result) => {
         setParticipant(result.data.data);
-        console.log("participant result", result.data);
+        // console.log("participant result", result.data);
       })
       .catch((err) => console.log("participant error", err));
   };
@@ -39,7 +39,7 @@ function InterviewInformation(props) {
       .then((res) => {
         alert("해당 면접 예약을 삭제하시겠습니까?");
         window.location.reload();
-        console.log("deleteInterview result", res.data);
+        // console.log("deleteInterview result", res.data);
       })
       .catch((error) => console.log("deleteInterview error", error));
   };

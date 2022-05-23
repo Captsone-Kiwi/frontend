@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     width: "280px",
     fontSize: "18px",
     color: "rgb(122, 122, 122)",
-    borderBottom: "1px solid rgb(225, 229, 227)",
   },
   nested: {
     paddingLeft: theme.spacing(3),

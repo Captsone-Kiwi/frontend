@@ -58,7 +58,7 @@ function InterviewList(props) {
       .getInterview()
       .then((res) => {
         setInterviewInfo(res.data.data);
-        console.log("getInterviewInfo result", res.data);
+        // console.log("getInterviewInfo result", res.data);
       })
       .catch((error) => console.log("getInterviewInfo error", error));
   };

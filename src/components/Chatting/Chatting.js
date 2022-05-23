@@ -72,7 +72,7 @@ function Chatting() {
   // 참여자 정보 가져오기
   useEffect(() => {
     getParticipant();
-  }, []);
+  }, [room]);
   const [participant, setParticipant] = useState([]);
   const getParticipant = async () => {
     await interviewAPI

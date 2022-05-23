@@ -39,7 +39,7 @@ function EvaluationInformation(props) {
   // 평가항목 삭제하기
   const deleteEvaluation = async () => {
     await evaluationAPI
-      .deleteEvaluation(props.evalId)
+      .deleteEvaluation(props.evalId.id)
       .then((res) => {
         alert("해당 평가항목을 삭제하시겠습니까?");
         window.location.reload();

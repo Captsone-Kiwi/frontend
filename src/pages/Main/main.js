@@ -269,12 +269,13 @@ async function getRemoteStreams() {
 }
 
 function Main() {
-  //페이지를 나갈때 경고 알림과 localStorage 지우기
-  window.onbeforeunload = function (event) {
-    event.preventDefault();
-    localStorage.removeItem("EvalResult");
-    return "이 페이지에서 벗어나시겠습니까? \n 평가항목 변경사항이 저장되지 않을 수 있습니다.";
-  };
+  // 페이지를 나갈때 경고 알림과 localStorage 지우기
+  // 로컬스토리지를 지우지 않게 하기 위한 코드 나중에 구현 완료되면 주석 풀 예정! 지우지 마세용
+  // window.onbeforeunload = function (event) {
+  //   event.preventDefault();
+  //   localStorage.removeItem("EvalResult");
+  //   return "이 페이지에서 벗어나시겠습니까? \n 평가항목 변경사항이 저장되지 않을 수 있습니다.";
+  // };
 
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
