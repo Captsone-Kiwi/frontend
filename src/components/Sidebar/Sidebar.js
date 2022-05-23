@@ -114,15 +114,6 @@ function Sidebar() {
                   }}
                   onClick={tabHandler}
                 />
-                <Io5Icons.IoAccessibility
-                  id="onTrans"
-                  style={{
-                    color: tabState.onTrans ? "#3CB371" : "#7a7a7a",
-                    fontSize: "28px",
-                    margin: "16px 16px",
-                  }}
-                  onClick={tabHandler}
-                />
                 <Io5Icons.IoChatbox
                   id="onChat"
                   style={{
@@ -173,15 +164,6 @@ function Sidebar() {
                   id="onSet"
                   style={{
                     color: tabState.onSet ? "#3CB371" : "#7a7a7a",
-                    fontSize: "28px",
-                    margin: "16px 16px",
-                  }}
-                  onClick={tabHandler}
-                />
-                <Io5Icons.IoAccessibility
-                  id="onTrans"
-                  style={{
-                    color: tabState.onTrans ? "#3CB371" : "#7a7a7a",
                     fontSize: "28px",
                     margin: "16px 16px",
                   }}
