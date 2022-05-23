@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { StyledVideo } from "./Video.js";
 import styled from "styled-components";
+import { useRadio } from "@chakra-ui/radio";
 
 export const Video = styled.video`
   width: 180px;
@@ -26,57 +27,59 @@ const Name = styled.div`
   border-radius: 20px;
 `;
 
-const NameBlock = ({ title }) => (
-  <>
-    <Name>{title}</Name>
-  </>
-);
+const NameBlock = ({id}) => (
+    <>
+      <Name>{id}</Name>
+    </>
+  )
+  
+function User({ user}) {
+    // console.log(user)
+    return (
+      <div>
+        <NameBlock id={user.name} style={{position:'absolute'}}/>
+        <Video autoPlay id={user.id}/>
+      </div>
+    );
+  }
 
-function User({ user }) {
-  return (
-    <div>
-      <NameBlock title={user.username} style={{ position: "absolute" }} />
-      <Video autoPlay id={user.id} />
-    </div>
-  );
-}
+export default class VideoSlider extends Component{
 
-export default class VideoSlider extends Component {
+
   state = {
     display: true,
     width: 600,
   };
+
   render() {
+
+
     const settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
     };
 
     const users = [
-      {
-        id: "remoteVideo1",
-        username: "sohyeon",
-        email: "sohyeon@gmail.com",
+        {
+          "email": "test23",
+          "name": "professor"
       },
       {
-        id: "remoteVideo2",
-        username: "jinwoo",
-        email: "jinwoo@example.com",
+          "email": "test",
+          "name": "chanmi"
       },
       {
-        id: "remoteVideo3",
-        username: "chanmi",
-        email: "chanmi@example.com",
+        "email": "test",
+        "name": "jinwoo"
       },
       {
-        id: "remoteVideo4",
-        username: "professor",
-        email: "professor@example.com",
-      },
-    ];
+        "email": "test",
+        "name": "daeyoung"
+      }
+    ]
 
     return (
       <div>
@@ -124,12 +127,14 @@ export default class VideoSlider extends Component {
             zIndex: 3,
           }}
         >
+      
           <Slider {...settings}>
-            {users.map((user) => (
+          {users.map(user => (
               <User user={user} />
             ))}
           </Slider>
-        </div>
+      </div>
+        
       </div>
     );
   }

@@ -1,402 +1,686 @@
-gdjs.interview_32sceneCode = {};
-gdjs.interview_32sceneCode.GDNewObjectObjects1= [];
-gdjs.interview_32sceneCode.GDNewObjectObjects2= [];
-gdjs.interview_32sceneCode.GDNewObject2Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject2Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject3Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject3Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject4Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject4Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject5Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject5Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject6Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject6Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject7Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject7Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject9Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject9Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject10Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject10Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject11Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject11Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject13Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject13Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject14Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject14Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject15Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject15Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject16Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject16Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject17Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject17Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject18Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject18Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject19Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject19Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject20Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject20Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject21Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject21Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject22Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject22Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject23Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject23Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject24Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject24Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject26Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject26Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject27Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject27Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject28Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject28Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject29Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject29Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject30Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject30Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject35Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject35Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject8Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject8Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject25Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject25Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject31Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject31Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject32Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject32Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject33Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject33Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject34Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject34Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject36Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject36Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject37Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject37Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject38Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject38Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject39Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject39Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject40Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject40Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject41Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject41Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject42Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject42Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject43Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject43Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject44Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject44Objects2= [];
-gdjs.interview_32sceneCode.GDNewObject45Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject45Objects2= [];
-gdjs.interview_32sceneCode.GDRightObjects1= [];
-gdjs.interview_32sceneCode.GDRightObjects2= [];
-gdjs.interview_32sceneCode.GDLeftObjects1= [];
-gdjs.interview_32sceneCode.GDLeftObjects2= [];
-gdjs.interview_32sceneCode.GDUpObjects1= [];
-gdjs.interview_32sceneCode.GDUpObjects2= [];
-gdjs.interview_32sceneCode.GDDownObjects1= [];
-gdjs.interview_32sceneCode.GDDownObjects2= [];
-gdjs.interview_32sceneCode.GDleftUpObjects1= [];
-gdjs.interview_32sceneCode.GDleftUpObjects2= [];
-gdjs.interview_32sceneCode.GDRightUpObjects1= [];
-gdjs.interview_32sceneCode.GDRightUpObjects2= [];
-gdjs.interview_32sceneCode.GDleftBottomObjects1= [];
-gdjs.interview_32sceneCode.GDleftBottomObjects2= [];
-gdjs.interview_32sceneCode.GDRightBottomObjects1= [];
-gdjs.interview_32sceneCode.GDRightBottomObjects2= [];
-gdjs.interview_32sceneCode.GDNewObject12Objects1= [];
-gdjs.interview_32sceneCode.GDNewObject12Objects2= [];
-gdjs.interview_32sceneCode.GDPlayer6Objects1= [];
-gdjs.interview_32sceneCode.GDPlayer6Objects2= [];
-gdjs.interview_32sceneCode.GDPlayer5Objects1= [];
-gdjs.interview_32sceneCode.GDPlayer5Objects2= [];
-gdjs.interview_32sceneCode.GDPlayer4Objects1= [];
-gdjs.interview_32sceneCode.GDPlayer4Objects2= [];
-gdjs.interview_32sceneCode.GDPlayer3Objects1= [];
-gdjs.interview_32sceneCode.GDPlayer3Objects2= [];
-gdjs.interview_32sceneCode.GDPlayer2Objects1= [];
-gdjs.interview_32sceneCode.GDPlayer2Objects2= [];
-gdjs.interview_32sceneCode.GDPlayer1Objects1= [];
-gdjs.interview_32sceneCode.GDPlayer1Objects2= [];
-gdjs.interview_32sceneCode.GDShoes6Objects1= [];
-gdjs.interview_32sceneCode.GDShoes6Objects2= [];
-gdjs.interview_32sceneCode.GDShoes5Objects1= [];
-gdjs.interview_32sceneCode.GDShoes5Objects2= [];
-gdjs.interview_32sceneCode.GDShoes4Objects1= [];
-gdjs.interview_32sceneCode.GDShoes4Objects2= [];
-gdjs.interview_32sceneCode.GDShoes3Objects1= [];
-gdjs.interview_32sceneCode.GDShoes3Objects2= [];
-gdjs.interview_32sceneCode.GDShoes2Objects1= [];
-gdjs.interview_32sceneCode.GDShoes2Objects2= [];
-gdjs.interview_32sceneCode.GDShoes1Objects1= [];
-gdjs.interview_32sceneCode.GDShoes1Objects2= [];
-gdjs.interview_32sceneCode.GDSkirt8Objects1= [];
-gdjs.interview_32sceneCode.GDSkirt8Objects2= [];
-gdjs.interview_32sceneCode.GDSkirt7Objects1= [];
-gdjs.interview_32sceneCode.GDSkirt7Objects2= [];
-gdjs.interview_32sceneCode.GDSkirt6Objects1= [];
-gdjs.interview_32sceneCode.GDSkirt6Objects2= [];
-gdjs.interview_32sceneCode.GDSkirt5Objects1= [];
-gdjs.interview_32sceneCode.GDSkirt5Objects2= [];
-gdjs.interview_32sceneCode.GDSkirt4Objects1= [];
-gdjs.interview_32sceneCode.GDSkirt4Objects2= [];
-gdjs.interview_32sceneCode.GDSkirt3Objects1= [];
-gdjs.interview_32sceneCode.GDSkirt3Objects2= [];
-gdjs.interview_32sceneCode.GDSkirt2Objects1= [];
-gdjs.interview_32sceneCode.GDSkirt2Objects2= [];
-gdjs.interview_32sceneCode.GDSkirt1Objects1= [];
-gdjs.interview_32sceneCode.GDSkirt1Objects2= [];
-gdjs.interview_32sceneCode.GDPant8Objects1= [];
-gdjs.interview_32sceneCode.GDPant8Objects2= [];
-gdjs.interview_32sceneCode.GDPant7Objects1= [];
-gdjs.interview_32sceneCode.GDPant7Objects2= [];
-gdjs.interview_32sceneCode.GDPant6Objects1= [];
-gdjs.interview_32sceneCode.GDPant6Objects2= [];
-gdjs.interview_32sceneCode.GDPant5Objects1= [];
-gdjs.interview_32sceneCode.GDPant5Objects2= [];
-gdjs.interview_32sceneCode.GDPant4Objects1= [];
-gdjs.interview_32sceneCode.GDPant4Objects2= [];
-gdjs.interview_32sceneCode.GDPant3Objects1= [];
-gdjs.interview_32sceneCode.GDPant3Objects2= [];
-gdjs.interview_32sceneCode.GDPant2Objects1= [];
-gdjs.interview_32sceneCode.GDPant2Objects2= [];
-gdjs.interview_32sceneCode.GDPant1Objects1= [];
-gdjs.interview_32sceneCode.GDPant1Objects2= [];
-gdjs.interview_32sceneCode.GDFloral8Objects1= [];
-gdjs.interview_32sceneCode.GDFloral8Objects2= [];
-gdjs.interview_32sceneCode.GDSuit8Objects1= [];
-gdjs.interview_32sceneCode.GDSuit8Objects2= [];
-gdjs.interview_32sceneCode.GDSporty8Objects1= [];
-gdjs.interview_32sceneCode.GDSporty8Objects2= [];
-gdjs.interview_32sceneCode.GDSailor8Objects1= [];
-gdjs.interview_32sceneCode.GDSailor8Objects2= [];
-gdjs.interview_32sceneCode.GDOverall8Objects1= [];
-gdjs.interview_32sceneCode.GDOverall8Objects2= [];
-gdjs.interview_32sceneCode.GDBasic8Objects1= [];
-gdjs.interview_32sceneCode.GDBasic8Objects2= [];
-gdjs.interview_32sceneCode.GDSuit7Objects1= [];
-gdjs.interview_32sceneCode.GDSuit7Objects2= [];
-gdjs.interview_32sceneCode.GDSporty7Objects1= [];
-gdjs.interview_32sceneCode.GDSporty7Objects2= [];
-gdjs.interview_32sceneCode.GDFloral7Objects1= [];
-gdjs.interview_32sceneCode.GDFloral7Objects2= [];
-gdjs.interview_32sceneCode.GDOverall7Objects1= [];
-gdjs.interview_32sceneCode.GDOverall7Objects2= [];
-gdjs.interview_32sceneCode.GDSailor7Objects1= [];
-gdjs.interview_32sceneCode.GDSailor7Objects2= [];
-gdjs.interview_32sceneCode.GDBasic7Objects1= [];
-gdjs.interview_32sceneCode.GDBasic7Objects2= [];
-gdjs.interview_32sceneCode.GDSailor6Objects1= [];
-gdjs.interview_32sceneCode.GDSailor6Objects2= [];
-gdjs.interview_32sceneCode.GDSporty6Objects1= [];
-gdjs.interview_32sceneCode.GDSporty6Objects2= [];
-gdjs.interview_32sceneCode.GDSuit6Objects1= [];
-gdjs.interview_32sceneCode.GDSuit6Objects2= [];
-gdjs.interview_32sceneCode.GDOverall6Objects1= [];
-gdjs.interview_32sceneCode.GDOverall6Objects2= [];
-gdjs.interview_32sceneCode.GDFloral6Objects1= [];
-gdjs.interview_32sceneCode.GDFloral6Objects2= [];
-gdjs.interview_32sceneCode.GDBasic6Objects1= [];
-gdjs.interview_32sceneCode.GDBasic6Objects2= [];
-gdjs.interview_32sceneCode.GDFloral5Objects1= [];
-gdjs.interview_32sceneCode.GDFloral5Objects2= [];
-gdjs.interview_32sceneCode.GDSporty5Objects1= [];
-gdjs.interview_32sceneCode.GDSporty5Objects2= [];
-gdjs.interview_32sceneCode.GDSuit5Objects1= [];
-gdjs.interview_32sceneCode.GDSuit5Objects2= [];
-gdjs.interview_32sceneCode.GDSailor5Objects1= [];
-gdjs.interview_32sceneCode.GDSailor5Objects2= [];
-gdjs.interview_32sceneCode.GDOverall5Objects1= [];
-gdjs.interview_32sceneCode.GDOverall5Objects2= [];
-gdjs.interview_32sceneCode.GDBasic5Objects1= [];
-gdjs.interview_32sceneCode.GDBasic5Objects2= [];
-gdjs.interview_32sceneCode.GDSuit4Objects1= [];
-gdjs.interview_32sceneCode.GDSuit4Objects2= [];
-gdjs.interview_32sceneCode.GDSporty4Objects1= [];
-gdjs.interview_32sceneCode.GDSporty4Objects2= [];
-gdjs.interview_32sceneCode.GDSailor4Objects1= [];
-gdjs.interview_32sceneCode.GDSailor4Objects2= [];
-gdjs.interview_32sceneCode.GDOverall4Objects1= [];
-gdjs.interview_32sceneCode.GDOverall4Objects2= [];
-gdjs.interview_32sceneCode.GDFloral4Objects1= [];
-gdjs.interview_32sceneCode.GDFloral4Objects2= [];
-gdjs.interview_32sceneCode.GDBasic4Objects1= [];
-gdjs.interview_32sceneCode.GDBasic4Objects2= [];
-gdjs.interview_32sceneCode.GDSuit3Objects1= [];
-gdjs.interview_32sceneCode.GDSuit3Objects2= [];
-gdjs.interview_32sceneCode.GDSporty3Objects1= [];
-gdjs.interview_32sceneCode.GDSporty3Objects2= [];
-gdjs.interview_32sceneCode.GDSailor3Objects1= [];
-gdjs.interview_32sceneCode.GDSailor3Objects2= [];
-gdjs.interview_32sceneCode.GDOverall3Objects1= [];
-gdjs.interview_32sceneCode.GDOverall3Objects2= [];
-gdjs.interview_32sceneCode.GDFloral3Objects1= [];
-gdjs.interview_32sceneCode.GDFloral3Objects2= [];
-gdjs.interview_32sceneCode.GDBasic3Objects1= [];
-gdjs.interview_32sceneCode.GDBasic3Objects2= [];
-gdjs.interview_32sceneCode.GDSporty2Objects1= [];
-gdjs.interview_32sceneCode.GDSporty2Objects2= [];
-gdjs.interview_32sceneCode.GDSuit2Objects1= [];
-gdjs.interview_32sceneCode.GDSuit2Objects2= [];
-gdjs.interview_32sceneCode.GDFloral2Objects1= [];
-gdjs.interview_32sceneCode.GDFloral2Objects2= [];
-gdjs.interview_32sceneCode.GDSailor2Objects1= [];
-gdjs.interview_32sceneCode.GDSailor2Objects2= [];
-gdjs.interview_32sceneCode.GDOverall2Objects1= [];
-gdjs.interview_32sceneCode.GDOverall2Objects2= [];
-gdjs.interview_32sceneCode.GDBasic2Objects1= [];
-gdjs.interview_32sceneCode.GDBasic2Objects2= [];
-gdjs.interview_32sceneCode.GDOverall1Objects1= [];
-gdjs.interview_32sceneCode.GDOverall1Objects2= [];
-gdjs.interview_32sceneCode.GDSporty1Objects1= [];
-gdjs.interview_32sceneCode.GDSporty1Objects2= [];
-gdjs.interview_32sceneCode.GDSailor1Objects1= [];
-gdjs.interview_32sceneCode.GDSailor1Objects2= [];
-gdjs.interview_32sceneCode.GDFloral1Objects1= [];
-gdjs.interview_32sceneCode.GDFloral1Objects2= [];
-gdjs.interview_32sceneCode.GDBasic1Objects1= [];
-gdjs.interview_32sceneCode.GDBasic1Objects2= [];
-gdjs.interview_32sceneCode.GDSuit1Objects1= [];
-gdjs.interview_32sceneCode.GDSuit1Objects2= [];
-gdjs.interview_32sceneCode.GDCurly9Objects1= [];
-gdjs.interview_32sceneCode.GDCurly9Objects2= [];
-gdjs.interview_32sceneCode.GDWavy9Objects1= [];
-gdjs.interview_32sceneCode.GDWavy9Objects2= [];
-gdjs.interview_32sceneCode.GDEmo9Objects1= [];
-gdjs.interview_32sceneCode.GDEmo9Objects2= [];
-gdjs.interview_32sceneCode.GDSpace9Objects1= [];
-gdjs.interview_32sceneCode.GDSpace9Objects2= [];
-gdjs.interview_32sceneCode.GDGentle9Objects1= [];
-gdjs.interview_32sceneCode.GDGentle9Objects2= [];
-gdjs.interview_32sceneCode.GDBraids9Objects1= [];
-gdjs.interview_32sceneCode.GDBraids9Objects2= [];
-gdjs.interview_32sceneCode.GDEmo8Objects1= [];
-gdjs.interview_32sceneCode.GDEmo8Objects2= [];
-gdjs.interview_32sceneCode.GDSpace8Objects1= [];
-gdjs.interview_32sceneCode.GDSpace8Objects2= [];
-gdjs.interview_32sceneCode.GDGentle8Objects1= [];
-gdjs.interview_32sceneCode.GDGentle8Objects2= [];
-gdjs.interview_32sceneCode.GDWavy8Objects1= [];
-gdjs.interview_32sceneCode.GDWavy8Objects2= [];
-gdjs.interview_32sceneCode.GDCurly8Objects1= [];
-gdjs.interview_32sceneCode.GDCurly8Objects2= [];
-gdjs.interview_32sceneCode.GDBraids8Objects1= [];
-gdjs.interview_32sceneCode.GDBraids8Objects2= [];
-gdjs.interview_32sceneCode.GDWavy7Objects1= [];
-gdjs.interview_32sceneCode.GDWavy7Objects2= [];
-gdjs.interview_32sceneCode.GDSpace7Objects1= [];
-gdjs.interview_32sceneCode.GDSpace7Objects2= [];
-gdjs.interview_32sceneCode.GDGentle7Objects1= [];
-gdjs.interview_32sceneCode.GDGentle7Objects2= [];
-gdjs.interview_32sceneCode.GDEmo7Objects1= [];
-gdjs.interview_32sceneCode.GDEmo7Objects2= [];
-gdjs.interview_32sceneCode.GDCurly7Objects1= [];
-gdjs.interview_32sceneCode.GDCurly7Objects2= [];
-gdjs.interview_32sceneCode.GDBraids7Objects1= [];
-gdjs.interview_32sceneCode.GDBraids7Objects2= [];
-gdjs.interview_32sceneCode.GDWavy6Objects1= [];
-gdjs.interview_32sceneCode.GDWavy6Objects2= [];
-gdjs.interview_32sceneCode.GDSpace6Objects1= [];
-gdjs.interview_32sceneCode.GDSpace6Objects2= [];
-gdjs.interview_32sceneCode.GDGentle6Objects1= [];
-gdjs.interview_32sceneCode.GDGentle6Objects2= [];
-gdjs.interview_32sceneCode.GDEmo6Objects1= [];
-gdjs.interview_32sceneCode.GDEmo6Objects2= [];
-gdjs.interview_32sceneCode.GDCurly6Objects1= [];
-gdjs.interview_32sceneCode.GDCurly6Objects2= [];
-gdjs.interview_32sceneCode.GDBraids6Objects1= [];
-gdjs.interview_32sceneCode.GDBraids6Objects2= [];
-gdjs.interview_32sceneCode.GDWavy5Objects1= [];
-gdjs.interview_32sceneCode.GDWavy5Objects2= [];
-gdjs.interview_32sceneCode.GDSpace5Objects1= [];
-gdjs.interview_32sceneCode.GDSpace5Objects2= [];
-gdjs.interview_32sceneCode.GDGentle5Objects1= [];
-gdjs.interview_32sceneCode.GDGentle5Objects2= [];
-gdjs.interview_32sceneCode.GDCurly5Objects1= [];
-gdjs.interview_32sceneCode.GDCurly5Objects2= [];
-gdjs.interview_32sceneCode.GDEmo5Objects1= [];
-gdjs.interview_32sceneCode.GDEmo5Objects2= [];
-gdjs.interview_32sceneCode.GDBraids5Objects1= [];
-gdjs.interview_32sceneCode.GDBraids5Objects2= [];
-gdjs.interview_32sceneCode.GDGentle4Objects1= [];
-gdjs.interview_32sceneCode.GDGentle4Objects2= [];
-gdjs.interview_32sceneCode.GDSpace4Objects1= [];
-gdjs.interview_32sceneCode.GDSpace4Objects2= [];
-gdjs.interview_32sceneCode.GDEmo4Objects1= [];
-gdjs.interview_32sceneCode.GDEmo4Objects2= [];
-gdjs.interview_32sceneCode.GDWavy4Objects1= [];
-gdjs.interview_32sceneCode.GDWavy4Objects2= [];
-gdjs.interview_32sceneCode.GDCurly4Objects1= [];
-gdjs.interview_32sceneCode.GDCurly4Objects2= [];
-gdjs.interview_32sceneCode.GDBraids4Objects1= [];
-gdjs.interview_32sceneCode.GDBraids4Objects2= [];
-gdjs.interview_32sceneCode.GDGentle3Objects1= [];
-gdjs.interview_32sceneCode.GDGentle3Objects2= [];
-gdjs.interview_32sceneCode.GDWavy3Objects1= [];
-gdjs.interview_32sceneCode.GDWavy3Objects2= [];
-gdjs.interview_32sceneCode.GDCurly3Objects1= [];
-gdjs.interview_32sceneCode.GDCurly3Objects2= [];
-gdjs.interview_32sceneCode.GDSpace3Objects1= [];
-gdjs.interview_32sceneCode.GDSpace3Objects2= [];
-gdjs.interview_32sceneCode.GDBraids3Objects1= [];
-gdjs.interview_32sceneCode.GDBraids3Objects2= [];
-gdjs.interview_32sceneCode.GDEmo3Objects1= [];
-gdjs.interview_32sceneCode.GDEmo3Objects2= [];
-gdjs.interview_32sceneCode.GDWavy2Objects1= [];
-gdjs.interview_32sceneCode.GDWavy2Objects2= [];
-gdjs.interview_32sceneCode.GDSpace2Objects1= [];
-gdjs.interview_32sceneCode.GDSpace2Objects2= [];
-gdjs.interview_32sceneCode.GDBraids2Objects1= [];
-gdjs.interview_32sceneCode.GDBraids2Objects2= [];
-gdjs.interview_32sceneCode.GDCurly2Objects1= [];
-gdjs.interview_32sceneCode.GDCurly2Objects2= [];
-gdjs.interview_32sceneCode.GDGentle2Objects1= [];
-gdjs.interview_32sceneCode.GDGentle2Objects2= [];
-gdjs.interview_32sceneCode.GDEmo2Objects1= [];
-gdjs.interview_32sceneCode.GDEmo2Objects2= [];
-gdjs.interview_32sceneCode.GDGentle1Objects1= [];
-gdjs.interview_32sceneCode.GDGentle1Objects2= [];
-gdjs.interview_32sceneCode.GDWavy1Objects1= [];
-gdjs.interview_32sceneCode.GDWavy1Objects2= [];
-gdjs.interview_32sceneCode.GDSpace1Objects1= [];
-gdjs.interview_32sceneCode.GDSpace1Objects2= [];
-gdjs.interview_32sceneCode.GDCurly1Objects1= [];
-gdjs.interview_32sceneCode.GDCurly1Objects2= [];
-gdjs.interview_32sceneCode.GDBraids1Objects1= [];
-gdjs.interview_32sceneCode.GDBraids1Objects2= [];
-gdjs.interview_32sceneCode.GDEmo1Objects1= [];
-gdjs.interview_32sceneCode.GDEmo1Objects2= [];
+gdjs.interviewCode = {};
+gdjs.interviewCode.GDNewObjectObjects1= [];
+gdjs.interviewCode.GDNewObjectObjects2= [];
+gdjs.interviewCode.GDNewObject2Objects1= [];
+gdjs.interviewCode.GDNewObject2Objects2= [];
+gdjs.interviewCode.GDNewObject3Objects1= [];
+gdjs.interviewCode.GDNewObject3Objects2= [];
+gdjs.interviewCode.GDNewObject4Objects1= [];
+gdjs.interviewCode.GDNewObject4Objects2= [];
+gdjs.interviewCode.GDNewObject5Objects1= [];
+gdjs.interviewCode.GDNewObject5Objects2= [];
+gdjs.interviewCode.GDNewObject6Objects1= [];
+gdjs.interviewCode.GDNewObject6Objects2= [];
+gdjs.interviewCode.GDNewObject7Objects1= [];
+gdjs.interviewCode.GDNewObject7Objects2= [];
+gdjs.interviewCode.GDNewObject9Objects1= [];
+gdjs.interviewCode.GDNewObject9Objects2= [];
+gdjs.interviewCode.GDNewObject10Objects1= [];
+gdjs.interviewCode.GDNewObject10Objects2= [];
+gdjs.interviewCode.GDNewObject11Objects1= [];
+gdjs.interviewCode.GDNewObject11Objects2= [];
+gdjs.interviewCode.GDNewObject13Objects1= [];
+gdjs.interviewCode.GDNewObject13Objects2= [];
+gdjs.interviewCode.GDNewObject14Objects1= [];
+gdjs.interviewCode.GDNewObject14Objects2= [];
+gdjs.interviewCode.GDNewObject15Objects1= [];
+gdjs.interviewCode.GDNewObject15Objects2= [];
+gdjs.interviewCode.GDNewObject16Objects1= [];
+gdjs.interviewCode.GDNewObject16Objects2= [];
+gdjs.interviewCode.GDNewObject17Objects1= [];
+gdjs.interviewCode.GDNewObject17Objects2= [];
+gdjs.interviewCode.GDNewObject18Objects1= [];
+gdjs.interviewCode.GDNewObject18Objects2= [];
+gdjs.interviewCode.GDNewObject19Objects1= [];
+gdjs.interviewCode.GDNewObject19Objects2= [];
+gdjs.interviewCode.GDNewObject20Objects1= [];
+gdjs.interviewCode.GDNewObject20Objects2= [];
+gdjs.interviewCode.GDNewObject21Objects1= [];
+gdjs.interviewCode.GDNewObject21Objects2= [];
+gdjs.interviewCode.GDNewObject22Objects1= [];
+gdjs.interviewCode.GDNewObject22Objects2= [];
+gdjs.interviewCode.GDNewObject23Objects1= [];
+gdjs.interviewCode.GDNewObject23Objects2= [];
+gdjs.interviewCode.GDNewObject24Objects1= [];
+gdjs.interviewCode.GDNewObject24Objects2= [];
+gdjs.interviewCode.GDNewObject26Objects1= [];
+gdjs.interviewCode.GDNewObject26Objects2= [];
+gdjs.interviewCode.GDNewObject27Objects1= [];
+gdjs.interviewCode.GDNewObject27Objects2= [];
+gdjs.interviewCode.GDNewObject28Objects1= [];
+gdjs.interviewCode.GDNewObject28Objects2= [];
+gdjs.interviewCode.GDNewObject29Objects1= [];
+gdjs.interviewCode.GDNewObject29Objects2= [];
+gdjs.interviewCode.GDNewObject30Objects1= [];
+gdjs.interviewCode.GDNewObject30Objects2= [];
+gdjs.interviewCode.GDNewObject35Objects1= [];
+gdjs.interviewCode.GDNewObject35Objects2= [];
+gdjs.interviewCode.GDNewObject8Objects1= [];
+gdjs.interviewCode.GDNewObject8Objects2= [];
+gdjs.interviewCode.GDNewObject25Objects1= [];
+gdjs.interviewCode.GDNewObject25Objects2= [];
+gdjs.interviewCode.GDNewObject31Objects1= [];
+gdjs.interviewCode.GDNewObject31Objects2= [];
+gdjs.interviewCode.GDNewObject32Objects1= [];
+gdjs.interviewCode.GDNewObject32Objects2= [];
+gdjs.interviewCode.GDNewObject33Objects1= [];
+gdjs.interviewCode.GDNewObject33Objects2= [];
+gdjs.interviewCode.GDNewObject34Objects1= [];
+gdjs.interviewCode.GDNewObject34Objects2= [];
+gdjs.interviewCode.GDNewObject36Objects1= [];
+gdjs.interviewCode.GDNewObject36Objects2= [];
+gdjs.interviewCode.GDNewObject37Objects1= [];
+gdjs.interviewCode.GDNewObject37Objects2= [];
+gdjs.interviewCode.GDNewObject38Objects1= [];
+gdjs.interviewCode.GDNewObject38Objects2= [];
+gdjs.interviewCode.GDNewObject39Objects1= [];
+gdjs.interviewCode.GDNewObject39Objects2= [];
+gdjs.interviewCode.GDNewObject40Objects1= [];
+gdjs.interviewCode.GDNewObject40Objects2= [];
+gdjs.interviewCode.GDNewObject41Objects1= [];
+gdjs.interviewCode.GDNewObject41Objects2= [];
+gdjs.interviewCode.GDNewObject42Objects1= [];
+gdjs.interviewCode.GDNewObject42Objects2= [];
+gdjs.interviewCode.GDNewObject43Objects1= [];
+gdjs.interviewCode.GDNewObject43Objects2= [];
+gdjs.interviewCode.GDNewObject44Objects1= [];
+gdjs.interviewCode.GDNewObject44Objects2= [];
+gdjs.interviewCode.GDNewObject45Objects1= [];
+gdjs.interviewCode.GDNewObject45Objects2= [];
+gdjs.interviewCode.GDRightObjects1= [];
+gdjs.interviewCode.GDRightObjects2= [];
+gdjs.interviewCode.GDLeftObjects1= [];
+gdjs.interviewCode.GDLeftObjects2= [];
+gdjs.interviewCode.GDUpObjects1= [];
+gdjs.interviewCode.GDUpObjects2= [];
+gdjs.interviewCode.GDDownObjects1= [];
+gdjs.interviewCode.GDDownObjects2= [];
+gdjs.interviewCode.GDleftUpObjects1= [];
+gdjs.interviewCode.GDleftUpObjects2= [];
+gdjs.interviewCode.GDRightUpObjects1= [];
+gdjs.interviewCode.GDRightUpObjects2= [];
+gdjs.interviewCode.GDleftBottomObjects1= [];
+gdjs.interviewCode.GDleftBottomObjects2= [];
+gdjs.interviewCode.GDRightBottomObjects1= [];
+gdjs.interviewCode.GDRightBottomObjects2= [];
+gdjs.interviewCode.GDTransparent1Objects1= [];
+gdjs.interviewCode.GDTransparent1Objects2= [];
+gdjs.interviewCode.GDPlayer6Objects1= [];
+gdjs.interviewCode.GDPlayer6Objects2= [];
+gdjs.interviewCode.GDPlayer5Objects1= [];
+gdjs.interviewCode.GDPlayer5Objects2= [];
+gdjs.interviewCode.GDPlayer4Objects1= [];
+gdjs.interviewCode.GDPlayer4Objects2= [];
+gdjs.interviewCode.GDPlayer3Objects1= [];
+gdjs.interviewCode.GDPlayer3Objects2= [];
+gdjs.interviewCode.GDPlayer2Objects1= [];
+gdjs.interviewCode.GDPlayer2Objects2= [];
+gdjs.interviewCode.GDPlayer1Objects1= [];
+gdjs.interviewCode.GDPlayer1Objects2= [];
+gdjs.interviewCode.GDShoes6Objects1= [];
+gdjs.interviewCode.GDShoes6Objects2= [];
+gdjs.interviewCode.GDShoes5Objects1= [];
+gdjs.interviewCode.GDShoes5Objects2= [];
+gdjs.interviewCode.GDShoes4Objects1= [];
+gdjs.interviewCode.GDShoes4Objects2= [];
+gdjs.interviewCode.GDShoes3Objects1= [];
+gdjs.interviewCode.GDShoes3Objects2= [];
+gdjs.interviewCode.GDShoes2Objects1= [];
+gdjs.interviewCode.GDShoes2Objects2= [];
+gdjs.interviewCode.GDShoes1Objects1= [];
+gdjs.interviewCode.GDShoes1Objects2= [];
+gdjs.interviewCode.GDSkirt8Objects1= [];
+gdjs.interviewCode.GDSkirt8Objects2= [];
+gdjs.interviewCode.GDSkirt7Objects1= [];
+gdjs.interviewCode.GDSkirt7Objects2= [];
+gdjs.interviewCode.GDSkirt6Objects1= [];
+gdjs.interviewCode.GDSkirt6Objects2= [];
+gdjs.interviewCode.GDSkirt5Objects1= [];
+gdjs.interviewCode.GDSkirt5Objects2= [];
+gdjs.interviewCode.GDSkirt4Objects1= [];
+gdjs.interviewCode.GDSkirt4Objects2= [];
+gdjs.interviewCode.GDSkirt3Objects1= [];
+gdjs.interviewCode.GDSkirt3Objects2= [];
+gdjs.interviewCode.GDSkirt2Objects1= [];
+gdjs.interviewCode.GDSkirt2Objects2= [];
+gdjs.interviewCode.GDSkirt1Objects1= [];
+gdjs.interviewCode.GDSkirt1Objects2= [];
+gdjs.interviewCode.GDPant8Objects1= [];
+gdjs.interviewCode.GDPant8Objects2= [];
+gdjs.interviewCode.GDPant7Objects1= [];
+gdjs.interviewCode.GDPant7Objects2= [];
+gdjs.interviewCode.GDPant6Objects1= [];
+gdjs.interviewCode.GDPant6Objects2= [];
+gdjs.interviewCode.GDPant5Objects1= [];
+gdjs.interviewCode.GDPant5Objects2= [];
+gdjs.interviewCode.GDPant4Objects1= [];
+gdjs.interviewCode.GDPant4Objects2= [];
+gdjs.interviewCode.GDPant3Objects1= [];
+gdjs.interviewCode.GDPant3Objects2= [];
+gdjs.interviewCode.GDPant2Objects1= [];
+gdjs.interviewCode.GDPant2Objects2= [];
+gdjs.interviewCode.GDPant1Objects1= [];
+gdjs.interviewCode.GDPant1Objects2= [];
+gdjs.interviewCode.GDFloral8Objects1= [];
+gdjs.interviewCode.GDFloral8Objects2= [];
+gdjs.interviewCode.GDSuit8Objects1= [];
+gdjs.interviewCode.GDSuit8Objects2= [];
+gdjs.interviewCode.GDSporty8Objects1= [];
+gdjs.interviewCode.GDSporty8Objects2= [];
+gdjs.interviewCode.GDSailor8Objects1= [];
+gdjs.interviewCode.GDSailor8Objects2= [];
+gdjs.interviewCode.GDOverall8Objects1= [];
+gdjs.interviewCode.GDOverall8Objects2= [];
+gdjs.interviewCode.GDBasic8Objects1= [];
+gdjs.interviewCode.GDBasic8Objects2= [];
+gdjs.interviewCode.GDSuit7Objects1= [];
+gdjs.interviewCode.GDSuit7Objects2= [];
+gdjs.interviewCode.GDSporty7Objects1= [];
+gdjs.interviewCode.GDSporty7Objects2= [];
+gdjs.interviewCode.GDFloral7Objects1= [];
+gdjs.interviewCode.GDFloral7Objects2= [];
+gdjs.interviewCode.GDOverall7Objects1= [];
+gdjs.interviewCode.GDOverall7Objects2= [];
+gdjs.interviewCode.GDSailor7Objects1= [];
+gdjs.interviewCode.GDSailor7Objects2= [];
+gdjs.interviewCode.GDBasic7Objects1= [];
+gdjs.interviewCode.GDBasic7Objects2= [];
+gdjs.interviewCode.GDSailor6Objects1= [];
+gdjs.interviewCode.GDSailor6Objects2= [];
+gdjs.interviewCode.GDSporty6Objects1= [];
+gdjs.interviewCode.GDSporty6Objects2= [];
+gdjs.interviewCode.GDSuit6Objects1= [];
+gdjs.interviewCode.GDSuit6Objects2= [];
+gdjs.interviewCode.GDOverall6Objects1= [];
+gdjs.interviewCode.GDOverall6Objects2= [];
+gdjs.interviewCode.GDFloral6Objects1= [];
+gdjs.interviewCode.GDFloral6Objects2= [];
+gdjs.interviewCode.GDBasic6Objects1= [];
+gdjs.interviewCode.GDBasic6Objects2= [];
+gdjs.interviewCode.GDFloral5Objects1= [];
+gdjs.interviewCode.GDFloral5Objects2= [];
+gdjs.interviewCode.GDSporty5Objects1= [];
+gdjs.interviewCode.GDSporty5Objects2= [];
+gdjs.interviewCode.GDSuit5Objects1= [];
+gdjs.interviewCode.GDSuit5Objects2= [];
+gdjs.interviewCode.GDSailor5Objects1= [];
+gdjs.interviewCode.GDSailor5Objects2= [];
+gdjs.interviewCode.GDOverall5Objects1= [];
+gdjs.interviewCode.GDOverall5Objects2= [];
+gdjs.interviewCode.GDBasic5Objects1= [];
+gdjs.interviewCode.GDBasic5Objects2= [];
+gdjs.interviewCode.GDSuit4Objects1= [];
+gdjs.interviewCode.GDSuit4Objects2= [];
+gdjs.interviewCode.GDSporty4Objects1= [];
+gdjs.interviewCode.GDSporty4Objects2= [];
+gdjs.interviewCode.GDSailor4Objects1= [];
+gdjs.interviewCode.GDSailor4Objects2= [];
+gdjs.interviewCode.GDOverall4Objects1= [];
+gdjs.interviewCode.GDOverall4Objects2= [];
+gdjs.interviewCode.GDFloral4Objects1= [];
+gdjs.interviewCode.GDFloral4Objects2= [];
+gdjs.interviewCode.GDBasic4Objects1= [];
+gdjs.interviewCode.GDBasic4Objects2= [];
+gdjs.interviewCode.GDSuit3Objects1= [];
+gdjs.interviewCode.GDSuit3Objects2= [];
+gdjs.interviewCode.GDSporty3Objects1= [];
+gdjs.interviewCode.GDSporty3Objects2= [];
+gdjs.interviewCode.GDSailor3Objects1= [];
+gdjs.interviewCode.GDSailor3Objects2= [];
+gdjs.interviewCode.GDOverall3Objects1= [];
+gdjs.interviewCode.GDOverall3Objects2= [];
+gdjs.interviewCode.GDFloral3Objects1= [];
+gdjs.interviewCode.GDFloral3Objects2= [];
+gdjs.interviewCode.GDBasic3Objects1= [];
+gdjs.interviewCode.GDBasic3Objects2= [];
+gdjs.interviewCode.GDSporty2Objects1= [];
+gdjs.interviewCode.GDSporty2Objects2= [];
+gdjs.interviewCode.GDSuit2Objects1= [];
+gdjs.interviewCode.GDSuit2Objects2= [];
+gdjs.interviewCode.GDFloral2Objects1= [];
+gdjs.interviewCode.GDFloral2Objects2= [];
+gdjs.interviewCode.GDSailor2Objects1= [];
+gdjs.interviewCode.GDSailor2Objects2= [];
+gdjs.interviewCode.GDOverall2Objects1= [];
+gdjs.interviewCode.GDOverall2Objects2= [];
+gdjs.interviewCode.GDBasic2Objects1= [];
+gdjs.interviewCode.GDBasic2Objects2= [];
+gdjs.interviewCode.GDOverall1Objects1= [];
+gdjs.interviewCode.GDOverall1Objects2= [];
+gdjs.interviewCode.GDSporty1Objects1= [];
+gdjs.interviewCode.GDSporty1Objects2= [];
+gdjs.interviewCode.GDSailor1Objects1= [];
+gdjs.interviewCode.GDSailor1Objects2= [];
+gdjs.interviewCode.GDFloral1Objects1= [];
+gdjs.interviewCode.GDFloral1Objects2= [];
+gdjs.interviewCode.GDBasic1Objects1= [];
+gdjs.interviewCode.GDBasic1Objects2= [];
+gdjs.interviewCode.GDSuit1Objects1= [];
+gdjs.interviewCode.GDSuit1Objects2= [];
+gdjs.interviewCode.GDCurly9Objects1= [];
+gdjs.interviewCode.GDCurly9Objects2= [];
+gdjs.interviewCode.GDWavy9Objects1= [];
+gdjs.interviewCode.GDWavy9Objects2= [];
+gdjs.interviewCode.GDEmo9Objects1= [];
+gdjs.interviewCode.GDEmo9Objects2= [];
+gdjs.interviewCode.GDSpace9Objects1= [];
+gdjs.interviewCode.GDSpace9Objects2= [];
+gdjs.interviewCode.GDGentle9Objects1= [];
+gdjs.interviewCode.GDGentle9Objects2= [];
+gdjs.interviewCode.GDBraids9Objects1= [];
+gdjs.interviewCode.GDBraids9Objects2= [];
+gdjs.interviewCode.GDEmo8Objects1= [];
+gdjs.interviewCode.GDEmo8Objects2= [];
+gdjs.interviewCode.GDSpace8Objects1= [];
+gdjs.interviewCode.GDSpace8Objects2= [];
+gdjs.interviewCode.GDGentle8Objects1= [];
+gdjs.interviewCode.GDGentle8Objects2= [];
+gdjs.interviewCode.GDWavy8Objects1= [];
+gdjs.interviewCode.GDWavy8Objects2= [];
+gdjs.interviewCode.GDCurly8Objects1= [];
+gdjs.interviewCode.GDCurly8Objects2= [];
+gdjs.interviewCode.GDBraids8Objects1= [];
+gdjs.interviewCode.GDBraids8Objects2= [];
+gdjs.interviewCode.GDWavy7Objects1= [];
+gdjs.interviewCode.GDWavy7Objects2= [];
+gdjs.interviewCode.GDSpace7Objects1= [];
+gdjs.interviewCode.GDSpace7Objects2= [];
+gdjs.interviewCode.GDGentle7Objects1= [];
+gdjs.interviewCode.GDGentle7Objects2= [];
+gdjs.interviewCode.GDEmo7Objects1= [];
+gdjs.interviewCode.GDEmo7Objects2= [];
+gdjs.interviewCode.GDCurly7Objects1= [];
+gdjs.interviewCode.GDCurly7Objects2= [];
+gdjs.interviewCode.GDBraids7Objects1= [];
+gdjs.interviewCode.GDBraids7Objects2= [];
+gdjs.interviewCode.GDWavy6Objects1= [];
+gdjs.interviewCode.GDWavy6Objects2= [];
+gdjs.interviewCode.GDSpace6Objects1= [];
+gdjs.interviewCode.GDSpace6Objects2= [];
+gdjs.interviewCode.GDGentle6Objects1= [];
+gdjs.interviewCode.GDGentle6Objects2= [];
+gdjs.interviewCode.GDEmo6Objects1= [];
+gdjs.interviewCode.GDEmo6Objects2= [];
+gdjs.interviewCode.GDCurly6Objects1= [];
+gdjs.interviewCode.GDCurly6Objects2= [];
+gdjs.interviewCode.GDBraids6Objects1= [];
+gdjs.interviewCode.GDBraids6Objects2= [];
+gdjs.interviewCode.GDWavy5Objects1= [];
+gdjs.interviewCode.GDWavy5Objects2= [];
+gdjs.interviewCode.GDSpace5Objects1= [];
+gdjs.interviewCode.GDSpace5Objects2= [];
+gdjs.interviewCode.GDGentle5Objects1= [];
+gdjs.interviewCode.GDGentle5Objects2= [];
+gdjs.interviewCode.GDCurly5Objects1= [];
+gdjs.interviewCode.GDCurly5Objects2= [];
+gdjs.interviewCode.GDEmo5Objects1= [];
+gdjs.interviewCode.GDEmo5Objects2= [];
+gdjs.interviewCode.GDBraids5Objects1= [];
+gdjs.interviewCode.GDBraids5Objects2= [];
+gdjs.interviewCode.GDGentle4Objects1= [];
+gdjs.interviewCode.GDGentle4Objects2= [];
+gdjs.interviewCode.GDSpace4Objects1= [];
+gdjs.interviewCode.GDSpace4Objects2= [];
+gdjs.interviewCode.GDEmo4Objects1= [];
+gdjs.interviewCode.GDEmo4Objects2= [];
+gdjs.interviewCode.GDWavy4Objects1= [];
+gdjs.interviewCode.GDWavy4Objects2= [];
+gdjs.interviewCode.GDCurly4Objects1= [];
+gdjs.interviewCode.GDCurly4Objects2= [];
+gdjs.interviewCode.GDBraids4Objects1= [];
+gdjs.interviewCode.GDBraids4Objects2= [];
+gdjs.interviewCode.GDGentle3Objects1= [];
+gdjs.interviewCode.GDGentle3Objects2= [];
+gdjs.interviewCode.GDWavy3Objects1= [];
+gdjs.interviewCode.GDWavy3Objects2= [];
+gdjs.interviewCode.GDCurly3Objects1= [];
+gdjs.interviewCode.GDCurly3Objects2= [];
+gdjs.interviewCode.GDSpace3Objects1= [];
+gdjs.interviewCode.GDSpace3Objects2= [];
+gdjs.interviewCode.GDBraids3Objects1= [];
+gdjs.interviewCode.GDBraids3Objects2= [];
+gdjs.interviewCode.GDEmo3Objects1= [];
+gdjs.interviewCode.GDEmo3Objects2= [];
+gdjs.interviewCode.GDWavy2Objects1= [];
+gdjs.interviewCode.GDWavy2Objects2= [];
+gdjs.interviewCode.GDSpace2Objects1= [];
+gdjs.interviewCode.GDSpace2Objects2= [];
+gdjs.interviewCode.GDBraids2Objects1= [];
+gdjs.interviewCode.GDBraids2Objects2= [];
+gdjs.interviewCode.GDCurly2Objects1= [];
+gdjs.interviewCode.GDCurly2Objects2= [];
+gdjs.interviewCode.GDGentle2Objects1= [];
+gdjs.interviewCode.GDGentle2Objects2= [];
+gdjs.interviewCode.GDEmo2Objects1= [];
+gdjs.interviewCode.GDEmo2Objects2= [];
+gdjs.interviewCode.GDGentle1Objects1= [];
+gdjs.interviewCode.GDGentle1Objects2= [];
+gdjs.interviewCode.GDWavy1Objects1= [];
+gdjs.interviewCode.GDWavy1Objects2= [];
+gdjs.interviewCode.GDSpace1Objects1= [];
+gdjs.interviewCode.GDSpace1Objects2= [];
+gdjs.interviewCode.GDCurly1Objects1= [];
+gdjs.interviewCode.GDCurly1Objects2= [];
+gdjs.interviewCode.GDBraids1Objects1= [];
+gdjs.interviewCode.GDBraids1Objects2= [];
+gdjs.interviewCode.GDEmo1Objects1= [];
+gdjs.interviewCode.GDEmo1Objects2= [];
+gdjs.interviewCode.GDdoorObjects1= [];
+gdjs.interviewCode.GDdoorObjects2= [];
+gdjs.interviewCode.GDTransparentObjects1= [];
+gdjs.interviewCode.GDTransparentObjects2= [];
+gdjs.interviewCode.GDrestroomObjects1= [];
+gdjs.interviewCode.GDrestroomObjects2= [];
+gdjs.interviewCode.GDrestObjects1= [];
+gdjs.interviewCode.GDrestObjects2= [];
 
-gdjs.interview_32sceneCode.conditionTrue_0 = {val:false};
-gdjs.interview_32sceneCode.condition0IsTrue_0 = {val:false};
-gdjs.interview_32sceneCode.condition1IsTrue_0 = {val:false};
+gdjs.interviewCode.conditionTrue_0 = {val:false};
+gdjs.interviewCode.condition0IsTrue_0 = {val:false};
+gdjs.interviewCode.condition1IsTrue_0 = {val:false};
+gdjs.interviewCode.condition2IsTrue_0 = {val:false};
 
 
-gdjs.interview_32sceneCode.userFunc0x1c078e0 = function(runtimeScene) {
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects = Hashtable.newFrom({"Transparent": gdjs.interviewCode.GDTransparentObjects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDPlayer1Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer2Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer3Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer4Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer5Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer6Objects1Objects = Hashtable.newFrom({"Player1": gdjs.interviewCode.GDPlayer1Objects1, "Player2": gdjs.interviewCode.GDPlayer2Objects1, "Player3": gdjs.interviewCode.GDPlayer3Objects1, "Player4": gdjs.interviewCode.GDPlayer4Objects1, "Player5": gdjs.interviewCode.GDPlayer5Objects1, "Player6": gdjs.interviewCode.GDPlayer6Objects1});
+gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDrestObjects1Objects = Hashtable.newFrom({"rest": gdjs.interviewCode.GDrestObjects1});
+gdjs.interviewCode.userFunc0x381e420 = function(runtimeScene) {
 "use strict";
-runtimeScene.ws = new WebSocket("ws://localhost:5200/ws");
+runtimeScene.ws = new WebSocket("ws://localhost:5100/ws");
 const id = Math.floor(Math.random() * Math.floor(100000))
 const sit = 0;
+const roomName = "interview";
 runtimeScene.player_id = id
 runtimeScene.delayedEvents = []
-const BodyColor = runtimeScene.getGame().getVariables().get("PlayerBodyColor")._str;
-const HairColor = runtimeScene.getGame().getVariables().get("HairColor")._str;
-const TopColor = runtimeScene.getGame().getVariables().get("TopColor")._str;
-const BottomColor = runtimeScene.getGame().getVariables().get("BottomColor")._str;
-const ShoesColor = runtimeScene.getGame().getVariables().get("ShoesColor")._str;
-
-const HairStyle = runtimeScene.getGame().getVariables().get("PlayerHairStyle")._str;
-const TopStyle = runtimeScene.getGame().getVariables().get("PlayerTopStyle")._str;
-const BottomStyle = runtimeScene.getGame().getVariables().get("PlayerBottomStyle")._str;
-const ShoesStyle = runtimeScene.getGame().getVariables().get("PlayerShoesStyle")._str;
 
 runtimeScene.ws.onopen = function(event) {
+    const BodyColor = runtimeScene.getGame().getVariables().get("PlayerBodyColor")._str;
+    const HairColor = runtimeScene.getGame().getVariables().get("HairColor")._str;
+    const TopColor = runtimeScene.getGame().getVariables().get("TopColor")._str;
+    const BottomColor = runtimeScene.getGame().getVariables().get("BottomColor")._str;
+    const ShoesColor = runtimeScene.getGame().getVariables().get("ShoesColor")._str;
+
+    const HairStyle = runtimeScene.getGame().getVariables().get("PlayerHairStyle")._str;
+    const TopStyle = runtimeScene.getGame().getVariables().get("PlayerTopStyle")._str;
+    const BottomStyle = runtimeScene.getGame().getVariables().get("PlayerBottomStyle")._str;
+    const ShoesStyle = runtimeScene.getGame().getVariables().get("PlayerShoesStyle")._str;
+
     const data = {
+        join: roomName,
+        room: roomName,
         command: "NEW_PLAYER",
         player_id: runtimeScene.player_id,
         data : {
-            x: 38,
-            y: 26,
-            z: 9
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
+            x: 480,
+            y: 300,
+            z: 20
         }
     }
     setTimeout(() => {
@@ -449,13 +733,34 @@ runtimeScene.ws.onmessage = function (event) {
 
 function newPlayer(event) {
     const p = createPlayer(event)
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
     if(runtimeScene.player_id !== p.player_id){
         // create that player
         const o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === runtimeScene.player_id)
         const update = {
+            room: roomName,
             command: "REFRESH_PLAYER",
             player_id: runtimeScene.player_id,
             data: {
+                bodyColor: BodyColor,
+                hairColor: HairColor,
+                topColor: TopColor,
+                bottomColor: BottomColor,
+                shoesColor: ShoesColor,
+                hairStyle: HairStyle,
+                topStyle: TopStyle,
+                bottomStyle: BottomStyle,
+                shoesStyle: ShoesStyle,
                 x: o.getX(),
                 y: o.getY(),
                 z: o.getZOrder()
@@ -466,6 +771,7 @@ function newPlayer(event) {
 }
 
 function refreshPlayers(event) {
+    const bodyColor = event.data.bodyColor;
     const o = runtimeScene.getObjects("Player"+ BodyColor).find((o) => o.player_id === event.player_id)
     if(typeof o === "undefined") {
         const p = createPlayer(event)
@@ -475,6 +781,17 @@ function refreshPlayers(event) {
 
 
 function createPlayer(event) {
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
     // BODY
     var player;
     player = runtimeScene.createObject("Player" + BodyColor)
@@ -490,8 +807,10 @@ function createPlayer(event) {
 
     // Top
     var top;
-
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.createObject("EmptyTop")
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.createObject("Suit"+TopColor)
     }
     else if (TopStyle === "2"){
@@ -520,8 +839,10 @@ function createPlayer(event) {
     
     // Bottom
     var bottom;
-
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.createObject("EmptyBottom")
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.createObject("Pant"+BottomColor)
     }
     else if (BottomStyle === "2"){
@@ -538,7 +859,12 @@ function createPlayer(event) {
 
     // // Shoes
     var shoes;
-    shoes = runtimeScene.createObject("Shoes"+ShoesColor)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.createObject("EmptyShoes")
+    }
+    else {
+        shoes = runtimeScene.createObject("Shoes"+ShoesColor)
+    }
     shoes.setX(player.getPointX("zero"))
     shoes.setY(player.getPointY("zero"))
     shoes.setZOrder(event.data.z + 1)
@@ -547,10 +873,12 @@ function createPlayer(event) {
     shoes.player_id = event.player_id
     shoes.positions = []
 
-    // // Hair
+    // Hair
     var hair;
-
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.createObject("EmptyHair")
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.createObject("Emo"+HairColor)
     }
     else if (HairStyle === "2"){
@@ -577,78 +905,32 @@ function createPlayer(event) {
     hair.player_id = event.player_id
     hair.positions = []
 
-    // camera
-    var camX = runtimeScene.getLayer("").getCameraX(player.player_id)
-    var camY = runtimeScene.getLayer("").getCameraY(player.player_id)
-
-    runtimeScene.getLayer("").setCameraX(lerp(camX,player.getX(),0.8), player.player_id)
-    runtimeScene.getLayer("").setCameraY(lerp(camY,player.getY(),0.8), player.player_id)
-
     return player
 }
 
 
-function rightMovement(event){
-    const o = runtimeScene.getObjects("Player").find((o) => o.player_id === event.player_id)
-    const top = runtimeScene.getObjects("Top").find((o) => o.player_id === event.player_id)
-    const bottom = runtimeScene.getObjects("Bottom").find((o) => o.player_id === event.player_id)
-    const shoes = runtimeScene.getObjects("Shoes").find((o) => o.player_id === event.player_id)
-    const hair = runtimeScene.getObjects("Hair").find((o) => o.player_id === event.player_id)
-
-    if (typeof o === "undefined") {
-        return
-    }
-    o.setAnimationName("Right-walking")
-    top.setAnimationName("Right-walking")
-    bottom.setAnimationName("Right-walking")
-    shoes.setAnimationName("Right-walking")
-    hair.setAnimationName("Right-walking")
-    movement(event)
-}
-
-function upMovement(event){
-    const o = runtimeScene.getObjects("Player").find((o) => o.player_id === event.player_id)
-    const top = runtimeScene.getObjects("Top").find((o) => o.player_id === event.player_id)
-    const bottom = runtimeScene.getObjects("Bottom").find((o) => o.player_id === event.player_id)
-    const shoes = runtimeScene.getObjects("Shoes").find((o) => o.player_id === event.player_id)
-    const hair = runtimeScene.getObjects("Hair").find((o) => o.player_id === event.player_id)
-
-    if (typeof o === "undefined") {
-        return
-    }
-    o.setAnimationName("Up-walking")
-    top.setAnimationName("Up-walking")
-    bottom.setAnimationName("Up-walking")
-    shoes.setAnimationName("Up-walking")
-    hair.setAnimationName("Up-walking")
-    movement(event)
-}
-
-function downMovement(event){
-    const o = runtimeScene.getObjects("Player").find((o) => o.player_id === event.player_id)
-    const top = runtimeScene.getObjects("Top").find((o) => o.player_id === event.player_id)
-    const bottom = runtimeScene.getObjects("Bottom").find((o) => o.player_id === event.player_id)
-    const shoes = runtimeScene.getObjects("Shoes").find((o) => o.player_id === event.player_id)
-    const hair = runtimeScene.getObjects("Hair").find((o) => o.player_id === event.player_id)
-
-    if (typeof o === "undefined") {
-        return
-    }
-    o.setAnimationName("Down-walking")
-    top.setAnimationName("Down-walking")
-    bottom.setAnimationName("Down-walking")
-    shoes.setAnimationName("Down-walking")
-    hair.setAnimationName("Down-walking")
-    movement(event)
-}
 function leftMovement(event){
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
     //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
     
     //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -669,7 +951,10 @@ function leftMovement(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -678,11 +963,19 @@ function leftMovement(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -702,6 +995,7 @@ function leftMovement(event){
     }
 
     if (typeof o === "undefined") {
+        createPlayer(event);
         return
     }
 
@@ -715,13 +1009,27 @@ function leftMovement(event){
 }
 
 function rightMovement(event){
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
     //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
     
     //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -742,7 +1050,10 @@ function rightMovement(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -751,11 +1062,19 @@ function rightMovement(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -775,6 +1094,7 @@ function rightMovement(event){
     }
 
     if (typeof o === "undefined") {
+        createPlayer(event);
         return
     }
     o.setAnimationName("Right-walking")
@@ -782,17 +1102,33 @@ function rightMovement(event){
     bottom.setAnimationName("Right-walking")
     shoes.setAnimationName("Right-walking")
     hair.setAnimationName("Right-walking")
+
+
     movement(event)
 }
 
 function upMovement(event){
-     //body
-     var o;
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
+    //body
+    var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
     
     //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -813,7 +1149,10 @@ function upMovement(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -822,11 +1161,19 @@ function upMovement(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -846,6 +1193,7 @@ function upMovement(event){
     }
 
     if (typeof o === "undefined") {
+        createPlayer(event);
         return
     }
     o.setAnimationName("Up-walking")
@@ -854,16 +1202,33 @@ function upMovement(event){
     shoes.setAnimationName("Up-walking")
     hair.setAnimationName("Up-walking")
     movement(event)
+
+
+
 }
 
 function downMovement(event){
-     //body
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
+    //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
     
     //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -884,7 +1249,10 @@ function downMovement(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -893,11 +1261,19 @@ function downMovement(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -917,6 +1293,7 @@ function downMovement(event){
     }
 
     if (typeof o === "undefined") {
+        createPlayer(event);
         return
     }
     o.setAnimationName("Down-walking")
@@ -925,6 +1302,20 @@ function downMovement(event){
     shoes.setAnimationName("Down-walking")
     hair.setAnimationName("Down-walking")
     movement(event)
+
+    const doorGroup = runtimeScene.getObjects("restroom")
+
+    for(let obj of doorGroup){
+        if (gdjs.RuntimeObject.collisionTest(o,obj,false) == true){
+            o.deleteFromScene(runtimeScene)
+            hair.deleteFromScene(runtimeScene)
+            top.deleteFromScene(runtimeScene)
+            bottom.deleteFromScene(runtimeScene)
+            shoes.deleteFromScene(runtimeScene)
+            
+            return;
+        }
+    }
 }
 
 function lerp(a,b,c){
@@ -932,13 +1323,27 @@ function lerp(a,b,c){
 }
 
 function spacebar(event){
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
     //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
     
     //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -959,7 +1364,10 @@ function spacebar(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -968,11 +1376,19 @@ function spacebar(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -995,10 +1411,12 @@ function spacebar(event){
         return
     }
     // To global variable
-    const leftChairGroup = runtimeScene.getObjects("couch02").concat(runtimeScene.getObjects("chair_kitchen02"))
-    const rightChairGroup = runtimeScene.getObjects("chair_kitchen").concat(runtimeScene.getObjects("couch_blue02")).concat(runtimeScene.getObjects("couch01"))
-    const downChairGroup = runtimeScene.getObjects("toilet").concat(runtimeScene.getObjects("couch_blue01"))
-    const upChairGroup = runtimeScene.getObjects("makeup_chair01").concat(runtimeScene.getObjects("makeup_chair02")).concat(runtimeScene.getObjects("makeup_chair03")).concat(runtimeScene.getObjects("couch_up")).concat(runtimeScene.getObjects("chair_kitchen03")).concat(runtimeScene.getObjects("chair_black"))
+    const leftChairGroup = runtimeScene.getObjects("NewObject16").concat(runtimeScene.getObjects("NewObject20"))
+    const rightChairGroup = runtimeScene.getObjects("NewObject17").concat(runtimeScene.getObjects("NewObject19"))
+    const downChairGroup = runtimeScene.getObjects("NewObject5").concat(runtimeScene.getObjects("NewObject18")).concat(runtimeScene.getObjects("NewObject25")).concat(runtimeScene.getObjects("NewObject38")).concat(runtimeScene.getObjects("NewObject10"))
+    const upChairGroup = runtimeScene.getObjects("NewObject6").concat(runtimeScene.getObjects("NewObject32")).concat(runtimeScene.getObjects("NewObject21"))
+    const doorGroup = runtimeScene.getObjects("door")
+
     for(let obj of leftChairGroup){
         if (gdjs.RuntimeObject.collisionTest(o,obj,false) == true){
             o.setAnimationName("Left-sit")
@@ -1121,16 +1539,33 @@ function spacebar(event){
         }
     }
 
+
+
 }
 
 function movement(event) {
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
+    
     //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
-    
+
     //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -1151,7 +1586,10 @@ function movement(event) {
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -1160,11 +1598,19 @@ function movement(event) {
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -1181,12 +1627,19 @@ function movement(event) {
     }
     else if (HairStyle === "6"){
         hair = runtimeScene.getObjects("Wavy"+HairColor).find((o) => o.player_id === event.player_id)
-    }
-    
+    }   
+
+    // console.log("movement Player : ",o);
+    // console.log("movement Player : ",top);
+    // console.log("movement Player : ",bottom);
+    // console.log("movement Player : ",shoes);
+    // console.log("movement Player : ",hair);
+
     if (typeof o === "undefined") {
+        // createPlayer(event);
         return
     }
-
+    
     o.setX(event.data.x)
     o.setY(event.data.y)
     o.setZOrder(event.data.z)
@@ -1209,21 +1662,37 @@ function movement(event) {
 
 
     if(o.player_id === id){
-        var camX = runtimeScene.getLayer("Item Layer").getCameraX(o.player_id)
-        var camY = runtimeScene.getLayer("Item Layer").getCameraY(o.player_id)
+        var camX = runtimeScene.getLayer("").getCameraX(o.player_id)
+        var camY = runtimeScene.getLayer("").getCameraY(o.player_id)
 
-        runtimeScene.getLayer("Item Layer").setCameraX(lerp(camX,o.getX(),0.8), o.player_id)
-        runtimeScene.getLayer("Item Layer").setCameraY(lerp(camY,o.getY(),0.8), o.player_id)
+        runtimeScene.getLayer("").setCameraX(lerp(camX,o.getX(),0.8), o.player_id)
+        runtimeScene.getLayer("").setCameraY(lerp(camY,o.getY(),0.8), o.player_id)
     }
+
 }
 
 function leftRelease(event){
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
     //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
-   //top
+    
+    //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -1244,7 +1713,10 @@ function leftRelease(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -1253,11 +1725,19 @@ function leftRelease(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -1288,12 +1768,27 @@ function leftRelease(event){
 }
 
 function rightRelease(event){
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
     //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
-   //top
+    
+    //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -1314,7 +1809,10 @@ function rightRelease(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -1323,11 +1821,19 @@ function rightRelease(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -1357,12 +1863,27 @@ function rightRelease(event){
 }
 
 function upRelease(event){
-        //body
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
+    //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
-   //top
+    
+    //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -1383,7 +1904,10 @@ function upRelease(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -1392,11 +1916,19 @@ function upRelease(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -1426,12 +1958,27 @@ function upRelease(event){
 }
 
 function downRelease(event){
-        //body
+    const BodyColor = event.data.bodyColor;
+    const HairColor = event.data.hairColor;
+    const TopColor = event.data.topColor;
+    const BottomColor = event.data.bottomColor;
+    const ShoesColor = event.data.shoesColor;
+
+    const HairStyle = event.data.hairStyle;
+    const TopStyle = event.data.topStyle;
+    const BottomStyle = event.data.bottomStyle;
+    const ShoesStyle = event.data.shoesStyle;
+
+    //body
     var o;
     o = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === event.player_id)
-   //top
+    
+    //top
     var top;
-    if (TopStyle === "1"){
+    if (TopStyle === "0"){
+        top = runtimeScene.getObjects("EmptyTop").find((o) => o.player_id === event.player_id)
+    }
+    else if (TopStyle === "1"){
         top = runtimeScene.getObjects("Suit"+TopColor).find((o) => o.player_id === event.player_id)
     }
     else if (TopStyle === "2"){
@@ -1452,7 +1999,10 @@ function downRelease(event){
     
     //bottom
     var bottom;
-    if (BottomStyle === "1"){
+    if (BottomStyle === "0"){
+        bottom = runtimeScene.getObjects("EmptyBottom").find((o) => o.player_id === event.player_id)
+    }
+    else if (BottomStyle === "1"){
         bottom = runtimeScene.getObjects("Pant"+BottomColor).find((o) => o.player_id === event.player_id)
     }
     else if (BottomStyle === "2"){
@@ -1461,11 +2011,19 @@ function downRelease(event){
 
     // shoes
     var shoes;
-    shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    if (ShoesStyle === "0"){
+        shoes = runtimeScene.getObjects("EmptyShoes").find((o) => o.player_id === event.player_id)
+    }
+    else {
+        shoes = runtimeScene.getObjects("Shoes"+ShoesColor).find((o) => o.player_id === event.player_id)
+    }
 
     //hair
     var hair;
-    if (HairStyle === "1"){
+    if (HairStyle === "0"){
+        hair = runtimeScene.getObjects("EmptyHair").find((o) => o.player_id === event.player_id)
+    }
+    else if (HairStyle === "1"){
         hair = runtimeScene.getObjects("Emo"+HairColor).find((o) => o.player_id === event.player_id)
     }
     else if (HairStyle === "2"){
@@ -1495,26 +2053,38 @@ function downRelease(event){
     hair.setAnimationName("Down-idle")
 }
 };
-gdjs.interview_32sceneCode.eventsList0 = function(runtimeScene) {
+gdjs.interviewCode.eventsList0 = function(runtimeScene) {
 
 {
 
 
-gdjs.interview_32sceneCode.userFunc0x1c078e0(runtimeScene);
+gdjs.interviewCode.userFunc0x381e420(runtimeScene);
 
 }
 
 
-};gdjs.interview_32sceneCode.userFunc0x1bd75b8 = function(runtimeScene) {
+};gdjs.interviewCode.userFunc0x3c99fe0 = function(runtimeScene) {
 "use strict";
-const input = runtimeScene._runtimeGame.getInputManager()
+const roomName = "interview";
+
 const BodyColor = runtimeScene.getGame().getVariables().get("PlayerBodyColor")._str;
+const HairColor = runtimeScene.getGame().getVariables().get("HairColor")._str;
+const TopColor = runtimeScene.getGame().getVariables().get("TopColor")._str;
+const BottomColor = runtimeScene.getGame().getVariables().get("BottomColor")._str;
+const ShoesColor = runtimeScene.getGame().getVariables().get("ShoesColor")._str;
+
+const HairStyle = runtimeScene.getGame().getVariables().get("PlayerHairStyle")._str;
+const TopStyle = runtimeScene.getGame().getVariables().get("PlayerTopStyle")._str;
+const BottomStyle = runtimeScene.getGame().getVariables().get("PlayerBottomStyle")._str;
+const ShoesStyle = runtimeScene.getGame().getVariables().get("PlayerShoesStyle")._str;
+
+const input = runtimeScene._runtimeGame.getInputManager()
 const player = runtimeScene.getObjects("Player"+BodyColor).find((o) => o.player_id === runtimeScene.player_id);
 const SPACEBAR = 32;
 const LEFTKEY = 37;
-const UPKEY = 38
-const RIGHTKEY = 39
-const DOWNKEY = 40
+const UPKEY = 38;
+const RIGHTKEY = 39;
+const DOWNKEY = 40;
 
 if(typeof player === "undefined") {
     return;
@@ -1531,9 +2101,19 @@ var update;
 if(input.wasKeyReleased(SPACEBAR)){
     moved = true
     update = {
+        room: roomName,
         command : "SPACEBAR",
         player_id : runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1546,9 +2126,19 @@ if(input.isKeyPressed(LEFTKEY)) {
     x -= movementSpeed
 
     update = {
+        room: roomName,
         command: "MOVEMENT_LEFT",
         player_id: runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1561,9 +2151,19 @@ if(input.isKeyPressed(RIGHTKEY)) {
     x += movementSpeed
 
     update = {
+        room: roomName,
         command: "MOVEMENT_RIGHT",
         player_id: runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1577,9 +2177,19 @@ if(input.isKeyPressed(UPKEY)) {
     y -= movementSpeed
 
     update = {
+        room: roomName,
         command: "MOVEMENT_UP",
         player_id: runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1592,9 +2202,19 @@ if(input.isKeyPressed(DOWNKEY)) {
     y += movementSpeed
 
     update = {
+        room: roomName,
         command: "MOVEMENT_DOWN",
         player_id: runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1607,9 +2227,19 @@ if(input.wasKeyReleased(LEFTKEY)) {
     moved = true
     
     update = {
+        room: roomName,
         command: "RELEASED_LEFT",
         player_id: runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1621,9 +2251,19 @@ if(input.wasKeyReleased(RIGHTKEY)) {
     moved = true
 
     update = {
+        room: roomName,
         command: "RELEASED_RIGHT",
         player_id: runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1635,9 +2275,19 @@ if(input.wasKeyReleased(UPKEY)) {
     moved = true
 
     update = {
+        room: roomName,
         command: "RELEASED_UP",
         player_id: runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1649,9 +2299,19 @@ if(input.wasKeyReleased(DOWNKEY)) {
     moved = true
 
     update = {
+        room: roomName,
         command: "RELEASED_DOWN",
         player_id: runtimeScene.player_id,
         data: {
+            bodyColor: BodyColor,
+            hairColor: HairColor,
+            topColor: TopColor,
+            bottomColor: BottomColor,
+            shoesColor: ShoesColor,
+            hairStyle: HairStyle,
+            topStyle: TopStyle,
+            bottomStyle: BottomStyle,
+            shoesStyle: ShoesStyle,
             x : x,
             y : y,
             z : z
@@ -1665,7 +2325,7 @@ if(moved === false) {
 
 runtimeScene.ws.send(JSON.stringify(update))
 };
-gdjs.interview_32sceneCode.eventsList1 = function(runtimeScene) {
+gdjs.interviewCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -1687,6 +2347,1104 @@ gdjs.interview_32sceneCode.eventsList1 = function(runtimeScene) {
 
 
 {
+gdjs.copyArray(runtimeScene.getObjects("Basic1"), gdjs.interviewCode.GDBasic1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic2"), gdjs.interviewCode.GDBasic2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic3"), gdjs.interviewCode.GDBasic3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic4"), gdjs.interviewCode.GDBasic4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic5"), gdjs.interviewCode.GDBasic5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic6"), gdjs.interviewCode.GDBasic6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic7"), gdjs.interviewCode.GDBasic7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic8"), gdjs.interviewCode.GDBasic8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids1"), gdjs.interviewCode.GDBraids1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids2"), gdjs.interviewCode.GDBraids2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids3"), gdjs.interviewCode.GDBraids3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids4"), gdjs.interviewCode.GDBraids4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids5"), gdjs.interviewCode.GDBraids5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids6"), gdjs.interviewCode.GDBraids6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids7"), gdjs.interviewCode.GDBraids7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids8"), gdjs.interviewCode.GDBraids8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids9"), gdjs.interviewCode.GDBraids9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly1"), gdjs.interviewCode.GDCurly1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly2"), gdjs.interviewCode.GDCurly2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly3"), gdjs.interviewCode.GDCurly3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly4"), gdjs.interviewCode.GDCurly4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly5"), gdjs.interviewCode.GDCurly5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly6"), gdjs.interviewCode.GDCurly6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly7"), gdjs.interviewCode.GDCurly7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly8"), gdjs.interviewCode.GDCurly8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly9"), gdjs.interviewCode.GDCurly9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo1"), gdjs.interviewCode.GDEmo1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo2"), gdjs.interviewCode.GDEmo2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo3"), gdjs.interviewCode.GDEmo3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo4"), gdjs.interviewCode.GDEmo4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo5"), gdjs.interviewCode.GDEmo5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo6"), gdjs.interviewCode.GDEmo6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo7"), gdjs.interviewCode.GDEmo7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo8"), gdjs.interviewCode.GDEmo8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo9"), gdjs.interviewCode.GDEmo9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral1"), gdjs.interviewCode.GDFloral1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral2"), gdjs.interviewCode.GDFloral2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral3"), gdjs.interviewCode.GDFloral3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral4"), gdjs.interviewCode.GDFloral4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral5"), gdjs.interviewCode.GDFloral5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral6"), gdjs.interviewCode.GDFloral6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral7"), gdjs.interviewCode.GDFloral7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral8"), gdjs.interviewCode.GDFloral8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle1"), gdjs.interviewCode.GDGentle1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle2"), gdjs.interviewCode.GDGentle2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle3"), gdjs.interviewCode.GDGentle3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle4"), gdjs.interviewCode.GDGentle4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle5"), gdjs.interviewCode.GDGentle5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle6"), gdjs.interviewCode.GDGentle6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle7"), gdjs.interviewCode.GDGentle7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle8"), gdjs.interviewCode.GDGentle8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle9"), gdjs.interviewCode.GDGentle9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall1"), gdjs.interviewCode.GDOverall1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall2"), gdjs.interviewCode.GDOverall2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall3"), gdjs.interviewCode.GDOverall3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall4"), gdjs.interviewCode.GDOverall4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall5"), gdjs.interviewCode.GDOverall5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall6"), gdjs.interviewCode.GDOverall6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall7"), gdjs.interviewCode.GDOverall7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall8"), gdjs.interviewCode.GDOverall8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant1"), gdjs.interviewCode.GDPant1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant2"), gdjs.interviewCode.GDPant2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant3"), gdjs.interviewCode.GDPant3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant4"), gdjs.interviewCode.GDPant4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant5"), gdjs.interviewCode.GDPant5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant6"), gdjs.interviewCode.GDPant6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant7"), gdjs.interviewCode.GDPant7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant8"), gdjs.interviewCode.GDPant8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player1"), gdjs.interviewCode.GDPlayer1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player2"), gdjs.interviewCode.GDPlayer2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player3"), gdjs.interviewCode.GDPlayer3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player4"), gdjs.interviewCode.GDPlayer4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player5"), gdjs.interviewCode.GDPlayer5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player6"), gdjs.interviewCode.GDPlayer6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor1"), gdjs.interviewCode.GDSailor1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor2"), gdjs.interviewCode.GDSailor2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor3"), gdjs.interviewCode.GDSailor3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor4"), gdjs.interviewCode.GDSailor4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor5"), gdjs.interviewCode.GDSailor5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor6"), gdjs.interviewCode.GDSailor6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor7"), gdjs.interviewCode.GDSailor7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor8"), gdjs.interviewCode.GDSailor8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes1"), gdjs.interviewCode.GDShoes1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes2"), gdjs.interviewCode.GDShoes2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes3"), gdjs.interviewCode.GDShoes3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes4"), gdjs.interviewCode.GDShoes4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes5"), gdjs.interviewCode.GDShoes5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes6"), gdjs.interviewCode.GDShoes6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt1"), gdjs.interviewCode.GDSkirt1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt2"), gdjs.interviewCode.GDSkirt2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt3"), gdjs.interviewCode.GDSkirt3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt4"), gdjs.interviewCode.GDSkirt4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt5"), gdjs.interviewCode.GDSkirt5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt6"), gdjs.interviewCode.GDSkirt6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt7"), gdjs.interviewCode.GDSkirt7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt8"), gdjs.interviewCode.GDSkirt8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space1"), gdjs.interviewCode.GDSpace1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space2"), gdjs.interviewCode.GDSpace2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space3"), gdjs.interviewCode.GDSpace3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space4"), gdjs.interviewCode.GDSpace4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space5"), gdjs.interviewCode.GDSpace5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space6"), gdjs.interviewCode.GDSpace6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space7"), gdjs.interviewCode.GDSpace7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space8"), gdjs.interviewCode.GDSpace8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space9"), gdjs.interviewCode.GDSpace9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty1"), gdjs.interviewCode.GDSporty1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty2"), gdjs.interviewCode.GDSporty2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty3"), gdjs.interviewCode.GDSporty3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty4"), gdjs.interviewCode.GDSporty4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty5"), gdjs.interviewCode.GDSporty5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty6"), gdjs.interviewCode.GDSporty6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty7"), gdjs.interviewCode.GDSporty7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty8"), gdjs.interviewCode.GDSporty8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit1"), gdjs.interviewCode.GDSuit1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit2"), gdjs.interviewCode.GDSuit2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit3"), gdjs.interviewCode.GDSuit3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit4"), gdjs.interviewCode.GDSuit4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit5"), gdjs.interviewCode.GDSuit5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit6"), gdjs.interviewCode.GDSuit6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit7"), gdjs.interviewCode.GDSuit7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit8"), gdjs.interviewCode.GDSuit8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Transparent"), gdjs.interviewCode.GDTransparentObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy1"), gdjs.interviewCode.GDWavy1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy2"), gdjs.interviewCode.GDWavy2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy3"), gdjs.interviewCode.GDWavy3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy4"), gdjs.interviewCode.GDWavy4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy5"), gdjs.interviewCode.GDWavy5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy6"), gdjs.interviewCode.GDWavy6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy7"), gdjs.interviewCode.GDWavy7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy8"), gdjs.interviewCode.GDWavy8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy9"), gdjs.interviewCode.GDWavy9Objects1);
+{for(var i = 0, len = gdjs.interviewCode.GDPlayer1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.interviewCode.GDShoes1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.interviewCode.GDCurly1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.interviewCode.GDPant1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.interviewCode.GDSailor1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparentObjects1Objects, false);
+}
+}}
+
+}
+
+
+{
+
+
+{
+gdjs.copyArray(runtimeScene.getObjects("Basic1"), gdjs.interviewCode.GDBasic1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic2"), gdjs.interviewCode.GDBasic2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic3"), gdjs.interviewCode.GDBasic3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic4"), gdjs.interviewCode.GDBasic4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic5"), gdjs.interviewCode.GDBasic5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic6"), gdjs.interviewCode.GDBasic6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic7"), gdjs.interviewCode.GDBasic7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Basic8"), gdjs.interviewCode.GDBasic8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids1"), gdjs.interviewCode.GDBraids1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids2"), gdjs.interviewCode.GDBraids2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids3"), gdjs.interviewCode.GDBraids3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids4"), gdjs.interviewCode.GDBraids4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids5"), gdjs.interviewCode.GDBraids5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids6"), gdjs.interviewCode.GDBraids6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids7"), gdjs.interviewCode.GDBraids7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids8"), gdjs.interviewCode.GDBraids8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Braids9"), gdjs.interviewCode.GDBraids9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly1"), gdjs.interviewCode.GDCurly1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly2"), gdjs.interviewCode.GDCurly2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly3"), gdjs.interviewCode.GDCurly3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly4"), gdjs.interviewCode.GDCurly4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly5"), gdjs.interviewCode.GDCurly5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly6"), gdjs.interviewCode.GDCurly6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly7"), gdjs.interviewCode.GDCurly7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly8"), gdjs.interviewCode.GDCurly8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Curly9"), gdjs.interviewCode.GDCurly9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo1"), gdjs.interviewCode.GDEmo1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo2"), gdjs.interviewCode.GDEmo2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo3"), gdjs.interviewCode.GDEmo3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo4"), gdjs.interviewCode.GDEmo4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo5"), gdjs.interviewCode.GDEmo5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo6"), gdjs.interviewCode.GDEmo6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo7"), gdjs.interviewCode.GDEmo7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo8"), gdjs.interviewCode.GDEmo8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Emo9"), gdjs.interviewCode.GDEmo9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral1"), gdjs.interviewCode.GDFloral1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral2"), gdjs.interviewCode.GDFloral2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral3"), gdjs.interviewCode.GDFloral3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral4"), gdjs.interviewCode.GDFloral4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral5"), gdjs.interviewCode.GDFloral5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral6"), gdjs.interviewCode.GDFloral6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral7"), gdjs.interviewCode.GDFloral7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Floral8"), gdjs.interviewCode.GDFloral8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle1"), gdjs.interviewCode.GDGentle1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle2"), gdjs.interviewCode.GDGentle2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle3"), gdjs.interviewCode.GDGentle3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle4"), gdjs.interviewCode.GDGentle4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle5"), gdjs.interviewCode.GDGentle5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle6"), gdjs.interviewCode.GDGentle6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle7"), gdjs.interviewCode.GDGentle7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle8"), gdjs.interviewCode.GDGentle8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Gentle9"), gdjs.interviewCode.GDGentle9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall1"), gdjs.interviewCode.GDOverall1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall2"), gdjs.interviewCode.GDOverall2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall3"), gdjs.interviewCode.GDOverall3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall4"), gdjs.interviewCode.GDOverall4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall5"), gdjs.interviewCode.GDOverall5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall6"), gdjs.interviewCode.GDOverall6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall7"), gdjs.interviewCode.GDOverall7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Overall8"), gdjs.interviewCode.GDOverall8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant1"), gdjs.interviewCode.GDPant1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant2"), gdjs.interviewCode.GDPant2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant3"), gdjs.interviewCode.GDPant3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant4"), gdjs.interviewCode.GDPant4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant5"), gdjs.interviewCode.GDPant5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant6"), gdjs.interviewCode.GDPant6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant7"), gdjs.interviewCode.GDPant7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Pant8"), gdjs.interviewCode.GDPant8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player1"), gdjs.interviewCode.GDPlayer1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player2"), gdjs.interviewCode.GDPlayer2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player3"), gdjs.interviewCode.GDPlayer3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player4"), gdjs.interviewCode.GDPlayer4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player5"), gdjs.interviewCode.GDPlayer5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player6"), gdjs.interviewCode.GDPlayer6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor1"), gdjs.interviewCode.GDSailor1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor2"), gdjs.interviewCode.GDSailor2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor3"), gdjs.interviewCode.GDSailor3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor4"), gdjs.interviewCode.GDSailor4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor5"), gdjs.interviewCode.GDSailor5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor6"), gdjs.interviewCode.GDSailor6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor7"), gdjs.interviewCode.GDSailor7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sailor8"), gdjs.interviewCode.GDSailor8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes1"), gdjs.interviewCode.GDShoes1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes2"), gdjs.interviewCode.GDShoes2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes3"), gdjs.interviewCode.GDShoes3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes4"), gdjs.interviewCode.GDShoes4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes5"), gdjs.interviewCode.GDShoes5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Shoes6"), gdjs.interviewCode.GDShoes6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt1"), gdjs.interviewCode.GDSkirt1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt2"), gdjs.interviewCode.GDSkirt2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt3"), gdjs.interviewCode.GDSkirt3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt4"), gdjs.interviewCode.GDSkirt4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt5"), gdjs.interviewCode.GDSkirt5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt6"), gdjs.interviewCode.GDSkirt6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt7"), gdjs.interviewCode.GDSkirt7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Skirt8"), gdjs.interviewCode.GDSkirt8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space1"), gdjs.interviewCode.GDSpace1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space2"), gdjs.interviewCode.GDSpace2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space3"), gdjs.interviewCode.GDSpace3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space4"), gdjs.interviewCode.GDSpace4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space5"), gdjs.interviewCode.GDSpace5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space6"), gdjs.interviewCode.GDSpace6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space7"), gdjs.interviewCode.GDSpace7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space8"), gdjs.interviewCode.GDSpace8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Space9"), gdjs.interviewCode.GDSpace9Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty1"), gdjs.interviewCode.GDSporty1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty2"), gdjs.interviewCode.GDSporty2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty3"), gdjs.interviewCode.GDSporty3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty4"), gdjs.interviewCode.GDSporty4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty5"), gdjs.interviewCode.GDSporty5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty6"), gdjs.interviewCode.GDSporty6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty7"), gdjs.interviewCode.GDSporty7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Sporty8"), gdjs.interviewCode.GDSporty8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit1"), gdjs.interviewCode.GDSuit1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit2"), gdjs.interviewCode.GDSuit2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit3"), gdjs.interviewCode.GDSuit3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit4"), gdjs.interviewCode.GDSuit4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit5"), gdjs.interviewCode.GDSuit5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit6"), gdjs.interviewCode.GDSuit6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit7"), gdjs.interviewCode.GDSuit7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Suit8"), gdjs.interviewCode.GDSuit8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Transparent1"), gdjs.interviewCode.GDTransparent1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy1"), gdjs.interviewCode.GDWavy1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy2"), gdjs.interviewCode.GDWavy2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy3"), gdjs.interviewCode.GDWavy3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy4"), gdjs.interviewCode.GDWavy4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy5"), gdjs.interviewCode.GDWavy5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy6"), gdjs.interviewCode.GDWavy6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy7"), gdjs.interviewCode.GDWavy7Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy8"), gdjs.interviewCode.GDWavy8Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Wavy9"), gdjs.interviewCode.GDWavy9Objects1);
+{for(var i = 0, len = gdjs.interviewCode.GDPlayer1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPlayer6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPlayer6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.interviewCode.GDShoes1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDShoes6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDShoes6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.interviewCode.GDCurly1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDCurly9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDCurly9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDGentle9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDGentle9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDWavy9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDWavy9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBraids9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBraids9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSpace9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSpace9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDEmo9Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDEmo9Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.interviewCode.GDPant1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDPant8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDPant8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSkirt8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSkirt8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+}{for(var i = 0, len = gdjs.interviewCode.GDSailor1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSailor8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSailor8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDOverall8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDOverall8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDBasic8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDBasic8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDFloral8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDFloral8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSuit8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSuit8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty1Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty1Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty2Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty2Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty3Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty3Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty4Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty4Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty5Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty5Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty6Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty6Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty7Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty7Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+for(var i = 0, len = gdjs.interviewCode.GDSporty8Objects1.length ;i < len;++i) {
+    gdjs.interviewCode.GDSporty8Objects1[i].separateFromObjectsList(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects, false);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Player1"), gdjs.interviewCode.GDPlayer1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player2"), gdjs.interviewCode.GDPlayer2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player3"), gdjs.interviewCode.GDPlayer3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player4"), gdjs.interviewCode.GDPlayer4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player5"), gdjs.interviewCode.GDPlayer5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("Player6"), gdjs.interviewCode.GDPlayer6Objects1);
+gdjs.copyArray(runtimeScene.getObjects("rest"), gdjs.interviewCode.GDrestObjects1);
+
+gdjs.interviewCode.condition0IsTrue_0.val = false;
+{
+gdjs.interviewCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDPlayer1Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer2Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer3Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer4Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer5Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer6Objects1Objects, gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDrestObjects1Objects, false, runtimeScene, false);
+}if (gdjs.interviewCode.condition0IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(0);
+}}
+
+}
+
+
+{
+
+
+gdjs.interviewCode.condition0IsTrue_0.val = false;
+gdjs.interviewCode.condition1IsTrue_0.val = false;
+{
+gdjs.interviewCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
+}if ( gdjs.interviewCode.condition0IsTrue_0.val ) {
+{
+gdjs.interviewCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) == 0;
+}}
+if (gdjs.interviewCode.condition1IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "restroom", true);
+}}
+
+}
+
+
+{
+
+
+{
 }
 
 }
@@ -1695,13 +3453,13 @@ gdjs.interview_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.interview_32sceneCode.condition0IsTrue_0.val = false;
+gdjs.interviewCode.condition0IsTrue_0.val = false;
 {
-gdjs.interview_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-}if (gdjs.interview_32sceneCode.condition0IsTrue_0.val) {
+gdjs.interviewCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.interviewCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.interview_32sceneCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.interviewCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -1710,386 +3468,394 @@ gdjs.interview_32sceneCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.interview_32sceneCode.userFunc0x1bd75b8(runtimeScene);
+gdjs.interviewCode.userFunc0x3c99fe0(runtimeScene);
 
 }
 
 
 };
 
-gdjs.interview_32sceneCode.func = function(runtimeScene) {
+gdjs.interviewCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.interview_32sceneCode.GDNewObjectObjects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObjectObjects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject9Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject9Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject10Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject10Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject11Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject11Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject13Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject13Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject14Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject14Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject15Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject15Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject16Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject16Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject17Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject17Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject18Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject18Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject19Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject19Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject20Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject20Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject21Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject21Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject22Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject22Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject23Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject23Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject24Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject24Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject26Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject26Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject27Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject27Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject28Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject28Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject29Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject29Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject30Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject30Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject35Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject35Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject25Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject25Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject31Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject31Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject32Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject32Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject33Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject33Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject34Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject34Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject36Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject36Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject37Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject37Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject38Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject38Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject39Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject39Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject40Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject40Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject41Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject41Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject42Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject42Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject43Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject43Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject44Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject44Objects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject45Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject45Objects2.length = 0;
-gdjs.interview_32sceneCode.GDRightObjects1.length = 0;
-gdjs.interview_32sceneCode.GDRightObjects2.length = 0;
-gdjs.interview_32sceneCode.GDLeftObjects1.length = 0;
-gdjs.interview_32sceneCode.GDLeftObjects2.length = 0;
-gdjs.interview_32sceneCode.GDUpObjects1.length = 0;
-gdjs.interview_32sceneCode.GDUpObjects2.length = 0;
-gdjs.interview_32sceneCode.GDDownObjects1.length = 0;
-gdjs.interview_32sceneCode.GDDownObjects2.length = 0;
-gdjs.interview_32sceneCode.GDleftUpObjects1.length = 0;
-gdjs.interview_32sceneCode.GDleftUpObjects2.length = 0;
-gdjs.interview_32sceneCode.GDRightUpObjects1.length = 0;
-gdjs.interview_32sceneCode.GDRightUpObjects2.length = 0;
-gdjs.interview_32sceneCode.GDleftBottomObjects1.length = 0;
-gdjs.interview_32sceneCode.GDleftBottomObjects2.length = 0;
-gdjs.interview_32sceneCode.GDRightBottomObjects1.length = 0;
-gdjs.interview_32sceneCode.GDRightBottomObjects2.length = 0;
-gdjs.interview_32sceneCode.GDNewObject12Objects1.length = 0;
-gdjs.interview_32sceneCode.GDNewObject12Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPlayer6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPlayer6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPlayer5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPlayer5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPlayer4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPlayer4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPlayer3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPlayer3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPlayer2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPlayer2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPlayer1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPlayer1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDShoes6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDShoes6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDShoes5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDShoes5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDShoes4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDShoes4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDShoes3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDShoes3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDShoes2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDShoes2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDShoes1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDShoes1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSkirt8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSkirt8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSkirt7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSkirt7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSkirt6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSkirt6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSkirt5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSkirt5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSkirt4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSkirt4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSkirt3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSkirt3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSkirt2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSkirt2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSkirt1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSkirt1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPant8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPant8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPant7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPant7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPant6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPant6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPant5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPant5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPant4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPant4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPant3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPant3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPant2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPant2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDPant1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDPant1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDFloral8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDFloral8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSuit8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSuit8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSporty8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSporty8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSailor8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSailor8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDOverall8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDOverall8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBasic8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBasic8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSuit7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSuit7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSporty7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSporty7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDFloral7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDFloral7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDOverall7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDOverall7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSailor7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSailor7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBasic7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBasic7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSailor6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSailor6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSporty6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSporty6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSuit6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSuit6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDOverall6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDOverall6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDFloral6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDFloral6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBasic6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBasic6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDFloral5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDFloral5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSporty5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSporty5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSuit5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSuit5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSailor5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSailor5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDOverall5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDOverall5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBasic5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBasic5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSuit4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSuit4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSporty4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSporty4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSailor4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSailor4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDOverall4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDOverall4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDFloral4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDFloral4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBasic4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBasic4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSuit3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSuit3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSporty3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSporty3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSailor3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSailor3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDOverall3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDOverall3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDFloral3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDFloral3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBasic3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBasic3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSporty2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSporty2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSuit2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSuit2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDFloral2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDFloral2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSailor2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSailor2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDOverall2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDOverall2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBasic2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBasic2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDOverall1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDOverall1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSporty1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSporty1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSailor1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSailor1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDFloral1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDFloral1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBasic1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBasic1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSuit1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSuit1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly9Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly9Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy9Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy9Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo9Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo9Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace9Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace9Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle9Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle9Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids9Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids9Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids8Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids8Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids7Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids7Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids6Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids6Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids5Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids5Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids4Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids4Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo3Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo3Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo2Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo2Objects2.length = 0;
-gdjs.interview_32sceneCode.GDGentle1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDGentle1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDWavy1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDWavy1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDSpace1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDSpace1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDCurly1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDCurly1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDBraids1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDBraids1Objects2.length = 0;
-gdjs.interview_32sceneCode.GDEmo1Objects1.length = 0;
-gdjs.interview_32sceneCode.GDEmo1Objects2.length = 0;
+gdjs.interviewCode.GDNewObjectObjects1.length = 0;
+gdjs.interviewCode.GDNewObjectObjects2.length = 0;
+gdjs.interviewCode.GDNewObject2Objects1.length = 0;
+gdjs.interviewCode.GDNewObject2Objects2.length = 0;
+gdjs.interviewCode.GDNewObject3Objects1.length = 0;
+gdjs.interviewCode.GDNewObject3Objects2.length = 0;
+gdjs.interviewCode.GDNewObject4Objects1.length = 0;
+gdjs.interviewCode.GDNewObject4Objects2.length = 0;
+gdjs.interviewCode.GDNewObject5Objects1.length = 0;
+gdjs.interviewCode.GDNewObject5Objects2.length = 0;
+gdjs.interviewCode.GDNewObject6Objects1.length = 0;
+gdjs.interviewCode.GDNewObject6Objects2.length = 0;
+gdjs.interviewCode.GDNewObject7Objects1.length = 0;
+gdjs.interviewCode.GDNewObject7Objects2.length = 0;
+gdjs.interviewCode.GDNewObject9Objects1.length = 0;
+gdjs.interviewCode.GDNewObject9Objects2.length = 0;
+gdjs.interviewCode.GDNewObject10Objects1.length = 0;
+gdjs.interviewCode.GDNewObject10Objects2.length = 0;
+gdjs.interviewCode.GDNewObject11Objects1.length = 0;
+gdjs.interviewCode.GDNewObject11Objects2.length = 0;
+gdjs.interviewCode.GDNewObject13Objects1.length = 0;
+gdjs.interviewCode.GDNewObject13Objects2.length = 0;
+gdjs.interviewCode.GDNewObject14Objects1.length = 0;
+gdjs.interviewCode.GDNewObject14Objects2.length = 0;
+gdjs.interviewCode.GDNewObject15Objects1.length = 0;
+gdjs.interviewCode.GDNewObject15Objects2.length = 0;
+gdjs.interviewCode.GDNewObject16Objects1.length = 0;
+gdjs.interviewCode.GDNewObject16Objects2.length = 0;
+gdjs.interviewCode.GDNewObject17Objects1.length = 0;
+gdjs.interviewCode.GDNewObject17Objects2.length = 0;
+gdjs.interviewCode.GDNewObject18Objects1.length = 0;
+gdjs.interviewCode.GDNewObject18Objects2.length = 0;
+gdjs.interviewCode.GDNewObject19Objects1.length = 0;
+gdjs.interviewCode.GDNewObject19Objects2.length = 0;
+gdjs.interviewCode.GDNewObject20Objects1.length = 0;
+gdjs.interviewCode.GDNewObject20Objects2.length = 0;
+gdjs.interviewCode.GDNewObject21Objects1.length = 0;
+gdjs.interviewCode.GDNewObject21Objects2.length = 0;
+gdjs.interviewCode.GDNewObject22Objects1.length = 0;
+gdjs.interviewCode.GDNewObject22Objects2.length = 0;
+gdjs.interviewCode.GDNewObject23Objects1.length = 0;
+gdjs.interviewCode.GDNewObject23Objects2.length = 0;
+gdjs.interviewCode.GDNewObject24Objects1.length = 0;
+gdjs.interviewCode.GDNewObject24Objects2.length = 0;
+gdjs.interviewCode.GDNewObject26Objects1.length = 0;
+gdjs.interviewCode.GDNewObject26Objects2.length = 0;
+gdjs.interviewCode.GDNewObject27Objects1.length = 0;
+gdjs.interviewCode.GDNewObject27Objects2.length = 0;
+gdjs.interviewCode.GDNewObject28Objects1.length = 0;
+gdjs.interviewCode.GDNewObject28Objects2.length = 0;
+gdjs.interviewCode.GDNewObject29Objects1.length = 0;
+gdjs.interviewCode.GDNewObject29Objects2.length = 0;
+gdjs.interviewCode.GDNewObject30Objects1.length = 0;
+gdjs.interviewCode.GDNewObject30Objects2.length = 0;
+gdjs.interviewCode.GDNewObject35Objects1.length = 0;
+gdjs.interviewCode.GDNewObject35Objects2.length = 0;
+gdjs.interviewCode.GDNewObject8Objects1.length = 0;
+gdjs.interviewCode.GDNewObject8Objects2.length = 0;
+gdjs.interviewCode.GDNewObject25Objects1.length = 0;
+gdjs.interviewCode.GDNewObject25Objects2.length = 0;
+gdjs.interviewCode.GDNewObject31Objects1.length = 0;
+gdjs.interviewCode.GDNewObject31Objects2.length = 0;
+gdjs.interviewCode.GDNewObject32Objects1.length = 0;
+gdjs.interviewCode.GDNewObject32Objects2.length = 0;
+gdjs.interviewCode.GDNewObject33Objects1.length = 0;
+gdjs.interviewCode.GDNewObject33Objects2.length = 0;
+gdjs.interviewCode.GDNewObject34Objects1.length = 0;
+gdjs.interviewCode.GDNewObject34Objects2.length = 0;
+gdjs.interviewCode.GDNewObject36Objects1.length = 0;
+gdjs.interviewCode.GDNewObject36Objects2.length = 0;
+gdjs.interviewCode.GDNewObject37Objects1.length = 0;
+gdjs.interviewCode.GDNewObject37Objects2.length = 0;
+gdjs.interviewCode.GDNewObject38Objects1.length = 0;
+gdjs.interviewCode.GDNewObject38Objects2.length = 0;
+gdjs.interviewCode.GDNewObject39Objects1.length = 0;
+gdjs.interviewCode.GDNewObject39Objects2.length = 0;
+gdjs.interviewCode.GDNewObject40Objects1.length = 0;
+gdjs.interviewCode.GDNewObject40Objects2.length = 0;
+gdjs.interviewCode.GDNewObject41Objects1.length = 0;
+gdjs.interviewCode.GDNewObject41Objects2.length = 0;
+gdjs.interviewCode.GDNewObject42Objects1.length = 0;
+gdjs.interviewCode.GDNewObject42Objects2.length = 0;
+gdjs.interviewCode.GDNewObject43Objects1.length = 0;
+gdjs.interviewCode.GDNewObject43Objects2.length = 0;
+gdjs.interviewCode.GDNewObject44Objects1.length = 0;
+gdjs.interviewCode.GDNewObject44Objects2.length = 0;
+gdjs.interviewCode.GDNewObject45Objects1.length = 0;
+gdjs.interviewCode.GDNewObject45Objects2.length = 0;
+gdjs.interviewCode.GDRightObjects1.length = 0;
+gdjs.interviewCode.GDRightObjects2.length = 0;
+gdjs.interviewCode.GDLeftObjects1.length = 0;
+gdjs.interviewCode.GDLeftObjects2.length = 0;
+gdjs.interviewCode.GDUpObjects1.length = 0;
+gdjs.interviewCode.GDUpObjects2.length = 0;
+gdjs.interviewCode.GDDownObjects1.length = 0;
+gdjs.interviewCode.GDDownObjects2.length = 0;
+gdjs.interviewCode.GDleftUpObjects1.length = 0;
+gdjs.interviewCode.GDleftUpObjects2.length = 0;
+gdjs.interviewCode.GDRightUpObjects1.length = 0;
+gdjs.interviewCode.GDRightUpObjects2.length = 0;
+gdjs.interviewCode.GDleftBottomObjects1.length = 0;
+gdjs.interviewCode.GDleftBottomObjects2.length = 0;
+gdjs.interviewCode.GDRightBottomObjects1.length = 0;
+gdjs.interviewCode.GDRightBottomObjects2.length = 0;
+gdjs.interviewCode.GDTransparent1Objects1.length = 0;
+gdjs.interviewCode.GDTransparent1Objects2.length = 0;
+gdjs.interviewCode.GDPlayer6Objects1.length = 0;
+gdjs.interviewCode.GDPlayer6Objects2.length = 0;
+gdjs.interviewCode.GDPlayer5Objects1.length = 0;
+gdjs.interviewCode.GDPlayer5Objects2.length = 0;
+gdjs.interviewCode.GDPlayer4Objects1.length = 0;
+gdjs.interviewCode.GDPlayer4Objects2.length = 0;
+gdjs.interviewCode.GDPlayer3Objects1.length = 0;
+gdjs.interviewCode.GDPlayer3Objects2.length = 0;
+gdjs.interviewCode.GDPlayer2Objects1.length = 0;
+gdjs.interviewCode.GDPlayer2Objects2.length = 0;
+gdjs.interviewCode.GDPlayer1Objects1.length = 0;
+gdjs.interviewCode.GDPlayer1Objects2.length = 0;
+gdjs.interviewCode.GDShoes6Objects1.length = 0;
+gdjs.interviewCode.GDShoes6Objects2.length = 0;
+gdjs.interviewCode.GDShoes5Objects1.length = 0;
+gdjs.interviewCode.GDShoes5Objects2.length = 0;
+gdjs.interviewCode.GDShoes4Objects1.length = 0;
+gdjs.interviewCode.GDShoes4Objects2.length = 0;
+gdjs.interviewCode.GDShoes3Objects1.length = 0;
+gdjs.interviewCode.GDShoes3Objects2.length = 0;
+gdjs.interviewCode.GDShoes2Objects1.length = 0;
+gdjs.interviewCode.GDShoes2Objects2.length = 0;
+gdjs.interviewCode.GDShoes1Objects1.length = 0;
+gdjs.interviewCode.GDShoes1Objects2.length = 0;
+gdjs.interviewCode.GDSkirt8Objects1.length = 0;
+gdjs.interviewCode.GDSkirt8Objects2.length = 0;
+gdjs.interviewCode.GDSkirt7Objects1.length = 0;
+gdjs.interviewCode.GDSkirt7Objects2.length = 0;
+gdjs.interviewCode.GDSkirt6Objects1.length = 0;
+gdjs.interviewCode.GDSkirt6Objects2.length = 0;
+gdjs.interviewCode.GDSkirt5Objects1.length = 0;
+gdjs.interviewCode.GDSkirt5Objects2.length = 0;
+gdjs.interviewCode.GDSkirt4Objects1.length = 0;
+gdjs.interviewCode.GDSkirt4Objects2.length = 0;
+gdjs.interviewCode.GDSkirt3Objects1.length = 0;
+gdjs.interviewCode.GDSkirt3Objects2.length = 0;
+gdjs.interviewCode.GDSkirt2Objects1.length = 0;
+gdjs.interviewCode.GDSkirt2Objects2.length = 0;
+gdjs.interviewCode.GDSkirt1Objects1.length = 0;
+gdjs.interviewCode.GDSkirt1Objects2.length = 0;
+gdjs.interviewCode.GDPant8Objects1.length = 0;
+gdjs.interviewCode.GDPant8Objects2.length = 0;
+gdjs.interviewCode.GDPant7Objects1.length = 0;
+gdjs.interviewCode.GDPant7Objects2.length = 0;
+gdjs.interviewCode.GDPant6Objects1.length = 0;
+gdjs.interviewCode.GDPant6Objects2.length = 0;
+gdjs.interviewCode.GDPant5Objects1.length = 0;
+gdjs.interviewCode.GDPant5Objects2.length = 0;
+gdjs.interviewCode.GDPant4Objects1.length = 0;
+gdjs.interviewCode.GDPant4Objects2.length = 0;
+gdjs.interviewCode.GDPant3Objects1.length = 0;
+gdjs.interviewCode.GDPant3Objects2.length = 0;
+gdjs.interviewCode.GDPant2Objects1.length = 0;
+gdjs.interviewCode.GDPant2Objects2.length = 0;
+gdjs.interviewCode.GDPant1Objects1.length = 0;
+gdjs.interviewCode.GDPant1Objects2.length = 0;
+gdjs.interviewCode.GDFloral8Objects1.length = 0;
+gdjs.interviewCode.GDFloral8Objects2.length = 0;
+gdjs.interviewCode.GDSuit8Objects1.length = 0;
+gdjs.interviewCode.GDSuit8Objects2.length = 0;
+gdjs.interviewCode.GDSporty8Objects1.length = 0;
+gdjs.interviewCode.GDSporty8Objects2.length = 0;
+gdjs.interviewCode.GDSailor8Objects1.length = 0;
+gdjs.interviewCode.GDSailor8Objects2.length = 0;
+gdjs.interviewCode.GDOverall8Objects1.length = 0;
+gdjs.interviewCode.GDOverall8Objects2.length = 0;
+gdjs.interviewCode.GDBasic8Objects1.length = 0;
+gdjs.interviewCode.GDBasic8Objects2.length = 0;
+gdjs.interviewCode.GDSuit7Objects1.length = 0;
+gdjs.interviewCode.GDSuit7Objects2.length = 0;
+gdjs.interviewCode.GDSporty7Objects1.length = 0;
+gdjs.interviewCode.GDSporty7Objects2.length = 0;
+gdjs.interviewCode.GDFloral7Objects1.length = 0;
+gdjs.interviewCode.GDFloral7Objects2.length = 0;
+gdjs.interviewCode.GDOverall7Objects1.length = 0;
+gdjs.interviewCode.GDOverall7Objects2.length = 0;
+gdjs.interviewCode.GDSailor7Objects1.length = 0;
+gdjs.interviewCode.GDSailor7Objects2.length = 0;
+gdjs.interviewCode.GDBasic7Objects1.length = 0;
+gdjs.interviewCode.GDBasic7Objects2.length = 0;
+gdjs.interviewCode.GDSailor6Objects1.length = 0;
+gdjs.interviewCode.GDSailor6Objects2.length = 0;
+gdjs.interviewCode.GDSporty6Objects1.length = 0;
+gdjs.interviewCode.GDSporty6Objects2.length = 0;
+gdjs.interviewCode.GDSuit6Objects1.length = 0;
+gdjs.interviewCode.GDSuit6Objects2.length = 0;
+gdjs.interviewCode.GDOverall6Objects1.length = 0;
+gdjs.interviewCode.GDOverall6Objects2.length = 0;
+gdjs.interviewCode.GDFloral6Objects1.length = 0;
+gdjs.interviewCode.GDFloral6Objects2.length = 0;
+gdjs.interviewCode.GDBasic6Objects1.length = 0;
+gdjs.interviewCode.GDBasic6Objects2.length = 0;
+gdjs.interviewCode.GDFloral5Objects1.length = 0;
+gdjs.interviewCode.GDFloral5Objects2.length = 0;
+gdjs.interviewCode.GDSporty5Objects1.length = 0;
+gdjs.interviewCode.GDSporty5Objects2.length = 0;
+gdjs.interviewCode.GDSuit5Objects1.length = 0;
+gdjs.interviewCode.GDSuit5Objects2.length = 0;
+gdjs.interviewCode.GDSailor5Objects1.length = 0;
+gdjs.interviewCode.GDSailor5Objects2.length = 0;
+gdjs.interviewCode.GDOverall5Objects1.length = 0;
+gdjs.interviewCode.GDOverall5Objects2.length = 0;
+gdjs.interviewCode.GDBasic5Objects1.length = 0;
+gdjs.interviewCode.GDBasic5Objects2.length = 0;
+gdjs.interviewCode.GDSuit4Objects1.length = 0;
+gdjs.interviewCode.GDSuit4Objects2.length = 0;
+gdjs.interviewCode.GDSporty4Objects1.length = 0;
+gdjs.interviewCode.GDSporty4Objects2.length = 0;
+gdjs.interviewCode.GDSailor4Objects1.length = 0;
+gdjs.interviewCode.GDSailor4Objects2.length = 0;
+gdjs.interviewCode.GDOverall4Objects1.length = 0;
+gdjs.interviewCode.GDOverall4Objects2.length = 0;
+gdjs.interviewCode.GDFloral4Objects1.length = 0;
+gdjs.interviewCode.GDFloral4Objects2.length = 0;
+gdjs.interviewCode.GDBasic4Objects1.length = 0;
+gdjs.interviewCode.GDBasic4Objects2.length = 0;
+gdjs.interviewCode.GDSuit3Objects1.length = 0;
+gdjs.interviewCode.GDSuit3Objects2.length = 0;
+gdjs.interviewCode.GDSporty3Objects1.length = 0;
+gdjs.interviewCode.GDSporty3Objects2.length = 0;
+gdjs.interviewCode.GDSailor3Objects1.length = 0;
+gdjs.interviewCode.GDSailor3Objects2.length = 0;
+gdjs.interviewCode.GDOverall3Objects1.length = 0;
+gdjs.interviewCode.GDOverall3Objects2.length = 0;
+gdjs.interviewCode.GDFloral3Objects1.length = 0;
+gdjs.interviewCode.GDFloral3Objects2.length = 0;
+gdjs.interviewCode.GDBasic3Objects1.length = 0;
+gdjs.interviewCode.GDBasic3Objects2.length = 0;
+gdjs.interviewCode.GDSporty2Objects1.length = 0;
+gdjs.interviewCode.GDSporty2Objects2.length = 0;
+gdjs.interviewCode.GDSuit2Objects1.length = 0;
+gdjs.interviewCode.GDSuit2Objects2.length = 0;
+gdjs.interviewCode.GDFloral2Objects1.length = 0;
+gdjs.interviewCode.GDFloral2Objects2.length = 0;
+gdjs.interviewCode.GDSailor2Objects1.length = 0;
+gdjs.interviewCode.GDSailor2Objects2.length = 0;
+gdjs.interviewCode.GDOverall2Objects1.length = 0;
+gdjs.interviewCode.GDOverall2Objects2.length = 0;
+gdjs.interviewCode.GDBasic2Objects1.length = 0;
+gdjs.interviewCode.GDBasic2Objects2.length = 0;
+gdjs.interviewCode.GDOverall1Objects1.length = 0;
+gdjs.interviewCode.GDOverall1Objects2.length = 0;
+gdjs.interviewCode.GDSporty1Objects1.length = 0;
+gdjs.interviewCode.GDSporty1Objects2.length = 0;
+gdjs.interviewCode.GDSailor1Objects1.length = 0;
+gdjs.interviewCode.GDSailor1Objects2.length = 0;
+gdjs.interviewCode.GDFloral1Objects1.length = 0;
+gdjs.interviewCode.GDFloral1Objects2.length = 0;
+gdjs.interviewCode.GDBasic1Objects1.length = 0;
+gdjs.interviewCode.GDBasic1Objects2.length = 0;
+gdjs.interviewCode.GDSuit1Objects1.length = 0;
+gdjs.interviewCode.GDSuit1Objects2.length = 0;
+gdjs.interviewCode.GDCurly9Objects1.length = 0;
+gdjs.interviewCode.GDCurly9Objects2.length = 0;
+gdjs.interviewCode.GDWavy9Objects1.length = 0;
+gdjs.interviewCode.GDWavy9Objects2.length = 0;
+gdjs.interviewCode.GDEmo9Objects1.length = 0;
+gdjs.interviewCode.GDEmo9Objects2.length = 0;
+gdjs.interviewCode.GDSpace9Objects1.length = 0;
+gdjs.interviewCode.GDSpace9Objects2.length = 0;
+gdjs.interviewCode.GDGentle9Objects1.length = 0;
+gdjs.interviewCode.GDGentle9Objects2.length = 0;
+gdjs.interviewCode.GDBraids9Objects1.length = 0;
+gdjs.interviewCode.GDBraids9Objects2.length = 0;
+gdjs.interviewCode.GDEmo8Objects1.length = 0;
+gdjs.interviewCode.GDEmo8Objects2.length = 0;
+gdjs.interviewCode.GDSpace8Objects1.length = 0;
+gdjs.interviewCode.GDSpace8Objects2.length = 0;
+gdjs.interviewCode.GDGentle8Objects1.length = 0;
+gdjs.interviewCode.GDGentle8Objects2.length = 0;
+gdjs.interviewCode.GDWavy8Objects1.length = 0;
+gdjs.interviewCode.GDWavy8Objects2.length = 0;
+gdjs.interviewCode.GDCurly8Objects1.length = 0;
+gdjs.interviewCode.GDCurly8Objects2.length = 0;
+gdjs.interviewCode.GDBraids8Objects1.length = 0;
+gdjs.interviewCode.GDBraids8Objects2.length = 0;
+gdjs.interviewCode.GDWavy7Objects1.length = 0;
+gdjs.interviewCode.GDWavy7Objects2.length = 0;
+gdjs.interviewCode.GDSpace7Objects1.length = 0;
+gdjs.interviewCode.GDSpace7Objects2.length = 0;
+gdjs.interviewCode.GDGentle7Objects1.length = 0;
+gdjs.interviewCode.GDGentle7Objects2.length = 0;
+gdjs.interviewCode.GDEmo7Objects1.length = 0;
+gdjs.interviewCode.GDEmo7Objects2.length = 0;
+gdjs.interviewCode.GDCurly7Objects1.length = 0;
+gdjs.interviewCode.GDCurly7Objects2.length = 0;
+gdjs.interviewCode.GDBraids7Objects1.length = 0;
+gdjs.interviewCode.GDBraids7Objects2.length = 0;
+gdjs.interviewCode.GDWavy6Objects1.length = 0;
+gdjs.interviewCode.GDWavy6Objects2.length = 0;
+gdjs.interviewCode.GDSpace6Objects1.length = 0;
+gdjs.interviewCode.GDSpace6Objects2.length = 0;
+gdjs.interviewCode.GDGentle6Objects1.length = 0;
+gdjs.interviewCode.GDGentle6Objects2.length = 0;
+gdjs.interviewCode.GDEmo6Objects1.length = 0;
+gdjs.interviewCode.GDEmo6Objects2.length = 0;
+gdjs.interviewCode.GDCurly6Objects1.length = 0;
+gdjs.interviewCode.GDCurly6Objects2.length = 0;
+gdjs.interviewCode.GDBraids6Objects1.length = 0;
+gdjs.interviewCode.GDBraids6Objects2.length = 0;
+gdjs.interviewCode.GDWavy5Objects1.length = 0;
+gdjs.interviewCode.GDWavy5Objects2.length = 0;
+gdjs.interviewCode.GDSpace5Objects1.length = 0;
+gdjs.interviewCode.GDSpace5Objects2.length = 0;
+gdjs.interviewCode.GDGentle5Objects1.length = 0;
+gdjs.interviewCode.GDGentle5Objects2.length = 0;
+gdjs.interviewCode.GDCurly5Objects1.length = 0;
+gdjs.interviewCode.GDCurly5Objects2.length = 0;
+gdjs.interviewCode.GDEmo5Objects1.length = 0;
+gdjs.interviewCode.GDEmo5Objects2.length = 0;
+gdjs.interviewCode.GDBraids5Objects1.length = 0;
+gdjs.interviewCode.GDBraids5Objects2.length = 0;
+gdjs.interviewCode.GDGentle4Objects1.length = 0;
+gdjs.interviewCode.GDGentle4Objects2.length = 0;
+gdjs.interviewCode.GDSpace4Objects1.length = 0;
+gdjs.interviewCode.GDSpace4Objects2.length = 0;
+gdjs.interviewCode.GDEmo4Objects1.length = 0;
+gdjs.interviewCode.GDEmo4Objects2.length = 0;
+gdjs.interviewCode.GDWavy4Objects1.length = 0;
+gdjs.interviewCode.GDWavy4Objects2.length = 0;
+gdjs.interviewCode.GDCurly4Objects1.length = 0;
+gdjs.interviewCode.GDCurly4Objects2.length = 0;
+gdjs.interviewCode.GDBraids4Objects1.length = 0;
+gdjs.interviewCode.GDBraids4Objects2.length = 0;
+gdjs.interviewCode.GDGentle3Objects1.length = 0;
+gdjs.interviewCode.GDGentle3Objects2.length = 0;
+gdjs.interviewCode.GDWavy3Objects1.length = 0;
+gdjs.interviewCode.GDWavy3Objects2.length = 0;
+gdjs.interviewCode.GDCurly3Objects1.length = 0;
+gdjs.interviewCode.GDCurly3Objects2.length = 0;
+gdjs.interviewCode.GDSpace3Objects1.length = 0;
+gdjs.interviewCode.GDSpace3Objects2.length = 0;
+gdjs.interviewCode.GDBraids3Objects1.length = 0;
+gdjs.interviewCode.GDBraids3Objects2.length = 0;
+gdjs.interviewCode.GDEmo3Objects1.length = 0;
+gdjs.interviewCode.GDEmo3Objects2.length = 0;
+gdjs.interviewCode.GDWavy2Objects1.length = 0;
+gdjs.interviewCode.GDWavy2Objects2.length = 0;
+gdjs.interviewCode.GDSpace2Objects1.length = 0;
+gdjs.interviewCode.GDSpace2Objects2.length = 0;
+gdjs.interviewCode.GDBraids2Objects1.length = 0;
+gdjs.interviewCode.GDBraids2Objects2.length = 0;
+gdjs.interviewCode.GDCurly2Objects1.length = 0;
+gdjs.interviewCode.GDCurly2Objects2.length = 0;
+gdjs.interviewCode.GDGentle2Objects1.length = 0;
+gdjs.interviewCode.GDGentle2Objects2.length = 0;
+gdjs.interviewCode.GDEmo2Objects1.length = 0;
+gdjs.interviewCode.GDEmo2Objects2.length = 0;
+gdjs.interviewCode.GDGentle1Objects1.length = 0;
+gdjs.interviewCode.GDGentle1Objects2.length = 0;
+gdjs.interviewCode.GDWavy1Objects1.length = 0;
+gdjs.interviewCode.GDWavy1Objects2.length = 0;
+gdjs.interviewCode.GDSpace1Objects1.length = 0;
+gdjs.interviewCode.GDSpace1Objects2.length = 0;
+gdjs.interviewCode.GDCurly1Objects1.length = 0;
+gdjs.interviewCode.GDCurly1Objects2.length = 0;
+gdjs.interviewCode.GDBraids1Objects1.length = 0;
+gdjs.interviewCode.GDBraids1Objects2.length = 0;
+gdjs.interviewCode.GDEmo1Objects1.length = 0;
+gdjs.interviewCode.GDEmo1Objects2.length = 0;
+gdjs.interviewCode.GDdoorObjects1.length = 0;
+gdjs.interviewCode.GDdoorObjects2.length = 0;
+gdjs.interviewCode.GDTransparentObjects1.length = 0;
+gdjs.interviewCode.GDTransparentObjects2.length = 0;
+gdjs.interviewCode.GDrestroomObjects1.length = 0;
+gdjs.interviewCode.GDrestroomObjects2.length = 0;
+gdjs.interviewCode.GDrestObjects1.length = 0;
+gdjs.interviewCode.GDrestObjects2.length = 0;
 
-gdjs.interview_32sceneCode.eventsList1(runtimeScene);
+gdjs.interviewCode.eventsList1(runtimeScene);
 return;
 
 }
 
-gdjs['interview_32sceneCode'] = gdjs.interview_32sceneCode;
+gdjs['interviewCode'] = gdjs.interviewCode;
