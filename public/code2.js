@@ -642,9 +642,10 @@ gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects =
 gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDTransparent1Objects1Objects = Hashtable.newFrom({"Transparent1": gdjs.interviewCode.GDTransparent1Objects1});
 gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDPlayer1Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer2Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer3Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer4Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer5Objects1ObjectsGDgdjs_46interviewCode_46GDPlayer6Objects1Objects = Hashtable.newFrom({"Player1": gdjs.interviewCode.GDPlayer1Objects1, "Player2": gdjs.interviewCode.GDPlayer2Objects1, "Player3": gdjs.interviewCode.GDPlayer3Objects1, "Player4": gdjs.interviewCode.GDPlayer4Objects1, "Player5": gdjs.interviewCode.GDPlayer5Objects1, "Player6": gdjs.interviewCode.GDPlayer6Objects1});
 gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDrestObjects1Objects = Hashtable.newFrom({"rest": gdjs.interviewCode.GDrestObjects1});
-gdjs.interviewCode.userFunc0x381e420 = function(runtimeScene) {
+gdjs.interviewCode.userFunc0x1c3f4c0 = function(runtimeScene) {
 "use strict";
-runtimeScene.ws = new WebSocket("ws://localhost:5100/ws");
+runtimeScene.ws = new WebSocket("ws://35.174.145.15:5100/ws");
+const url = window.location.search;
 const id = Math.floor(Math.random() * Math.floor(100000))
 const sit = 0;
 const roomName = "interview";
@@ -680,7 +681,8 @@ runtimeScene.ws.onopen = function(event) {
             shoesStyle: ShoesStyle,
             x: 480,
             y: 300,
-            z: 20
+            z: 20,
+            url:url
         }
     }
     setTimeout(() => {
@@ -2058,12 +2060,12 @@ gdjs.interviewCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.interviewCode.userFunc0x381e420(runtimeScene);
+gdjs.interviewCode.userFunc0x1c3f4c0(runtimeScene);
 
 }
 
 
-};gdjs.interviewCode.userFunc0x3c99fe0 = function(runtimeScene) {
+};gdjs.interviewCode.userFunc0x1c3f9d0 = function(runtimeScene) {
 "use strict";
 const roomName = "interview";
 
@@ -3468,7 +3470,7 @@ gdjs.interviewCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.interviewCode.userFunc0x3c99fe0(runtimeScene);
+gdjs.interviewCode.userFunc0x1c3f9d0(runtimeScene);
 
 }
 
