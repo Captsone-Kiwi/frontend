@@ -67,7 +67,7 @@ export const reserveTitle = styled.p`
 
 export const reserveName = styled.input`
   width: 70%;
-  height: 25px;
+  height: 30px;
   border: 1px solid #929292;
   border-radius: 12px;
   padding: 6px 10px;

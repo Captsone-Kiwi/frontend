@@ -3,6 +3,7 @@ import SelectType from "react-select";
 import "./styles.css";
 
 function TypeSelect(props) {
+  // 평가항목 유형 선택
   const options = useMemo(
     () => [
       { value: 0, label: "점수형 평가" },

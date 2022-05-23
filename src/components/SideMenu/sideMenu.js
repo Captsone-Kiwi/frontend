@@ -25,7 +25,7 @@ function SideMenu(props) {
       .getUser()
       .then((res) => {
         setMemberInfo(res.data.data);
-        console.log("getMember result", res.data.data);
+        // console.log("getMember result", res.data.data);
       })
       .catch((error) => console.log("getMember error", error));
   };

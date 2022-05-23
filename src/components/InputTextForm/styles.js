@@ -7,7 +7,7 @@ export const inputBox = styled.div`
 
 export const interviewerList = styled.input`
   width: 100%;
-  height: 25px;
+  height: 30px;
   border: 1px solid #929292;
   border-radius: 12px;
   margin-bottom: 10px;
@@ -19,8 +19,8 @@ export const addBtn = styled.button`
   padding: unset;
   background: transparent;
   border: none;
-  margin-top: 7px;
-  margin-left: 10px;
+  margin-top: 9px;
+  margin-left: 11px;
   &:hover {
     cursor: pointer;
   }
@@ -35,7 +35,7 @@ export const removeBtn = styled.button`
   padding: unset;
   background: transparent;
   border: none;
-  margin-top: 7px;
+  margin-top: 9px;
   margin-left: -28px;
   &:hover {
     cursor: pointer;

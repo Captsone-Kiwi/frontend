@@ -85,3 +85,24 @@ export const uploadBtn = styled.button`
   width: 70px;
   height: 30px;
 `;
+
+export const buttonSection = styled.div`
+  display: flex;
+  align-self: flex-end;
+  margin-top: 80px;
+`;
+
+export const Button = styled.button`
+  width: 65px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  color: black;
+  margin: 0 10px 0 0;
+  &:hover {
+    cursor: pointer;
+  }
+`;

@@ -133,7 +133,7 @@ export const interviewTitle = styled.p`
 export const interviewMember = styled.div`
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
 `;
 
 export const intervieweeList = styled.p`

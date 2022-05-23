@@ -41,6 +41,13 @@ export const Span = styled.p`
   margin-left: 10px;
 `;
 
+export const detailText = styled.p`
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
+  margin: 5px 0 5px 10px;
+`;
+
 export const resumeUpload = styled.div`
   width: 100%;
   display: flex;

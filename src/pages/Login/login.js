@@ -5,9 +5,6 @@ import authAPI from "../../api/authAPI";
 import AuthContext from "../../store";
 
 function Login() {
-  // const [username, setUsername] = useState("sohyeon");
-  // const [room, setRoom] = useState("KIWI");
-
   const navigator = useNavigate();
   const [, actions] = useContext(AuthContext);
   const [values, setValues] = useState({ email: "", password: "" });
@@ -37,12 +34,17 @@ function Login() {
         alert("비밀번호 또는 이메일이 잘못되었습니다.");
       });
   };
+  const onKeyPress = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+    }
+  };
 
   return (
     <>
       <style.Container>
         <style.Title>Login</style.Title>
-        <style.LoginForm onSubmit={handleSubmit}>
+        <style.LoginForm onKeyPress={onKeyPress} onSubmit={handleSubmit}>
           <style.Span
             color="#7a7a7a"
             size="14px"
@@ -97,9 +99,6 @@ function Login() {
               Create an account
             </style.SignUpButton>
             <style.LoginButton>Login</style.LoginButton>
-            {/* <Link onClick={e => (!username || !room) ? e.preventDefault() : null} to={`/main?username=${username}&room=${room}`}>
-                <style.Button>Login</style.Button>
-            </Link> */}
           </style.ButtonContainer>
         </style.LoginForm>
       </style.Container>

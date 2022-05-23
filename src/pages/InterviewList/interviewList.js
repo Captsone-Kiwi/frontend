@@ -35,12 +35,10 @@ function InterviewList(props) {
     }
   };
 
+  // 유저 정보 가져오기
   useEffect(() => {
     getMemberInfo();
-    getInterviewInfo();
   }, [state]);
-
-  // 유저 정보 가져오기
   const getMemberInfo = async () => {
     await authAPI
       .getUser()
@@ -52,12 +50,15 @@ function InterviewList(props) {
   };
 
   //예약된 인터뷰 & 참여자 정보 가져오기
+  useEffect(() => {
+    getInterviewInfo();
+  }, [state]);
   const getInterviewInfo = async () => {
     await interviewAPI
       .getInterview()
       .then((res) => {
         setInterviewInfo(res.data.data);
-        console.log("getInterviewInfo result", res.data);
+        // console.log("getInterviewInfo result", res.data);
       })
       .catch((error) => console.log("getInterviewInfo error", error));
   };
@@ -106,7 +107,7 @@ function InterviewList(props) {
                   </style.reserveInterview>
                   <style.dateDiv>
                     <style.interviewSpan style={{ marginLeft: "10px" }}>
-                      시간
+                      날짜 / 시간
                     </style.interviewSpan>
                     <style.interviewSpan>면접명</style.interviewSpan>
                     <style.interviewSpan>참여자</style.interviewSpan>
@@ -126,7 +127,7 @@ function InterviewList(props) {
                 <>
                   <style.dateDiv>
                     <style.interviewSpan style={{ marginLeft: "10px" }}>
-                      시간
+                      날짜 / 시간
                     </style.interviewSpan>
                     <style.interviewSpan>면접명</style.interviewSpan>
                   </style.dateDiv>

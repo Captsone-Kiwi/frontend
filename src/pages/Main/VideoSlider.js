@@ -2,29 +2,29 @@ import React, { Component, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { StyledVideo } from './Video.js';
+import { StyledVideo } from "./Video.js";
 import styled from "styled-components";
 import { useRadio } from "@chakra-ui/radio";
 
 export const Video = styled.video`
-    width: 180px;
-    height: 120px;
-    box-sizing: border-box;
-    border-radius: 12px;
-    object-fit: cover;
-    background-color: black;
-    z-index:1;
+  width: 180px;
+  height: 120px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  object-fit: cover;
+  background-color: black;
+  z-index: 1;
 `;
 
 const Name = styled.div`
-    position: absolute;
-    bottom: 4px;
-    padding: 4px;
-    display: flex;
-    z-index: 4;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
+  position: absolute;
+  bottom: 4px;
+  padding: 4px;
+  display: flex;
+  z-index: 4;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
 `;
 
 const NameBlock = ({id}) => (
@@ -59,7 +59,7 @@ export default class VideoSlider extends Component{
       infinite: false,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     };
 
     const users = [
@@ -87,7 +87,7 @@ export default class VideoSlider extends Component{
           className="button"
           onClick={() =>
             this.setState({
-              width: this.state.width + 100
+              width: this.state.width + 100,
             })
           }
         >
@@ -98,7 +98,7 @@ export default class VideoSlider extends Component{
           className="button"
           onClick={() =>
             this.setState({
-              width: this.state.width - 100
+              width: this.state.width - 100,
             })
           }
         >
@@ -109,7 +109,7 @@ export default class VideoSlider extends Component{
           className="button"
           onClick={() =>
             this.setState({
-              display: !this.state.display
+              display: !this.state.display,
             })
           }
         >
@@ -118,13 +118,13 @@ export default class VideoSlider extends Component{
         </button>
         <div
           style={{
-            position: 'absolute',
-            transform: 'translate(-50%, 0%)',
-            left: '50%',
-            top: '2%',
+            position: "absolute",
+            transform: "translate(-50%, 0%)",
+            left: "50%",
+            top: "2%",
             width: this.state.width + "px",
             display: this.state.display ? "block" : "none",
-            zIndex:3
+            zIndex: 3,
           }}
         >
       
