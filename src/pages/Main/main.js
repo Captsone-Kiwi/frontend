@@ -40,7 +40,8 @@ const NameBlock = ({title}) => (
 var mediasoup = require('mediasoup-client');
 var socket_client = require('socket.io-client');
 
-const server_url = `http://35.174.145.15:3000`;
+// const server_url = `http://35.174.145.15:3000`;
+const server_url = 'http://localhost:4000';
 const socket = socket_client(server_url);
 
 
@@ -288,6 +289,11 @@ function Main() {
   })
 
   socket.on("connection-success",async ({socketId}) => {
+    console.log("CONNECTION ", socketId);
+    await socket.request("saveUsername",{username});
+  })
+
+  socket.on("start",async ({socketId}) => {
     console.log(socketId);
 
     // 1. 서버 라우터의 rtp capabilites를 받아와서 아래 내용을 처리.

@@ -416,9 +416,10 @@ gdjs.restroomCode.condition1IsTrue_0 = {val:false};
 gdjs.restroomCode.condition2IsTrue_0 = {val:false};
 
 
-gdjs.restroomCode.userFunc0x381e420 = function(runtimeScene) {
+gdjs.restroomCode.userFunc0x1490308 = function(runtimeScene) {
 "use strict";
 runtimeScene.ws = new WebSocket("ws://localhost:5100/ws");
+const url = window.location.search;
 const id = Math.floor(Math.random() * Math.floor(100000))
 const sit = 0;
 const roomName = "restroom";
@@ -454,7 +455,8 @@ runtimeScene.ws.onopen = function(event) {
             shoesStyle: ShoesStyle,
             x: 480,
             y: 300,
-            z: 9
+            z: 9,
+            url: url
         }
     }
     setTimeout(() => {
@@ -1835,12 +1837,12 @@ gdjs.restroomCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.restroomCode.userFunc0x381e420(runtimeScene);
+gdjs.restroomCode.userFunc0x1490308(runtimeScene);
 
 }
 
 
-};gdjs.restroomCode.userFunc0x3c99388 = function(runtimeScene) {
+};gdjs.restroomCode.userFunc0x21c1320 = function(runtimeScene) {
 "use strict";
 const roomName = "restroom";
 
@@ -2894,7 +2896,7 @@ gdjs.restroomCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.restroomCode.userFunc0x3c99388(runtimeScene);
+gdjs.restroomCode.userFunc0x21c1320(runtimeScene);
 
 }
 
