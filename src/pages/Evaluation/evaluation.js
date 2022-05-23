@@ -26,6 +26,7 @@ function Evaluation(props) {
       })
       .catch((error) => console.log("getEvaluationId error", error));
   };
+  console.log("evalId", evalId);
 
   return (
     <style.mainContainer>

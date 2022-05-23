@@ -33,7 +33,7 @@ function Chatting() {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState([]);
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "localhost:5000";
+  const ENDPOINT = "35.174.145.15:5000";
   const location = useLocation().search;
 
   useEffect(() => {

@@ -204,7 +204,7 @@ function Sidebar() {
         {tabState.onEval && <EvalSide />}
         {tabState.onChat && <Chatting />}
         {tabState.onWatch && <Timer />}
-        {tabState.onCheck && <Sample name={"CV2"} />}
+        {tabState.onCheck && <Sample name={"sohyeon"} />}
       </style.NavMenu>
       {tabState.onSet && <SettingModal />}
       {tabState.onExit && <ExitModal />}

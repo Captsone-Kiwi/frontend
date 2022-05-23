@@ -12,7 +12,7 @@ function ParticipantList(props) {
         : props.participant.member_type === 2
         ? props.memberInfo.name === props.participant.name
           ? " 본인"
-          : " 면접관"
+          : " 면접자"
         : null}
     </style.intervieweeList>
   );

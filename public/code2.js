@@ -644,7 +644,7 @@ gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDPlayer1Objects1ObjectsGDgdjs_
 gdjs.interviewCode.mapOfGDgdjs_46interviewCode_46GDrestObjects1Objects = Hashtable.newFrom({"rest": gdjs.interviewCode.GDrestObjects1});
 gdjs.interviewCode.userFunc0x1c3f4c0 = function(runtimeScene) {
 "use strict";
-runtimeScene.ws = new WebSocket("ws://35.174.145.15:5100/ws");
+runtimeScene.ws = new WebSocket("ws://10.223.114.48:5100/ws");
 const url = window.location.search;
 const id = Math.floor(Math.random() * Math.floor(100000))
 const sit = 0;
