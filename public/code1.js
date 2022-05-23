@@ -416,9 +416,9 @@ gdjs.restroomCode.condition1IsTrue_0 = {val:false};
 gdjs.restroomCode.condition2IsTrue_0 = {val:false};
 
 
-gdjs.restroomCode.userFunc0x1490308 = function(runtimeScene) {
+gdjs.restroomCode.userFunc0x1c3f4c0 = function(runtimeScene) {
 "use strict";
-runtimeScene.ws = new WebSocket("ws://localhost:5100/ws");
+runtimeScene.ws = new WebSocket("ws://35.174.145.15:5100/ws");
 const url = window.location.search;
 const id = Math.floor(Math.random() * Math.floor(100000))
 const sit = 0;
@@ -456,7 +456,7 @@ runtimeScene.ws.onopen = function(event) {
             x: 480,
             y: 300,
             z: 9,
-            url: url
+            url:url
         }
     }
     setTimeout(() => {
@@ -1837,12 +1837,12 @@ gdjs.restroomCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.restroomCode.userFunc0x1490308(runtimeScene);
+gdjs.restroomCode.userFunc0x1c3f4c0(runtimeScene);
 
 }
 
 
-};gdjs.restroomCode.userFunc0x21c1320 = function(runtimeScene) {
+};gdjs.restroomCode.userFunc0x1c3f770 = function(runtimeScene) {
 "use strict";
 const roomName = "restroom";
 
@@ -2896,7 +2896,7 @@ gdjs.restroomCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.restroomCode.userFunc0x21c1320(runtimeScene);
+gdjs.restroomCode.userFunc0x1c3f770(runtimeScene);
 
 }
 

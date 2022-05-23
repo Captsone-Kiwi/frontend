@@ -40,8 +40,8 @@ const NameBlock = ({title}) => (
 var mediasoup = require('mediasoup-client');
 var socket_client = require('socket.io-client');
 
-// const server_url = `http://35.174.145.15:3000`;
-const server_url = 'http://localhost:4000';
+const server_url = `http://35.174.145.15:4000`;
+// const server_url = 'http://localhost:4000';
 const socket = socket_client(server_url);
 
 
