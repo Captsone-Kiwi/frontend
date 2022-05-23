@@ -15,9 +15,11 @@ function EvaluationInformation(props) {
         category: "",
         title: "",
         type: 0,
+        data: 0,
       },
     ],
   });
+  console.log("evaluationInfo", evaluationInfo);
 
   useEffect(() => {
     getEvaluationInfo();
@@ -26,7 +28,7 @@ function EvaluationInformation(props) {
   //평가항목 정보 가져오기
   const getEvaluationInfo = async () => {
     await evaluationAPI
-      .getEvaluation(props.evalId)
+      .getEvaluation(props.evalId.id)
       .then((res) => {
         setEvaluationInfo(res.data.data);
         console.log("getEvaluationInfo result", res.data);
@@ -37,7 +39,7 @@ function EvaluationInformation(props) {
   // 평가항목 삭제하기
   const deleteEvaluation = async () => {
     await evaluationAPI
-      .deleteEvaluation(props.evalId)
+      .deleteEvaluation(props.evalId.id)
       .then((res) => {
         alert("해당 평가항목을 삭제하시겠습니까?");
         window.location.reload();

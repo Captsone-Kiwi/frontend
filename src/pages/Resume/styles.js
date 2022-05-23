@@ -128,3 +128,18 @@ export const Buttons = styled.button`
     cursor: pointer;
   }
 `;
+
+export const noResume = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 25% 20%;
+  align-items: center;
+  border: 1px solid #e1e6e3;
+`;
+
+export const noResumeText = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+  color: #7a7a7a;
+  margin-block-start: 0;
+`;

@@ -2,8 +2,7 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
-import queryString from 'query-string';
-
+import queryString from "query-string";
 
 // const Container = styled.div`
 //     bottom: 0;
@@ -13,13 +12,13 @@ import queryString from 'query-string';
 //     z-index: 1;
 // `;
 export const StyledVideo = styled.video`
-    width: 180px;
-    height: 120px;
-    box-sizing: border-box;
-    border-radius: 12px;
-    object-fit: cover;
-    background-color: black;
-    z-index:1;
+  width: 180px;
+  height: 120px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  object-fit: cover;
+  background-color: black;
+  z-index: 1;
 `;
 
 // export const Name = styled.div`
@@ -39,22 +38,22 @@ export const StyledVideo = styled.video`
 //   )
 
 const Video = () => {
-    // const location = useLocation().search;
-    // const {username, room} = queryString.parse(location);
-    const videos = useRef([]);
+  // const location = useLocation().search;
+  // const {username, room} = queryString.parse(location);
+  const videos = useRef([]);
 
-    return (
-        <>
-            {/* <NameBlock title={username} /> */}
-            <StyledVideo ref={videos}  autoPlay id="localVideo"/>
+  return (
+    <>
+      {/* <NameBlock title={username} /> */}
+      <StyledVideo ref={videos} autoPlay id="localVideo" />
 
-            {/* <NameBlock title="remote1" /> */}
-            {/* <StyledVideo ref={videos}  autoPlay id="remoteVideo1" /> */}
+      {/* <NameBlock title="remote1" /> */}
+      {/* <StyledVideo ref={videos}  autoPlay id="remoteVideo1" /> */}
 
-            {/* <NameBlock title="remote1" /> */}
-            {/* <StyledVideo ref={videos}  autoPlay id="remoteVideo2" /> */}
-        </>
-    );
+      {/* <NameBlock title="remote1" /> */}
+      {/* <StyledVideo ref={videos}  autoPlay id="remoteVideo2" /> */}
+    </>
+  );
 };
 
 export default Video;

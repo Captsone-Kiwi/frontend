@@ -1,21 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import SideMenu from "../../components/SideMenu/sideMenu";
 import DatePick from "../../components/DatePick/datepick";
 import TimePick from "../../components/TimePick/timepick";
-import TemplateSelect from "../../components/SelectForm/templateSelect";
+import EvaluationSelect from "../../components/SelectForm/evaluationSelect";
 import InterviewerInput from "../../components/InputTextForm/InterviewerInput";
 import IntervieweeInput from "../../components/InputTextForm/IntervieweeInput";
 import * as style from "./styles";
 import interviewAPI from "../../api/interviewAPI";
+import evaluationAPI from "../../api/evaluationAPI";
+import AuthContext from "../../store";
 
 function InterviewReserve(props) {
   const navigator = useNavigate();
+  const [state, actions] = useContext(AuthContext);
   const shortid = require("shortid");
   const [side, setSide] = useState("interview");
   const [selectedDay, setSelectedDay] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState(new Date(0, 0, 0));
+
   //면접 예약 정보
   const [reserveInfo, setReserveInfo] = useState({
     interviewName: "",
@@ -25,7 +29,7 @@ function InterviewReserve(props) {
     interviewee: [""],
     interviewer: [""],
   });
-  console.log("저장되는 정보들", reserveInfo);
+  // console.log("저장되는 정보들", reserveInfo);
 
   // 면접 이름 정보 저장
   const reserveUpload = ({ target }) => {
@@ -69,6 +73,24 @@ function InterviewReserve(props) {
       })
       .catch((err) => console.log("createInterview err", err));
   };
+
+  useEffect(() => {
+    getEvaluationId();
+  }, [state]);
+
+  //평가항목 리스트 가져오기
+  const [evalInfo, setEvalInfo] = useState([]);
+  const [selectedName, setSelectedName] = useState("평가항목 선택");
+  const getEvaluationId = async () => {
+    await evaluationAPI
+      .getEvaluationIdList()
+      .then((res) => {
+        setEvalInfo(res.data.data);
+        // console.log("getEvaluationId result", res.data);
+      })
+      .catch((error) => console.log("getEvaluationId error", error));
+  };
+  console.log("evalInfo", evalInfo);
 
   return (
     <style.mainContainer>
@@ -126,10 +148,22 @@ function InterviewReserve(props) {
                 <style.Text>자동으로 생성</style.Text>
               </style.createId>
             </style.reserveSection>
-            <style.reserveSection>
-              <style.reserveTitle>템플릿</style.reserveTitle>
+            {/* <style.reserveSection>
+              <style.reserveTitle>평가 항목</style.reserveTitle>
               <style.selectTemplate>
                 <TemplateSelect
+                  reserveInfo={reserveInfo}
+                  setReserveInfo={setReserveInfo}
+                />
+              </style.selectTemplate>
+            </style.reserveSection> */}
+            <style.reserveSection>
+              <style.reserveTitle>평가 항목</style.reserveTitle>
+              <style.selectTemplate>
+                <EvaluationSelect
+                  evalInfo={evalInfo}
+                  selectedName={selectedName}
+                  setSelectedName={setSelectedName}
                   reserveInfo={reserveInfo}
                   setReserveInfo={setReserveInfo}
                 />

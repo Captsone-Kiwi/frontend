@@ -3,10 +3,19 @@ import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 import interviewAPI from "../../api/interviewAPI";
 import AuthContext from "../../store";
+import ParticipantList from "./participantList";
 
 function InterviewInformation(props) {
   const navigator = useNavigate();
-  const [participant, setParticipant] = useState([]);
+  const [participant, setParticipant] = useState([
+    {
+      email: "",
+      name: "",
+      member_type: 0,
+    },
+  ]);
+  // console.log("participant", participant);
+
   const [state, actions] = useContext(AuthContext);
   useEffect(() => {
     getParticipant();
@@ -18,7 +27,7 @@ function InterviewInformation(props) {
       .participant(props.interview_id)
       .then((result) => {
         setParticipant(result.data.data);
-        // console.log("participant result", result.data.data);
+        // console.log("participant result", result.data);
       })
       .catch((err) => console.log("participant error", err));
   };
@@ -30,7 +39,7 @@ function InterviewInformation(props) {
       .then((res) => {
         alert("해당 면접 예약을 삭제하시겠습니까?");
         window.location.reload();
-        console.log("deleteInterview result", res.data);
+        // console.log("deleteInterview result", res.data);
       })
       .catch((error) => console.log("deleteInterview error", error));
   };
@@ -38,7 +47,7 @@ function InterviewInformation(props) {
   //원하는 링크로 이동
   const gotoGdevelop = () => {
     navigator(
-      `/main?username=${props.memberInfo.name}?room=${props.interview_id}`
+      `/main?username=${props.memberInfo.name}&room=${props.interview_id}`
     );
   };
 
@@ -51,8 +60,8 @@ function InterviewInformation(props) {
         </style.interviewSchedule>
         <style.interviewTitle>{props.interview_name}</style.interviewTitle>
         <style.interviewMember>
-          {participant.map((e) => (
-            <style.intervieweeList>{e}</style.intervieweeList>
+          {participant.map((e, idx) => (
+            <ParticipantList memberInfo={props.memberInfo} participant={e} />
           ))}
         </style.interviewMember>
       </style.leftDetail>

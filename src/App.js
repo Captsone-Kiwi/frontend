@@ -6,7 +6,6 @@ import {
   Home,
   Login,
   SignUp,
-  Profile,
   InterviewList,
   InterviewReserve,
   Evaluation,
@@ -47,17 +46,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/profile" element={<Profile />} />
         <Route path="/interviewlist" element={<InterviewList />} />
         <Route path="/interviewreserve" element={<InterviewReserve />} />
         <Route path="/evaluation" element={<Evaluation />} />
         <Route path="/upload_evaluation" element={<UploadEvaluation />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/upload_resume" element={<UploadResume />} />
-        <Route
-          path="/main"
-          element={<Main />}
-        />
+        <Route path="/main" element={<Main />} />
       </Routes>
     </Router>
   );

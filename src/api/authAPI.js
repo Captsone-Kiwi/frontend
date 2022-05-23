@@ -13,7 +13,6 @@ export default {
     return axios.post(`signout`, null, tokenConfig());
   },
   getUser() {
-    console.log("토큰", tokenConfig());
     return axios.get(`getUser`, tokenConfig());
   },
 };
