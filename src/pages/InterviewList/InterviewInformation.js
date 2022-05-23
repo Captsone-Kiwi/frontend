@@ -61,7 +61,7 @@ function InterviewInformation(props) {
         <style.interviewTitle>{props.interview_name}</style.interviewTitle>
         <style.interviewMember>
           {participant.map((e, idx) => (
-            <ParticipantList participant={e} />
+            <ParticipantList memberInfo={props.memberInfo} participant={e} />
           ))}
         </style.interviewMember>
       </style.leftDetail>

@@ -78,17 +78,19 @@ function InterviewReserve(props) {
     getEvaluationId();
   }, [state]);
 
-  //평가항목 아이디 리스트 가져오기
-  const [evalId, setEvalId] = useState([]);
+  //평가항목 리스트 가져오기
+  const [evalInfo, setEvalInfo] = useState([]);
+  const [selectedName, setSelectedName] = useState("평가항목 선택");
   const getEvaluationId = async () => {
     await evaluationAPI
       .getEvaluationIdList()
       .then((res) => {
-        setEvalId(res.data.data);
+        setEvalInfo(res.data.data);
         // console.log("getEvaluationId result", res.data);
       })
       .catch((error) => console.log("getEvaluationId error", error));
   };
+  console.log("evalInfo", evalInfo);
 
   return (
     <style.mainContainer>
@@ -158,7 +160,13 @@ function InterviewReserve(props) {
             <style.reserveSection>
               <style.reserveTitle>평가 항목</style.reserveTitle>
               <style.selectTemplate>
-                <EvaluationSelect evalId={evalId} />
+                <EvaluationSelect
+                  evalInfo={evalInfo}
+                  selectedName={selectedName}
+                  setSelectedName={setSelectedName}
+                  reserveInfo={reserveInfo}
+                  setReserveInfo={setReserveInfo}
+                />
               </style.selectTemplate>
             </style.reserveSection>
             <style.reserveSection>

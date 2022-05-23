@@ -1,35 +1,27 @@
-import React, { useState, useCallback, useEffect, useContext } from "react";
+import React, { useState, useMemo } from "react";
 import SelectEval from "react-select";
 import "./styles.css";
-import evaluationAPI from "../../api/evaluationAPI";
-import AuthContext from "../../store";
 
 function EvaluationSelect(props) {
-  const [value, setValue] = useState();
-  const [state, actions] = useContext(AuthContext);
+  const handleSelect = (e) => {
+    const setTemplate = { ...props.reserveInfo };
+    setTemplate["template"] = e.value;
+    props.setReserveInfo(setTemplate);
+  };
 
-  // const [options, setOptions] = useState({ value: 0, label: "" });
-
-  const handleChange = useCallback((inputValue) => {
-    const setCategory = { ...props.evaluationInfo };
-    setCategory["evaluationList"][props.index]["category"] = inputValue.value;
-    props.setEvaluationInfo(setCategory);
-    setValue(inputValue);
-  }, []);
-
-  const [options, setOptions] = useState(
-    props.evalId.map((e, idx) => ({
-      value: e,
-      label: "???",
+  const options = useMemo(() =>
+    props.evalInfo.map((e, idx) => ({
+      value: e.id,
+      label: e.name,
     }))
   );
   console.log("options", options);
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <SelectEval
-        onChange={handleChange}
-        // options={options}
+        onChange={handleSelect}
+        options={options}
         placeholder={"평가항목 선택"}
       />
     </div>

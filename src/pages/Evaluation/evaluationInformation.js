@@ -19,6 +19,7 @@ function EvaluationInformation(props) {
       },
     ],
   });
+  console.log("evaluationInfo", evaluationInfo);
 
   useEffect(() => {
     getEvaluationInfo();
@@ -27,7 +28,7 @@ function EvaluationInformation(props) {
   //평가항목 정보 가져오기
   const getEvaluationInfo = async () => {
     await evaluationAPI
-      .getEvaluation(props.evalId)
+      .getEvaluation(props.evalId.id)
       .then((res) => {
         setEvaluationInfo(res.data.data);
         console.log("getEvaluationInfo result", res.data);
