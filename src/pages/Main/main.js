@@ -1,9 +1,7 @@
 import React from 'react';
-import Bottom from "../../components/Bottom/Bottom.js";
 import Sidebar from "../../components/Sidebar/Sidebar.js";
 import Video from './Video.js';
 import VideoSlider from './VideoSlider.js';
-import GdevelopPage from '../../pages/GDevelop/GdevelopPage.js';
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 import queryString from 'query-string';
@@ -384,7 +382,6 @@ function Main() {
   return (
     <>
         <Sidebar style={{position:'absolute', zIndex:1}}/>
-        <Bottom style={{position:'absolute'}}/>
         <VideoSlider/>
         <Container>
             <Video/>
