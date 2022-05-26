@@ -114,15 +114,6 @@ function Sidebar() {
                   }}
                   onClick={tabHandler}
                 />
-                <Io5Icons.IoAccessibility
-                  id="onTrans"
-                  style={{
-                    color: tabState.onTrans ? "#3CB371" : "#7a7a7a",
-                    fontSize: "28px",
-                    margin: "16px 16px",
-                  }}
-                  onClick={tabHandler}
-                />
                 <Io5Icons.IoChatbox
                   id="onChat"
                   style={{
@@ -178,15 +169,6 @@ function Sidebar() {
                   }}
                   onClick={tabHandler}
                 />
-                <Io5Icons.IoAccessibility
-                  id="onTrans"
-                  style={{
-                    color: tabState.onTrans ? "#3CB371" : "#7a7a7a",
-                    fontSize: "28px",
-                    margin: "16px 16px",
-                  }}
-                  onClick={tabHandler}
-                />
                 <Io5Icons.IoChatbox
                   id="onChat"
                   style={{
@@ -222,7 +204,7 @@ function Sidebar() {
         {tabState.onEval && <EvalSide />}
         {tabState.onChat && <Chatting />}
         {tabState.onWatch && <Timer />}
-        {tabState.onCheck && <Sample name={"CV2"} />}
+        {tabState.onCheck && <Sample name={"sohyeon"} />}
       </style.NavMenu>
       {tabState.onSet && <SettingModal />}
       {tabState.onExit && <ExitModal />}

@@ -40,7 +40,7 @@ function EvalSide() {
   console.log("Questions", Questions);
   const getEvaluationInfo = async () => {
     await evaluationAPI
-      .getEvaluation(10)
+      .getEvaluation(2)
       .then((res) => {
         setQuestions(res.data.data);
         console.log("getEvaluationInfo result", res.data.data);
