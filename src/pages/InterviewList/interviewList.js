@@ -157,7 +157,7 @@ function InterviewList(props) {
                 <style.leftDetail>
                   <style.interviewSchedule>
                     <style.interviewDate>2022년 05월 28일</style.interviewDate>
-                    <style.interviewTime>15시 30분</style.interviewTime>
+                    <style.interviewTime>16시 50분</style.interviewTime>
                   </style.interviewSchedule>
                   <style.interviewTitle>Kiwi interview</style.interviewTitle>
                 </style.leftDetail>
