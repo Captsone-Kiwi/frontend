@@ -418,7 +418,9 @@ gdjs.restroomCode.condition2IsTrue_0 = {val:false};
 
 gdjs.restroomCode.userFunc0x1c3f4c0 = function(runtimeScene) {
 "use strict";
-runtimeScene.ws = new WebSocket("ws://35.174.145.15:5100/ws");
+// EDIT
+runtimeScene.ws = new WebSocket("ws://[SFU Server IP]:5100/ws");
+
 const url = window.location.search;
 const id = Math.floor(Math.random() * Math.floor(100000))
 const sit = 0;

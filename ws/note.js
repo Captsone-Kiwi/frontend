@@ -1,4 +1,5 @@
-runtimeScene.ws = new WebSocket("ws://localhost:5100/ws");
+// EDIT
+runtimeScene.ws = new WebSocket("ws://[SFU Server IP]:5100/ws");
 const id = Math.floor(Math.random() * Math.floor(100000))
 const sit = 0;
 runtimeScene.player_id = id
