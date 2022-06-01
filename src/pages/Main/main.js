@@ -40,6 +40,7 @@ const NameBlock = ({ title }) => (
 var mediasoup = require("mediasoup-client");
 var socket_client = require("socket.io-client");
 
+// const server_url = `http://[SFU Server IP]:4000`;
 const server_url = `http://3.34.250.104:4000`;
 // const server_url = 'http://localhost:4000';
 const socket = socket_client(server_url);
