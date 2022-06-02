@@ -243,7 +243,7 @@ function Sidebar() {
         )}
         {tabState.onChat && <Chatting />}
         {tabState.onWatch && <Timer />}
-        {tabState.onCheck && <Sample name={"백소현"} />}
+        {tabState.onCheck && <Sample />}
       </style.NavMenu>
       {tabState.onSet && <SettingModal />}
       {tabState.onExit && <ExitModal />}
