@@ -2,11 +2,12 @@ import zIndex from "@mui/material/styles/zIndex";
 import React, { useState } from "react";
 import * as style from "./styles";
 
-function EvalPerson(props) {
+function ResumePerson(props) {
   const [isOpenName, setIsOpenName] = useState(false);
   const togglingName = () => setIsOpenName(!isOpenName);
   const onNameClicked = (value) => () => {
     props.setSelectedNames(value);
+    props.setEmbedURL(`http://localhost:8000/getResume?name=${value}`);
     setIsOpenName(false);
   };
   return (
@@ -31,4 +32,4 @@ function EvalPerson(props) {
   );
 }
 
-export default EvalPerson;
+export default ResumePerson;

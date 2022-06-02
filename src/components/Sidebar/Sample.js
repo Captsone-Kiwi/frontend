@@ -1,11 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useLocation } from "react-router-dom";
 import * as style from "./styles";
-import EvalPerson from "../EvaluationSide/EvalPerson";
+import ResumePerson from "./ResumePerson";
 import interviewAPI from "../../api/interviewAPI";
 import AuthContext from "../../store";
 import queryString from "query-string";
-import resumeAPI from "../../api/resumeAPI";
 
 function Sample(props) {
   const [state, actions] = useContext(AuthContext);
@@ -66,7 +65,7 @@ function Sample(props) {
 
   return (
     <style.resumeDiv>
-      <EvalPerson
+      <ResumePerson
         interviewee={interviewee}
         selectedName={selectedName}
         setSelectedNames={setSelectedNames}

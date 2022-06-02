@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { useLocation } from "react-router-dom";
 
 import * as MdIcons from "react-icons/md";
 import * as Io5Icons from "react-icons/io5";
@@ -14,8 +15,10 @@ import EvalSide from "../EvaluationSide/EvalSide.js";
 import Chatting from "../Chatting/Chatting.js";
 import { motion } from "framer-motion";
 import Sample from "./Sample";
+import queryString from "query-string";
 
 import authAPI from "../../api/authAPI";
+import interviewAPI from "../../api/interviewAPI";
 import AuthContext from "../../store";
 
 function Sidebar() {
@@ -62,6 +65,40 @@ function Sidebar() {
         console.log("getMember result", res.data.data);
       })
       .catch((error) => console.log("getMember error", error));
+  };
+
+  //예약된 인터뷰 & 참여자 정보 가져오기
+  const location = useLocation().search;
+  const { username, room } = queryString.parse(location);
+  const [interviewInfo, setInterviewInfo] = useState([
+    {
+      interview_name: "",
+      startDate: "",
+      startTime: "",
+      template: 0,
+      interviewee: [""],
+      interviewer: [""],
+    },
+  ]);
+  console.log("interviewInfo", interviewInfo);
+
+  // 선택한 템플릿 골라내기
+  const selectedTemplate = interviewInfo.filter((e) => e.id == room);
+  // .map((temp) => temp.temp);
+
+  console.log("selectedTemplate", selectedTemplate);
+
+  useEffect(() => {
+    getInterviewInfo();
+  }, [state]);
+  const getInterviewInfo = async () => {
+    await interviewAPI
+      .getInterview()
+      .then((res) => {
+        setInterviewInfo(res.data.data);
+        // console.log("getInterviewInfo result", res.data);
+      })
+      .catch((error) => console.log("getInterviewInfo error", error));
   };
 
   return (
@@ -201,7 +238,7 @@ function Sidebar() {
           )}
         </style.Sidebar>
 
-        {tabState.onEval && <EvalSide />}
+        {tabState.onEval && <EvalSide selectedTemplate={selectedTemplate} />}
         {tabState.onChat && <Chatting />}
         {tabState.onWatch && <Timer />}
         {tabState.onCheck && <Sample name={"백소현"} />}
