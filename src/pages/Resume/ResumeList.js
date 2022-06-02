@@ -26,10 +26,12 @@ function ResumeList(props) {
       </style.leftDiv>
       <style.rightDiv>
         <style.greenButton
+          // EDIT
           onClick={() =>
             window.open(
               // `http://35.174.145.15:8000/getResume?name=${resume_name[0]}`,
               `http://localhost:8000/getResume?name=${resume_name[0]}`,
+              // `http://[API Server IP]:8000/getResume?name=${resume_name[0]}`,
               "_blank"
             )
           }
