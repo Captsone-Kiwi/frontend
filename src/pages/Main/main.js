@@ -303,6 +303,10 @@ async function getRemoteStreams() {
 }
 
 function Main() {
+  if (!window.location.hash) {
+    window.location = window.location + "#loaded";
+    window.location.reload();
+  }
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
   socket.request = socketPromise(socket);
