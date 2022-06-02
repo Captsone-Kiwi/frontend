@@ -71,19 +71,16 @@ function EvalSide(props) {
   // 선택된 면접자
   const [selectedName, setSelectedNames] = useState("면접자 선택");
 
-  // if (props.tabState.onEval) {
-  //   document.getElementById("onEval").style.display = "block";
-  // } else {
-  //   document.getElementById("onEval").style.display = "none";
-  // }
-
   return (
-    <style.EvalSideBack id="onEval">
+    <style.EvalSideBack>
+      {/* <style.topSection> */}
+      {/* <style.saveBtn>저장</style.saveBtn> */}
       <EvalPerson
         interviewee={interviewee}
         selectedName={selectedName}
         setSelectedNames={setSelectedNames}
       />
+      {/* </style.topSection> */}
       {selectedName === "면접자 선택" ? (
         <style.infoDiv>
           <style.textDiv>

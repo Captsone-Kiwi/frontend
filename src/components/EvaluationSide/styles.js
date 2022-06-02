@@ -65,6 +65,31 @@ export const EvalSideBack = styled.div`
   overflow-x: hidden;
 `;
 
+export const topSection = styled.div`
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  width: 100%;
+`;
+
+export const saveBtn = styled.button`
+  width: 20%;
+  height: 35px;
+  margin-top: 30px;
+  margin-right: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background: #3cb371;
+  border-radius: 15px;
+  align-self: flex-end;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 export const Main = styled.div`
   font-family: sans-serif;
   background: #fff;
