@@ -80,13 +80,13 @@ function Sidebar() {
       interviewer: [""],
     },
   ]);
-  console.log("interviewInfo", interviewInfo);
+  // console.log("interviewInfo", interviewInfo);
 
   // 선택한 템플릿 골라내기
   const selectedTemplate = interviewInfo.filter((e) => e.id == room);
   // .map((temp) => temp.temp);
 
-  console.log("selectedTemplate", selectedTemplate);
+  // console.log("selectedTemplate", selectedTemplate);
 
   useEffect(() => {
     getInterviewInfo();
@@ -238,7 +238,9 @@ function Sidebar() {
           )}
         </style.Sidebar>
 
-        {tabState.onEval && <EvalSide selectedTemplate={selectedTemplate} />}
+        {tabState.onEval && (
+          <EvalSide tabState={tabState} selectedTemplate={selectedTemplate} />
+        )}
         {tabState.onChat && <Chatting />}
         {tabState.onWatch && <Timer />}
         {tabState.onCheck && <Sample name={"백소현"} />}

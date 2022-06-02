@@ -7,20 +7,10 @@ function ExitModal() {
 
   // onClick={exit}
 
-  // const exit = async (event) => {
-  //   event.preventDefault();
-  //   await evaluationAPI
-  //     .createEvaluation({
-  //       name: evalName.name,
-  //       evaluationList: evaluationInfo.evaluationList,
-  //     })
-  //     .then((res) => {
-  //       console.log("createEvaluation result", res);
-  //       alert("평가 항목 등록 완료");
-  //       navigator("/evaluation");
-  //     })
-  //     .catch((err) => console.log("createEvaluation err", err));
-  // };
+  const exit = () => {
+    navigator("/interviewlist");
+    window.location.reload();
+  };
 
   return (
     <>
@@ -34,7 +24,7 @@ function ExitModal() {
               Yes를 누르시면 마이페이지로 이동합니다.
             </style.styleLabel2>
             <style.btnContainer>
-              <style.Button>Yes</style.Button>
+              <style.Button onClick={exit}>Yes</style.Button>
               <style.Button>No</style.Button>
             </style.btnContainer>
           </style.columnDiv>

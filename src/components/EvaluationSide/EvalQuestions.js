@@ -13,7 +13,8 @@ function EvalQuestions(props) {
       evaluation: Questions,
     }))
   );
-  console.log("data", data);
+  // console.log("data", data);
+
   //세션 스토리지 정보 가져오기
   // useEffect(() => {
   //   loadData();

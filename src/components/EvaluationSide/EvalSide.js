@@ -36,15 +36,15 @@ function EvalSide(props) {
 
   //평가항목 정보 가져오기
   const [questions, setQuestions] = useState([]);
-  console.log("questions", questions);
+  // console.log("questions", questions);
   const Questions = questions.evaluationList;
-  console.log("Questions", Questions);
+  // console.log("Questions", Questions);
   const getEvaluationInfo = async () => {
     await evaluationAPI
       .getEvaluation(template_num)
       .then((res) => {
         setQuestions(res.data.data);
-        console.log("getEvaluationInfo result", res.data.data);
+        // console.log("getEvaluationInfo result", res.data.data);
       })
       .catch((error) => console.log("getEvaluationInfo error", error));
   };
