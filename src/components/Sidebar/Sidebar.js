@@ -237,14 +237,22 @@ function Sidebar() {
             </motion.div>
           )}
         </style.Sidebar>
+        <div style={{display: tabState.onEval ? "flex" : "none"}}>
+          <EvalSide tabState={tabState} selectedTemplate={selectedTemplate}/>
+        </div>
 
-        {tabState.onEval && (
-          <EvalSide tabState={tabState} selectedTemplate={selectedTemplate} />
-        )}
-        {tabState.onChat && <Chatting />}
+        <div style={{display: tabState.onChat ? "flex" : "none"}}>
+          <Chatting/>
+        </div>
+
         {tabState.onWatch && <Timer />}
-        {tabState.onCheck && <Sample name={"백소현"} />}
-      </style.NavMenu>
+
+        <div style={{display: tabState.onCheck ? "flex" : "none"}}>
+          <Sample/>
+        </div>
+
+        </style.NavMenu>
+
       {tabState.onSet && <SettingModal />}
       {tabState.onExit && <ExitModal />}
     </>
