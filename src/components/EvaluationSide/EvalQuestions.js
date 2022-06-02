@@ -13,8 +13,8 @@ function EvalQuestions(props) {
       evaluation: Questions,
     }))
   );
-  console.log("data", data);
-  console.log("questions", props.questions);
+  // console.log("data!!!!", data);
+  // console.log("questions", props.questions);
 
   //세션 스토리지 정보 가져오기
   // useEffect(() => {
@@ -47,29 +47,32 @@ function EvalQuestions(props) {
     setData(copyArray);
   };
 
-  // const saveData = async (e) => {
-  //   e.preventDefault();
-  //   await evaluationAPI
-  //     .createEvaluationResult({
-  //       evaluationResultList: [
-  //         {
-  //           label: data.label,
-  //           evaluation: {
-  //             name: props.questions.name,
-  //             evaluationList: data.evaluation,
-  //           },
-  //         },
-  //       ],
-  //     })
-  //     .then((res) => {
-  //       console.log("createEvaluationResult result", res);
-  //       alert("평가결과 저장 완료");
-  //     })
-  //     .catch((err) => console.log("createEvaluationResult err", err));
-  // };
+  const saveData = async (e) => {
+    e.preventDefault();
+    await evaluationAPI
+      .createEvaluationResult({
+        evaluationResultList: [
+          {
+            label: data.label,
+            evaluation: {
+              name: props.questions.name,
+              evaluationList: data.evaluation,
+            },
+          },
+        ],
+      })
+      .then((res) => {
+        console.log("createEvaluationResult result", res);
+        alert("평가결과 저장 완료");
+      })
+      .catch((err) => console.log("createEvaluationResult err", err));
+  };
 
   return (
     <>
+      <style.btnDiv>
+        <style.saveBtn onClick={saveData}>평가결과 제출</style.saveBtn>
+      </style.btnDiv>
       {data.map((question, que_idx) =>
         question.label === props.selectedName
           ? question.evaluation.map((qu, index) =>
@@ -115,7 +118,7 @@ function EvalQuestions(props) {
                         onChange={(e) =>
                           onToggle(e, index, idx, props.selectedName)
                         }
-                        value={q.data === 0 ? null : q.data}
+                        value={q.data === "0" ? null : q.data}
                         placeholder="이곳에 의견을 작성해주세요."
                       />
                     )}
@@ -125,7 +128,6 @@ function EvalQuestions(props) {
             )
           : null
       )}
-      <style.saveBtn>저장</style.saveBtn>
     </>
   );
 }

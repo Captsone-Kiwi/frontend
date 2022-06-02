@@ -73,17 +73,25 @@ export const topSection = styled.div`
   width: 100%;
 `;
 
+export const btnDiv = styled.div`
+  display: flex;
+  z-index: 10;
+  width: 100%;
+  height: fit-content;
+`;
+
 export const saveBtn = styled.button`
-  width: 20%;
-  height: 35px;
-  margin-top: 30px;
-  margin-right: 30px;
+  width: fit-content;
+  padding: 0 10px;
+  height: 30px;
+  // margin-top: 30px;
+  margin-left: 20px;
   font-size: 14px;
   font-weight: bold;
   color: white;
   border: none;
   background: #3cb371;
-  border-radius: 15px;
+  border-radius: 10px;
   align-self: flex-end;
   &:hover {
     cursor: pointer;

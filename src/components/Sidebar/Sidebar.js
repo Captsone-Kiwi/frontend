@@ -67,9 +67,10 @@ function Sidebar() {
       .catch((error) => console.log("getMember error", error));
   };
 
-  //예약된 인터뷰 & 참여자 정보 가져오기
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
+
+  //예약된 인터뷰 & 참여자 정보 가져오기
   const [interviewInfo, setInterviewInfo] = useState([
     {
       interview_name: "",
@@ -80,13 +81,7 @@ function Sidebar() {
       interviewer: [""],
     },
   ]);
-  // console.log("interviewInfo", interviewInfo);
-
-  // 선택한 템플릿 골라내기
-  const selectedTemplate = interviewInfo.filter((e) => e.id == room);
-  // .map((temp) => temp.temp);
-
-  // console.log("selectedTemplate", selectedTemplate);
+  console.log("interviewInfo", interviewInfo);
 
   useEffect(() => {
     getInterviewInfo();
@@ -100,6 +95,15 @@ function Sidebar() {
       })
       .catch((error) => console.log("getInterviewInfo error", error));
   };
+  // 가져온 인터뷰에서 현재 room넘버와 같은 인터뷰만 남기기
+  useEffect(() => {
+    settingTemp();
+  }, [interviewInfo]);
+  const [selectedTemplate, setSelectedTemplate] = useState([]);
+  const settingTemp = () => {
+    setSelectedTemplate(interviewInfo.filter((e) => e.id == room));
+  };
+  console.log("selectedTemplate", selectedTemplate);
 
   return (
     <>
@@ -237,8 +241,21 @@ function Sidebar() {
             </motion.div>
           )}
         </style.Sidebar>
+
+        {/* ver1 */}
+        {/* {tabState.onEval &&
+          selectedTemplate.map((e, idx) => (
+            <EvalSide templateNum={e.template} />
+          ))}
+        {tabState.onChat && <Chatting />}
+        {tabState.onWatch && <Timer />}
+        {tabState.onCheck && <Sample />} */}
+
+        {/* ver2 */}
         <div style={{ display: tabState.onEval ? "flex" : "none" }}>
-          <EvalSide tabState={tabState} selectedTemplate={selectedTemplate} />
+          {selectedTemplate.map((e, idx) => (
+            <EvalSide templateNum={e.template} />
+          ))}
         </div>
 
         <div style={{ display: tabState.onChat ? "flex" : "none" }}>
@@ -246,6 +263,7 @@ function Sidebar() {
         </div>
 
         {tabState.onWatch && <Timer />}
+
         <div style={{ display: tabState.onCheck ? "flex" : "none" }}>
           <Sample />
         </div>
