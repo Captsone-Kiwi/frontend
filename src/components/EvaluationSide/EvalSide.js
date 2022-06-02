@@ -11,37 +11,37 @@ import EvalPerson from "./EvalPerson";
 import EvalQuestions from "./EvalQuestions";
 
 function EvalSide(props) {
-  const template_num = props.selectedTemplate[0].template;
-  const [state, actions] = useContext(AuthContext);
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
+  const [state, actions] = useContext(AuthContext);
   const [isVisit, setIsVisit] = useState(true);
+
+  // // 선택한 평가항목 id 뽑아내기
+  // useEffect(() => {
+  //   settingTempNum();
+  // }, [props.selectedTemplate]);
+  // const [templateNum, setTemplateNum] = useState(0);
+  // const settingTempNum = () => {
+  //   setTemplateNum(props.selectedTemplate[0].template);
+  // };
+  console.log("templateNum", props.templateNum);
 
   useEffect(() => {
     // getParticipant();
     getEvaluationInfo();
-  }, []);
-
-  // EvalSide를 실행 시켰을때 세션스토리지 정보 가져오기
-  // useEffect(() => {
-  //   const stored_data = localStorage.getItem("EvalResult");
-  //   if (stored_data == null) {
-  //     console.log("트루");
-  //     setIsVisit(true);
-  //   } else {
-  //     console.log("아니야!!");
-  //     setIsVisit(false);
-  //   }
-  // }, []);
+  }, [state]);
 
   //평가항목 정보 가져오기
   const [questions, setQuestions] = useState([]);
-  // console.log("questions", questions);
+  console.log("받아온 questions", questions);
+
   const Questions = questions.evaluationList;
   // console.log("Questions", Questions);
+
   const getEvaluationInfo = async () => {
     await evaluationAPI
-      .getEvaluation(template_num)
+      .getEvaluation(props.templateNum)
+      // selectedTemplate[0].template
       .then((res) => {
         setQuestions(res.data.data);
         // console.log("getEvaluationInfo result", res.data.data);

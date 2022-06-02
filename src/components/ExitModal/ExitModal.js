@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import * as style from "./styles";
 
-function ExitModal() {
+function ExitModal(props) {
   const navigator = useNavigate();
 
   // onClick={exit}
@@ -12,9 +12,16 @@ function ExitModal() {
     window.location.reload();
   };
 
+  const close = () => {
+    document.getElementById("modal").style.display = "none";
+    const newTabState = { ...props.tabState };
+    newTabState.onExit = false;
+    props.setTabState(newTabState);
+  };
+
   return (
     <>
-      <style.ModalContainer>
+      <style.ModalContainer id="modal">
         {/* <style.removeBtn onClick={remove}/> */}
         <style.LogoDiv />
         <style.WrapContainer>
@@ -25,7 +32,7 @@ function ExitModal() {
             </style.styleLabel2>
             <style.btnContainer>
               <style.Button onClick={exit}>Yes</style.Button>
-              <style.Button>No</style.Button>
+              <style.Button onClick={close}>No</style.Button>
             </style.btnContainer>
           </style.columnDiv>
         </style.WrapContainer>

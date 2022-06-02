@@ -6,6 +6,7 @@ import InterviewInformation from "./InterviewInformation";
 import AuthContext from "../../store";
 import interviewAPI from "../../api/interviewAPI";
 import authAPI from "../../api/authAPI";
+import OldInterviewInfo from "./oldInterviewInfo";
 
 function InterviewList(props) {
   const navigator = useNavigate();
@@ -63,6 +64,38 @@ function InterviewList(props) {
       .catch((error) => console.log("getInterviewInfo error", error));
   };
 
+  // 예정 & 이전 필터링하기
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = ("0" + (today.getMonth() + 1)).slice(-2);
+  const day = ("0" + today.getDate()).slice(-2);
+  const dateString = year + "년 " + month + "월 " + day + "일";
+
+  // console.log("today", dateString);
+
+  const hours = ("0" + today.getHours()).slice(-2);
+  const minutes = ("0" + today.getMinutes()).slice(-2);
+
+  const timeString = hours + "시 " + minutes + "분";
+
+  console.log("now", timeString);
+
+  // 오늘 기준 앞으로 예정인 인터뷰들 필터링
+  const newInterview = interviewInfo.filter(
+    (e) =>
+      e.startDate > dateString ||
+      (e.startDate === dateString && e.startTime > timeString)
+  );
+  // console.log("newInterview", newInterview);
+
+  // 오늘 기준 이미 지난 인터뷰들 필터링
+  const oldInterview = interviewInfo.filter(
+    (e) =>
+      e.startDate < dateString ||
+      (e.startDate === dateString && e.startTime <= timeString)
+  );
+  // console.log("oldInterview", oldInterview);
+
   return (
     <style.mainContainer>
       <SideMenu side={side} setSide={setSide} />
@@ -112,7 +145,7 @@ function InterviewList(props) {
                       <style.interviewSpan>면접명</style.interviewSpan>
                       <style.interviewSpan>참여자</style.interviewSpan>
                     </style.dateDiv>
-                    {interviewInfo.map((e) => (
+                    {newInterview.map((e) => (
                       <InterviewInformation
                         memberInfo={memberInfo}
                         startDate={e.startDate}
@@ -131,7 +164,7 @@ function InterviewList(props) {
                       </style.interviewSpan>
                       <style.interviewSpan>면접명</style.interviewSpan>
                     </style.dateDiv>
-                    {interviewInfo.map((e) => (
+                    {newInterview.map((e) => (
                       <InterviewInformation
                         memberInfo={memberInfo}
                         startDate={e.startDate}
@@ -147,37 +180,46 @@ function InterviewList(props) {
             )
           ) : (
             <>
-              <style.dateDiv>
-                <style.interviewSpan style={{ marginLeft: "10px" }}>
-                  날짜 / 시간
-                </style.interviewSpan>
-                <style.interviewSpan>면접명</style.interviewSpan>
-              </style.dateDiv>
-              <style.interviewDetail>
-                <style.leftDetail>
-                  <style.interviewSchedule>
-                    <style.interviewDate>2022년 05월 28일</style.interviewDate>
-                    <style.interviewTime>16시 50분</style.interviewTime>
-                  </style.interviewSchedule>
-                  <style.interviewTitle>Kiwi interview</style.interviewTitle>
-                </style.leftDetail>
-                <style.rightDetail>
-                  <style.greenButton
-                    style={{
-                      width: "130px",
-                      paddingLeft: "14px",
-                      height: "30px",
-                    }}
-                    onClick={() =>
-                      window.open(
-                        `http://35.174.145.15:8000/downloadInterviewResult/kiwi_interview`
-                      )
-                    }
-                  >
-                    면접 결과 다운받기
-                  </style.greenButton>
-                </style.rightDetail>
-              </style.interviewDetail>
+              {memberInfo.memberType === 1 ? (
+                <>
+                  <style.dateDiv>
+                    <style.interviewSpan style={{ marginLeft: "10px" }}>
+                      날짜 / 시간
+                    </style.interviewSpan>
+                    <style.interviewSpan>면접명</style.interviewSpan>
+                    <style.interviewSpan>참여자</style.interviewSpan>
+                  </style.dateDiv>
+                  {oldInterview.map((e) => (
+                    <OldInterviewInfo
+                      memberInfo={memberInfo}
+                      startDate={e.startDate}
+                      startTime={e.startTime}
+                      interview_name={e.interview_name}
+                      interview_id={e.id}
+                      memberType={memberInfo.memberType}
+                    />
+                  ))}
+                </>
+              ) : memberInfo.memberType === 2 ? (
+                <>
+                  <style.dateDiv>
+                    <style.interviewSpan style={{ marginLeft: "10px" }}>
+                      날짜 / 시간
+                    </style.interviewSpan>
+                    <style.interviewSpan>면접명</style.interviewSpan>
+                  </style.dateDiv>
+                  {oldInterview.map((e) => (
+                    <OldInterviewInfo
+                      memberInfo={memberInfo}
+                      startDate={e.startDate}
+                      startTime={e.startTime}
+                      interview_name={e.interview_name}
+                      interview_id={e.id}
+                      memberType={memberInfo.memberType}
+                    />
+                  ))}
+                </>
+              ) : null}
             </>
           )}
         </style.Container>
