@@ -270,7 +270,9 @@ function Sidebar() {
       </style.NavMenu>
 
       {tabState.onSet && <SettingModal />}
-      {tabState.onExit && <ExitModal />}
+      {tabState.onExit && (
+        <ExitModal tabState={tabState} setTabState={setTabState} />
+      )}
     </>
   );
 }
