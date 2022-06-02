@@ -6,6 +6,9 @@ export default {
   createEvaluation(data) {
     return axios.post(`createEvaluation`, data, tokenConfig());
   },
+  createEvaluationResult(data) {
+    return axios.post(`createEvaluationResult`, data, tokenConfig());
+  },
   getEvaluationIdList() {
     return axios.get(`getEvaluationIdList`, tokenConfig());
   },

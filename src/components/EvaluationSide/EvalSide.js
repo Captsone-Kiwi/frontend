@@ -10,7 +10,8 @@ import interviewAPI from "../../api/interviewAPI";
 import EvalPerson from "./EvalPerson";
 import EvalQuestions from "./EvalQuestions";
 
-function EvalSide() {
+function EvalSide(props) {
+  const template_num = props.selectedTemplate[0].template;
   const [state, actions] = useContext(AuthContext);
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
@@ -35,15 +36,15 @@ function EvalSide() {
 
   //평가항목 정보 가져오기
   const [questions, setQuestions] = useState([]);
-  console.log("questions", questions);
+  // console.log("questions", questions);
   const Questions = questions.evaluationList;
-  console.log("Questions", Questions);
+  // console.log("Questions", Questions);
   const getEvaluationInfo = async () => {
     await evaluationAPI
-      .getEvaluation(2)
+      .getEvaluation(template_num)
       .then((res) => {
         setQuestions(res.data.data);
-        console.log("getEvaluationInfo result", res.data.data);
+        // console.log("getEvaluationInfo result", res.data.data);
       })
       .catch((error) => console.log("getEvaluationInfo error", error));
   };
@@ -69,38 +70,17 @@ function EvalSide() {
     .map((name) => name.name);
   // 선택된 면접자
   const [selectedName, setSelectedNames] = useState("면접자 선택");
-  // console.log("============================");
-  // console.log("이거???", interviewee);
-
-  // const [data, setData] = useState(
-  //   interviewee.map((Label, _) => ({
-  //     label: Label,
-  //     evaluation: questions.evaluationList,
-  //   }))
-  // );
-  // console.log("data!!!!!!!!!!!!!!!!!!!", data);
-  //세션 스토리지 정보 가져오기
-  // useEffect(() => {
-  //   loadData();
-  // }, [isVisit]);
-  // const loadData = () => {
-  //   let stored_data = localStorage.getItem("EvalResult");
-  //   if (isVisit === false) {
-  //     stored_data = JSON.parse(stored_data);
-  //     console.log("이거~!~!", stored_data);
-  //     setData(stored_data);
-  //   } else {
-  //     return data;
-  //   }
-  // };
 
   return (
     <style.EvalSideBack>
+      {/* <style.topSection> */}
+      {/* <style.saveBtn>저장</style.saveBtn> */}
       <EvalPerson
         interviewee={interviewee}
         selectedName={selectedName}
         setSelectedNames={setSelectedNames}
       />
+      {/* </style.topSection> */}
       {selectedName === "면접자 선택" ? (
         <style.infoDiv>
           <style.textDiv>

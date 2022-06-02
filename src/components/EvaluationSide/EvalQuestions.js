@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FormControl from "@mui/material/FormControl";
 import SizeSlider from "../../components/SizeSlider/sizeslider";
 import * as style from "./styles";
-import { StepLabel } from "@material-ui/core";
+import evaluationAPI from "../../api/evaluationAPI";
 
 function EvalQuestions(props) {
   const Questions = props.questions.evaluationList;
@@ -14,6 +14,8 @@ function EvalQuestions(props) {
     }))
   );
   console.log("data", data);
+  console.log("questions", props.questions);
+
   //세션 스토리지 정보 가져오기
   // useEffect(() => {
   //   loadData();
@@ -44,6 +46,27 @@ function EvalQuestions(props) {
     );
     setData(copyArray);
   };
+
+  // const saveData = async (e) => {
+  //   e.preventDefault();
+  //   await evaluationAPI
+  //     .createEvaluationResult({
+  //       evaluationResultList: [
+  //         {
+  //           label: data.label,
+  //           evaluation: {
+  //             name: props.questions.name,
+  //             evaluationList: data.evaluation,
+  //           },
+  //         },
+  //       ],
+  //     })
+  //     .then((res) => {
+  //       console.log("createEvaluationResult result", res);
+  //       alert("평가결과 저장 완료");
+  //     })
+  //     .catch((err) => console.log("createEvaluationResult err", err));
+  // };
 
   return (
     <>
@@ -102,6 +125,7 @@ function EvalQuestions(props) {
             )
           : null
       )}
+      <style.saveBtn>저장</style.saveBtn>
     </>
   );
 }

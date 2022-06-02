@@ -12,7 +12,7 @@ function Login() {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setValues({ ...values, [name]: value });
-    console.log(event.target);
+    // console.log(event.target);
   };
 
   const handleSubmit = async (event) => {

@@ -8,7 +8,7 @@ import queryString from "query-string";
 
 const Container = styled.div`
   position: absolute;
-  bottom: 0;
+  bottom: 2%;
   width: 180px;
   height: 120px;
   left: 75%;
@@ -41,8 +41,8 @@ var mediasoup = require("mediasoup-client");
 var socket_client = require("socket.io-client");
 
 // const server_url = `http://[SFU Server IP]:4000`;
-const server_url = `http://3.34.250.104:4000`;
-// const server_url = 'http://localhost:4000';
+// const server_url = `http://3.34.250.104:4000`;
+const server_url = "http://localhost:4000";
 const socket = socket_client(server_url);
 
 let device;
@@ -304,6 +304,10 @@ async function getRemoteStreams() {
 }
 
 function Main() {
+  if (!window.location.hash) {
+    window.location = window.location + "#loaded";
+    window.location.reload();
+  }
   const location = useLocation().search;
   const { username, room } = queryString.parse(location);
   socket.request = socketPromise(socket);
