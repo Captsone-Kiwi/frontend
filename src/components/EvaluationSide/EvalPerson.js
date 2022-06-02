@@ -7,6 +7,7 @@ function EvalPerson(props) {
   const togglingName = () => setIsOpenName(!isOpenName);
   const onNameClicked = (value) => () => {
     props.setSelectedNames(value);
+    props.setEmbedURL(`http://localhost:8000/getResume?name=${value}`);
     setIsOpenName(false);
   };
   return (

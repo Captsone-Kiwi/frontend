@@ -8,7 +8,7 @@ import queryString from "query-string";
 
 const Container = styled.div`
   position: absolute;
-  bottom: 0;
+  bottom: 2%;
   width: 180px;
   height: 120px;
   left: 75%;
@@ -40,8 +40,8 @@ const NameBlock = ({ title }) => (
 var mediasoup = require("mediasoup-client");
 var socket_client = require("socket.io-client");
 
-const server_url = `http://3.34.250.104:4000`;
-// const server_url = 'http://localhost:4000';
+// const server_url = `http://3.34.250.104:4000`;
+const server_url = "http://localhost:4000";
 const socket = socket_client(server_url);
 
 let device;

@@ -28,6 +28,7 @@ function ResumeList(props) {
         <style.greenButton
           onClick={() =>
             window.open(
+              // `http://35.174.145.15:8000/getResume?name=${resume_name[0]}`,
               `http://localhost:8000/getResume?name=${resume_name[0]}`,
               "_blank"
             )

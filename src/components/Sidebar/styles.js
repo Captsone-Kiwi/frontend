@@ -46,3 +46,33 @@ export const Logo = styled.div`
   width: 50px;
   height: 40px;
 `;
+
+export const resumeDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  overflow-y: auto;
+  overflow-x: auto;
+`;
+
+export const infoDiv = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+`;
+
+export const textDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const infoText = styled.p`
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #7a7a7a;
+  margin-block: 5px;
+  width: fit-content;
+  align-self: center;
+`;
