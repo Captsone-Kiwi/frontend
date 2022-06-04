@@ -52,15 +52,15 @@ function Sample(props) {
   // console.log("selectFile", selectFile);
 
   // URL 설정부분
-  const [embedURL, setEmbedURL] = useState(
-    `http://localhost:8000/getResume?name=${selectedName}`
-  );
+  // const [embedURL, setEmbedURL] = useState(
+  //   `http://localhost:8000/getResume?name=${selectedName}`
+  // );
   // const embedURL = decodeURI(
   //   `http://35.174.145.15:8000/getResume?name=${selectedName}`
   // );
-  // const [embedURL, setEmbedURL] = useState(
-  //   `http://35.174.145.15:8000/getResume?name=${selectedName}`
-  // );
+  const [embedURL, setEmbedURL] = useState(
+    `http://35.174.145.15:8000/getResume?name=${selectedName}`
+  );
   console.log("URL", embedURL);
 
   return (

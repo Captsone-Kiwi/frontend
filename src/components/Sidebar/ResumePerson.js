@@ -7,7 +7,7 @@ function ResumePerson(props) {
   const togglingName = () => setIsOpenName(!isOpenName);
   const onNameClicked = (value) => () => {
     props.setSelectedNames(value);
-    props.setEmbedURL(`http://localhost:8000/getResume?name=${value}`);
+    props.setEmbedURL(`http://35.174.145.15:8000/getResume?name=${value}`);
     setIsOpenName(false);
   };
   return (
